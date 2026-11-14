@@ -1,5 +1,7 @@
 # OpenCloudModel Regions
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24215448.svg)](https://doi.org/10.5281/zenodo.24215448)
+
 An evidence-linked dataset of cloud region locations and codes. It maps the regions published by AWS, Azure, Google Cloud, Alibaba Cloud, Oracle Cloud, Tencent Cloud, Huawei Cloud, IBM Cloud, Hetzner, Vultr, DigitalOcean, OVHcloud and Akamai to a place and to IATA, UN/LOCODE and inferred CLLI codes, rebuilt by script from a published list of document links. Of 380 regions in scope, 379 have a place, and the one without is reported as a gap.
 
 A code is a label. It does not prove where a data centre is. Each region carries an evidence grade and a stated precision, so a reader can see how far to trust it, and every gap or doubt is published as a call.
