@@ -895,7 +895,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     asked = commands.add_parser(
         "heldout-memory", help="ask the model where held-out regions are from their identifiers alone"
     )
-    asked.add_argument("--model", default=PAPER_MODEL)
+    _ = asked.add_argument("--model", default=PAPER_MODEL)
     asked.set_defaults(run=cmd_heldout_memory)
     commands.add_parser(
         "quote-review", help="score the author's verdicts on every quoted evidence record"

@@ -14,3 +14,6 @@ paper/arxiv-source.tar.gz
 downloads/
 .env
 .DS_Store
+evaluation/quote_review.xlsx
+evaluation/quote_review_archive_links.csv
+evaluation/~$*

@@ -245,7 +245,7 @@ def parse_zones(text: str) -> list[Site]:
         cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
         if len(cells) == 3:
             for code in ZONE_CODE.findall(cells[2]):
-                sites.setdefault((cells[1], code), (cells[1], code, None))
+                _ = sites.setdefault((cells[1], code), (cells[1], code, None))
     return list(sites.values())
 
 
@@ -366,7 +366,7 @@ def _memory_row(region_id: str, stated: str, client: Chat, gaz: Gazetteer) -> Me
     }
     if truth and answer["status"] == "answered":
         km = haversine_km((float(answer["lat"]), float(answer["lon"])), (truth.lat, truth.lon))
-        row |= {"km": round(km, 1), "within_50_km": "yes" if km <= NEAR_KM else "no"}
+        row["km"], row["within_50_km"] = round(km, 1), "yes" if km <= NEAR_KM else "no"
     return row
 
 
@@ -431,11 +431,11 @@ def _site_row(
         return row
     here = (city.lat, city.lon)
     nearest, hub, nearby = rule_codes(here, CountryCode(city.country), airports, ranks, cap)
-    row |= {"placed_city": city.name, "country": city.country}
-    row |= {"nearest_airport": nearest, "major_hub": hub, "nearby_hub": nearby}
+    row["placed_city"], row["country"] = city.name, city.country
+    row["nearest_airport"], row["major_hub"], row["nearby_hub"] = nearest, hub, nearby
     if point:
         km = haversine_km(here, point)
-        row |= {"km": round(km, 1), "within_50_km": "yes" if km <= NEAR_KM else "no"}
+        row["km"], row["within_50_km"] = round(km, 1), "yes" if km <= NEAR_KM else "no"
     return row
 
 
