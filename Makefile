@@ -171,4 +171,4 @@ paper: place sensitivity caps external compare
 	cd paper && tectonic --keep-logs --keep-intermediates main.tex
 
 arxiv: paper
-	cd paper && tar czf arxiv-source.tar.gz main.tex main.bbl generated figures
+	cd paper && tar czf arxiv-source.tar.gz main.tex main.bbl refs.bib generated figures
