@@ -1,0 +1,381 @@
+provider,region_id,basis,cross_check,city,country,lat,lon,label_city,id_city,feed_city,from_capital,split,curated_city,km_to_curated,matches_curated
+aws,us-east-1,feed,,Ashburn,US,39.04372,-77.48749,,,Ashburn,,development,Ashburn,0,yes
+aws,us-east-2,feed,,Columbus,US,39.96118,-82.99879,,,Columbus,,development,Columbus,0,yes
+aws,us-west-1,feed,,San Jose,US,37.33939,-121.89496,,,San Jose,,development,San Jose,0,yes
+aws,us-west-2,feed,,Boardman,US,45.83986,-119.70058,,,Boardman,,development,Boardman,0,yes
+aws,af-south-1,label,agrees,Cape Town,ZA,-33.92584,18.42322,Cape Town,,Cape Town,,development,Cape Town,0,yes
+aws,ap-east-1,label,agrees,Hong Kong,HK,22.27832,114.17469,Hong Kong,,Hong Kong,yes,development,Hong Kong,0,yes
+aws,ap-south-2,label,agrees,Hyderabad,IN,17.38405,78.45636,Hyderabad,,Hyderabad,,development,Hyderabad,0,yes
+aws,ap-southeast-3,label,agrees,Jakarta,ID,-6.21462,106.84513,Jakarta,,Jakarta,,development,Jakarta,0,yes
+aws,ap-southeast-5,feed,,Kuala Lumpur,MY,3.1412,101.68653,,,Kuala Lumpur,,development,Kuala Lumpur,0,yes
+aws,ap-southeast-4,label,agrees,Melbourne,AU,-37.814,144.96332,Melbourne,,Melbourne,,holdout,Melbourne,0,yes
+aws,ap-south-1,label,agrees,Mumbai,IN,19.07283,72.88261,Mumbai,,Mumbai,,development,Mumbai,0,yes
+aws,ap-southeast-6,feed,,Auckland,NZ,-36.84853,174.76349,,,Auckland,,holdout,Auckland,0,yes
+aws,ap-northeast-3,label,agrees,Osaka,JP,34.69379,135.50107,Osaka,,Osaka,,holdout,Osaka,0,yes
+aws,ap-northeast-2,label,agrees,Seoul,KR,37.566,126.9784,Seoul,,Incheon,,development,Seoul,0,yes
+aws,ap-southeast-1,label,agrees,Singapore,SG,1.28967,103.85007,Singapore,,Singapore,,development,Singapore,0,yes
+aws,ap-southeast-2,label,agrees,Sydney,AU,-33.86785,151.20732,Sydney,,Sydney,,development,Sydney,0,yes
+aws,ap-east-2,label,agrees,Taipei,TW,25.05306,121.52639,Taipei,,Taipei,,development,Taipei,0,yes
+aws,ap-southeast-7,feed,,Bangkok,TH,13.75398,100.50144,,,Bangkok,,holdout,Bangkok,0,yes
+aws,ap-northeast-1,label,agrees,Tokyo,JP,35.6895,139.69171,Tokyo,,Tokyo,,development,Tokyo,0,yes
+aws,ca-central-1,feed,,Montreal,CA,45.50884,-73.58781,,,Montreal,,development,Montreal,0,yes
+aws,ca-west-1,label,agrees,Calgary,CA,51.05011,-114.08529,Calgary,,Calgary,,development,Calgary,0,yes
+aws,eu-central-1,label,agrees,Frankfurt am Main,DE,50.11552,8.68417,Frankfurt am Main,,Frankfurt,,holdout,Frankfurt,0,yes
+aws,eu-west-1,feed,,Dublin,IE,53.33306,-6.24889,,,Dublin,,development,Dublin,0,yes
+aws,eu-west-2,label,agrees,London,GB,51.50853,-0.12574,London,,London,,development,London,0,yes
+aws,eu-south-1,label,agrees,Milan,IT,45.46427,9.18951,Milan,,Milan,,development,Milan,0,yes
+aws,eu-west-3,label,agrees,Paris,FR,48.85341,2.3488,Paris,,Paris,,development,Paris,0,yes
+aws,eu-south-2,feed,,Zaragoza,ES,41.65606,-0.87734,,,Zaragoza,,development,Zaragoza,0,yes
+aws,eu-north-1,label,agrees,Stockholm,SE,59.32938,18.06871,Stockholm,,Stockholm,,development,Stockholm,0,yes
+aws,eu-central-2,label,agrees,Zürich,CH,47.36667,8.55,Zürich,,Zurich,,development,Zurich,0,yes
+aws,il-central-1,label,agrees,Tel Aviv,IL,32.08088,34.78057,Tel Aviv,,Tel Aviv,,development,Tel Aviv,0,yes
+aws,mx-central-1,feed,,Querétaro,MX,20.58806,-100.38806,,,Querétaro,,development,Queretaro,0,yes
+aws,me-south-1,capital,,Manama,BH,26.22787,50.58565,,,Manama,yes,development,Manama,0,yes
+aws,me-central-1,feed,,Dubai,AE,25.07725,55.30927,,,Dubai,,development,Abu Dhabi,115,no
+aws,sa-east-1,label,agrees,São Paulo,BR,-23.5475,-46.63611,São Paulo,,Sao Paulo,,development,Sao Paulo,0,yes
+aws,cn-north-1,label,agrees,Beijing,CN,39.9075,116.39723,Beijing,,Beijing,,holdout,Beijing,0,yes
+aws,cn-northwest-1,none,,,,,,,,,,holdout,Zhongwei,,
+aws,eusc-de-east-1,feed,,Berlin,DE,52.52437,13.41053,,,Berlin,,holdout,Berlin,0,yes
+azure,australiacentral,label,agrees,Canberra,AU,-35.28346,149.12807,Canberra,,Canberra,,holdout,Canberra,0,yes
+azure,australiacentral2,label,agrees,Canberra,AU,-35.28346,149.12807,Canberra,,Canberra,,development,Canberra,0,yes
+azure,australiaeast,feed,,SYDNEY,AU,-33.86785,151.20732,,,SYDNEY,,holdout,Sydney,0,yes
+azure,australiasoutheast,feed,,MELBOURNE,AU,-37.814,144.96332,,,MELBOURNE,,development,Melbourne,0,yes
+azure,austriaeast,label,agrees,Vienna,AT,48.20849,16.37208,Vienna,,VIENNA,,development,Vienna,0,yes
+azure,belgiumcentral,label,agrees,Brussels,BE,50.85045,4.34878,Brussels,,BRUSSELS,,development,Brussels,0,yes
+azure,brazilsouth,feed,,CAMPINAS,BR,-22.90556,-47.06083,,,CAMPINAS,,development,Campinas,0,yes
+azure,brazilsoutheast,feed,,RIO DE JANEIRO,BR,-22.90642,-43.18223,,,RIO DE JANEIRO,,holdout,Rio de Janeiro,0,yes
+azure,canadacentral,label,agrees,Toronto,CA,43.65333,-79.38389,Toronto,,TORONTO,,development,Toronto,0,yes
+azure,canadaeast,label,agrees,Québec,CA,46.81228,-71.21454,Québec,,QUEBEC,,development,Quebec City,0,yes
+azure,centralindia,label,agrees,Pune,IN,18.51957,73.85535,Pune,,PUNE,,holdout,Pune,0,yes
+azure,centralus,feed,,DES MOINES,US,41.60054,-93.60911,,,DES MOINES,,development,Des Moines,0,yes
+azure,chilecentral,label,agrees,Santiago,CL,-33.45694,-70.64827,Santiago,,SANTIAGO,,holdout,Santiago,0,yes
+azure,denmarkeast,label,agrees,Copenhagen,DK,55.67594,12.56553,Copenhagen,,COPENHAGEN,,development,Copenhagen,0,yes
+azure,eastasia,label,agrees,Hong Kong,HK,22.27832,114.17469,Hong Kong,,HONG KONG,,holdout,Hong Kong,0,yes
+azure,eastus,feed,,DULLES,US,39.03333333333333,-77.41666666666667,,,DULLES,,development,Ashburn,6,yes
+azure,eastus2,feed,,BOYDTON,US,36.66764,-78.3875,,,BOYDTON,,development,Boydton,0,yes
+azure,francecentral,label,agrees,Paris,FR,48.85341,2.3488,Paris,,PARIS,,holdout,Paris,0,yes
+azure,francesouth,label,agrees,Marseille,FR,43.29695,5.38107,Marseille,,MARSEILLE,,development,Marseille,0,yes
+azure,germanynorth,label,agrees,Berlin,DE,52.52437,13.41053,Berlin,,BERLIN,,development,Berlin,0,yes
+azure,germanywestcentral,label,agrees,Frankfurt am Main,DE,50.11552,8.68417,Frankfurt am Main,,FRANKFURT,,development,Frankfurt,0,yes
+azure,indiasouthcentral,label,agrees,Hyderabad,IN,17.38405,78.45636,Hyderabad,,HYDERABAD,,holdout,Hyderabad,0,yes
+azure,indonesiacentral,label,agrees,Jakarta,ID,-6.21462,106.84513,Jakarta,,JAKARTA,,development,Jakarta,0,yes
+azure,israelcentral,feed,,TEL AVIV,IL,32.08088,34.78057,,,TEL AVIV,,development,Tel Aviv,0,yes
+azure,italynorth,label,agrees,Milan,IT,45.46427,9.18951,Milan,,MILAN,,holdout,Milan,0,yes
+azure,japaneast,label,agrees,Tokyo,JP,35.6895,139.69171,Tokyo,,TOKYO,,development,Tokyo,0,yes
+azure,japanwest,label,agrees,Osaka,JP,34.69379,135.50107,Osaka,,OSAKA,,development,Osaka,0,yes
+azure,koreacentral,label,agrees,Seoul,KR,37.566,126.9784,Seoul,,SEOUL,,development,Seoul,0,yes
+azure,koreasouth,label,agrees,Busan,KR,35.10168,129.03004,Busan,,BUSAN,,holdout,Busan,0,yes
+azure,malaysiawest,label,agrees,Kuala Lumpur,MY,3.1412,101.68653,Kuala Lumpur,,KUALA LUMPUR,,development,Kuala Lumpur,0,yes
+azure,mexicocentral,feed,,QUERETARO,MX,20.58806,-100.38806,,,QUERETARO,,holdout,Queretaro,0,yes
+azure,newzealandnorth,label,agrees,Auckland,NZ,-36.84853,174.76349,Auckland,,AUCKLAND,,holdout,Auckland,0,yes
+azure,northcentralus,feed,,CHICAGO,US,41.85003,-87.65005,,,CHICAGO,,development,Chicago,0,yes
+azure,northeurope,feed,,DUBLIN,IE,53.33306,-6.24889,,,DUBLIN,,holdout,Dublin,0,yes
+azure,norwayeast,feed,,OSLO,NO,59.91273,10.74609,,,OSLO,,development,Oslo,0,yes
+azure,norwaywest,feed,,STAVANGER,NO,58.97005,5.73332,,,STAVANGER,,development,Stavanger,0,yes
+azure,polandcentral,label,agrees,Warsaw,PL,52.22977,21.01178,Warsaw,,WARSAW,,development,Warsaw,0,yes
+azure,qatarcentral,label,agrees,Doha,QA,25.28545,51.53096,Doha,,DOHA,,development,Doha,0,yes
+azure,southafricanorth,label,agrees,Johannesburg,ZA,-26.20227,28.04363,Johannesburg,,JOHANNESBURG,,development,Johannesburg,0,yes
+azure,southafricawest,label,agrees,Cape Town,ZA,-33.92584,18.42322,Cape Town,,CAPE TOWN,,development,Cape Town,0,yes
+azure,southcentralus,feed,,SAN ANTONIO,US,29.42412,-98.49363,,,SAN ANTONIO,,development,San Antonio,0,yes
+azure,southindia,label,agrees,Chennai,IN,13.08784,80.27847,Chennai,,CHENNAI,,development,Chennai,0,yes
+azure,southeastasia,label,agrees,Singapore,SG,1.28967,103.85007,Singapore,,SINGAPORE,,development,Singapore,0,yes
+azure,southeastasia3,label,agrees,Johor Bahru,MY,1.4655,103.7578,Johor Bahru,,JOHOR BAHRU,,development,Johor Bahru,0,yes
+azure,spaincentral,label,agrees,Madrid,ES,40.4165,-3.70256,Madrid,,MADRID,,development,Madrid,0,yes
+azure,swedencentral,label,agrees,Gävle,SE,60.67452,17.14174,Gävle,,GAVLE,,holdout,Gavle,0,yes
+azure,switzerlandnorth,label,agrees,Zürich,CH,47.36667,8.55,Zürich,,Zurich,,holdout,Zurich,0,yes
+azure,switzerlandwest,label,agrees,Geneva,CH,46.20222,6.14569,Geneva,,Geneva,,development,Geneva,0,yes
+azure,taiwannorth,label,agrees,Taipei,TW,25.05306,121.52639,Taipei,,TAIPEI,,development,Taipei,0,yes
+azure,uaecentral,label,conflicts,Abu Dhabi,AE,24.45118,54.39696,Abu Dhabi,,Dubai,,development,Abu Dhabi,0,yes
+azure,uaenorth,label,agrees,Dubai,AE,25.07725,55.30927,Dubai,,DUBAI,,holdout,Dubai,0,yes
+azure,uksouth,label,agrees,London,GB,51.50853,-0.12574,London,,LONDON,,holdout,London,0,yes
+azure,ukwest,label,agrees,Cardiff,GB,51.48,-3.18,Cardiff,,CARDIFF,,development,Cardiff,0,yes
+azure,westcentralus,feed,,CHEYENNE,US,41.13998,-104.82025,,,CHEYENNE,,development,Cheyenne,0,yes
+azure,westeurope,feed,,AMSTERDAM,NL,52.37403,4.88969,,,AMSTERDAM,,development,Middenmeer,49,yes
+azure,westindia,label,agrees,Mumbai,IN,19.07283,72.88261,Mumbai,,MUMBAI,,development,Mumbai,0,yes
+azure,westus,feed,,SAN JOSE,US,37.33939,-121.89496,,,SAN JOSE,,development,San Jose,0,yes
+azure,westus2,feed,,QUINCY-MOSES LAKE,US,47.2343,-119.85255,,,QUINCY-MOSES LAKE,,development,Quincy,0,yes
+azure,westus3,label,agrees,Phoenix,US,33.44838,-112.07404,Phoenix,,PHOENIX,,development,Phoenix,0,yes
+gcp,africa-south1,label,agrees,Johannesburg,ZA,-26.20227,28.04363,Johannesburg,,Johannesburg,,development,Johannesburg,0,yes
+gcp,asia-east1,label,conflicts,Changhua,TW,24.0692,120.5512,Changhua,,Taipei,,development,Changhua County,1,yes
+gcp,asia-east2,label,agrees,Hong Kong,HK,22.27832,114.17469,Hong Kong,,Hong Kong,,development,Hong Kong,0,yes
+gcp,asia-northeast1,label,agrees,Tokyo,JP,35.6895,139.69171,Tokyo,,Tokyo,,development,Tokyo,0,yes
+gcp,asia-northeast2,label,agrees,Osaka,JP,34.69379,135.50107,Osaka,,Osaka,,holdout,Osaka,0,yes
+gcp,asia-northeast3,label,agrees,Seoul,KR,37.566,126.9784,Seoul,,Seoul,,holdout,Seoul,0,yes
+gcp,asia-south1,label,agrees,Mumbai,IN,19.07283,72.88261,Mumbai,,Mumbai,,development,Mumbai,0,yes
+gcp,asia-south2,label,agrees,Delhi,IN,28.65195,77.23149,Delhi,,New Delhi,,holdout,Delhi,0,yes
+gcp,asia-southeast1,label,agrees,Jurong West,SG,1.35028,103.72278,Jurong West,,Singapore,,development,Singapore,16,yes
+gcp,asia-southeast2,label,agrees,Jakarta,ID,-6.21462,106.84513,Jakarta,,Jakarta,,holdout,Jakarta,0,yes
+gcp,asia-southeast3,label,agrees,Bangkok,TH,13.75398,100.50144,Bangkok,,Bangkok,,development,Bangkok,0,yes
+gcp,australia-southeast1,label,agrees,Sydney,AU,-33.86785,151.20732,Sydney,,Sydney,,development,Sydney,0,yes
+gcp,australia-southeast2,label,agrees,Melbourne,AU,-37.814,144.96332,Melbourne,,Melbourne,,holdout,Melbourne,0,yes
+gcp,europe-central2,label,agrees,Warsaw,PL,52.22977,21.01178,Warsaw,,Warsaw,,holdout,Warsaw,0,yes
+gcp,europe-north1,label,conflicts,Hamina,FI,60.56974,27.19794,Hamina,,Lappeenranta,,development,Hamina,0,yes
+gcp,europe-north2,label,agrees,Stockholm,SE,59.32938,18.06871,Stockholm,,Stockholm,,holdout,Stockholm,0,yes
+gcp,europe-southwest1,label,agrees,Madrid,ES,40.4165,-3.70256,Madrid,,Madrid,,development,Madrid,0,yes
+gcp,europe-west1,label,conflicts,Saint-Ghislain,BE,50.44816,3.81886,Saint-Ghislain,,Brussels,,development,Saint-Ghislain,0,yes
+gcp,europe-west10,label,agrees,Berlin,DE,52.52437,13.41053,Berlin,,Berlin,,development,Berlin,0,yes
+gcp,europe-west12,label,agrees,Turin,IT,45.07049,7.68682,Turin,,Turin,,development,Turin,0,yes
+gcp,europe-west2,label,agrees,London,GB,51.50853,-0.12574,London,,London,,holdout,London,0,yes
+gcp,europe-west3,label,agrees,Frankfurt am Main,DE,50.11552,8.68417,Frankfurt am Main,,Frankfurt,,development,Frankfurt,0,yes
+gcp,europe-west4,feed,,Groningen,NL,53.21917,6.56667,,,Groningen,,development,Eemshaven,30,yes
+gcp,europe-west6,label,agrees,Zürich,CH,47.36667,8.55,Zürich,,Zurich,,development,Zurich,0,yes
+gcp,europe-west8,label,agrees,Milan,IT,45.46427,9.18951,Milan,,Milan,,development,Milan,0,yes
+gcp,europe-west9,label,agrees,Paris,FR,48.85341,2.3488,Paris,,Paris,,development,Paris,0,yes
+gcp,me-central1,label,agrees,Doha,QA,25.28545,51.53096,Doha,,Doha,,development,Doha,0,yes
+gcp,me-central2,label,agrees,Dammam,SA,26.43442,50.10326,Dammam,,Dammam,,development,Dammam,0,yes
+gcp,me-west1,label,agrees,Tel Aviv,IL,32.08088,34.78057,Tel Aviv,,Tel Aviv,,development,Tel Aviv,0,yes
+gcp,northamerica-northeast1,label,agrees,Montréal,CA,45.50884,-73.58781,Montréal,,Montreal,,holdout,Montreal,0,yes
+gcp,northamerica-northeast2,label,agrees,Toronto,CA,43.65333,-79.38389,Toronto,,Toronto,,development,Toronto,0,yes
+gcp,northamerica-south1,label,agrees,Santiago de Querétaro,MX,20.58806,-100.38806,Santiago de Querétaro,,Queretaro,,holdout,Queretaro,0,yes
+gcp,southamerica-east1,label,agrees,Osasco,BR,-23.5325,-46.79167,Osasco,,Sao Paulo,,holdout,Osasco,0,yes
+gcp,southamerica-west1,label,agrees,Santiago,CL,-33.45694,-70.64827,Santiago,,Santiago,,holdout,Santiago,0,yes
+gcp,us-central1,label,agrees,Council Bluffs,US,41.26194,-95.86083,Council Bluffs,,Council Bluffs,,development,Council Bluffs,0,yes
+gcp,us-east1,label,agrees,Moncks Corner,US,33.19632,-80.01429,Moncks Corner,,North Charleston,,development,Moncks Corner,0,yes
+gcp,us-east4,label,agrees,Ashburn,US,39.04372,-77.48749,Ashburn,,Washington,,development,Ashburn,0,yes
+gcp,us-east5,label,agrees,Columbus,US,39.96118,-82.99879,Columbus,,Columbus,,development,Columbus,0,yes
+gcp,us-south1,label,agrees,Dallas,US,32.78306,-96.80667,Dallas,,Dallas,,development,Dallas,0,yes
+gcp,us-west1,label,agrees,The Dalles,US,45.59456,-121.17868,The Dalles,,The Dalles,,holdout,The Dalles,0,yes
+gcp,us-west2,label,agrees,Los Angeles,US,34.05223,-118.24368,Los Angeles,,Los Angeles,,development,Los Angeles,0,yes
+gcp,us-west3,label,agrees,Salt Lake City,US,40.76078,-111.89105,Salt Lake City,,Salt Lake City,,holdout,Salt Lake City,0,yes
+gcp,us-west4,label,agrees,Las Vegas,US,36.17497,-115.13722,Las Vegas,,Las Vegas,,development,Las Vegas,0,yes
+alibaba,cn-qingdao,label,agrees,Qingdao,CN,36.06488,120.38042,Qingdao,Qingdao,,,development,Qingdao,0,yes
+alibaba,cn-beijing,label,,Beijing,CN,39.9075,116.39723,Beijing,,,,development,Beijing,0,yes
+alibaba,cn-zhangjiakou,label,agrees,Zhangjiakou,CN,40.78341,114.87139,Zhangjiakou,Zhangjiakou,,,development,Zhangjiakou,0,yes
+alibaba,cn-huhehaote,label,agrees,Hohhot,CN,40.81056,111.65222,Hohhot,Hohhot,,,development,Hohhot,0,yes
+alibaba,cn-wulanchabu,label,,Ulanqab,CN,40.993,113.133,Ulanqab,,,,development,Ulanqab,4,yes
+alibaba,cn-hangzhou,label,agrees,Hangzhou,CN,30.29365,120.16142,Hangzhou,Hangzhou,,,holdout,Hangzhou,0,yes
+alibaba,cn-shanghai,label,,Shanghai,CN,31.22222,121.45806,Shanghai,,,,holdout,Shanghai,0,yes
+alibaba,cn-wuhan-lr,label,agrees,Wuhan,CN,30.58333,114.26667,Wuhan,Wuhan,,,holdout,Wuhan,0,yes
+alibaba,cn-shenzhen,label,agrees,Shenzhen,CN,22.54554,114.0683,Shenzhen,Shenzhen,,,holdout,Shenzhen,0,yes
+alibaba,cn-heyuan,label,agrees,Heyuan,CN,23.73333,114.68333,Heyuan,Heyuan,,,holdout,Heyuan,0,yes
+alibaba,cn-guangzhou,label,agrees,Guangzhou,CN,23.11667,113.25,Guangzhou,Guangzhou,,,development,Guangzhou,0,yes
+alibaba,cn-chengdu,label,agrees,Chengdu,CN,30.66667,104.06667,Chengdu,Chengdu,,,holdout,Chengdu,0,yes
+alibaba,cn-zhongwei,label,agrees,Zhongwei,CN,37.51129,105.19067,Zhongwei,Zhongwei,,,holdout,Zhongwei,0,yes
+alibaba,cn-hongkong,label,agrees,Hong Kong,HK,22.27832,114.17469,Hong Kong,Hong Kong,Hong Kong,yes,development,Hong Kong,0,yes
+alibaba,ap-southeast-1,label,agrees,Singapore,SG,1.28967,103.85007,Singapore,,Singapore,yes,development,Singapore,0,yes
+alibaba,ap-southeast-3,label,,Kuala Lumpur,MY,3.1412,101.68653,Kuala Lumpur,,,,development,Kuala Lumpur,0,yes
+alibaba,ap-southeast-5,label,,Jakarta,ID,-6.21462,106.84513,Jakarta,,,,development,Jakarta,0,yes
+alibaba,ap-southeast-6,label,,Manila,PH,14.6042,120.9822,Manila,,,,holdout,Manila,0,yes
+alibaba,ap-southeast-7,label,,Bangkok,TH,13.75398,100.50144,Bangkok,,,,holdout,Bangkok,0,yes
+alibaba,ap-southeast-8,label,,Johor Bahru,MY,1.4655,103.7578,Johor Bahru,,,,holdout,Johor Bahru,0,yes
+alibaba,ap-northeast-1,label,,Tokyo,JP,35.6895,139.69171,Tokyo,,,,development,Tokyo,0,yes
+alibaba,ap-northeast-2,label,,Seoul,KR,37.566,126.9784,Seoul,,,,holdout,Seoul,0,yes
+alibaba,us-west-1,none,,,,,,,,,,development,Santa Clara,,
+alibaba,us-east-1,none,,,,,,,,,,development,Ashburn,,
+alibaba,eu-central-1,label,,Frankfurt am Main,DE,50.11552,8.68417,Frankfurt am Main,,,,holdout,Frankfurt,0,yes
+alibaba,eu-west-1,label,,London,GB,51.50853,-0.12574,London,,,,development,London,0,yes
+alibaba,eu-west-2,label,,Paris,FR,48.85341,2.3488,Paris,,,,holdout,Paris,0,yes
+alibaba,me-east-1,label,,Dubai,AE,25.07725,55.30927,Dubai,,,,development,Dubai,0,yes
+alibaba,me-central-1,label,,Riyadh,SA,24.68773,46.72185,Riyadh,,,,development,Riyadh,0,yes
+alibaba,na-south-1,capital,,Mexico City,MX,19.42847,-99.12766,,,Mexico City,yes,holdout,Queretaro,184,no
+alibaba,sa-east-1,label,,São Paulo,BR,-23.5475,-46.63611,São Paulo,,,,development,Sao Paulo,0,yes
+oracle,ap-sydney-1,label,agrees,Sydney,AU,-33.86785,151.20732,Sydney,Sydney,,,development,Sydney,0,yes
+oracle,ap-melbourne-1,label,agrees,Melbourne,AU,-37.814,144.96332,Melbourne,Melbourne,,,development,Melbourne,0,yes
+oracle,sa-saopaulo-1,label,agrees,São Paulo,BR,-23.5475,-46.63611,São Paulo,São Paulo,,,development,Sao Paulo,0,yes
+oracle,sa-vinhedo-1,label,agrees,Vinhedo,BR,-23.02972,-46.97528,Vinhedo,Vinhedo,,,development,Vinhedo,0,yes
+oracle,ca-montreal-1,label,agrees,Montréal,CA,45.50884,-73.58781,Montréal,Montréal,,,holdout,Montreal,0,yes
+oracle,ca-toronto-1,label,agrees,Toronto,CA,43.65333,-79.38389,Toronto,Toronto,,,development,Toronto,0,yes
+oracle,sa-santiago-1,label,agrees,Santiago,CL,-33.45694,-70.64827,Santiago,Santiago,,,holdout,Santiago,0,yes
+oracle,sa-valparaiso-1,label,,Valparaíso,CL,-33.036,-71.62963,Valparaíso,,,,holdout,Valparaiso,0,yes
+oracle,sa-bogota-1,label,agrees,Bogotá,CO,4.60971,-74.08175,Bogotá,Bogotá,,,development,Bogota,0,yes
+oracle,eu-paris-1,label,agrees,Paris,FR,48.85341,2.3488,Paris,Paris,,,holdout,Paris,0,yes
+oracle,eu-marseille-1,label,agrees,Marseille,FR,43.29695,5.38107,Marseille,Marseille,,,holdout,Marseille,0,yes
+oracle,eu-frankfurt-1,label,agrees,Frankfurt am Main,DE,50.11552,8.68417,Frankfurt am Main,Frankfurt am Main,,,holdout,Frankfurt,0,yes
+oracle,ap-hyderabad-1,label,agrees,Hyderabad,IN,17.38405,78.45636,Hyderabad,Hyderabad,,,holdout,Hyderabad,0,yes
+oracle,ap-mumbai-1,label,agrees,Mumbai,IN,19.07283,72.88261,Mumbai,Mumbai,,,development,Mumbai,0,yes
+oracle,ap-batam-1,label,agrees,Batam,ID,1.14937,104.02491,Batam,Batam,,,development,Batam,0,yes
+oracle,il-jerusalem-1,label,,Jerusalem,IL,31.76904,35.21633,Jerusalem,,,,development,Jerusalem,0,yes
+oracle,eu-milan-1,label,agrees,Milan,IT,45.46427,9.18951,Milan,Milan,,,holdout,Milan,0,yes
+oracle,eu-turin-1,label,agrees,Turin,IT,45.07049,7.68682,Turin,Turin,,,development,Turin,0,yes
+oracle,ap-osaka-1,label,,Osaka,JP,34.69379,135.50107,Osaka,,,,holdout,Osaka,0,yes
+oracle,ap-tokyo-1,label,,Tokyo,JP,35.6895,139.69171,Tokyo,,,,development,Tokyo,0,yes
+oracle,ap-kulai-2,label,agrees,Kulai,MY,1.6561,103.6032,Kulai,Kulai,,,holdout,Kulai,0,yes
+oracle,mx-queretaro-1,label,,Santiago de Querétaro,MX,20.58806,-100.38806,Santiago de Querétaro,,,,holdout,Queretaro,0,yes
+oracle,mx-monterrey-1,label,agrees,Monterrey,MX,25.68435,-100.31721,Monterrey,Monterrey,,,development,Monterrey,0,yes
+oracle,af-casablanca-1,label,,Casablanca,MA,33.58831,-7.61138,Casablanca,,,,development,Casablanca,0,yes
+oracle,eu-amsterdam-1,label,agrees,Amsterdam,NL,52.37403,4.88969,Amsterdam,Amsterdam,,,development,Amsterdam,0,yes
+oracle,me-riyadh-1,label,agrees,Riyadh,SA,24.68773,46.72185,Riyadh,Riyadh,,,development,Riyadh,0,yes
+oracle,me-jeddah-1,label,agrees,Jeddah,SA,21.49012,39.18624,Jeddah,Jeddah,,,development,Jeddah,0,yes
+oracle,eu-jovanovac-1,none,,,,,,,,,,holdout,Jovanovac,,
+oracle,ap-singapore-1,label,,Singapore,SG,1.28967,103.85007,Singapore,,,,development,Singapore,0,yes
+oracle,ap-singapore-2,label,,Singapore,SG,1.28967,103.85007,Singapore,,,,development,Singapore,0,yes
+oracle,af-johannesburg-1,label,agrees,Johannesburg,ZA,-26.20227,28.04363,Johannesburg,Johannesburg,,,development,Johannesburg,0,yes
+oracle,ap-seoul-1,label,,Seoul,KR,37.566,126.9784,Seoul,,,,development,Seoul,0,yes
+oracle,ap-chuncheon-1,label,agrees,Chuncheon,KR,37.88302,127.7289,Chuncheon,Chuncheon,,,development,Chuncheon,0,yes
+oracle,eu-madrid-1,label,,Madrid,ES,40.4165,-3.70256,Madrid,,,,holdout,Madrid,0,yes
+oracle,eu-madrid-3,label,,Madrid,ES,40.4165,-3.70256,Madrid,,,,development,Madrid,0,yes
+oracle,eu-stockholm-1,label,,Stockholm,SE,59.32938,18.06871,Stockholm,,,,development,Stockholm,0,yes
+oracle,eu-zurich-1,label,,Zürich,CH,47.36667,8.55,Zürich,,,,development,Zurich,0,yes
+oracle,me-abudhabi-1,label,agrees,Abu Dhabi,AE,24.45118,54.39696,Abu Dhabi,Abu Dhabi,,,holdout,Abu Dhabi,0,yes
+oracle,me-dubai-1,label,,Dubai,AE,25.07725,55.30927,Dubai,,,,development,Dubai,0,yes
+oracle,uk-london-1,label,agrees,London,GB,51.50853,-0.12574,London,London,,,development,London,0,yes
+oracle,uk-cardiff-1,label,agrees,Newport,GB,51.58774,-2.99835,Newport,Cardiff,,,development,Newport,0,yes
+oracle,us-ashburn-1,label,agrees,Ashburn,US,39.04372,-77.48749,Ashburn,Ashburn,,,development,Ashburn,0,yes
+oracle,us-chicago-1,label,agrees,Chicago,US,41.85003,-87.65005,Chicago,Chicago,,,development,Chicago,0,yes
+oracle,us-phoenix-1,label,agrees,Phoenix,US,33.44838,-112.07404,Phoenix,Phoenix,,,development,Phoenix,0,yes
+oracle,us-sanjose-1,label,agrees,San Jose,US,37.33939,-121.89496,San Jose,San Jose,,,holdout,San Jose,0,yes
+hetzner,fsn1,label,,Falkenstein,DE,50.47788,12.37129,Falkenstein,,,,holdout,Falkenstein,0,yes
+hetzner,ash,label,,Ashburn,US,39.04372,-77.48749,Ashburn,,,,development,Ashburn,0,yes
+hetzner,hil,label,,Hillsboro,US,45.52289,-122.98983,Hillsboro,,,,development,Hillsboro,0,yes
+hetzner,sin,label,agrees,Singapore,SG,1.28967,103.85007,Singapore,,Singapore,yes,development,Singapore,0,yes
+hetzner,nbg1,label,,Nuremberg,DE,49.45421,11.07752,Nuremberg,,,,holdout,Nuremberg,0,yes
+hetzner,hel1,label,,Helsinki,FI,60.16952,24.93545,Helsinki,,,,development,Tuusula,27,yes
+vultr,ams,label,,Amsterdam,NL,52.37403,4.88969,Amsterdam,,,,development,Amsterdam,0,yes
+vultr,atl,label,,Atlanta,US,33.749,-84.38798,Atlanta,,,,development,Atlanta,0,yes
+vultr,blr,label,,Bengaluru,IN,12.97194,77.59369,Bengaluru,,,,holdout,Bangalore,0,yes
+vultr,bom,label,,Mumbai,IN,19.07283,72.88261,Mumbai,,,,holdout,Mumbai,0,yes
+vultr,cdg,label,,Paris,FR,48.85341,2.3488,Paris,,,,development,Paris,0,yes
+vultr,del,label,,Delhi,IN,28.65195,77.23149,Delhi,,,,development,Delhi,0,yes
+vultr,dfw,label,,Dallas,US,32.78306,-96.80667,Dallas,,,,development,Dallas,0,yes
+vultr,ewr,none,,,,,,,,,,development,Newark,,
+vultr,fra,label,,Frankfurt am Main,DE,50.11552,8.68417,Frankfurt am Main,,,,development,Frankfurt,0,yes
+vultr,hnl,label,,Honolulu,US,21.30694,-157.85833,Honolulu,,,,development,Honolulu,0,yes
+vultr,icn,label,,Seoul,KR,37.566,126.9784,Seoul,,,,development,Seoul,0,yes
+vultr,itm,label,,Osaka,JP,34.69379,135.50107,Osaka,,,,development,Osaka,0,yes
+vultr,jnb,label,,Johannesburg,ZA,-26.20227,28.04363,Johannesburg,,,,development,Johannesburg,0,yes
+vultr,lax,label,,Los Angeles,US,34.05223,-118.24368,Los Angeles,,,,holdout,Los Angeles,0,yes
+vultr,lhr,label,,London,GB,51.50853,-0.12574,London,,,,development,London,0,yes
+vultr,mad,label,,Madrid,ES,40.4165,-3.70256,Madrid,,,,holdout,Madrid,0,yes
+vultr,man,label,,Manchester,GB,53.48095,-2.23743,Manchester,,,,development,Manchester,0,yes
+vultr,mel,label,,Melbourne,AU,-37.814,144.96332,Melbourne,,,,holdout,Melbourne,0,yes
+vultr,mex,label,,Mexico City,MX,19.42847,-99.12766,Mexico City,,,,development,Mexico City,0,yes
+vultr,mia,label,,Miami,US,25.77427,-80.19366,Miami,,,,holdout,Miami,0,yes
+vultr,mxp,label,,Milan,IT,45.46427,9.18951,Milan,,,,development,Milan,0,yes
+vultr,nrt,label,,Tokyo,JP,35.6895,139.69171,Tokyo,,,,development,Tokyo,0,yes
+vultr,ord,label,,Chicago,US,41.85003,-87.65005,Chicago,,,,development,Chicago,0,yes
+vultr,sao,label,,São Paulo,BR,-23.5475,-46.63611,São Paulo,,,,holdout,Sao Paulo,0,yes
+vultr,scl,label,,Santiago,CL,-33.45694,-70.64827,Santiago,,,,development,Santiago,0,yes
+vultr,sea,label,,Seattle,US,47.60621,-122.33207,Seattle,,,,holdout,Seattle,0,yes
+vultr,sgp,label,,Singapore,SG,1.28967,103.85007,Singapore,,,,development,Singapore,0,yes
+vultr,sjc,none,,,,,,,,,,holdout,Santa Clara,,
+vultr,sto,label,,Stockholm,SE,59.32938,18.06871,Stockholm,,,,holdout,Stockholm,0,yes
+vultr,syd,label,,Sydney,AU,-33.86785,151.20732,Sydney,,,,development,Sydney,0,yes
+vultr,tlv,label,,Tel Aviv,IL,32.08088,34.78057,Tel Aviv,,,,holdout,Tel Aviv,0,yes
+vultr,waw,label,,Warsaw,PL,52.22977,21.01178,Warsaw,,,,development,Warsaw,0,yes
+vultr,yto,label,,Toronto,CA,43.65333,-79.38389,Toronto,,,,holdout,Toronto,0,yes
+digitalocean,nyc1,label,,New York City,US,40.71427,-74.00597,New York City,,,,holdout,New York,0,yes
+digitalocean,nyc2,label,,New York City,US,40.71427,-74.00597,New York City,,,,development,New York,0,yes
+digitalocean,nyc3,label,,New York City,US,40.71427,-74.00597,New York City,,,,development,New York,0,yes
+digitalocean,ams3,label,,Amsterdam,NL,52.37403,4.88969,Amsterdam,,,,development,Amsterdam,0,yes
+digitalocean,sfo2,label,,San Francisco,US,37.77493,-122.41942,San Francisco,,,,development,San Francisco,0,yes
+digitalocean,sfo3,label,,San Francisco,US,37.77493,-122.41942,San Francisco,,,,holdout,San Francisco,0,yes
+digitalocean,sgp1,label,agrees,Singapore,SG,1.28967,103.85007,Singapore,,Singapore,yes,development,Singapore,0,yes
+digitalocean,lon1,label,,London,GB,51.50853,-0.12574,London,,,,holdout,London,0,yes
+digitalocean,fra1,label,,Frankfurt am Main,DE,50.11552,8.68417,Frankfurt am Main,,,,holdout,Frankfurt,0,yes
+digitalocean,tor1,label,,Toronto,CA,43.65333,-79.38389,Toronto,,,,development,Toronto,0,yes
+digitalocean,blr1,label,,Bengaluru,IN,12.97194,77.59369,Bengaluru,,,,holdout,Bangalore,0,yes
+digitalocean,syd1,label,,Sydney,AU,-33.86785,151.20732,Sydney,,,,development,Sydney,0,yes
+digitalocean,atl1,label,,Atlanta,US,33.749,-84.38798,Atlanta,,,,development,Atlanta,0,yes
+digitalocean,ric1,label,,Richmond,US,37.55376,-77.46026,Richmond,,,,holdout,Richmond,0,yes
+digitalocean,mkc1,label,,Kansas City,US,39.09973,-94.57857,Kansas City,,,,holdout,Kansas City,0,yes
+digitalocean,mem1,label,,Memphis,US,35.14953,-90.04898,Memphis,,,,development,Memphis,0,yes
+tencent,ap-beijing,label,,Beijing,CN,39.9075,116.39723,Beijing,,,,development,Beijing,0,yes
+tencent,ap-shanghai,label,,Shanghai,CN,31.22222,121.45806,Shanghai,,,,development,Shanghai,0,yes
+tencent,ap-nanjing,label,agrees,Nanjing,CN,32.06167,118.77778,Nanjing,Nanjing,,,development,Nanjing,0,yes
+tencent,ap-guangzhou,label,agrees,Guangzhou,CN,23.11667,113.25,Guangzhou,Guangzhou,,,development,Guangzhou,0,yes
+tencent,ap-chengdu,label,agrees,Chengdu,CN,30.66667,104.06667,Chengdu,Chengdu,,,development,Chengdu,0,yes
+tencent,ap-chongqing,label,,Chongqing,CN,29.56026,106.55771,Chongqing,,,,holdout,Chongqing,0,yes
+tencent,ap-zhongwei,label,agrees,Zhongwei,CN,37.51129,105.19067,Zhongwei,Zhongwei,,,development,Zhongwei,0,yes
+tencent,ap-hongkong,label,conflicts,Hong Kong,HK,22.27832,114.17469,Hong Kong,Hong Kong,Beijing,yes,development,Hong Kong,0,yes
+tencent,ap-singapore,label,agrees,Singapore,SG,1.28967,103.85007,Singapore,,Singapore,yes,holdout,Singapore,0,yes
+tencent,ap-johorbahru,label,agrees,Johor Bahru,MY,1.4655,103.7578,Johor Bahru,Johor Bahru,,,development,Johor Bahru,0,yes
+tencent,ap-jakarta,label,,Jakarta,ID,-6.21462,106.84513,Jakarta,,,,development,Jakarta,0,yes
+tencent,ap-seoul,label,,Seoul,KR,37.566,126.9784,Seoul,,,,development,Seoul,0,yes
+tencent,ap-tokyo,label,,Tokyo,JP,35.6895,139.69171,Tokyo,,,,development,Tokyo,0,yes
+tencent,ap-osaka,label,,Osaka,JP,34.69379,135.50107,Osaka,,,,development,Osaka,0,yes
+tencent,ap-bangkok,label,,Bangkok,TH,13.75398,100.50144,Bangkok,,,,holdout,Bangkok,0,yes
+tencent,me-saudi-arabia,capital,,Riyadh,SA,24.68773,46.72185,,,Riyadh,yes,development,Riyadh,0,yes
+tencent,sa-saopaulo,label,agrees,São Paulo,BR,-23.5475,-46.63611,São Paulo,São Paulo,,,development,Sao Paulo,0,yes
+tencent,na-queretaro,label,,Santiago de Querétaro,MX,20.58806,-100.38806,Santiago de Querétaro,,,,holdout,Queretaro,0,yes
+tencent,na-siliconvalley,none,,,,,,,,,,development,San Jose,,
+tencent,na-ashburn,label,,Ashburn,US,39.04372,-77.48749,,Ashburn,,,holdout,Ashburn,0,yes
+tencent,eu-frankfurt,label,agrees,Frankfurt am Main,DE,50.11552,8.68417,Frankfurt am Main,Frankfurt am Main,,,development,Frankfurt,0,yes
+ovhcloud,SBG,label,,Strasbourg,FR,48.58392,7.74553,Strasbourg,,,,development,Strasbourg,0,yes
+ovhcloud,GRA,label,,Gravelines,FR,50.98651,2.12807,Gravelines,,,,holdout,Gravelines,0,yes
+ovhcloud,RBX,label,,Roubaix,FR,50.69421,3.17456,Roubaix,,,,development,Roubaix,0,yes
+ovhcloud,PAR,label,,Paris,FR,48.85341,2.3488,Paris,,,,development,Paris,0,yes
+ovhcloud,MIL,label,,Milan,IT,45.46427,9.18951,Milan,,,,holdout,Milan,0,yes
+ovhcloud,ERI,label,,London,GB,51.50853,-0.12574,London,,,,development,Erith,21,yes
+ovhcloud,LIM,label,,Frankfurt am Main,DE,50.11552,8.68417,Frankfurt am Main,,,,holdout,Limburg,54,no
+ovhcloud,WAW,label,,Warsaw,PL,52.22977,21.01178,Warsaw,,,,development,Ozarow,15,yes
+ovhcloud,BHS,label,,Montréal,CA,45.50884,-73.58781,Montréal,,,,development,Beauharnois,31,yes
+ovhcloud,TOR,label,,Toronto,CA,43.65333,-79.38389,Toronto,,,,development,Cambridge,82,no
+ovhcloud,HIL,label,,Seattle,US,47.60621,-122.33207,Seattle,,,,holdout,Hillsboro,237,no
+ovhcloud,VIN,label,,Washington,US,38.89511,-77.03637,Washington,,,,holdout,Vint Hill,58,no
+ovhcloud,SGP,label,agrees,Singapore,SG,1.28967,103.85007,Singapore,,Singapore,yes,development,Singapore,0,yes
+ovhcloud,SYD,label,,Sydney,AU,-33.86785,151.20732,Sydney,,,,development,Sydney,0,yes
+ovhcloud,MUM,label,,Mumbai,IN,19.07283,72.88261,Mumbai,,,,development,Mumbai,0,yes
+ibm,us-south,label,,Dallas,US,32.78306,-96.80667,Dallas,,,,development,Dallas,0,yes
+ibm,br-sao,label,,São Paulo,BR,-23.5475,-46.63611,São Paulo,,,,holdout,Sao Paulo,0,yes
+ibm,ca-tor,label,,Toronto,CA,43.65333,-79.38389,Toronto,,,,development,Toronto,0,yes
+ibm,us-east,label,,Washington,US,38.89511,-77.03637,Washington,,,,development,Ashburn,42,yes
+ibm,eu-de,label,,Frankfurt am Main,DE,50.11552,8.68417,Frankfurt am Main,,,,holdout,Frankfurt,0,yes
+ibm,eu-gb,label,,London,GB,51.50853,-0.12574,London,,,,development,London,0,yes
+ibm,eu-es,label,,Madrid,ES,40.4165,-3.70256,Madrid,,,,development,Madrid,0,yes
+ibm,au-syd,label,,Sydney,AU,-33.86785,151.20732,Sydney,,,,development,Sydney,0,yes
+ibm,jp-tok,label,,Tokyo,JP,35.6895,139.69171,Tokyo,,,,development,Tokyo,0,yes
+ibm,in-che,label,,Chennai,IN,13.08784,80.27847,Chennai,,,,development,Chennai,0,yes
+ibm,ca-mon,label,,Montréal,CA,45.50884,-73.58781,Montréal,,,,development,Montreal,0,yes
+ibm,in-mum,label,,Mumbai,IN,19.07283,72.88261,Mumbai,,,,development,Mumbai,0,yes
+ibm,jp-osa,label,,Osaka,JP,34.69379,135.50107,Osaka,,,,development,Osaka,0,yes
+akamai,gb-lon,label,agrees,London,GB,51.50853,-0.12574,London,,London,,development,London,0,yes
+akamai,se-sto,label,agrees,Stockholm,SE,59.32938,18.06871,Stockholm,,Stockholm,,development,Stockholm,0,yes
+akamai,es-mad,label,agrees,Madrid,ES,40.4165,-3.70256,Madrid,,Madrid,,holdout,Madrid,0,yes
+akamai,in-maa,label,agrees,Chennai,IN,13.08784,80.27847,Chennai,,Chennai,,development,Chennai,0,yes
+akamai,jp-osa,label,agrees,Osaka,JP,34.69379,135.50107,Osaka,,Osaka,,holdout,Osaka,0,yes
+akamai,it-mil,label,agrees,Milan,IT,45.46427,9.18951,Milan,,Milan,,holdout,Milan,0,yes
+akamai,us-mia,label,agrees,Miami,US,25.77427,-80.19366,Miami,,Miami,,development,Miami,0,yes
+akamai,id-cgk,label,agrees,Jakarta,ID,-6.21462,106.84513,Jakarta,,Jakarta,,development,Jakarta,0,yes
+akamai,us-lax,label,agrees,Los Angeles,US,34.05223,-118.24368,Los Angeles,,Los Angeles,,development,Los Angeles,0,yes
+akamai,nl-ams,label,agrees,Amsterdam,NL,52.37403,4.88969,Amsterdam,,Amsterdam,,development,Amsterdam,0,yes
+akamai,au-mel,label,agrees,Melbourne,AU,-37.814,144.96332,Melbourne,,Melbourne,,development,Melbourne,0,yes
+akamai,in-bom-2,label,agrees,Mumbai,IN,19.07283,72.88261,Mumbai,,Mumbai,,holdout,Mumbai,0,yes
+akamai,de-fra-2,label,agrees,Frankfurt am Main,DE,50.11552,8.68417,Frankfurt am Main,,Frankfurt,,development,Frankfurt,0,yes
+akamai,sg-sin-2,label,agrees,Singapore,SG,1.28967,103.85007,Singapore,,Singapore,,holdout,Singapore,0,yes
+akamai,jp-tyo-3,label,agrees,Tokyo,JP,35.6895,139.69171,Tokyo,,Tokyo,,development,Tokyo,0,yes
+akamai,us-iad-2,label,agrees,Washington,US,38.89511,-77.03637,Washington,,Ashburn,,development,Washington,0,yes
+akamai,fr-par-2,label,agrees,Paris,FR,48.85341,2.3488,Paris,,Paris,,development,Paris,0,yes
+akamai,br-gru,label,agrees,São Paulo,BR,-23.5475,-46.63611,São Paulo,,Sao Paulo,,holdout,Sao Paulo,0,yes
+akamai,us-sea,label,agrees,Seattle,US,47.60621,-122.33207,Seattle,,Tukwila,,holdout,Seattle,0,yes
+akamai,fr-par,label,agrees,Paris,FR,48.85341,2.3488,Paris,,Paris,,holdout,Paris,0,yes
+akamai,us-ord,label,agrees,Chicago,US,41.85003,-87.65005,Chicago,,Chicago,,development,Chicago,0,yes
+akamai,us-iad,label,agrees,Washington,US,38.89511,-77.03637,Washington,,Ashburn,,development,Washington,0,yes
+akamai,ap-southeast,label,agrees,Sydney,AU,-33.86785,151.20732,Sydney,,Sydney,,holdout,Sydney,0,yes
+akamai,ca-central,label,agrees,Toronto,CA,43.65333,-79.38389,Toronto,,Toronto,,development,Toronto,0,yes
+akamai,ap-west,label,agrees,Mumbai,IN,19.07283,72.88261,Mumbai,,Mumbai,,development,Mumbai,0,yes
+akamai,us-central,label,agrees,Dallas,US,32.78306,-96.80667,Dallas,,Richardson,,development,Dallas,0,yes
+akamai,ap-northeast,label,agrees,Tokyo,JP,35.6895,139.69171,Tokyo,,Tokyo,,holdout,Tokyo,0,yes
+akamai,eu-central,label,agrees,Frankfurt am Main,DE,50.11552,8.68417,Frankfurt am Main,,Frankfurt,,holdout,Frankfurt,0,yes
+akamai,ap-south,label,agrees,Singapore,SG,1.28967,103.85007,Singapore,,Singapore,,development,Singapore,0,yes
+akamai,eu-west,label,agrees,London,GB,51.50853,-0.12574,London,,London,,holdout,London,0,yes
+akamai,us-east,label,agrees,Newark,US,40.73566,-74.17237,Newark,,Cedar Knolls,,holdout,Newark,0,yes
+akamai,us-southeast,label,agrees,Atlanta,US,33.749,-84.38798,Atlanta,,Atlanta,,development,Atlanta,0,yes
+akamai,us-west,label,agrees,Fremont,US,37.54827,-121.98857,Fremont,,Fremont,,development,Fremont,0,yes
+huawei,ap-southeast-3,label,,Singapore,SG,1.28967,103.85007,Singapore,,,,development,Singapore,0,yes
+huawei,ap-southeast-2,label,,Bangkok,TH,13.75398,100.50144,Bangkok,,,,development,Bangkok,0,yes
+huawei,ap-southeast-4,label,,Jakarta,ID,-6.21462,106.84513,Jakarta,,,,development,Jakarta,0,yes
+huawei,ap-southeast-5,label,,Manila,PH,14.6042,120.9822,Manila,,,,development,Manila,0,yes
+huawei,cn-east-3,label,,Shanghai,CN,31.22222,121.45806,Shanghai,,,,development,Shanghai,0,yes
+huawei,cn-east-2,label,,Shanghai,CN,31.22222,121.45806,Shanghai,,,,development,Shanghai,0,yes
+huawei,ap-southeast-1,label,,Hong Kong,HK,22.27832,114.17469,Hong Kong,,,,development,Hong Kong,0,yes
+huawei,cn-north-1,label,,Beijing,CN,39.9075,116.39723,Beijing,,,,development,Beijing,0,yes
+huawei,cn-north-4,label,,Beijing,CN,39.9075,116.39723,Beijing,,,,development,Beijing,0,yes
+huawei,cn-south-1,label,,Guangzhou,CN,23.11667,113.25,Guangzhou,,,,development,Guangzhou,0,yes
+huawei,cn-north-9,label,,Ulanqab,CN,40.993,113.133,Ulanqab,,,,development,Ulanqab,4,yes
+huawei,cn-southwest-2,label,,Guiyang,CN,26.58333,106.71667,Guiyang,,,,development,Guiyang,0,yes
+huawei,cn-east-5,label,,Qingdao,CN,36.06488,120.38042,Qingdao,,,,development,Qingdao,0,yes
+huawei,tr-west-1,label,,Istanbul,TR,41.01384,28.94966,Istanbul,,,,development,Istanbul,0,yes
+huawei,af-south-1,label,,Johannesburg,ZA,-26.20227,28.04363,Johannesburg,,,,holdout,Johannesburg,0,yes
+huawei,na-mexico-1,label,,Mexico City,MX,19.42847,-99.12766,Mexico City,,,,development,Mexico City,0,yes
+huawei,la-north-2,label,,Mexico City,MX,19.42847,-99.12766,Mexico City,,,,holdout,Mexico City,0,yes
+huawei,sa-brazil-1,label,,São Paulo,BR,-23.5475,-46.63611,São Paulo,,,,holdout,Sao Paulo,0,yes
+huawei,la-south-2,label,,Santiago,CL,-33.45694,-70.64827,Santiago,,,,development,Santiago,0,yes
+huawei,me-east-1,label,,Riyadh,SA,24.68773,46.72185,Riyadh,,,,development,Riyadh,0,yes
+huawei,af-north-1,label,,Cairo,EG,30.06263,31.24967,Cairo,,,,development,Cairo,0,yes
+huawei,cn-east-4,none,,,,,,,,,,holdout,Wuhu,,
+huawei,cn-north-12,none,,,,,,,,,,holdout,Hohhot,,
+huawei,cn-north-2,label,,Beijing,CN,39.9075,116.39723,Beijing,,,,development,Beijing,0,yes
+huawei,cn-south-2,label,,Shenzhen,CN,22.54554,114.0683,Shenzhen,,,,holdout,Shenzhen,0,yes
+huawei,eu-west-0,label,,Paris,FR,48.85341,2.3488,Paris,,,,holdout,Paris,0,yes
+huawei,my-kualalumpur-1,label,agrees,Kuala Lumpur,MY,3.1412,101.68653,Kuala Lumpur,Kuala Lumpur,,,development,Kuala Lumpur,0,yes
+huawei,ru-northwest-2,label,,Moscow,RU,55.75204,37.61781,Moscow,,,,development,Moscow,0,yes

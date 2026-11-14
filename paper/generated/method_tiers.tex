@@ -1,0 +1,25 @@
+\definecolor{ocmblue}{HTML}{2A78D6}
+\definecolor{ocmorange}{HTML}{EB6834}
+\definecolor{ocmaqua}{HTML}{1BAF7A}
+\definecolor{ocmviolet}{HTML}{6250D6}
+\definecolor{ocmgrey}{HTML}{8A8984}
+\begin{tikzpicture}
+\begin{axis}[width=0.96\linewidth,height=5.5cm,xmin=40,xmax=102,ymin=94,ymax=100.8,xlabel={Regions answered, \%},ylabel={Answers within 50~km, \%},legend pos=south west,legend style={font=\footnotesize},xmajorgrids,ymajorgrids,major grid style={gray!25},tick label style={font=\footnotesize},label style={font=\footnotesize},title style={font=\footnotesize\bfseries}]
+\addplot[thick,mark=*,mark size=1.8pt,ocmblue] coordinates {(49.5,100.00) (87.1,98.79) (88.4,98.81) (96.8,98.64) (97.6,98.38)};
+\addlegendentry{Rules, adding steps}
+\node[font=\scriptsize,anchor=south west] at (axis cs:49.5,100.00) {label, agrees};
+\node[font=\scriptsize,anchor=south west] at (axis cs:87.1,98.79) {label};
+\node[font=\scriptsize,anchor=south west] at (axis cs:96.8,98.64) {feed};
+\addplot[only marks,mark=square*,mark size=2pt,ocmorange] coordinates {(82.4,96.81)};
+\addlegendentry{Model methods}
+\node[font=\scriptsize,anchor=north east] at (axis cs:82.4,96.81) {RAG, GLM 4.7 Flash};
+\addplot[only marks,mark=square*,mark size=2pt,ocmorange,forget plot] coordinates {(82.4,97.44)};
+\node[font=\scriptsize,anchor=south east] at (axis cs:82.4,97.44) {RAG, Qwen 3.6};
+\addplot[only marks,mark=square*,mark size=2pt,ocmorange,forget plot] coordinates {(84.5,98.75)};
+\node[font=\scriptsize,anchor=north east] at (axis cs:84.5,98.75) {RAG, Qwen 3.8};
+\addplot[only marks,mark=square*,mark size=2pt,ocmorange,forget plot] coordinates {(87.6,98.80)};
+\node[font=\scriptsize,anchor=south east] at (axis cs:87.6,98.80) {Model, label only};
+\addplot[only marks,mark=square*,mark size=2pt,ocmorange,forget plot] coordinates {(95.5,95.87)};
+\node[font=\scriptsize,anchor=north east] at (axis cs:95.5,95.87) {Model, no documents};
+\end{axis}
+\end{tikzpicture}

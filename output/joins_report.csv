@@ -1,0 +1,13 @@
+provider,region_id,url,codes,city,km,status
+azure,centralus,https://frs-public.epa.gov/ords/frs_public2/frs_rest_services.get_facilities?facility_name=MICROSOFT&state_abbr=IA&output=JSON,DSM09,Des Moines,0,joined
+azure,eastus,https://web.archive.org/web/20260919161053id_/https://www.deq.virginia.gov/home/showpublisheddocument/25630/638771964788470000,IAD01;IAD02,Leesburg,16,joined
+azure,eastus2,https://web.archive.org/web/20260207070111id_/https://www.deq.virginia.gov/home/showpublisheddocument/25664/638627894486630000,LVL08,Boydton,0,joined
+azure,eastus2,https://web.archive.org/web/20260919161108id_/https://www.deq.virginia.gov/home/showpublisheddocument/25642/638627842668970000,BN1;BN10;BN13;BN14;BN2;BN3;BN4;BN6;BN7;BN8;BN9,Boydton,0,joined
+azure,eastus2,https://web.archive.org/web/20260919161114id_/https://www.deq.virginia.gov/home/showpublisheddocument/25662/638627893416770000,LVL01;LVL02;LVL03,Boydton,0,joined
+azure,westus2,https://apps.ecology.wa.gov/publications/documents/1702002.pdf,CO3;MWH01;MWH02,Quincy,0,joined
+azure,westus2,https://ecology.wa.gov/20250328mscolumbianoctsd,CO1;CO2;CO3;CO6,Quincy,0,joined
+azure,northeurope,https://epawebapp.epa.ie/licences/lic_eDMS/090151b28086a71a.pdf,DUB09;DUB10;DUB12;DUB13;DUB14,Dublin,0,joined
+azure,northeurope,https://epawebapp.epa.ie/licences/lic_eDMS/090151b28086a720.pdf,DB3;DB4;DB5,Dublin,0,joined
+azure,northeurope,https://epawebapp.epa.ie/licences/lic_eDMS/090151b280876422.pdf,DUB06;DUB07;DUB08;DUB09;DUB10;DUB11;DUB12;DUB13;DUB14,Dublin,0,joined
+azure,westeurope,https://repository.officiele-overheidspublicaties.nl/externebijlagen/exb-2016-23878/currentItem,AMS07;AMS08,Middenmeer,49,joined
+azure,westeurope,https://repository.officiele-overheidspublicaties.nl/externebijlagen/exb-2024-38235/currentItem,AMS05;AMS06;AMS07;AMS08;AMS09;AMS11;AMS12,Noord,2,joined

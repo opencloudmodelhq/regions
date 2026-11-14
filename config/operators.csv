@@ -1,0 +1,14 @@
+provider,operator
+aws,Amazon
+azure,Microsoft
+gcp,Google
+alibaba,Alibaba
+oracle,Oracle
+hetzner,Hetzner
+vultr,Vultr
+digitalocean,DigitalOcean
+tencent,Tencent
+ovhcloud,OVH
+ibm,IBM
+akamai,Akamai
+huawei,Huawei

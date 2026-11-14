@@ -1,0 +1,21 @@
+region_id,stated_city,placed_city,country,lat,lon
+na-central-2,Dallas,Dallas,US,32.78306,-96.80667
+na-east-1,"Washington, D.C.",Washington,US,38.89511,-77.03637
+na-south-1,Miami,Miami,US,25.77427,-80.19366
+na-west-1,Los Angeles,Los Angeles,US,34.05223,-118.24368
+sa-east-1,Sao Paulo,São Paulo,BR,-23.5475,-46.63611
+sa-north-1,Bogota,Bogotá,CO,4.60971,-74.08175
+sa-south-1,Santiago,Santiago,CL,-33.45694,-70.64827
+sa-south-2,Buenos Aires,Buenos Aires,AR,-34.61315,-58.37723
+sa-west-1,Lima,Lima,PE,-12.04318,-77.02824
+asia-southeast-1,Hong Kong,Hong Kong,HK,22.27832,114.17469
+asia-southeast-2,Jakarta,Jakarta,ID,-6.21462,106.84513
+asia-southeast-3,Kuala Lumpur,Kuala Lumpur,MY,3.1412,101.68653
+asia-southeast-4,Ho Chi Minh City,Ho Chi Minh City,VN,10.82302,106.62965
+asia-southeast-5,Hanoi,Hanoi,VN,21.0245,105.84117
+asia-southeast-6,Manila,Manila,PH,14.6042,120.9822
+asia-southwest-1,Singapore,Singapore,SG,1.28967,103.85007
+europe-central-1,Frankfurt,Frankfurt am Main,DE,50.11552,8.68417
+europe-east-1,Istanbul,Istanbul,TR,41.01384,28.94966
+europe-south-1,Marseille,Marseille,FR,43.29695,5.38107
+me-central-1,Riyadh,Riyadh,SA,24.68773,46.72185

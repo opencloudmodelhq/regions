@@ -1,0 +1,14 @@
+setting,value,placed,matched,abstained,low,high,holdout_placed,holdout_matched
+agreement radius km,25,371,360,9,0.9477,0.9834,116,112
+agreement radius km,50,371,365,9,0.9652,0.9926,116,112
+agreement radius km,75,371,367,9,0.9726,0.9958,116,114
+agreement radius km,100,371,368,9,0.9765,0.9972,116,114
+minimum population,5000,374,364,6,0.9515,0.9854,117,112
+minimum population,10000,371,365,9,0.9652,0.9926,116,112
+minimum population,20000,371,365,9,0.9652,0.9926,116,112
+minimum population,50000,370,364,10,0.9651,0.9925,115,111
+minimum population,100000,370,364,10,0.9651,0.9925,115,111
+minimum feed share,0.3,371,365,9,0.9652,0.9926,116,112
+minimum feed share,0.5,371,365,9,0.9652,0.9926,116,112
+minimum feed share,0.7,371,365,9,0.9652,0.9926,116,112
+minimum feed share,0.9,371,365,9,0.9652,0.9926,116,112

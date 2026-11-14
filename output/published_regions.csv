@@ -1,0 +1,401 @@
+provider,partition,region_id,name,stated_location,vendor_code
+aws,public,us-east-1,US East (N. Virginia),US East (N. Virginia),
+aws,public,us-east-2,US East (Ohio),US East (Ohio),
+aws,public,us-west-1,US West (N. California),US West (N. California),
+aws,public,us-west-2,US West (Oregon),US West (Oregon),
+aws,public,af-south-1,Africa (Cape Town),Africa (Cape Town),
+aws,public,ap-east-1,Asia Pacific (Hong Kong),Asia Pacific (Hong Kong),
+aws,public,ap-south-2,Asia Pacific (Hyderabad),Asia Pacific (Hyderabad),
+aws,public,ap-southeast-3,Asia Pacific (Jakarta),Asia Pacific (Jakarta),
+aws,public,ap-southeast-5,Asia Pacific (Malaysia),Asia Pacific (Malaysia),
+aws,public,ap-southeast-4,Asia Pacific (Melbourne),Asia Pacific (Melbourne),
+aws,public,ap-south-1,Asia Pacific (Mumbai),Asia Pacific (Mumbai),
+aws,public,ap-southeast-6,Asia Pacific (New Zealand),Asia Pacific (New Zealand),
+aws,public,ap-northeast-3,Asia Pacific (Osaka),Asia Pacific (Osaka),
+aws,public,ap-northeast-2,Asia Pacific (Seoul),Asia Pacific (Seoul),
+aws,public,ap-southeast-1,Asia Pacific (Singapore),Asia Pacific (Singapore),
+aws,public,ap-southeast-2,Asia Pacific (Sydney),Asia Pacific (Sydney),
+aws,public,ap-east-2,Asia Pacific (Taipei),Asia Pacific (Taipei),
+aws,public,ap-southeast-7,Asia Pacific (Thailand),Asia Pacific (Thailand),
+aws,public,ap-northeast-1,Asia Pacific (Tokyo),Asia Pacific (Tokyo),
+aws,public,ca-central-1,Canada (Central),Canada (Central),
+aws,public,ca-west-1,Canada West (Calgary),Canada West (Calgary),
+aws,public,eu-central-1,Europe (Frankfurt),Europe (Frankfurt),
+aws,public,eu-west-1,Europe (Ireland),Europe (Ireland),
+aws,public,eu-west-2,Europe (London),Europe (London),
+aws,public,eu-south-1,Europe (Milan),Europe (Milan),
+aws,public,eu-west-3,Europe (Paris),Europe (Paris),
+aws,public,eu-south-2,Europe (Spain),Europe (Spain),
+aws,public,eu-north-1,Europe (Stockholm),Europe (Stockholm),
+aws,public,eu-central-2,Europe (Zurich),Europe (Zurich),
+aws,public,il-central-1,Israel (Tel Aviv),Israel (Tel Aviv),
+aws,public,mx-central-1,Mexico (Central),Mexico (Central),
+aws,public,me-south-1,Middle East (Bahrain),Middle East (Bahrain),
+aws,public,me-central-1,Middle East (UAE),Middle East (UAE),
+aws,public,sa-east-1,South America (São Paulo),South America (São Paulo),
+aws,aws-cn,cn-north-1,China (Beijing),China (Beijing),
+aws,aws-cn,cn-northwest-1,China (Ningxia),China (Ningxia),
+aws,aws-us-gov,us-gov-east-1,AWS GovCloud (US-East),AWS GovCloud (US-East),
+aws,aws-us-gov,us-gov-west-1,AWS GovCloud (US-West),AWS GovCloud (US-West),
+aws,aws-iso,us-iso-east-1,US ISO East,US ISO East,
+aws,aws-iso,us-iso-west-1,US ISO WEST,US ISO WEST,
+aws,aws-iso-b,us-isob-east-1,US ISOB East (Ohio),US ISOB East (Ohio),
+aws,aws-iso-b,us-isob-west-1,US ISOB West,US ISOB West,
+aws,aws-iso-e,eu-isoe-west-1,EU ISOE West,EU ISOE West,
+aws,aws-iso-f,us-isof-east-1,US ISOF EAST,US ISOF EAST,
+aws,aws-iso-f,us-isof-south-1,US ISOF SOUTH,US ISOF SOUTH,
+aws,aws-eusc,eusc-de-east-1,AWS European Sovereign Cloud (Germany),AWS European Sovereign Cloud (Germany),
+azure,public,australiacentral,Australia Central,Canberra,
+azure,public,australiacentral2,Australia Central 2,Canberra,
+azure,public,australiaeast,Australia East,New South Wales,
+azure,public,australiasoutheast,Australia Southeast,Victoria,
+azure,public,austriaeast,Austria East,Vienna,
+azure,public,belgiumcentral,Belgium Central,Brussels,
+azure,public,brazilsouth,Brazil South,Sao Paulo State,
+azure,public,brazilsoutheast,Brazil Southeast,Rio,
+azure,public,canadacentral,Canada Central,Toronto,
+azure,public,canadaeast,Canada East,Quebec,
+azure,public,centralindia,Central India,Pune,
+azure,public,centralus,Central US,Iowa,
+azure,public,chilecentral,Chile Central,Santiago,
+azure,public,denmarkeast,Denmark East,Copenhagen,
+azure,public,eastasia,East Asia,Hong Kong,
+azure,public,eastus,East US,Virginia,
+azure,public,eastus2,East US 2,Virginia,
+azure,public,francecentral,France Central,Paris,
+azure,public,francesouth,France South,Marseille,
+azure,public,germanynorth,Germany North,Berlin,
+azure,public,germanywestcentral,Germany West Central,Frankfurt,
+azure,public,indiasouthcentral,India South Central,Hyderabad,
+azure,public,indonesiacentral,Indonesia Central,Jakarta,
+azure,public,israelcentral,Israel Central,Israel,
+azure,public,italynorth,Italy North,Milan,
+azure,public,japaneast,Japan East,"Tokyo, Saitama",
+azure,public,japanwest,Japan West,Osaka,
+azure,public,koreacentral,Korea Central,Seoul,
+azure,public,koreasouth,Korea South,Busan,
+azure,public,malaysiawest,Malaysia West,Kuala Lumpur,
+azure,public,mexicocentral,Mexico Central,Querétaro State,
+azure,public,newzealandnorth,New Zealand North,Auckland,
+azure,public,northcentralus,North Central US,Illinois,
+azure,public,northeurope,North Europe,Ireland,
+azure,public,norwayeast,Norway East,Norway,
+azure,public,norwaywest,Norway West,Norway,
+azure,public,polandcentral,Poland Central,Warsaw,
+azure,public,qatarcentral,Qatar Central,Doha,
+azure,public,southafricanorth,South Africa North,Johannesburg,
+azure,public,southafricawest,South Africa West,Cape Town,
+azure,public,southcentralus,South Central US,Texas,
+azure,public,southindia,South India,Chennai,
+azure,public,southeastasia,Southeast Asia,Singapore,
+azure,public,southeastasia3,Southeast Asia 3,Johor Bahru,
+azure,public,spaincentral,Spain Central,Madrid,
+azure,public,swedencentral,Sweden Central,Gävle,
+azure,public,switzerlandnorth,Switzerland North,Zurich,
+azure,public,switzerlandwest,Switzerland West,Geneva,
+azure,public,taiwannorth,Taiwan North,Taipei,
+azure,public,uaecentral,UAE Central,Abu Dhabi,
+azure,public,uaenorth,UAE North,Dubai,
+azure,public,uksouth,UK South,London,
+azure,public,ukwest,UK West,Cardiff,
+azure,public,westcentralus,West Central US,Wyoming,
+azure,public,westeurope,West Europe,Netherlands,
+azure,public,westindia,West India,Mumbai,
+azure,public,westus,West US,California,
+azure,public,westus2,West US 2,Washington,
+azure,public,westus3,West US 3,Phoenix,
+gcp,public,africa-south1,africa-south1,"Johannesburg, South Africa",
+gcp,public,asia-east1,asia-east1,"Changhua County, Taiwan, APAC",
+gcp,public,asia-east2,asia-east2,"Hong Kong, APAC",
+gcp,public,asia-northeast1,asia-northeast1,"Tokyo, Japan, APAC",
+gcp,public,asia-northeast2,asia-northeast2,"Osaka, Japan, APAC",
+gcp,public,asia-northeast3,asia-northeast3,"Seoul, South Korea, APAC",
+gcp,public,asia-south1,asia-south1,"Mumbai, India, APAC",
+gcp,public,asia-south2,asia-south2,"Delhi, India, APAC",
+gcp,public,asia-southeast1,asia-southeast1,"Jurong West, Singapore, APAC",
+gcp,public,asia-southeast2,asia-southeast2,"Jakarta, Indonesia, APAC",
+gcp,public,asia-southeast3,asia-southeast3,"Bangkok, Thailand, APAC",
+gcp,public,australia-southeast1,australia-southeast1,"Sydney, Australia, APAC",
+gcp,public,australia-southeast2,australia-southeast2,"Melbourne, Australia, APAC",
+gcp,public,europe-central2,europe-central2,"Warsaw, Poland, Europe",
+gcp,public,europe-north1,europe-north1,"Hamina, Finland, Europe",
+gcp,public,europe-north2,europe-north2,"Stockholm, Sweden, Europe",
+gcp,public,europe-southwest1,europe-southwest1,"Madrid, Spain, Europe",
+gcp,public,europe-west1,europe-west1,"St. Ghislain, Belgium, Europe",
+gcp,public,europe-west10,europe-west10,"Berlin, Germany, Europe",
+gcp,public,europe-west12,europe-west12,"Turin, Italy, Europe",
+gcp,public,europe-west2,europe-west2,"London, England, Europe",
+gcp,public,europe-west3,europe-west3,"Frankfurt, Germany, Europe",
+gcp,public,europe-west4,europe-west4,"Eemshaven, Netherlands, Europe",
+gcp,public,europe-west6,europe-west6,"Zurich, Switzerland, Europe",
+gcp,public,europe-west8,europe-west8,"Milan, Italy, Europe",
+gcp,public,europe-west9,europe-west9,"Paris, France, Europe",
+gcp,public,me-central1,me-central1,"Doha, Qatar, Middle East",
+gcp,public,me-central2,me-central2,"Dammam, Saudi Arabia, Middle East",
+gcp,public,me-west1,me-west1,"Tel Aviv, Israel, Middle East",
+gcp,public,northamerica-northeast1,northamerica-northeast1,"Montréal, Québec, North America",
+gcp,public,northamerica-northeast2,northamerica-northeast2,"Toronto, Ontario, North America",
+gcp,public,northamerica-south1,northamerica-south1,"Queretaro, Mexico, North America",
+gcp,public,southamerica-east1,southamerica-east1,"Osasco, São Paulo, Brazil, South America",
+gcp,public,southamerica-west1,southamerica-west1,"Santiago, Chile, South America",
+gcp,public,us-central1,us-central1,"Council Bluffs, Iowa, North America",
+gcp,public,us-east1,us-east1,"Moncks Corner, South Carolina, North America",
+gcp,public,us-east4,us-east4,"Ashburn, Virginia, North America",
+gcp,public,us-east5,us-east5,"Columbus, Ohio, North America",
+gcp,public,us-south1,us-south1,"Dallas, Texas, North America",
+gcp,public,us-west1,us-west1,"The Dalles, Oregon, North America",
+gcp,public,us-west2,us-west2,"Los Angeles, California, North America",
+gcp,public,us-west3,us-west3,"Salt Lake City, Utah, North America",
+gcp,public,us-west4,us-west4,"Las Vegas, Nevada, North America",
+alibaba,public,cn-qingdao,China (Qingdao),China (Qingdao),
+alibaba,public,cn-beijing,China (Beijing),China (Beijing),
+alibaba,public,cn-zhangjiakou,China (Zhangjiakou),China (Zhangjiakou),
+alibaba,public,cn-huhehaote,China (Hohhot),China (Hohhot),
+alibaba,public,cn-wulanchabu,China (Ulanqab),China (Ulanqab),
+alibaba,public,cn-hangzhou,China (Hangzhou),China (Hangzhou),
+alibaba,public,cn-shanghai,China (Shanghai),China (Shanghai),
+alibaba,public,cn-wuhan-lr,China (Wuhan - Local Region),China (Wuhan - Local Region),
+alibaba,public,cn-shenzhen,China (Shenzhen),China (Shenzhen),
+alibaba,public,cn-heyuan,China (Heyuan),China (Heyuan),
+alibaba,public,cn-guangzhou,China (Guangzhou),China (Guangzhou),
+alibaba,public,cn-chengdu,China (Chengdu),China (Chengdu),
+alibaba,public,cn-zhongwei,China (Zhongwei),China (Zhongwei),
+alibaba,public,cn-hongkong,China (Hong Kong),China (Hong Kong),
+alibaba,public,ap-southeast-1,Singapore,Singapore,
+alibaba,public,ap-southeast-3,Malaysia (Kuala Lumpur),Malaysia (Kuala Lumpur),
+alibaba,public,ap-southeast-5,Indonesia (Jakarta),Indonesia (Jakarta),
+alibaba,public,ap-southeast-6,Philippines (Manila),Philippines (Manila),
+alibaba,public,ap-southeast-7,Thailand (Bangkok),Thailand (Bangkok),
+alibaba,public,ap-southeast-8,Malaysia (Johor),Malaysia (Johor),
+alibaba,public,ap-northeast-1,Japan (Tokyo),Japan (Tokyo),
+alibaba,public,ap-northeast-2,South Korea (Seoul),South Korea (Seoul),
+alibaba,public,us-west-1,US (Silicon Valley),US (Silicon Valley),
+alibaba,public,us-east-1,US (Virginia),US (Virginia),
+alibaba,public,eu-central-1,Germany (Frankfurt),Germany (Frankfurt),
+alibaba,public,eu-west-1,UK (London),UK (London),
+alibaba,public,eu-west-2,France (Paris),France (Paris),
+alibaba,public,me-east-1,UAE (Dubai),UAE (Dubai),
+alibaba,public,me-central-1,SAU (Riyadh - Partner Region),SAU (Riyadh - Partner Region),
+alibaba,public,na-south-1,Mexico,Mexico,
+alibaba,public,sa-east-1,Brazil (São Paulo),Brazil (São Paulo),
+alibaba,alibaba-finance,cn-hangzhou-finance,China East 1 Finance,China (Hangzhou),
+alibaba,alibaba-finance,cn-shanghai-finance-1,China East 2 Finance,China (Shanghai),
+alibaba,alibaba-finance,cn-shenzhen-finance-1,China South 1 Finance,Shenzhen,
+alibaba,alibaba-finance,cn-beijing-finance-1,China North 2 Finance (Preview),China (Beijing),
+alibaba,alibaba-gov,cn-north-2-gov-1,China North 2 Ali Gov 1,China (Beijing),
+oracle,public,ap-sydney-1,Australia East (Sydney),"Sydney, Australia",SYD
+oracle,public,ap-melbourne-1,Australia Southeast (Melbourne),"Melbourne, Australia",MEL
+oracle,public,sa-saopaulo-1,Brazil East (Sao Paulo),"Sao Paulo, Brazil",GRU
+oracle,public,sa-vinhedo-1,Brazil Southeast (Vinhedo),"Vinhedo, Brazil",VCP
+oracle,public,ca-montreal-1,Canada Southeast (Montreal),"Montreal, Canada",YUL
+oracle,public,ca-toronto-1,Canada Southeast (Toronto),"Toronto, Canada",YYZ
+oracle,public,sa-santiago-1,Chile Central (Santiago),"Santiago, Chile",SCL
+oracle,public,sa-valparaiso-1,Chile West (Valparaiso),"Valparaiso, Chile",VAP
+oracle,public,sa-bogota-1,Colombia Central (Bogota),"Bogota, Colombia",BOG
+oracle,public,eu-paris-1,France Central (Paris),"Paris, France",CDG
+oracle,public,eu-marseille-1,France South (Marseille),"Marseille, France",MRS
+oracle,public,eu-frankfurt-1,Germany Central (Frankfurt),"Frankfurt, Germany",FRA
+oracle,public,ap-hyderabad-1,India South (Hyderabad),"Hyderabad, India",HYD
+oracle,public,ap-mumbai-1,India West (Mumbai),"Mumbai, India",BOM
+oracle,public,ap-batam-1,Indonesia North (Batam),"Batam, Indonesia",HSG
+oracle,public,il-jerusalem-1,Israel Central (Jerusalem),"Jerusalem, Israel",MTZ
+oracle,public,eu-milan-1,Italy Northwest (Milan),"Milan, Italy",LIN
+oracle,public,eu-turin-1,Italy North (Turin),"Turin, Italy",NRQ
+oracle,public,ap-osaka-1,Japan Central (Osaka),"Osaka, Japan",KIX
+oracle,public,ap-tokyo-1,Japan East (Tokyo),"Tokyo, Japan",NRT
+oracle,public,ap-kulai-2,Malaysia West 2 (Kulai),"Kulai, Malaysia",JBP
+oracle,public,mx-queretaro-1,Mexico Central (Queretaro),"Queretaro, Mexico",QRO
+oracle,public,mx-monterrey-1,Mexico Northeast (Monterrey),"Monterrey, Mexico",MTY
+oracle,public,af-casablanca-1,Morocco West (Casablanca),"Casablanca, Morocco",LEJ
+oracle,public,eu-amsterdam-1,Netherlands Northwest (Amsterdam),"Amsterdam, Netherlands",AMS
+oracle,public,me-riyadh-1,Saudi Arabia Central (Riyadh),"Riyadh, Saudi Arabia",RUH
+oracle,public,me-jeddah-1,Saudi Arabia West (Jeddah),"Jeddah, Saudi Arabia",JED
+oracle,public,eu-jovanovac-1,Serbia Central (Jovanovac),"Jovanovac,Serbia",BEG
+oracle,public,ap-singapore-1,Singapore (Singapore),"Singapore,Singapore",SIN
+oracle,public,ap-singapore-2,Singapore West (Singapore),"Singapore,Singapore",XSP
+oracle,public,af-johannesburg-1,South Africa Central (Johannesburg),"Johannesburg, South Africa",JNB
+oracle,public,ap-seoul-1,South Korea Central (Seoul),"Seoul, South Korea",ICN
+oracle,public,ap-chuncheon-1,South Korea North (Chuncheon),"Chuncheon, South Korea",YNY
+oracle,public,eu-madrid-1,Spain Central (Madrid),"Madrid, Spain",MAD
+oracle,public,eu-madrid-3,Spain Central (Madrid 3),"Madrid, Spain",ORF
+oracle,public,eu-stockholm-1,Sweden Central (Stockholm),"Stockholm, Sweden",ARN
+oracle,public,eu-zurich-1,Switzerland North (Zurich),"Zurich, Switzerland",ZRH
+oracle,public,me-abudhabi-1,UAE Central (Abu Dhabi),"Abu Dhabi, UAE",AUH
+oracle,public,me-dubai-1,UAE East (Dubai),"Dubai, UAE",DXB
+oracle,public,uk-london-1,UK South (London),"London, United Kingdom",LHR
+oracle,public,uk-cardiff-1,UK West (Newport),"Newport, United Kingdom",CWL
+oracle,public,us-ashburn-1,US East (Ashburn),"Ashburn, VA",IAD
+oracle,public,us-chicago-1,US Midwest (Chicago),"Chicago, IL",ORD
+oracle,public,us-phoenix-1,US West (Phoenix),"Phoenix, AZ",PHX
+oracle,public,us-sanjose-1,US West (San Jose),"San Jose, CA",SJC
+hetzner,public,fsn1,Falkenstein,Falkenstein,
+hetzner,public,ash,"Ashburn, VA","Ashburn, VA",
+hetzner,public,hil,"Hillsboro, OR","Hillsboro, OR",
+hetzner,public,sin,Singapore,Singapore,
+hetzner,public,nbg1,Nuremberg,Nuremberg,
+hetzner,public,hel1,Helsinki,Helsinki,
+vultr,public,ams,Amsterdam,"Amsterdam, NL",AMS
+vultr,public,atl,Atlanta,"Atlanta, US",ATL
+vultr,public,blr,Bangalore,"Bangalore, IN",BLR
+vultr,public,bom,Mumbai,"Mumbai, IN",BOM
+vultr,public,cdg,Paris,"Paris, FR",CDG
+vultr,public,del,Delhi NCR,"Delhi NCR, IN",DEL
+vultr,public,dfw,Dallas,"Dallas, US",DFW
+vultr,public,ewr,New Jersey,"New Jersey, US",EWR
+vultr,public,fra,Frankfurt,"Frankfurt, DE",FRA
+vultr,public,hnl,Honolulu,"Honolulu, US",HNL
+vultr,public,icn,Seoul,"Seoul, KR",ICN
+vultr,public,itm,Osaka,"Osaka, JP",ITM
+vultr,public,jnb,Johannesburg,"Johannesburg, ZA",JNB
+vultr,public,lax,Los Angeles,"Los Angeles, US",LAX
+vultr,public,lhr,London,"London, GB",LHR
+vultr,public,mad,Madrid,"Madrid, ES",MAD
+vultr,public,man,Manchester,"Manchester, GB",MAN
+vultr,public,mel,Melbourne,"Melbourne, AU",MEL
+vultr,public,mex,Mexico City,"Mexico City, MX",MEX
+vultr,public,mia,Miami,"Miami, US",MIA
+vultr,public,mxp,Milan,"Milan, IT",MXP
+vultr,public,nrt,Tokyo,"Tokyo, JP",NRT
+vultr,public,ord,Chicago,"Chicago, US",ORD
+vultr,public,sao,São Paulo,"São Paulo, BR",SAO
+vultr,public,scl,Santiago,"Santiago, CL",SCL
+vultr,public,sea,Seattle,"Seattle, US",SEA
+vultr,public,sgp,Singapore,"Singapore, SG",SGP
+vultr,public,sjc,Silicon Valley,"Silicon Valley, US",SJC
+vultr,public,sto,Stockholm,"Stockholm, SE",STO
+vultr,public,syd,Sydney,"Sydney, AU",SYD
+vultr,public,tlv,Tel Aviv,"Tel Aviv, IL",TLV
+vultr,public,waw,Warsaw,"Warsaw, PL",WAW
+vultr,public,yto,Toronto,"Toronto, CA",YTO
+digitalocean,public,nyc1,NYC1,"New York City, United States",
+digitalocean,public,nyc2,NYC2,"New York City, United States",
+digitalocean,public,nyc3,NYC3,"New York City, United States",
+digitalocean,public,ams3,AMS3,"Amsterdam, the Netherlands",
+digitalocean,public,sfo2,SFO2,"San Francisco, United States",
+digitalocean,public,sfo3,SFO3,"San Francisco, United States",
+digitalocean,public,sgp1,SGP1,Singapore,
+digitalocean,public,lon1,LON1,"London, United Kingdom",
+digitalocean,public,fra1,FRA1,"Frankfurt, Germany",
+digitalocean,public,tor1,TOR1,"Toronto, Canada",
+digitalocean,public,blr1,BLR1,"Bangalore, India",
+digitalocean,public,syd1,SYD1,"Sydney, Australia",
+digitalocean,public,atl1,ATL1,"Atlanta, United States",
+digitalocean,public,ric1,RIC1,"Richmond, United States",
+digitalocean,public,mkc1,MKC1,"Kansas City, United States",
+digitalocean,public,mem1,MEM1,"Memphis, United States",
+tencent,public,ap-beijing,North China (Beijing),North China (Beijing); Beijing Zone 3,
+tencent,public,ap-shanghai,East China (Shanghai),East China (Shanghai); Shanghai Zone 2,
+tencent,public,ap-nanjing,East China (Nanjing),East China (Nanjing); Nanjing Zone 1,
+tencent,public,ap-guangzhou,South China (Guangzhou),South China (Guangzhou); Guangzhou Zone 3,
+tencent,public,ap-chengdu,Southwest China (Chengdu),Southwest China (Chengdu); Chengdu Zone 1,
+tencent,public,ap-chongqing,Southwest China (Chongqing),Southwest China (Chongqing); Chongqing Zone 1,
+tencent,public,ap-zhongwei,Northwest China (Zhongwei),Northwest China (Zhongwei); Zhongwei Zone 1,
+tencent,public,ap-hongkong,"Hong Kong (China), Macao (China), and Taiwan (China)","Hong Kong (China), Macao (China), and Taiwan (China); Hong Kong Zone 1",
+tencent,tencent-finance,ap-beijing-fsi,Beijing Finance,Beijing Finance; Beijing Finance Zone 1,
+tencent,tencent-finance,ap-shanghai-fsi,Shanghai Finance,Shanghai Finance; Shanghai Finance Zone 2,
+tencent,tencent-finance,ap-shenzhen-fsi,Shenzhen Finance,Shenzhen Finance; Shenzhen Finance Zone 1,
+tencent,tencent-autonomous,ap-shanghai-adc,Shanghai Self-driving Cloud,Shanghai Self-driving Cloud; Shanghai Self-driving Cloud Zone 1,
+tencent,tencent-autonomous,ap-zhongwei-adc,Zhongwei Self-driving Cloud,Zhongwei Self-driving Cloud; Zhongwei Self-driving Cloud Zone 1,
+tencent,public,ap-singapore,Asia Pacific and the Middle East (Singapore),Asia Pacific and the Middle East (Singapore); Singapore Zone 1,
+tencent,public,ap-johorbahru,Asia Pacific and the Middle East (Johor Bahru),Asia Pacific and the Middle East (Johor Bahru); Johorbahru Zone 1,
+tencent,public,ap-jakarta,Asia Pacific and the Middle East (Jakarta),Asia Pacific and the Middle East (Jakarta); Jakarta Zone 1,
+tencent,public,ap-seoul,Asia Pacific and the Middle East (Seoul),Asia Pacific and the Middle East (Seoul); Seoul Zone 1,
+tencent,public,ap-tokyo,Asia Pacific and the Middle East (Tokyo),Asia Pacific and the Middle East (Tokyo); Tokyo Zone 1,
+tencent,public,ap-osaka,Asia Pacific and the Middle East (Osaka),Asia Pacific and the Middle East (Osaka); Osaka Zone 1,
+tencent,public,ap-bangkok,Asia Pacific and the Middle East (Bangkok),Asia Pacific and the Middle East (Bangkok); Bangkok Zone 1,
+tencent,public,me-saudi-arabia,Asia Pacific and the Middle East (Saudi Arabia),Asia Pacific and the Middle East (Saudi Arabia); Riyadh Zone 1,
+tencent,public,sa-saopaulo,Europe and the Americas (São Paulo),Europe and the Americas (São Paulo); São Paulo Zone 1,
+tencent,public,na-queretaro,Europe and the Americas (Queretaro),Europe and the Americas (Queretaro); Queretaro Zone 1,
+tencent,public,na-siliconvalley,Europe and the Americas (Silicon Valley),Europe and the Americas (Silicon Valley); Silicon Valley Zone 1,
+tencent,public,na-ashburn,Europe and the Americas (Virginia),Europe and the Americas (Virginia); Virginia Zone 1,
+tencent,public,eu-frankfurt,Europe and the Americas (Frankfurt),Europe and the Americas (Frankfurt); Frankfurt Zone 1,
+ovhcloud,public,SBG,Strasbourg,Strasbourg,SBG
+ovhcloud,public,GRA,Gravelines,Gravelines,GRA
+ovhcloud,public,RBX,Roubaix,Roubaix,RBX
+ovhcloud,public,PAR,Paris,Paris,PAR
+ovhcloud,public,MIL,Milan,Milan,MIL
+ovhcloud,public,ERI,London,London,ERI
+ovhcloud,public,LIM,Frankfurt,Frankfurt,LIM
+ovhcloud,public,WAW,Warsaw,Warsaw,WAW
+ovhcloud,public,BHS,Montreal,Montreal,BHS
+ovhcloud,public,TOR,Toronto,Toronto,TOR
+ovhcloud,public,HIL,Seattle,Seattle,HIL
+ovhcloud,public,VIN,Washington DC,Washington DC,VIN
+ovhcloud,public,SGP,Singapore,Singapore,SGP
+ovhcloud,public,SYD,Sydney,Sydney,SYD
+ovhcloud,public,MUM,Mumbai,Mumbai,MUM
+ibm,public,us-south,Dallas,Dallas,
+ibm,public,br-sao,Sao Paulo,Sao Paulo,
+ibm,public,ca-tor,Toronto,Toronto,
+ibm,public,us-east,Washington DC,Washington DC,
+ibm,public,eu-de,Frankfurt,Frankfurt,
+ibm,public,eu-gb,London,London,
+ibm,public,eu-es,Madrid,Madrid,
+ibm,public,au-syd,Sydney,Sydney,
+ibm,public,jp-tok,Tokyo,Tokyo,
+ibm,public,in-che,Chennai - Airtel,Chennai - Airtel,
+ibm,public,ca-mon,Montreal,Montreal,
+ibm,public,in-mum,Mumbai - Airtel,Mumbai - Airtel,
+ibm,public,jp-osa,Osaka,Osaka,
+akamai,public,gb-lon,"London 2, UK","London 2, UK",
+akamai,public,se-sto,"Stockholm, SE","Stockholm, SE",
+akamai,public,es-mad,"Madrid, ES","Madrid, ES",
+akamai,public,in-maa,"Chennai, IN","Chennai, IN",
+akamai,public,jp-osa,"Osaka, JP","Osaka, JP",
+akamai,public,it-mil,"Milan, IT","Milan, IT",
+akamai,public,us-mia,"Miami, FL","Miami, FL",
+akamai,public,id-cgk,"Jakarta, ID","Jakarta, ID",
+akamai,public,us-lax,"Los Angeles, CA","Los Angeles, CA",
+akamai,public,nl-ams,"Amsterdam, NL","Amsterdam, NL",
+akamai,public,au-mel,"Melbourne, AU","Melbourne, AU",
+akamai,public,in-bom-2,"Mumbai 2, IN","Mumbai 2, IN",
+akamai,public,de-fra-2,"Frankfurt 2, DE","Frankfurt 2, DE",
+akamai,public,sg-sin-2,"Singapore 2, SG","Singapore 2, SG",
+akamai,public,jp-tyo-3,"Tokyo 3, JP","Tokyo 3, JP",
+akamai,public,us-iad-2,"Washington 2, DC","Washington 2, DC",
+akamai,public,fr-par-2,"Paris 2, FR","Paris 2, FR",
+akamai,public,br-gru,"Sao Paulo, BR","Sao Paulo, BR",
+akamai,public,us-sea,"Seattle, WA","Seattle, WA",
+akamai,public,fr-par,"Paris, FR","Paris, FR",
+akamai,public,us-ord,"Chicago, IL","Chicago, IL",
+akamai,public,us-iad,"Washington, DC","Washington, DC",
+akamai,public,ap-southeast,"Sydney, AU","Sydney, AU",
+akamai,public,ca-central,"Toronto, CA","Toronto, CA",
+akamai,public,ap-west,"Mumbai, IN","Mumbai, IN",
+akamai,public,us-central,"Dallas, TX","Dallas, TX",
+akamai,public,ap-northeast,"Tokyo 2, JP","Tokyo 2, JP",
+akamai,public,eu-central,"Frankfurt, DE","Frankfurt, DE",
+akamai,public,ap-south,"Singapore, SG","Singapore, SG",
+akamai,public,eu-west,"London, UK","London, UK",
+akamai,public,us-east,"Newark, NJ","Newark, NJ",
+akamai,public,us-southeast,"Atlanta, GA","Atlanta, GA",
+akamai,public,us-west,"Fremont, CA","Fremont, CA",
+huawei,public,ap-southeast-3,AP-Singapore,AP-Singapore,
+huawei,public,ap-southeast-2,AP-Bangkok,AP-Bangkok,
+huawei,public,ap-southeast-4,AP-Jakarta,AP-Jakarta,
+huawei,public,ap-southeast-5,AP-Manila,AP-Manila,
+huawei,public,cn-east-3,CN East-Shanghai1,CN East-Shanghai1,
+huawei,public,cn-east-2,CN East-Shanghai2,CN East-Shanghai2,
+huawei,public,ap-southeast-1,CN-Hong Kong,CN-Hong Kong,
+huawei,public,cn-north-1,CN North-Beijing1,CN North-Beijing1,
+huawei,public,cn-north-4,CN North-Beijing4,CN North-Beijing4,
+huawei,public,cn-south-1,CN South-Guangzhou,CN South-Guangzhou,
+huawei,public,cn-north-9,CN North-Ulanqab1,CN North-Ulanqab1,
+huawei,public,cn-southwest-2,CN Southwest-Guiyang1,CN Southwest-Guiyang1,
+huawei,public,cn-east-5,CN East-Qingdao,CN East-Qingdao,
+huawei,public,tr-west-1,TR-Istanbul,TR-Istanbul,
+huawei,public,af-south-1,AF-Johannesburg,AF-Johannesburg,
+huawei,public,na-mexico-1,LA-Mexico City1,LA-Mexico City1,
+huawei,public,la-north-2,LA-Mexico City2,LA-Mexico City2,
+huawei,public,sa-brazil-1,LA-Sao Paulo1,LA-Sao Paulo1,
+huawei,public,la-south-2,LA-Santiago,LA-Santiago,
+huawei,public,me-east-1,ME-Riyadh,ME-Riyadh,
+huawei,public,af-north-1,AF-Cairo,AF-Cairo,
+huawei,public,cn-east-4,CN East2,CN East2,
+huawei,public,cn-north-12,CN North3,CN North3,
+huawei,public,cn-north-2,CN North-Beijing2,CN North-Beijing2,
+huawei,public,cn-south-2,CN South-Shenzhen,CN South-Shenzhen,
+huawei,huawei-invitation,cn-south-4,CN South-Guangzhou-InvitationOnly,CN South-Guangzhou-InvitationOnly,
+huawei,public,eu-west-0,EU-Paris,EU-Paris,
+huawei,public,my-kualalumpur-1,AP-Kuala Lumpur-OP6,AP-Kuala Lumpur-OP6,
+huawei,public,ru-northwest-2,RU-Moscow2,RU-Moscow2,

@@ -1,0 +1,381 @@
+provider,region_id,split,status,city,country,lat,lon,quote,quote_ok,quote_source,document
+aws,us-east-1,development,answered,Ashburn,US,39.04372,-77.48749,"Equinix DC1-DC6 & DC10-D12, Ashburn",yes,passage,8db9262d1422
+aws,us-east-2,development,answered,Columbus,US,39.96118,-82.99879,"US East (Ohio) Location How to request a connection Cologix COL2, Columbus",yes,passage,8db9262d1422
+aws,us-west-1,development,answered,Los Angeles,US,34.05223,-118.24368,"CoreSite, LA1, Los Angeles",yes,passage,8db9262d1422
+aws,us-west-2,development,unsupported,Portland,US,,,US West (Oregon) (us-west-2),no,passage,9826f1450b88
+aws,af-south-1,development,answered,Cape Town,ZA,-33.92584,18.42322,Africa (Cape Town) Location How to request a connection Cape Town Internet Exchange/ Teraco Data Centres Contact Teraco at support@teraco.co.za for existing Teraco customers or connect@teraco.co.za for new customers.,yes,passage,8db9262d1422
+aws,ap-east-1,development,answered,Hong Kong,HK,22.27832,114.17469,Hong Kong: Asia Pacific (ap-east-1),yes,passage,9826f1450b88
+aws,ap-south-2,development,answered,Hyderabad,IN,17.38405,78.45636,AP-South-2 (Hyderabad),yes,passage,0b2ff8134e28
+aws,ap-southeast-3,development,answered,Jakarta,,-6.21462,106.84513,"DCI JK3, Jakarta",yes,passage,8db9262d1422
+aws,ap-southeast-5,development,abstained,,,,,,,,
+aws,ap-southeast-4,holdout,answered,Sydney,AU,-33.86785,151.20732,"Australia: Asia Pacific (Sydney) (ap-southeast-2), Asia Pacific (Melbourne) (ap-southeast-4)",yes,passage,9826f1450b88
+aws,ap-south-1,development,answered,Mumbai,IN,19.07283,72.88261,"Asia Pacific (Mumbai) Location How to request a connection Equinix, Mumbai Contact Equinix at https://digital.equinix.com/AWS-Direct-Connect . NetMagic DC2, Bangalore Contact NetMagic Sales and Marketing toll-free at 18001033130 or at marketing@netmagicsolutions.com . Sify Rabale, Mumbai Contact Sify at aws.directconnect@sifycorp.com . STT Delhi DC2, Delhi Contact STT at enquiry.AWSDX@sttelemediagdc.in . STT GDC Pvt. Ltd. VSB, Chennai Contact STT at enquiry.AWSDX@sttelemediagdc.in . STT Hyderabad DC1, Hyderabad Contact STT at enquiry.AWSDX@sttelemediagdc.in .",yes,passage,8db9262d1422
+aws,ap-southeast-6,holdout,abstained,,,,,,,,
+aws,ap-northeast-3,holdout,answered,Osaka,JP,34.69379,135.50107,AWS Region: Asia Pacific (Osaka),yes,passage,56b665c7b6ed
+aws,ap-northeast-2,development,answered,Seoul,KR,37.566,126.9784,Asia Pacific (Seoul) Location,yes,passage,8db9262d1422
+aws,ap-southeast-1,development,answered,Singapore,SG,1.28967,103.85007,Asia Pacific (Singapore) Location,yes,passage,8db9262d1422
+aws,ap-southeast-2,development,answered,Sydney,AU,-33.86785,151.20732,Asia Pacific (Sydney),yes,passage,9826f1450b88
+aws,ap-east-2,development,abstained,,,,,,,,
+aws,ap-southeast-7,holdout,answered,Bangkok,TH,13.75398,100.50144,"Lumphini Park, one of the largest green spaces in central Bangkok spanning",yes,passage,8345c078f002
+aws,ap-northeast-1,development,answered,Tokyo,JP,35.6895,139.69171,AP-Northeast-1 (Tokyo),yes,passage,0b2ff8134e28
+aws,ca-central-1,development,answered,Montreal,CA,45.50884,-73.58781,"Montreal, Quebec",yes,passage,a07abf880e4e
+aws,ca-west-1,development,answered,Calgary,CA,51.05011,-114.08529,Canada West (Calgary) (ca-west-1),yes,passage,9826f1450b88
+aws,eu-central-1,holdout,answered,Frankfurt,DE,50.11552,8.68417,Germany: Europe (Frankfurt) (eu-central-1),yes,passage,9826f1450b88
+aws,eu-west-1,development,answered,Dublin,IE,53.33306,-6.24889,EU-West-1 (Dublin),yes,passage,0b2ff8134e28
+aws,eu-west-2,development,answered,London,GB,51.50853,-0.12574,England: Europe (London) (eu-west-2),yes,passage,9826f1450b88
+aws,eu-south-1,development,unsupported,Milano,IT,,,Italy: Europe (Milan) (eu-south-1),no,passage,9826f1450b88
+aws,eu-west-3,development,answered,Paris,FR,48.85341,2.3488,France: Europe (Paris) (eu-west-3),yes,passage,9826f1450b88
+aws,eu-south-2,development,answered,Zaragoza,ES,41.65606,-0.87734,with three Availability Zones in Zaragoza and Huesca provinces,yes,passage,55b805ab507e
+aws,eu-north-1,development,answered,Stockholm,SE,59.32938,18.06871,Europe (Stockholm),yes,passage,56b665c7b6ed
+aws,eu-central-2,development,answered,Zurich,CH,47.36667,8.55,AWS Region: Europe (Zurich),yes,passage,56b665c7b6ed
+aws,il-central-1,development,answered,Tel Aviv,IL,32.08088,34.78057,Israel: Israel (Tel Aviv) (il-central-1),yes,passage,9826f1450b88
+aws,mx-central-1,development,abstained,,,,,,,,
+aws,me-south-1,development,unresolved,Bahrain,,,,Bahrain: Middle East (Bahrain) (me-south-1),yes,passage,9826f1450b88
+aws,me-central-1,development,answered,Abu Dhabi,AE,24.45118,54.39696,"Based out of Abu Dhabi, the new AWS could generate up to 6,000 jobs annually as businesses use the facility for their data centre needs.",yes,passage,2a2ad4a0c376
+aws,sa-east-1,development,answered,São Paulo,BR,-23.5475,-46.63611,Brazil: South America (São Paulo) (sa-east-1),yes,passage,9826f1450b88
+aws,cn-north-1,holdout,unsupported,Beijing,CN,,,operated by Sinnet,no,passage,b94d9602e228
+aws,cn-northwest-1,holdout,unresolved,Ningxia,CN,,,"Founded in 2015, NWCD is a licensed datacenter and cloud services provider, based in Ningxia, China.",yes,passage,b94d9602e228
+aws,eusc-de-east-1,holdout,abstained,,,,,,,,
+azure,australiacentral,holdout,answered,Canberra,AU,-35.28346,149.12807,Australia Central Canberra,yes,passage,cbb246071343
+azure,australiacentral2,development,answered,Canberra,AU,-35.28346,149.12807,Australia Central 2 Canberra,yes,passage,cbb246071343
+azure,australiaeast,holdout,answered,Sydney,AU,-33.86785,151.20732,alongside the Australia East region in Sydney,yes,passage,6ef0301727f8
+azure,australiasoutheast,development,answered,Melbourne,AU,-37.814,144.96332,Microsoft has announced it will launch a new Azure Availability Zone (AZ) in Melbourne to improve infrastructure redundancy in the vendor’s Australia Southeast data centre region.,yes,passage,6ef0301727f8
+azure,austriaeast,development,answered,Vienna,AT,48.20849,16.37208,Austria East 3 N/A Vienna Austria austriaeast,yes,passage,b19439dd1c76
+azure,belgiumcentral,development,answered,Brussels,BE,50.85045,4.34878,Belgium Central Brussels,yes,passage,cff558c9b04c
+azure,brazilsouth,development,answered,São Paulo,BR,-23.5475,-46.63611,Microsoft launched a São Paulo Azure cloud region – known as Brazil South – in Campinas in 2014.,yes,passage,c31629408fc4
+azure,brazilsoutheast,holdout,answered,Rio de Janeiro,BR,-22.90642,-43.18223,Brazil Southeast Rio de Janeiro,yes,passage,cbb246071343
+azure,canadacentral,development,answered,Toronto,CA,43.65333,-79.38389,Canada Central Toronto,yes,passage,cff558c9b04c
+azure,canadaeast,development,answered,Quebec City,CA,46.81228,-71.21454,Canada East Quebec City,yes,passage,cbb246071343
+azure,centralindia,holdout,answered,Pune,IN,18.51957,73.85535,India Datacenter region Location Available to Central India Pune All customers and partners,yes,passage,cbb246071343
+azure,centralus,development,answered,Cheyenne,US,41.13998,-104.82025,"Cheyenne, Wyoming",yes,passage,1742f4be9280
+azure,chilecentral,holdout,answered,Santiago,CL,-33.45694,-70.64827,Datacenter region Location Available to Chile Central Santiago,yes,passage,cff558c9b04c
+azure,denmarkeast,development,answered,Copenhagen,DK,55.67594,12.56553,Denmark Datacenter region Location Available to Denmark East Copenhagen Coming soon,yes,passage,cff558c9b04c
+azure,eastasia,holdout,answered,Hong Kong,HK,22.27832,114.17469,East Asia Hong Kong,yes,passage,cbb246071343
+azure,eastus,development,answered,Boydton,US,36.66764,-78.3875,Azure US East 2 availability region is hosted on the Microsoft data center campus in Boydton,yes,passage,fba0f8c37a78
+azure,eastus2,development,answered,Boydton,US,36.66764,-78.3875,Azure US East 2 availability region is hosted on the Microsoft data center campus in Boydton,yes,passage,fba0f8c37a78
+azure,francecentral,holdout,answered,Paris,FR,48.85341,2.3488,France Central Paris,yes,passage,cbb246071343
+azure,francesouth,development,answered,Marseille,FR,43.29695,5.38107,France South Marseille,yes,passage,cbb246071343
+azure,germanynorth,development,answered,Berlin,DE,52.52437,13.41053,Germany North Berlin,yes,passage,cbb246071343
+azure,germanywestcentral,development,answered,Frankfurt,DE,50.11552,8.68417,Germany West Central Frankfurt,yes,passage,cff558c9b04c
+azure,indiasouthcentral,holdout,answered,Hyderabad,IN,17.38405,78.45636,India South Central Hyderabad All customers and partners,yes,passage,cbb246071343
+azure,indonesiacentral,development,answered,Jakarta,ID,-6.21462,106.84513,Indonesia Central Jakarta,yes,passage,cbb246071343
+azure,israelcentral,development,unresolved,Modi'in,IL,,,Microsoft has announced that it will launch within a year the regional data center that it is constructing in the Modi'in area.,yes,passage,6b8d787cd7e2
+azure,italynorth,holdout,answered,Milan,IT,45.46427,9.18951,Italy North Milan,yes,passage,cbb246071343
+azure,japaneast,development,answered,Tokyo,JP,35.6895,139.69171,"Japan East Tokyo, Saitama",yes,passage,cbb246071343
+azure,japanwest,development,answered,Osaka,JP,34.69379,135.50107,Japan West Osaka,yes,passage,cbb246071343
+azure,koreacentral,development,answered,Seoul,KR,37.566,126.9784,Korea Datacenter region Location Available to Korea Central Seoul All customers and partners,yes,passage,cff558c9b04c
+azure,koreasouth,holdout,answered,Busan,KR,35.10168,129.03004,Korea South Busan,yes,passage,cff558c9b04c
+azure,malaysiawest,development,answered,Kuala Lumpur,MY,3.1412,101.68653,Available to Malaysia West Kuala Lumpur,yes,passage,cbb246071343
+azure,mexicocentral,holdout,answered,Queretaro,MX,20.58806,-100.38806,Mexico Central Queretaro,yes,passage,cbb246071343
+azure,newzealandnorth,holdout,answered,Auckland,NZ,-36.84853,174.76349,New Zealand North (Auckland),yes,passage,6ef0301727f8
+azure,northcentralus,development,unresolved,Illinois,US,,,North Central US Illinois,yes,passage,cbb246071343
+azure,northeurope,holdout,answered,Dublin,IE,53.33306,-6.24889,with a major facility in Dublin delivering Azure services for North Europe.,yes,passage,5647088bd040
+azure,norwayeast,development,answered,Oslo,NO,59.91273,10.74609,Norway East Oslo,yes,passage,cff558c9b04c
+azure,norwaywest,development,answered,Stavanger,NO,58.97005,5.73332,Norway West Stavanger,yes,passage,cbb246071343
+azure,polandcentral,development,answered,Warsaw,PL,52.22977,21.01178,Location Available to Poland Central Warsaw,yes,passage,cbb246071343
+azure,qatarcentral,development,answered,Doha,QA,25.28545,51.53096,Qatar Central 3 N/A Doha Qatar qatarcentral,yes,passage,b19439dd1c76
+azure,southafricanorth,development,answered,Johannesburg,ZA,-26.20227,28.04363,South Africa North Johannesburg,yes,passage,cff558c9b04c
+azure,southafricawest,development,answered,Cape Town,ZA,-33.92584,18.42322,South Africa West Cape Town,yes,passage,cff558c9b04c
+azure,southcentralus,development,answered,San Antonio,US,29.42412,-98.49363,the region is hosted in San Antonio,yes,passage,13d4f976795a
+azure,southindia,development,answered,Chennai,,13.08784,80.27847,South India Chennai All customers and partners,yes,passage,cbb246071343
+azure,southeastasia,development,answered,Singapore,SG,1.28967,103.85007,Southeast Asia Singapore,yes,passage,cbb246071343
+azure,southeastasia3,development,answered,Johor Bahru,MY,1.4655,103.7578,Southeast Asia 3 3 Malaysia West Johor Bahru Malaysia southeastasia3,yes,passage,b19439dd1c76
+azure,spaincentral,development,answered,Madrid,ES,40.4165,-3.70256,Available to Spain Central Madrid,yes,passage,cbb246071343
+azure,swedencentral,holdout,answered,Gävle,SE,60.67452,17.14174,Sweden Central Gävle,yes,passage,cbb246071343
+azure,switzerlandnorth,holdout,answered,Zürich,CH,47.36667,8.55,Available to Switzerland North Zürich,yes,passage,cbb246071343
+azure,switzerlandwest,development,answered,Geneva,CH,46.20222,6.14569,Switzerland West Geneva,yes,passage,cff558c9b04c
+azure,taiwannorth,development,answered,Taipei,TW,25.05306,121.52639,Taiwan Datacenter region Location Available to Taiwan North Taipei,yes,passage,cff558c9b04c
+azure,uaecentral,development,answered,Abu Dhabi,AE,24.45118,54.39696,UAE Central N/A UAE North Abu Dhabi UAE uaecentral,yes,passage,b19439dd1c76
+azure,uaenorth,holdout,answered,Dubai,AE,25.07725,55.30927,UAE North Dubai,yes,passage,cff558c9b04c
+azure,uksouth,holdout,answered,London,GB,51.50853,-0.12574,Available to UK South London,yes,passage,cff558c9b04c
+azure,ukwest,development,answered,Cardiff,GB,51.48,-3.18,UK West Cardiff All customers and partners,yes,passage,cff558c9b04c
+azure,westcentralus,development,answered,Cheyenne,US,41.13998,-104.82025,"two new Microsoft datacenters in Cheyenne, Wyoming—one in Cheyenne Business Parkway and another in Bison Business Park—enabling us to expand and support the growth and demand for our digital services in our West Central US datacenter region.",yes,passage,1742f4be9280
+azure,westeurope,development,answered,Amsterdam,NL,52.37403,4.88969,Microsoft services for West Europe are supported by a data center in Amsterdam,yes,passage,5647088bd040
+azure,westindia,development,answered,Mumbai,IN,19.07283,72.88261,West India Mumbai All customers and partners,yes,passage,cbb246071343
+azure,westus,development,abstained,,,,,,,,
+azure,westus2,development,answered,Washington,US,38.89511,-77.03637,West US 2 Washington All customers and partners,yes,passage,cbb246071343
+azure,westus3,development,answered,Phoenix,US,33.44838,-112.07404,East US Phoenix United States westus3,yes,passage,b19439dd1c76
+gcp,africa-south1,development,answered,Johannesburg,ZA,-26.20227,28.04363,"Johannesburg, South Africa",yes,passage,702d48e2a2a3
+gcp,asia-east1,development,answered,Changhua,TW,24.0692,120.5512,"Changhua, Taiwan asia-east1",yes,passage,79ae6d24bbea
+gcp,asia-east2,development,answered,Hong Kong,HK,22.27832,114.17469,"asia-east2 Hong Kong, APAC",yes,passage,3c0f239e8e73
+gcp,asia-northeast1,development,unsupported,Tokyo,JP,,,"asia-northeast2 Seoul, South Korea asia-northeast3 Sydney, NSW, Australia australia-southeast1 Geographic area Location Cloud region FedRAMP Moderate FedRAMP High DoD IL2 DoD IL4 DoD IL5 Wenya, Singapore asia-southeast1 What's next Deployment guidance for Gemini for Government FedRAMP implementation guidance on Google Cloud FedRAMP compliance offering DoD compliance offering Meet regulatory, compliance, and privacy needs Google Cloud trust center Google Cloud compliance resource center Send feedback Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License , and code samples are licensed u",no,passage,79ae6d24bbea
+gcp,asia-northeast2,holdout,answered,Osaka,JP,34.69379,135.50107,"Osaka, Japan asia-northeast2",yes,passage,79ae6d24bbea
+gcp,asia-northeast3,holdout,answered,Seoul,KR,37.566,126.9784,"asia-northeast3 Seoul, South Korea",yes,passage,3c0f239e8e73
+gcp,asia-south1,development,answered,Mumbai,IN,19.07283,72.88261,"asia-south1 Mumbai, India",yes,passage,3c0f239e8e73
+gcp,asia-south2,holdout,answered,Delhi,IN,28.65195,77.23149,"Delhi, India asia-south2",yes,passage,79ae6d24bbea
+gcp,asia-southeast1,development,answered,Jurong West,SG,1.35028,103.72278,"asia-southeast1 Jurong West, Singapore,",yes,passage,3c0f239e8e73
+gcp,asia-southeast2,holdout,answered,Jakarta,ID,-6.21462,106.84513,"Jakarta, Indonesia",yes,passage,79ae6d24bbea
+gcp,asia-southeast3,development,answered,Bangkok,TH,13.75398,100.50144,"Bangkok, Thailand",yes,passage,79ae6d24bbea
+gcp,australia-southeast1,development,answered,Sydney,AU,-33.86785,151.20732,"Sydney, NSW, Australia",yes,passage,79ae6d24bbea
+gcp,australia-southeast2,holdout,unsupported,Melbourne,AU,,,"Melbourne, Australia australia-southeast1",no,,
+gcp,europe-central2,holdout,answered,Warsaw,PL,52.22977,21.01178,"Warsaw, Poland europe-central2",yes,passage,79ae6d24bbea
+gcp,europe-north1,development,answered,Hamina,FI,60.56974,27.19794,"Hamina, Finland europe-north1",yes,passage,702d48e2a2a3
+gcp,europe-north2,holdout,answered,Stockholm,SE,59.32938,18.06871,"Stockholm, Sweden europe-north2",yes,passage,702d48e2a2a3
+gcp,europe-southwest1,development,answered,Madrid,ES,40.4165,-3.70256,"Madrid, Spain europe-southwest1",yes,passage,702d48e2a2a3
+gcp,europe-west1,development,unsupported,St. Ghislain,BE,,,"Region name St. Ghislain, Belgium europe-west1",no,,
+gcp,europe-west10,development,answered,Berlin,DE,52.52437,13.41053,"Berlin, Germany europe-west10",yes,passage,702d48e2a2a3
+gcp,europe-west12,development,unsupported,Turin,IT,,,"europe-west12 Turin, Italy",no,,
+gcp,europe-west2,holdout,answered,London,GB,51.50853,-0.12574,"London, England europe-west2",yes,passage,702d48e2a2a3
+gcp,europe-west3,development,answered,Frankfurt,DE,50.11552,8.68417,"Frankfurt, Germany europe-west3",yes,passage,702d48e2a2a3
+gcp,europe-west4,development,unresolved,Eemshaven,NL,,,"europe-west4; Eemshaven, Netherlands, Europe",yes,label,
+gcp,europe-west6,development,answered,Zurich,CH,47.36667,8.55,"Zurich, Switzerland europe-west6",yes,passage,702d48e2a2a3
+gcp,europe-west8,development,answered,Milan,IT,45.46427,9.18951,"Milan, Italy europe-west8",yes,passage,702d48e2a2a3
+gcp,europe-west9,development,answered,Paris,FR,48.85341,2.3488,"Paris, France europe-west9",yes,passage,702d48e2a2a3
+gcp,me-central1,development,answered,Doha,QA,25.28545,51.53096,"Doha, Qatar me-central1",yes,passage,702d48e2a2a3
+gcp,me-central2,development,answered,Dammam,SA,26.43442,50.10326,"Dammam, Saudi Arabia me-central2",yes,passage,702d48e2a2a3
+gcp,me-west1,development,answered,Tel Aviv,IL,32.08088,34.78057,"Tel Aviv, Israel me-west1",yes,passage,702d48e2a2a3
+gcp,northamerica-northeast1,holdout,answered,Montréal,CA,45.50884,-73.58781,"Montréal, Québec, North America",yes,passage,3c0f239e8e73
+gcp,northamerica-northeast2,development,answered,Toronto,CA,43.65333,-79.38389,"Toronto, Ontario, Canada northamerica-northeast2",yes,passage,79ae6d24bbea
+gcp,northamerica-south1,holdout,answered,Queretaro,MX,20.58806,-100.38806,"Queretaro, Mexico northamerica-south1",yes,passage,702d48e2a2a3
+gcp,southamerica-east1,holdout,answered,Osasco,BR,-23.5325,-46.79167,"southamerica-east1 Osasco, São Paulo, Brazil, South America",yes,passage,3c0f239e8e73
+gcp,southamerica-west1,holdout,answered,Santiago,CL,-33.45694,-70.64827,"southamerica-west1 Santiago, Chile, South America",yes,passage,3c0f239e8e73
+gcp,us-central1,development,unsupported,Council Bluffs,US,,,"Council Bluffs, Iowa, North America us-central1",no,,
+gcp,us-east1,development,answered,Moncks Corner,US,33.19632,-80.01429,"us-east1 Moncks Corner, South Carolina, North America",yes,passage,3c0f239e8e73
+gcp,us-east4,development,answered,Ashburn,US,39.04372,-77.48749,"us-east4 Ashburn, Virginia, North America",yes,passage,3c0f239e8e73
+gcp,us-east5,development,answered,Columbus,US,39.96118,-82.99879,"Columbus, Ohio us-east5",yes,passage,702d48e2a2a3
+gcp,us-south1,development,answered,Dallas,US,32.78306,-96.80667,"Dallas, Texas us-south1",yes,passage,702d48e2a2a3
+gcp,us-west1,holdout,answered,The Dalles,US,45.59456,-121.17868,"The Dalles, OR, USA us-west1",yes,passage,79ae6d24bbea
+gcp,us-west2,development,answered,Los Angeles,US,34.05223,-118.24368,"Los Angeles, California us-west2",yes,passage,702d48e2a2a3
+gcp,us-west3,holdout,answered,Salt Lake City,US,40.76078,-111.89105,"Salt Lake City, Utah us-west3",yes,passage,702d48e2a2a3
+gcp,us-west4,development,answered,Las Vegas,US,36.17497,-115.13722,"Las Vegas, Nevada, North America",yes,passage,3c0f239e8e73
+alibaba,cn-qingdao,development,answered,Qingdao,CN,36.06488,120.38042,China (Qingdao) cn-qingdao 2 Qingdao Zone B cn-qingdao-b Qingdao Zone C cn-qingdao-c,yes,passage,5d83de88596d
+alibaba,cn-beijing,development,answered,Beijing,CN,39.9075,116.39723,"For example, the China (Beijing) region has data centers in Beijing.",yes,passage,5d83de88596d
+alibaba,cn-zhangjiakou,development,answered,Zhangjiakou,CN,40.78341,114.87139,China (Zhangjiakou) cn-zhangjiakou 3 Zhangjiakou Zone A cn-zhangjiakou-a Zhangjiakou Zone B cn-zhangjiakou-b Zhangjiakou Zone C cn-zhangjiakou-c,yes,passage,0d6c7338f6b3
+alibaba,cn-huhehaote,development,answered,Hohhot,CN,40.81056,111.65222,China (Hohhot) cn-huhehaote 2 Hohhot Zone A cn-huhehaote-a Hohhot Zone B cn-huhehaote-b,yes,passage,0d6c7338f6b3
+alibaba,cn-wulanchabu,development,answered,Ulanqab,CN,40.993,113.133,China (Ulanqab) cn-wulanchabu 4 Ulanqab Zone A cn-wulanchabu-a Ulanqab Zone B cn-wulanchabu-b Ulanqab Zone C cn-wulanchabu-c Ulanqab Zone D cn-wulanchabu-d,yes,passage,0d6c7338f6b3
+alibaba,cn-hangzhou,holdout,answered,Hangzhou,CN,30.29365,120.16142,China (Hangzhou),yes,passage,0d6c7338f6b3
+alibaba,cn-shanghai,holdout,unsupported,Shanghai,CN,,,China (Shanghai) cn-shanghai 12 Shanghai Zone A cn-shanghai-a Shanghai Zone B cn-shanghai-b Shanghai Zone C cn-shanghai-c Shanghai Zone D cn-shanghai-d Shanghai Zone E cn-shanghai-e Shanghai Zone F cn-shanghai-f Shanghai Zone G cn-shanghai-g Shanghai Zone K cn-shanghai-k Shanghai Zone L cn-shanghai-l Shanghai Zone M cn-shanghai-m Shanghai Zone N cn-shanghai-n Shanghai Zone O cn-shanghai-o China (Wuhan - Local Region) cn-wuhan-lr 1 Wuhan - Local Region Zone A cn-wuhan-lr-a China (Shenzhen) cn-shenzhen 6 Shenzhen Zone A cn-shenzhen-a Shenzhen Zone B cn-shenzhen-b Shenzhen Zone C cn-shenzhen-c Shenzhen Zone D cn-shenzhen-d Shenzhen Zone E cn-shenzhen-e Shenzhen Zone F cn-shenzhen-f China (Heyuan) cn-heyuan 3 Heyuan Zone A cn-heyuan-a Heyuan Zone B cn-heyuan-b Heyuan Zone C cn-heyuan-c China (Guangzhou) cn-guangzhou 2 Guangzhou Zone A cn-guangzhou-a Guangzhou Zone B cn-guangzhou-b China (Chengdu) cn-chengdu 3 Chengdu Zone A cn-chengdu-a Chengdu Zone B cn-chengdu-b Chengdu Zone C cn-chengdu-c China (Zhongwei) cn-zhongwei 2 Zhongwei Zone A cn-zhongwei-a Zhongwei Zone B cn-zhongwei-b China (Hong Kong) cn-hongkong 3 Hong Kong Zone B cn-hongkong-b Hong Kong Zone C cn-hongkong,no,,
+alibaba,cn-wuhan-lr,holdout,answered,Wuhan,CN,30.58333,114.26667,China (Wuhan - Local Region),yes,passage,0d6c7338f6b3
+alibaba,cn-shenzhen,holdout,answered,Shenzhen,CN,22.54554,114.0683,China (Shenzhen) cn-shenzhen 6 Shenzhen Zone A cn-shenzhen-a Shenzhen Zone B cn-shenzhen-b Shenzhen Zone C cn-shenzhen-c Shenzhen Zone D cn-shenzhen-d Shenzhen Zone E cn-shenzhen-e Shenzhen Zone F cn-shenzhen-f,yes,passage,d52777cb9b06
+alibaba,cn-heyuan,holdout,answered,Heyuan,CN,23.73333,114.68333,China (Heyuan) cn-heyuan 3 Heyuan Zone A cn-heyuan-a Heyuan Zone B cn-heyuan-b Heyuan Zone C cn-heyuan-c,yes,passage,5d83de88596d
+alibaba,cn-guangzhou,development,answered,Guangzhou,CN,23.11667,113.25,China (Guangzhou) cn-guangzhou 2 Guangzhou Zone A cn-guangzhou-a Guangzhou Zone B cn-guangzhou-b,yes,passage,d52777cb9b06
+alibaba,cn-chengdu,holdout,answered,Chengdu,CN,30.66667,104.06667,China (Chengdu) cn-chengdu,yes,passage,d52777cb9b06
+alibaba,cn-zhongwei,holdout,answered,Zhongwei,CN,37.51129,105.19067,China (Zhongwei),yes,passage,0d6c7338f6b3
+alibaba,cn-hongkong,development,answered,Hong Kong,HK,22.27832,114.17469,China (Hong Kong) cn-hongkong,yes,passage,5d83de88596d
+alibaba,ap-southeast-1,development,answered,Singapore,SG,1.28967,103.85007,Singapore,yes,passage,798fe72ea5a5
+alibaba,ap-southeast-3,development,answered,Kuala Lumpur,MY,3.1412,101.68653,"For example, the Malaysia (Kuala Lumpur) region has data centers in Kuala Lumpur.",yes,passage,0d6c7338f6b3
+alibaba,ap-southeast-5,development,answered,Jakarta,ID,-6.21462,106.84513,Indonesia (Jakarta) ap-southeast-5 3 Jakarta Zone A ap-southeast-5a Jakarta Zone B ap-southeast-5b Jakarta Zone C ap-southeast-5c,yes,passage,5d83de88596d
+alibaba,ap-southeast-6,holdout,answered,Manila,,14.6042,120.9822,Philippines (Manila),yes,passage,a4ad8fd6b211
+alibaba,ap-southeast-7,holdout,answered,Bangkok,TH,13.75398,100.50144,Thailand (Bangkok) Availability Zone: 2 Released in 2022,yes,passage,a4ad8fd6b211
+alibaba,ap-southeast-8,holdout,answered,Kuala Lumpur,MY,3.1412,101.68653,Malaysia (Kuala Lumpur) Availability Zone: 3 Released in 2017,yes,passage,a4ad8fd6b211
+alibaba,ap-northeast-1,development,answered,Tokyo,JP,35.6895,139.69171,Japan (Tokyo) Availability Zone: 5 Released in 2016,yes,passage,a4ad8fd6b211
+alibaba,ap-northeast-2,holdout,answered,Seoul,KR,37.566,126.9784,South Korea (Seoul) Availability Zone: 3 Released in 2022,yes,passage,a4ad8fd6b211
+alibaba,us-west-1,development,unresolved,Silicon Valley,US,,,US (Silicon Valley) us-west-1 2 Silicon Valley Zone A us-west-1a Silicon Valley Zone B us-west-1b,yes,passage,d52777cb9b06
+alibaba,us-east-1,development,unresolved,Virginia,US,,,US (Virginia) us-east-1 2 Virginia Zone A us-east-1a Virginia Zone B us-east-1b,yes,passage,d52777cb9b06
+alibaba,eu-central-1,holdout,answered,Frankfurt,DE,50.11552,8.68417,Germany (Frankfurt) eu-central-1 3 Frankfurt Zone A eu-central-1a Frankfurt Zone B eu-central-1b Frankfurt Zone C eu-central-1c,yes,passage,5d83de88596d
+alibaba,eu-west-1,development,answered,London,GB,51.50853,-0.12574,UK (London) eu-west-1 2 London Zone A eu-west-1a London Zone B eu-west-1b,yes,passage,0d6c7338f6b3
+alibaba,eu-west-2,holdout,answered,Paris,FR,48.85341,2.3488,France (Paris),yes,passage,5d83de88596d
+alibaba,me-east-1,development,answered,Dubai,,25.07725,55.30927,UAE (Dubai) me-east-1 2 Dubai Zone A me-east-1a Dubai Zone B me-east-1b,yes,passage,5d83de88596d
+alibaba,me-central-1,development,unsupported,Riyadh,,,,Riyadh Zone A me-central-1 2 Riyadh Zone A me-central-1a Riyadh Zone B me-central-1b,no,,
+alibaba,na-south-1,holdout,unresolved,Mexico,,,,Mexico na-south-1 2 Mexico Zone A na-south-1a Mexico Zone B na-south-1b,yes,passage,5d83de88596d
+alibaba,sa-east-1,development,answered,São Paulo,BR,-23.5475,-46.63611,Brazil (São Paulo) sa-east-1 3 São Paulo Zone A sa-east-1a São Paulo Zone B sa-east-1b,yes,passage,5d83de88596d
+oracle,ap-sydney-1,development,answered,Sydney,AU,-33.86785,151.20732,"Australia East (Sydney) ap-sydney-1 Sydney, Australia",yes,passage,f443cb1f6bd3
+oracle,ap-melbourne-1,development,answered,Melbourne,AU,-37.814,144.96332,"Australia Southeast (Melbourne) ap-melbourne-1 Melbourne, Australia",yes,passage,f443cb1f6bd3
+oracle,sa-saopaulo-1,development,answered,Sao Paulo,BR,-23.5475,-46.63611,"Brazil East (Sao Paulo) sa-saopaulo-1 Sao Paulo, Brazil GRU OC1 1",yes,passage,f443cb1f6bd3
+oracle,sa-vinhedo-1,development,answered,Vinhedo,BR,-23.02972,-46.97528,"Brazil Southeast (Vinhedo) sa-vinhedo-1 Vinhedo, Brazil",yes,passage,f443cb1f6bd3
+oracle,ca-montreal-1,holdout,answered,Montreal,CA,45.50884,-73.58781,"Canada Southeast (Montreal) ca-montreal-1 Montreal, Canada",yes,passage,f443cb1f6bd3
+oracle,ca-toronto-1,development,answered,Toronto,CA,43.65333,-79.38389,"Canada Southeast (Toronto) ca-toronto-1 Toronto, Canada",yes,passage,f443cb1f6bd3
+oracle,sa-santiago-1,holdout,answered,Santiago,CL,-33.45694,-70.64827,"Chile Central (Santiago) sa-santiago-1 Santiago, Chile SCL OC1 1",yes,passage,f443cb1f6bd3
+oracle,sa-valparaiso-1,holdout,answered,Valparaiso,CL,-33.036,-71.62963,"Chile West (Valparaiso) sa-valparaiso-1 Valparaiso, Chile VAP OC1 1",yes,passage,f443cb1f6bd3
+oracle,sa-bogota-1,development,answered,Bogota,CO,4.60971,-74.08175,"Colombia Central (Bogota) sa-bogota-1 Bogota, Colombia BOG OC1 1",yes,passage,f443cb1f6bd3
+oracle,eu-paris-1,holdout,answered,Paris,FR,48.85341,2.3488,"France Central (Paris) eu-paris-1 Paris, France",yes,passage,f443cb1f6bd3
+oracle,eu-marseille-1,holdout,unresolved,Marsei,,,,France South (Marseille) eu-marseille-1 Marsei,yes,passage,f443cb1f6bd3
+oracle,eu-frankfurt-1,holdout,answered,Frankfurt,DE,50.11552,8.68417,Frankfurt region (eu-frankfurt-1),yes,passage,397f83cc2d98
+oracle,ap-hyderabad-1,holdout,answered,Hyderabad,IN,17.38405,78.45636,India South (Hyderabad),yes,passage,fd68c9b6d5be
+oracle,ap-mumbai-1,development,answered,Mumbai,IN,19.07283,72.88261,India West (Mumbai),yes,passage,fd68c9b6d5be
+oracle,ap-batam-1,development,answered,Batam,ID,1.14937,104.02491,Indonesia North (Batam),yes,passage,066cd55fc647
+oracle,il-jerusalem-1,development,answered,Jerusalem,IL,31.76904,35.21633,Israel Central (Jerusalem),yes,passage,fd68c9b6d5be
+oracle,eu-milan-1,holdout,answered,Milan,IT,45.46427,9.18951,"Italy Northwest (Milan); Milan, Italy",yes,label,
+oracle,eu-turin-1,development,answered,Turin,IT,45.07049,7.68682,"Italy North (Turin); Turin, Italy",yes,label,
+oracle,ap-osaka-1,holdout,answered,Osaka,JP,34.69379,135.50107,"Japan Central (Osaka), KIX",yes,passage,5d909c7c3744
+oracle,ap-tokyo-1,development,answered,Tokyo,JP,35.6895,139.69171,"Japan East (Tokyo), NRT",yes,passage,5d909c7c3744
+oracle,ap-kulai-2,holdout,abstained,,,,,,,,
+oracle,mx-queretaro-1,holdout,abstained,,,,,,,,
+oracle,mx-monterrey-1,development,answered,Monterrey,MX,25.68435,-100.31721,Mexico Northeast (Monterrey),yes,passage,fd68c9b6d5be
+oracle,af-casablanca-1,development,answered,Casablanca,MA,33.58831,-7.61138,Morocco West (Casablanca) no Live,yes,passage,066cd55fc647
+oracle,eu-amsterdam-1,development,answered,Amsterdam,NL,52.37403,4.88969,Netherlands Northwest (Amsterdam),yes,passage,fd68c9b6d5be
+oracle,me-riyadh-1,development,answered,Riyadh,SA,24.68773,46.72185,Saudi Arabia Central (Riyadh),yes,passage,066cd55fc647
+oracle,me-jeddah-1,development,answered,Jeddah,SA,21.49012,39.18624,Saudi Arabia West (Jeddah),yes,passage,fd68c9b6d5be
+oracle,eu-jovanovac-1,holdout,unresolved,Jovanovac,,,,"Jovanovac,Serbia",yes,label,
+oracle,ap-singapore-1,development,answered,Singapore,SG,1.28967,103.85007,"Singapore (Singapore), SIN",yes,passage,5d909c7c3744
+oracle,ap-singapore-2,development,answered,Singapore,SG,1.28967,103.85007,"Singapore (Singapore), SIN",yes,passage,5d909c7c3744
+oracle,af-johannesburg-1,development,answered,Johannesburg,ZA,-26.20227,28.04363,South Africa Central (Johannesburg),yes,passage,fd68c9b6d5be
+oracle,ap-seoul-1,development,answered,Seoul,KR,37.566,126.9784,South Korea Central (Seoul),yes,passage,fd68c9b6d5be
+oracle,ap-chuncheon-1,development,answered,Chuncheon,KR,37.88302,127.7289,South Korea North (Chuncheon),yes,passage,fd68c9b6d5be
+oracle,eu-madrid-1,holdout,answered,Madrid,ES,40.4165,-3.70256,Spain Central (Madrid),yes,passage,fd68c9b6d5be
+oracle,eu-madrid-3,development,abstained,,,,,,,,
+oracle,eu-stockholm-1,development,answered,Stockholm,SE,59.32938,18.06871,Sweden Central (Stockholm),yes,passage,fd68c9b6d5be
+oracle,eu-zurich-1,development,answered,Zurich,CH,47.36667,8.55,Switzerland North (Zurich),yes,passage,fd68c9b6d5be
+oracle,me-abudhabi-1,holdout,answered,Abu Dhabi,AE,24.45118,54.39696,UAE Central (Abu Dhabi),yes,passage,fd68c9b6d5be
+oracle,me-dubai-1,development,answered,Dubai,,25.07725,55.30927,UAE East (Dubai),yes,passage,fd68c9b6d5be
+oracle,uk-london-1,development,answered,London,GB,51.50853,-0.12574,UK South (London),yes,passage,fd68c9b6d5be
+oracle,uk-cardiff-1,development,answered,Newport,GB,51.58774,-2.99835,UK West (Newport),yes,passage,fd68c9b6d5be
+oracle,us-ashburn-1,development,answered,Ashburn,US,39.04372,-77.48749,US East (Ashburn),yes,passage,fd68c9b6d5be
+oracle,us-chicago-1,development,answered,Chicago,US,41.85003,-87.65005,"US Midwest (Chicago); Chicago, IL",yes,label,
+oracle,us-phoenix-1,development,answered,Phoenix,US,33.44838,-112.07404,"US West (Phoenix); Phoenix, AZ",yes,label,
+oracle,us-sanjose-1,holdout,answered,San Jose,US,37.33939,-121.89496,"US West (San Jose) us-sanjose-1 San Jose, CA",yes,passage,f443cb1f6bd3
+hetzner,fsn1,holdout,answered,Falkenstein,DE,50.47788,12.37129,DE Falkenstein fsn1,yes,passage,3103d8bd88cb
+hetzner,ash,development,answered,Ashburn,US,39.04372,-77.48749,"US Ashburn, VA ash",yes,passage,3103d8bd88cb
+hetzner,hil,development,answered,Hillsboro,US,45.52289,-122.98983,"US Hillsboro, OR hil",yes,passage,3103d8bd88cb
+hetzner,sin,development,answered,Singapore,SG,1.28967,103.85007,SG Singapore,yes,passage,3103d8bd88cb
+hetzner,nbg1,holdout,answered,Nuremberg,DE,49.45421,11.07752,Nuremberg,yes,passage,dc610f65a1d8
+hetzner,hel1,development,answered,Helsinki,FI,60.16952,24.93545,FI Helsinki hel1,yes,passage,3103d8bd88cb
+vultr,ams,development,abstained,,,,,,,,
+vultr,atl,development,answered,Atlanta,US,33.749,-84.38798,"""city"":""Atlanta""",yes,passage,90fd4f3a8451
+vultr,blr,holdout,unsupported,Bangalore,IN,,,blr,no,passage,90fd4f3a8451
+vultr,bom,holdout,answered,Mumbai,IN,19.07283,72.88261,Mumbai,yes,passage,90fd4f3a8451
+vultr,cdg,development,answered,Paris,FR,48.85341,2.3488,"Paris; Paris, FR",yes,label,
+vultr,del,development,abstained,,,,,,,,
+vultr,dfw,development,abstained,,,,,,,,
+vultr,ewr,development,answered,Newark,US,40.73566,-74.17237,"The region ID value ewr sets the Newark, New Jersey Vultr location as the target deployment region.",yes,passage,713f34acaf61
+vultr,fra,development,abstained,,,,,,,,
+vultr,hnl,development,abstained,,,,,,,,
+vultr,icn,development,abstained,,,,,,,,
+vultr,itm,development,abstained,,,,,,,,
+vultr,jnb,development,abstained,,,,,,,,
+vultr,lax,holdout,abstained,,,,,,,,
+vultr,lhr,development,abstained,,,,,,,,
+vultr,mad,holdout,abstained,,,,,,,,
+vultr,man,development,abstained,,,,,,,,
+vultr,mel,holdout,abstained,,,,,,,,
+vultr,mex,development,abstained,,,,,,,,
+vultr,mia,holdout,abstained,,,,,,,,
+vultr,mxp,development,abstained,,,,,,,,
+vultr,nrt,development,abstained,,,,,,,,
+vultr,ord,development,abstained,,,,,,,,
+vultr,sao,holdout,abstained,,,,,,,,
+vultr,scl,development,abstained,,,,,,,,
+vultr,sea,holdout,answered,East Wenatchee,US,47.41568,-120.29313,"Sabey Data Centers' SDC Columbia location in East Wenatchee, Washington.",yes,passage,ca319f9b4248
+vultr,sgp,development,answered,Singapore,SG,1.28967,103.85007,Location : Singapore sgp,yes,passage,713f34acaf61
+vultr,sjc,holdout,abstained,,,,,,,,
+vultr,sto,holdout,abstained,,,,,,,,
+vultr,syd,development,abstained,,,,,,,,
+vultr,tlv,holdout,abstained,,,,,,,,
+vultr,waw,development,abstained,,,,,,,,
+vultr,yto,holdout,abstained,,,,,,,,
+digitalocean,nyc1,holdout,answered,New York City,US,40.71427,-74.00597,"NYC1 New York City, United States",yes,passage,ea728ef24aac
+digitalocean,nyc2,development,answered,New York City,US,40.71427,-74.00597,"NYC2 New York City, United States nyc2",yes,passage,ea728ef24aac
+digitalocean,nyc3,development,answered,New York City,US,40.71427,-74.00597,"NYC3 New York City, United States nyc3",yes,passage,ea728ef24aac
+digitalocean,ams3,development,answered,Amsterdam,NL,52.37403,4.88969,"AMS3 Amsterdam, the Netherlands",yes,passage,ea728ef24aac
+digitalocean,sfo2,development,answered,San Francisco,US,37.77493,-122.41942,"SFO2 San Francisco, United States",yes,passage,ea728ef24aac
+digitalocean,sfo3,holdout,answered,San Francisco,US,37.77493,-122.41942,"SFO3 San Francisco, United States",yes,passage,ea728ef24aac
+digitalocean,sgp1,development,answered,Singapore,SG,1.28967,103.85007,SGP1 Singapore,yes,passage,ea728ef24aac
+digitalocean,lon1,holdout,answered,London,GB,51.50853,-0.12574,"LON1 London, United Kingdom",yes,passage,ea728ef24aac
+digitalocean,fra1,holdout,answered,Frankfurt,DE,50.11552,8.68417,"FRA1 Frankfurt, Germany",yes,passage,ea728ef24aac
+digitalocean,tor1,development,answered,Toronto,CA,43.65333,-79.38389,"TOR1 Toronto, Canada",yes,passage,ea728ef24aac
+digitalocean,blr1,holdout,answered,Bangalore,IN,12.97194,77.59369,"BLR1 Bangalore, India",yes,passage,ea728ef24aac
+digitalocean,syd1,development,answered,Sydney,AU,-33.86785,151.20732,"SYD1 Sydney, Australia",yes,passage,ea728ef24aac
+digitalocean,atl1,development,answered,Atlanta,US,33.749,-84.38798,"ATL1 Atlanta, United States",yes,passage,ea728ef24aac
+digitalocean,ric1,holdout,answered,Richmond,US,37.55376,-77.46026,"RIC1 Richmond, United States",yes,passage,ea728ef24aac
+digitalocean,mkc1,holdout,answered,Kansas City,US,39.09973,-94.57857,"MKC1 Kansas City, United States mkc1",yes,passage,ea728ef24aac
+digitalocean,mem1,development,answered,Memphis,US,35.14953,-90.04898,"MEM1 Memphis, United States",yes,passage,ea728ef24aac
+tencent,ap-beijing,development,answered,Beijing,CN,39.9075,116.39723,North China (Beijing) ap-beijing 6 Beijing Zone 3 ap-beijing-3,yes,passage,db99578437bb
+tencent,ap-shanghai,development,answered,Shanghai,CN,31.22222,121.45806,East China (Shanghai) ap-shanghai 7 Shanghai Zone 2 ap-shanghai-2,yes,passage,db99578437bb
+tencent,ap-nanjing,development,answered,Nanjing,CN,32.06167,118.77778,East China (Nanjing),yes,passage,db99578437bb
+tencent,ap-guangzhou,development,answered,Guangzhou,CN,23.11667,113.25,China Region AZ South China (Guangzhou) ap-guangzhou Guangzhou Zone 3 ap-guangzhou-3,yes,passage,822ac580323a
+tencent,ap-chengdu,development,unsupported,成都,CN,,,成都电信西区803DC,no,passage,8e08407c5075
+tencent,ap-chongqing,holdout,answered,Chongqing,CN,29.56026,106.55771,Chongqing ap-chongqing Chongqing Zone 1 ap-chongqing-1,yes,passage,822ac580323a
+tencent,ap-zhongwei,development,answered,Zhongwei,,37.51129,105.19067,Zhongwei Self-driving Cloud ap-zhongwei-adc 1 Zhongwei Self-driving Cloud Zone 1 * ap-zhongwei-adc-1,yes,passage,842aca5b1999
+tencent,ap-hongkong,development,unresolved,Hong Kong,CN,,,"Hong Kong (China), Macao (China), and Taiwan (China); Hong Kong (China), Macao (China), and Taiwan (China); Hong Kong Zone 1",yes,label,
+tencent,ap-singapore,holdout,answered,Singapore,SG,1.28967,103.85007,Singapore Zone 1 (Singapore nodes can be used to cover the Southeast Asia region),yes,passage,822ac580323a
+tencent,ap-johorbahru,development,answered,Johor Bahru,MY,1.4655,103.7578,Asia Pacific and the Middle East (Johor Bahru),yes,passage,842aca5b1999
+tencent,ap-jakarta,development,answered,Jakarta,ID,-6.21462,106.84513,Jakarta Zone 1 (Jakarta nodes can be used to cover the Southeast Asia region),yes,passage,822ac580323a
+tencent,ap-seoul,development,answered,Seoul,KR,37.566,126.9784,Seoul (ap-seoul),yes,passage,03cedc0372a4
+tencent,ap-tokyo,development,answered,Tokyo,JP,35.6895,139.69171,Added support for the Tokyo (Japan) region COS is available in the new Tokyo (Japan) Region (ap-tokyo).,yes,passage,03cedc0372a4
+tencent,ap-osaka,development,abstained,,,,,,,,
+tencent,ap-bangkok,holdout,answered,Bangkok,TH,13.75398,100.50144,Bangkok (ap-bangkok) regions,yes,passage,03cedc0372a4
+tencent,me-saudi-arabia,development,answered,Riyadh,SA,24.68773,46.72185,Riyadh region goes live,yes,passage,03cedc0372a4
+tencent,sa-saopaulo,development,answered,São Paulo,BR,-23.5475,-46.63611,South America sa-saopaulo 1 São Paulo Zone 1 sa-saopaulo-1,yes,passage,842aca5b1999
+tencent,na-queretaro,holdout,answered,Queretaro,,20.58806,-100.38806,Europe and the Americas (Queretaro) Coverage: North America na-queretaro 1 Queretaro Zone 1 * na-queretaro-1,yes,passage,842aca5b1999
+tencent,na-siliconvalley,development,unsupported,San Jose,US,,,Coverage: Western United States.,no,passage,db99578437bb
+tencent,na-ashburn,holdout,answered,Ashburn,US,39.04372,-77.48749,"Virginia (Ashburn, na-ashburn)",yes,passage,03cedc0372a4
+tencent,eu-frankfurt,development,answered,Frankfurt,DE,50.11552,8.68417,Europe and the Americas (Frankfurt) Coverage: Europe. eu-frankfurt,yes,passage,db99578437bb
+ovhcloud,SBG,development,answered,Strasbourg,FR,48.58392,7.74553,"Strasbourg (SBG, France)",yes,passage,53e1b03c12aa
+ovhcloud,GRA,holdout,answered,Gravelines,FR,50.98651,2.12807,"Gravelines, France",yes,passage,3504b11e5ed5
+ovhcloud,RBX,development,answered,Roubaix,FR,50.69421,3.17456,"Roubaix (RBX, France)",yes,passage,53e1b03c12aa
+ovhcloud,PAR,development,answered,Paris,FR,48.85341,2.3488,"The first 3-AZ Region, comprising three Availability Zones, is now available and located in Paris, France.",yes,passage,7b9e89e8e8ed
+ovhcloud,MIL,holdout,answered,Milan,IT,45.46427,9.18951,"Milan, Italy: in 2025, OVHcloud announced the opening of a new datacenter near Milan.",yes,passage,3504b11e5ed5
+ovhcloud,ERI,development,answered,Erith,GB,51.48315,0.17484,Europe (United Kingdom - Erith),yes,passage,38fd0a87f79b
+ovhcloud,LIM,holdout,answered,Frankfurt,DE,50.11552,8.68417,"Frankfurt, Alemanha",yes,passage,98d94bffab3c
+ovhcloud,WAW,development,answered,Warsaw,PL,52.22977,21.01178,"CLEVER CLOUD -OVHCloud, Warsaw WAW-1 - DATA CENTER Kazimierza Kamińskiego 6, Ożarów Mazowiecki, Poland Hébergement et Stockage des données 05-850 Warsaw, PL – Pologne",yes,passage,40ea66a2887e
+ovhcloud,BHS,development,answered,Montreal,CA,45.50884,-73.58781,Montreal (Beauharnois),yes,passage,b6854131f18a
+ovhcloud,TOR,development,answered,Cambridge,CA,43.3601,-80.31269,Toronto (Cambridge),yes,passage,b6854131f18a
+ovhcloud,HIL,holdout,answered,Hillsboro,US,45.52289,-122.98983,"Telecommunications Hillsboro (HIL, United States) 1 1 2016",yes,passage,53e1b03c12aa
+ovhcloud,VIN,holdout,unresolved,Vint Hill,US,,,"Washington DC (Vint Hill, Virginia)",yes,passage,b6854131f18a
+ovhcloud,SGP,development,answered,Singapore,SG,1.28967,103.85007,"Singapore, Singapura",yes,passage,98d94bffab3c
+ovhcloud,SYD,development,answered,Mascot,AU,-33.92598,151.19347,Mascot,yes,passage,df2e263b6159
+ovhcloud,MUM,development,answered,Mumbai,IN,19.07283,72.88261,"Mumbai , Índia",yes,passage,98d94bffab3c
+ibm,us-south,development,answered,Dallas,US,32.78306,-96.80667,"For example, use Dallas for the metro location and then Dallas 10 (dal10) for the data center.",yes,passage,5c0e4d4f3a34
+ibm,br-sao,holdout,answered,Sao Paulo,BR,-23.5475,-46.63611,"SAO01 (Data Center) managed by Ascenty located in Sao Paulo, Brazil",yes,passage,69a60f7e7d85
+ibm,ca-tor,development,answered,Toronto,CA,43.65333,-79.38389,Toronto ( ca-tor ),yes,passage,5c0e4d4f3a34
+ibm,us-east,development,answered,Washington DC,US,38.89511,-77.03637,Washington DC ( us-east ),yes,passage,5c0e4d4f3a34
+ibm,eu-de,holdout,answered,Frankfurt,DE,50.11552,8.68417,"Frankfurt, Germany",yes,passage,a8c8d02d7de4
+ibm,eu-gb,development,answered,London,GB,51.50853,-0.12574,London 02 LON02 London 04 LON04 London 05 LON05 London 06 LON06,yes,passage,5c0e4d4f3a34
+ibm,eu-es,development,answered,Madrid,ES,40.4165,-3.70256,"MAD02 Madrid, Spain",yes,passage,94b576bafa9c
+ibm,au-syd,development,answered,Sydney,AU,-33.86785,151.20732,"SYD01 (Data Center) managed by Global Switch located in Sydney, Australia",yes,passage,89e3f823c65f
+ibm,jp-tok,development,answered,Tokyo,JP,35.6895,139.69171,"TOK02 (Data Center) managed by AT Tokyo located in Tokyo, Japan",yes,passage,89e3f823c65f
+ibm,in-che,development,answered,Chennai,IN,13.08784,80.27847,Chennai - Airtel ( in-che ),yes,passage,5c0e4d4f3a34
+ibm,ca-mon,development,answered,Montreal,CA,45.50884,-73.58781,"MON01 (Data Center) managed by COLO-D located in Montreal, Canada",yes,passage,69a60f7e7d85
+ibm,in-mum,development,answered,Mumbai,IN,19.07283,72.88261,Mumbai - Airtel ( in-mum ),yes,passage,5c0e4d4f3a34
+ibm,jp-osa,development,answered,Osaka,JP,34.69379,135.50107,"OSA2X (Data Center) managed by IDC Frontier located in Osaka, Japan",yes,passage,2daf78c5ac2a
+akamai,gb-lon,development,answered,London,gb,51.50853,-0.12574,"London, UK eu-west Limited availability London, UK Expansion gb-lon Full availability",yes,passage,636205a51078
+akamai,se-sto,development,answered,Stockholm,SE,59.32938,18.06871,"Stockholm, SE",yes,passage,636205a51078
+akamai,es-mad,holdout,answered,Madrid,ES,40.4165,-3.70256,"Madrid, ES es-mad Limited availability",yes,passage,636205a51078
+akamai,in-maa,development,answered,Chennai,IN,13.08784,80.27847,IN-MAA (Chennai),yes,passage,5157bc42f1d3
+akamai,jp-osa,holdout,answered,Osaka,JP,34.69379,135.50107,"Osaka, JP jp-osa Full availability",yes,passage,636205a51078
+akamai,it-mil,holdout,answered,Milan,IT,45.46427,9.18951,"Milan, IT it-mil Full availability",yes,passage,636205a51078
+akamai,us-mia,development,answered,Miami,,25.77427,-80.19366,"Miami, FL us-mia Full availability",yes,passage,636205a51078
+akamai,id-cgk,development,answered,Jakarta,ID,-6.21462,106.84513,ID-CGK (Jakarta),yes,passage,5157bc42f1d3
+akamai,us-lax,development,answered,Los Angeles,US,34.05223,-118.24368,"Los Angeles, CA us-lax Full availability",yes,passage,636205a51078
+akamai,nl-ams,development,answered,Amsterdam,NL,52.37403,4.88969,"Amsterdam, NL nl-ams Full availability",yes,passage,636205a51078
+akamai,au-mel,development,answered,Melbourne,AU,-37.814,144.96332,"Melbourne, AU au-mel Limited availability",yes,passage,636205a51078
+akamai,in-bom-2,holdout,answered,Mumbai,IN,19.07283,72.88261,IN-BOM-2 (Mumbai 2),yes,passage,5157bc42f1d3
+akamai,de-fra-2,development,answered,Frankfurt,DE,50.11552,8.68417,"Frankfurt, DE eu-central Full availability Frankfurt, DE Expansion de-fra-2 Full availability",yes,passage,636205a51078
+akamai,sg-sin-2,holdout,answered,Singapore,sg,1.28967,103.85007,"Singapore, SP ap-south Full availability Singapore Expansion, SP sg-sin-2 Full availability",yes,passage,636205a51078
+akamai,jp-tyo-3,development,answered,Tokyo,JP,35.6895,139.69171,"Tokyo, JP ap-northeast Full availability Tokyo Expansion, JP jp-tyo-3 Full availability",yes,passage,636205a51078
+akamai,us-iad-2,development,answered,Washington,US,38.89511,-77.03637,"Washington 2, DC, US",yes,passage,2e6e6d579269
+akamai,fr-par-2,development,answered,Paris,FR,48.85341,2.3488,"Paris 2, France",yes,passage,2e6e6d579269
+akamai,br-gru,holdout,answered,São Paulo,BR,-23.5475,-46.63611,BR-GRU (São Paulo),yes,passage,5157bc42f1d3
+akamai,us-sea,holdout,answered,Seattle,US,47.60621,-122.33207,"Seattle, WA us-sea Full availability",yes,passage,636205a51078
+akamai,fr-par,holdout,answered,Paris,FR,48.85341,2.3488,"Paris, FR fr-par Full availability",yes,passage,636205a51078
+akamai,us-ord,development,answered,Chicago,US,41.85003,-87.65005,"Chicago, IL us-ord Full availability",yes,passage,636205a51078
+akamai,us-iad,development,unsupported,"Washington, D.C.",us,,,"""Washington, D.C.""",no,,
+akamai,ap-southeast,holdout,answered,Sydney,AU,-33.86785,151.20732,"Sydney, AU ap-southeast Full availability",yes,passage,636205a51078
+akamai,ca-central,development,answered,Toronto,CA,43.65333,-79.38389,"Toronto, Canada ca-central Full availability",yes,passage,636205a51078
+akamai,ap-west,development,answered,Mumbai,IN,19.07283,72.88261,"Mumbai, IN ap-west Full availability",yes,passage,636205a51078
+akamai,us-central,development,answered,Dallas,US,32.78306,-96.80667,Scheduled Longview Maintenance - US-Central (Dallas),yes,passage,5157bc42f1d3
+akamai,ap-northeast,holdout,answered,Tokyo,JP,35.6895,139.69171,"Tokyo, JP ap-northeast Full availability",yes,passage,636205a51078
+akamai,eu-central,holdout,answered,Frankfurt,DE,50.11552,8.68417,"Frankfurt, DE eu-central Full availability",yes,passage,636205a51078
+akamai,ap-south,development,answered,Singapore,SG,1.28967,103.85007,"Singapore, SP ap-south Full availability",yes,passage,636205a51078
+akamai,eu-west,holdout,answered,London,GB,51.50853,-0.12574,"London, UK eu-west Limited availability",yes,passage,636205a51078
+akamai,us-east,holdout,answered,Newark,US,40.73566,-74.17237,"Newark, NJ us-east Full availability",yes,passage,636205a51078
+akamai,us-southeast,development,answered,Atlanta,US,33.749,-84.38798,"Atlanta, GA us-southeast Full availability",yes,passage,636205a51078
+akamai,us-west,development,answered,Fremont,,37.54827,-121.98857,"Fremont, CA us-west Full availability",yes,passage,636205a51078
+huawei,ap-southeast-3,development,answered,Singapore,SG,1.28967,103.85007,AP-Singapore Singapore-Equinix Equinix Singapore-Global Switch Global Switch Singapore-1Net 1-Net Singapore-Singtel Singtel Singapore-Telin3 Telin Singapore-STT STT,yes,passage,786814aef8d7
+huawei,ap-southeast-2,development,answered,Bangkok,TH,13.75398,100.50144,AP-Bangkok Bangkok-TRUE TRUE Bangkok-STT STT Bangkok-NTT NTT,yes,passage,786814aef8d7
+huawei,ap-southeast-4,development,answered,Jakarta,ID,-6.21462,106.84513,Jakarta-JK5 JK5 Jakarta-EDGE EDGE,yes,passage,e285df1584a9
+huawei,ap-southeast-5,development,answered,Manila,,14.6042,120.9822,AP-Manila Manila-GBP Globe Manila-Digital Halo Digital Halo,yes,passage,786814aef8d7
+huawei,cn-east-3,development,answered,Shanghái,CN,31.22222,121.45806,Shanghái CN East-Shanghai2 Shanghai-Pudong-GDS GDS Shanghai-Baoshan-Baoxin Baoxin Shanghai-Jiading-Sinnet Sinnet Suzhou CN East-Shanghai1 Suzhou-Kunshan-GDS GDS Suzhou-Wuzhong-Guoke China Unicom Suzhou-Wujiang-Fenhu-China Mobile China Mobile Hangzhou Research Center Huawei Cloud data center of Hangzhou Iron & Steel Group Carrier-neutral data center Shanghai-GDS Carrier-neutral data center Shanghai-Baoxin China Mobile Suzhou-Kunshan-Kunhui Kunshan Kunhui Suzhou-Wuzhong-Huawei Base Huawei Shanghai-Sinnet Sinnet Guangzhou CN South-Guangzhou Guangzhou-Huangpu-Huaxinyuan Bigone Guangzhou-Fanyu-University town Bigone Guangzhou-Mingmei-China Unicom China Unicom Guangzhou-Hualong-China Unicom China Unicom Guangzhou-Yunpu-China Telecom China,yes,passage,e285df1584a9
+huawei,cn-east-2,development,answered,Shanghai,CN,31.22222,121.45806,CN East-Shanghai2 Shanghai-Wanguo Neutral Shanghai GDS Data Center Shanghai-Guanghuan Neutral Beijing Sinnet Data Center Shanghai-Baoxin China Mobile Shanghai Baoxin Data Center,yes,passage,786814aef8d7
+huawei,ap-southeast-1,development,answered,Hong Kong,HK,22.27832,114.17469,CN-Hong Kong Hong Kong-Sha Tin,yes,passage,786814aef8d7
+huawei,cn-north-1,development,answered,Beijing,CN,39.9075,116.39723,Chinese mainland CN North-Beijing1,yes,passage,3cc87a273c7c
+huawei,cn-north-4,development,unsupported,Pekín,CN,,,Región geográfica Ciudad Región Localización IDC China continental Pekín CN North-Beijing4 Langfang-Guangyang-Huawei Huawei Beijing-Tongzhou-Huitian Huitian Beijing-Yizhuang-Centrin Centrin Data Systems Beijing-Yizhuang-Yatai Yatai Zhongli Beijing-Chaoyang-Jiuxianqiao Jiuxianqiao Langfang-GDS Carrier-neutral data center Langfang-Runze-China Telecom China cont,no,,
+huawei,cn-south-1,development,answered,Guangzhou,CN,23.11667,113.25,CN South-Guangzhou Guangzhou-Yunpu China Telecom Guangzhou Yunpu Data Center,yes,passage,786814aef8d7
+huawei,cn-north-9,development,answered,Ulanqab,CN,40.993,113.133,Ulanqab-Jining Huawei Ulanqab Huawei Data Center Ulanqab-Meiguiying Huawei Ulanqab Meiguiying Base,yes,passage,786814aef8d7
+huawei,cn-southwest-2,development,answered,Guiyang,CN,26.58333,106.71667,Guiyang-Machang Huawei Gui'an Machang Data Center,yes,passage,786814aef8d7
+huawei,cn-east-5,development,answered,Qingdao,CN,36.06488,120.38042,CN East-Qingdao Qingdao-Jiaozhou Huawei Jiaozhou Ka'aosi Qingdao-Hongdao,yes,passage,786814aef8d7
+huawei,tr-west-1,development,answered,Istanbul,TR,41.01384,28.94966,TR-Istanbul,yes,passage,e285df1584a9
+huawei,af-south-1,holdout,answered,Johannesburg,ZA,-26.20227,28.04363,África Johannesburgo AF-Johannesburg,yes,passage,e285df1584a9
+huawei,na-mexico-1,development,answered,Mexico City,MX,19.42847,-99.12766,LA-Mexico City1 Mexico City-COM Ixtlahuaca COM Ixtlahuaca Mexico-KIO MEX 5 KIO MEX 5 LA-Mexico City2 Mexico-Tultitlan Carrier-neutral data center,yes,passage,e285df1584a9
+huawei,la-north-2,holdout,unsupported,Mexico City,MX,,,LA-Mexico City2 Mexico City-COM Ixtlahuaca COM Ixtlahuaca Mexico-KIO MEX 5 KIO MEX 5 LA-Mexico City2,no,,
+huawei,sa-brazil-1,holdout,answered,Sao Paulo,BR,-23.5475,-46.63611,LA-Sao Paulo1 Sao Paulo-Equinix Equinix Sao Paulo-ODATA OData Sao Paulo-Scala Scala Sao Paulo-,yes,passage,786814aef8d7
+huawei,la-south-2,development,answered,Santiago,CL,-33.45694,-70.64827,Western Latin America LA-Santiago,yes,passage,3cc87a273c7c
+huawei,me-east-1,development,answered,Riyadh,,24.68773,46.72185,ME-Riyadh,yes,passage,3322441d5079
+huawei,af-north-1,development,answered,Cairo,EG,30.06263,31.24967,AF-Cairo Cairo-Xceed Xceed,yes,passage,786814aef8d7
+huawei,cn-east-4,holdout,answered,Wuhu,CN,31.35259,118.42947,Region Location:WuHu,yes,passage,b1d8170d13a0
+huawei,cn-north-12,holdout,answered,Beijing,CN,39.9075,116.39723,ijing-Zhongjin Neutral Centrin Data in Beijing Economic-Technological Development Area,yes,passage,786814aef8d7
+huawei,cn-north-2,development,abstained,,,,,,,,
+huawei,cn-south-2,holdout,answered,Shenzhen,CN,22.54554,114.0683,CN South-Shenzhen,yes,passage,3322441d5079
+huawei,eu-west-0,holdout,answered,Paris,FR,48.85341,2.3488,The EU-Paris Cloud Alliance region is based on partner cloud construction.,yes,passage,b1d8170d13a0
+huawei,my-kualalumpur-1,development,abstained,,,,,,,,
+huawei,ru-northwest-2,development,abstained,,,,,,,,

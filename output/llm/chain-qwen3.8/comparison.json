@@ -1,0 +1,255 @@
+{
+ "config": {
+  "temperature": 0,
+  "seed": 42,
+  "max_tokens": 1000,
+  "chat_model": "ai/qwen3.8:27b-q8_0",
+  "chat_model_id": "7f7f60352e7c",
+  "embed_model": "ai/qwen3-embedding:4b-q8_0",
+  "embed_model_id": "16bf87bcb903",
+  "embed_query_template": "Instruct: Given a cloud region, retrieve passages that say which city its data centres are in\nQuery:{text}",
+  "embed_document_template": "{text}",
+  "corpus": "fetched",
+  "index_name": "qwen-embedding-4b-fetched",
+  "rerank_model": "ai/qwen3-reranker:4B",
+  "rerank_model_id": "c980ea59258a",
+  "chat_extra": {
+   "chat_template_kwargs": {
+    "enable_thinking": false
+   }
+  }
+ },
+ "prompts": {
+  "label": "f1668d6ccc717bc96689187e957140a60fcc3c0014ba1ebc5d575100db6d27ba",
+  "memory": "4e102dad673e84044ddeb02b764533c85d9399d4dc9cd287ffc1b386e37d1b10",
+  "rag": "f9dfc9629d58fed6de780b6fbf5ca3caa1e329f118acc34b393fb364942046b5",
+  "document": "3b465e95a437d633b29c1b5bc396053eeb3c9051b81ed8d3c4bf599fd86e6ce4"
+ },
+ "scores": {
+  "rules": {
+   "development": {
+    "regions": 259,
+    "answered": 255,
+    "matched": 253,
+    "abstained": 4,
+    "unsupported": 0,
+    "unresolved": 0
+   },
+   "holdout": {
+    "regions": 121,
+    "answered": 116,
+    "matched": 112,
+    "abstained": 5,
+    "unsupported": 0,
+    "unresolved": 0
+   },
+   "all": {
+    "regions": 380,
+    "answered": 371,
+    "matched": 365,
+    "abstained": 9,
+    "unsupported": 0,
+    "unresolved": 0
+   },
+   "review": {
+    "regions": 49,
+    "answered": 40,
+    "matched": 38,
+    "abstained": 9,
+    "unsupported": 0,
+    "unresolved": 0
+   },
+   "overturned": {
+    "regions": 7,
+    "answered": 5,
+    "matched": 3,
+    "abstained": 2,
+    "unsupported": 0,
+    "unresolved": 0
+   },
+   "rescued": []
+  },
+  "label": {
+   "development": {
+    "regions": 259,
+    "answered": 226,
+    "matched": 225,
+    "abstained": 26,
+    "unsupported": 0,
+    "unresolved": 7,
+    "from_passage": 0
+   },
+   "holdout": {
+    "regions": 121,
+    "answered": 107,
+    "matched": 104,
+    "abstained": 11,
+    "unsupported": 0,
+    "unresolved": 3,
+    "from_passage": 0
+   },
+   "all": {
+    "regions": 380,
+    "answered": 333,
+    "matched": 329,
+    "abstained": 37,
+    "unsupported": 0,
+    "unresolved": 10,
+    "from_passage": 0
+   },
+   "review": {
+    "regions": 49,
+    "answered": 4,
+    "matched": 4,
+    "abstained": 35,
+    "unsupported": 0,
+    "unresolved": 10,
+    "from_passage": 0
+   },
+   "overturned": {
+    "regions": 7,
+    "answered": 0,
+    "matched": 0,
+    "abstained": 6,
+    "unsupported": 0,
+    "unresolved": 1,
+    "from_passage": 0
+   },
+   "rescued": []
+  },
+  "memory": {
+   "development": {
+    "regions": 259,
+    "answered": 247,
+    "matched": 238,
+    "abstained": 10,
+    "unsupported": 0,
+    "unresolved": 2,
+    "from_passage": 0
+   },
+   "holdout": {
+    "regions": 121,
+    "answered": 116,
+    "matched": 110,
+    "abstained": 4,
+    "unsupported": 0,
+    "unresolved": 1,
+    "from_passage": 0
+   },
+   "all": {
+    "regions": 380,
+    "answered": 363,
+    "matched": 348,
+    "abstained": 14,
+    "unsupported": 0,
+    "unresolved": 3,
+    "from_passage": 0
+   },
+   "review": {
+    "regions": 49,
+    "answered": 32,
+    "matched": 21,
+    "abstained": 14,
+    "unsupported": 0,
+    "unresolved": 3,
+    "from_passage": 0
+   },
+   "overturned": {
+    "regions": 7,
+    "answered": 4,
+    "matched": 3,
+    "abstained": 3,
+    "unsupported": 0,
+    "unresolved": 0,
+    "from_passage": 0
+   },
+   "rescued": [
+    [
+     "alibaba",
+     "us-west-1"
+    ],
+    [
+     "tencent",
+     "na-siliconvalley"
+    ],
+    [
+     "vultr",
+     "ewr"
+    ],
+    [
+     "vultr",
+     "sjc"
+    ]
+   ]
+  },
+  "rag": {
+   "development": {
+    "regions": 259,
+    "answered": 220,
+    "matched": 216,
+    "abstained": 28,
+    "unsupported": 1,
+    "unresolved": 10,
+    "from_passage": 220
+   },
+   "holdout": {
+    "regions": 121,
+    "answered": 101,
+    "matched": 101,
+    "abstained": 15,
+    "unsupported": 0,
+    "unresolved": 5,
+    "from_passage": 101
+   },
+   "all": {
+    "regions": 380,
+    "answered": 321,
+    "matched": 317,
+    "abstained": 43,
+    "unsupported": 1,
+    "unresolved": 15,
+    "from_passage": 321
+   },
+   "review": {
+    "regions": 49,
+    "answered": 29,
+    "matched": 27,
+    "abstained": 8,
+    "unsupported": 0,
+    "unresolved": 12,
+    "from_passage": 29
+   },
+   "overturned": {
+    "regions": 7,
+    "answered": 4,
+    "matched": 4,
+    "abstained": 2,
+    "unsupported": 0,
+    "unresolved": 1,
+    "from_passage": 4
+   },
+   "rescued": [
+    [
+     "aws",
+     "cn-northwest-1"
+    ],
+    [
+     "aws",
+     "me-central-1"
+    ],
+    [
+     "huawei",
+     "cn-east-4"
+    ],
+    [
+     "ovhcloud",
+     "HIL"
+    ],
+    [
+     "vultr",
+     "ewr"
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,21 @@
+version = 1
+
+[[annotations]]
+path = ["src/**", "tests/**", "prompts/**", "Makefile", "pyproject.toml", ".gitignore", "REUSE.toml", ".github/**", "policy/**", "typings/**", "uv.lock", "renovate.json",
+        ".editorconfig", ".editorconfig-checker.json", "_typos.toml", ".gitlint", ".yamllint", ".markdownlint.yaml", ".pre-commit-config.yaml", ".env.example"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Mosox Digital Ltd."
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = ["output/**", "sources/**", "config/**", "registers/**", "evaluation/**", "site/**", "README.md", "CITATION.cff", "ro-crate-metadata.json",
+        "CHANGELOG.md", "CODE_OF_CONDUCT.md", "CONTRIBUTING.md", "SECURITY.md", "SUPPORT.md"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Mosox Digital Ltd."
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = ["paper/**"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Mosox Digital Ltd."
+SPDX-License-Identifier = "LicenseRef-AllRightsReserved"

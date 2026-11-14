@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OpenCloudModel Regions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+/* Layout: a flight-board ledger. Region codes read as board entries; evidence strength is the only loud colour. */
+:root{--bg:#eef2f4;--fg:#172229;--muted:#50606b;--line:#ccd6dc;--panel:#fbfcfd;--accent:#0a5a86;--high:#a92b2b;--med:#7f5a00;--low:#46606f;--ok:#17694a;--sans:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10171c;--fg:#e4ebef;--muted:#9badb8;--line:#2b3942;--panel:#172027;--accent:#79c0e6;--high:#f08f8f;--med:#e2b755;--low:#a3bccb;--ok:#74d1a8;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10171c;--fg:#e4ebef;--muted:#9badb8;--line:#2b3942;--panel:#172027;--accent:#79c0e6;--high:#f08f8f;--med:#e2b755;--low:#a3bccb;--ok:#74d1a8;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 var(--sans)}
+main{max-width:1180px;margin:auto;padding-block:30px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1{font:600 clamp(26px,4.4vw,38px)/1.15 var(--mono);margin:0 0 8px;letter-spacing:-.02em;text-wrap:balance}h2{font:600 18px/1.3 var(--mono);margin:36px 0 10px}
+.sub{color:var(--muted);max-width:68ch;margin:0 0 10px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;margin:22px 0;background:var(--line);border:1px solid var(--line)}.tile{background:var(--panel);padding:12px 14px}.tile b{display:block;font:600 26px/1.2 var(--mono);font-variant-numeric:tabular-nums}.tile span{color:var(--muted);font-size:13px}
+.wrap{overflow:auto;border:1px solid var(--line);background:var(--panel)}.wrap.tall{max-height:72vh}table{border-collapse:collapse;width:100%;font-size:13.5px;line-height:1.4}th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--panel);white-space:nowrap;font-weight:600;z-index:1}td.c{font-family:var(--mono);white-space:nowrap}
+tr.row{cursor:pointer}tr.row:hover,tr.row:focus{background:color-mix(in srgb,var(--accent) 10%,transparent);outline:none}.detail td{background:color-mix(in srgb,var(--line) 28%,transparent);max-width:70ch}.detail p{margin:5px 0}a{color:var(--accent)}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}input,select{font:14px var(--sans);padding:8px 10px;border:1px solid var(--line);background:var(--panel);color:var(--fg);min-width:0}input{flex:1 1 220px}input:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px}
+.tag{font:12px var(--mono);padding:1px 6px;border:1px solid currentColor;white-space:nowrap}.g-vendor-stated,.g-vendor-document,.g-audit-document,.g-public-record,.g-vendor-feed{color:var(--ok)}.g-reported,.g-partial,.g-measured{color:var(--med)}.g-assumed,.g-network-presence{color:var(--high)}.high{color:var(--high)}.medium{color:var(--med)}.low{color:var(--low)}
+</style></head><body><main>
+<h1>OpenCloudModel Regions</h1>
+<p class="sub">Every region from the cloud vendors listed below, mapped to location codes, with the evidence behind each place and every gap or judgement call shown. Built by a repeatable script. A code is a label; it does not prove where a data centre is.</p>
+<div class="tiles" id="tiles"></div>
+<h2>Code coverage</h2><div class="wrap"><table id="cov"></table></div>
+<h2>Issues and judgement calls</h2><div class="wrap"><table id="calls"></table></div>
+<h2>Weak evidence</h2><p class="sub">Placements to distrust first, weakest at the top. A disputed region has a strong grade, but one of its own sources points elsewhere. Reasoning is in the last column.</p><div class="wrap tall"><table id="weak"></table></div>
+<h2>Regions</h2><div class="controls"><input id="q" placeholder="Search region, city, code" aria-label="Search"><select id="prov" aria-label="Provider"></select><select id="grade" aria-label="Evidence grade"></select></div>
+<p class="sub" id="count"></p><div class="wrap tall"><table id="reg"></table></div>
+<h2>Trust documents</h2><p class="sub">Certifications, audit reports and fact sheets found per vendor. Gated documents are listed, not reproduced.</p><div class="wrap tall"><table id="docs"></table></div>
+</main><script>
+const DATA=/*DATA*/null;
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const safeUrl=u=>/^https?:\/\//.test(u)?esc(u):"#";
+const R=DATA.regions,E=DATA.evidence;
+const byGrade=g=>R.filter(r=>r.grade===g).length;
+tiles.innerHTML=[[R.length,"regions"],[new Set(R.map(r=>r.provider)).size,"vendors"],[new Set(R.map(r=>r.place_id).filter(Boolean)).size,"places"],[byGrade("vendor-stated"),"cities stated by vendor"],[byGrade("assumed"),"places assumed"],[DATA.calls.filter(c=>c.severity==="high").length,"high-severity issues"]].map(([n,l])=>`<div class=tile><b>${n}</b><span>${l}</span></div>`).join("");
+const L={iata_nearest_airport:"IATA airport, nearest (nearest airport)",iata_major_hub:"IATA airport, best connected within 200 km (major hub)",iata_nearby_hub:"IATA airport, major hub within the cap, otherwise nearest (nearby hub)",iata_metro:"IATA metro (OpenTravelData) only",metro_or_airport:"IATA metro, airport as fallback",unlocode:"UN/LOCODE",clli:"CLLI prefix (inferred)"};
+cov.innerHTML="<tr><th>Scheme<th>Regions named<th>Share<th>Distinct codes</tr>"+Object.entries(L).map(([k,l])=>{const c=DATA.coverage[k]||{};return `<tr><td>${l}<td>${c.regions}<td>${((c.share||0)*100).toFixed(1)}%<td>${c.distinct}</tr>`}).join("");
+const order={high:0,medium:1,low:2},kinds={};DATA.calls.forEach(c=>{const k=c.severity+"|"+c.kind;(kinds[k]=kinds[k]||[]).push(c)});
+calls.innerHTML="<tr><th>Severity<th>Kind<th>Count<th>Examples</tr>"+Object.entries(kinds).sort((a,b)=>order[a[0].split("|")[0]]-order[b[0].split("|")[0]]||b[1].length-a[1].length).map(([k,v])=>{const[s,n]=k.split("|");return `<tr><td class=${s}>${s}<td>${esc(n)}<td>${v.length}<td>${v.slice(0,3).map(c=>esc(c.provider+"/"+c.region_id)).join(", ")}</tr>`}).join("");
+weak.innerHTML="<tr><th>Tier<th>Vendor<th>Region<th>Vendor says<th>Place<th>Grade<th>Precision<th>Flags<th>Reasoning</tr>"+DATA.weak.map(w=>`<tr><td>${esc(w.tier)}<td>${esc(w.provider)}<td class=c>${esc(w.region_id)}<td>${esc(w.stated_location)}<td>${esc(w.city||"none")}<td><span class="tag g-${esc(w.grade)}">${esc(w.grade)}</span><td>${esc(w.precision)}<td>${esc(w.flags)}<td>${esc(w.reasoning)}</tr>`).join("");
+const opt=(el,all,vals)=>el.innerHTML=`<option value="">${all}</option>`+vals.map(v=>`<option>${esc(v)}</option>`).join("");
+opt(prov,"All vendors",[...new Set(R.map(r=>r.provider))]);opt(grade,"All evidence grades",[...new Set(R.map(r=>r.grade))]);
+const ev=new Map();E.forEach(e=>{const k=e.provider+"/"+e.region_id;(ev.get(k)||ev.set(k,[]).get(k)).push(e)});
+function detail(r){const items=(ev.get(r.provider+"/"+r.region_id)||[]).map(e=>`<p><span class=tag>${esc(e.source_type)}</span> <span class=tag>${esc(e.stance)}</span> <a href="${safeUrl(e.url)}" target=_blank rel=noopener>${esc(e.title||e.url)}</a>${e.quote?` — “${esc(e.quote)}”`:""}${e.note?` <em>${esc(e.note)}</em>`:""}</p>`).join("");
+return `<tr class=detail><td colspan=10><p><b>Location:</b> ${esc(r.location_reasoning)}</p>${r.address?`<p><b>Site cities (${esc(r.address_status)}):</b> ${esc(r.address)}</p>`:""}<p><b>Nearest airport:</b> ${esc(r.iata_nearest_airport_why)}</p><p><b>Major hub:</b> ${esc(r.iata_major_hub_why)}</p><p><b>Nearby hub:</b> ${esc(r.iata_nearby_hub_why)}</p><p><b>UN/LOCODE:</b> ${esc(r.unlocode_why)}</p><p><b>CLLI:</b> ${esc(r.clli_why)}</p><p><b>Evidence</b></p>${items}</td></tr>`}
+function draw(){const t=q.value.trim().toLowerCase();const f=R.filter(r=>(!prov.value||r.provider===prov.value)&&(!grade.value||r.grade===grade.value)&&(!t||[r.region_id,r.region_name,r.city,r.code_nearest_airport,r.code_major_hub,r.code_nearby_hub,r.unlocode,r.iata_metro].join(" ").toLowerCase().includes(t)));
+count.textContent=`${f.length} of ${R.length} regions. Select a row to see its reasoning and evidence.`;
+reg.innerHTML="<tr><th>Vendor<th>Region<th>Place<th>Evidence<th>Precision<th>Nearest airport<th>Major hub<th>Nearby hub<th>UN/LOCODE<th>CLLI</tr>"+f.map((r,i)=>`<tr class=row tabindex=0 data-i=${R.indexOf(r)}><td>${esc(r.provider)}<td class=c>${esc(r.region_id)}<td>${esc(r.city||"unknown")}${r.country?", "+esc(r.country):""}<td><span class="tag g-${esc(r.grade)}">${esc(r.grade)}</span><td>${esc(r.precision)}<td class=c>${esc(r.code_nearest_airport)}<td class=c>${esc(r.code_major_hub)}<td class=c>${esc(r.code_nearby_hub)}<td class=c>${esc(r.unlocode)}<td class=c>${esc(r.clli)}</tr>`).join("")}
+reg.addEventListener("click",e=>{const tr=e.target.closest("tr.row");if(!tr)return;const n=tr.nextElementSibling;if(n&&n.classList.contains("detail")){n.remove();return}tr.insertAdjacentHTML("afterend",detail(R[+tr.dataset.i]))});
+reg.addEventListener("keydown",e=>{if(e.key==="Enter"&&e.target.matches("tr.row"))e.target.click()});
+[q,prov,grade].forEach(el=>el.addEventListener("input",draw));draw();
+docs.innerHTML="<tr><th>Vendor<th>Kind<th>Document<th>Access<th>Names locations</tr>"+DATA.documents.map(d=>`<tr><td>${esc(d.provider)}<td>${esc(d.kind)}<td><a href="${safeUrl(d.url)}" target=_blank rel=noopener>${esc(d.title)}</a><td>${esc(d.access)}<td>${esc(d.names_locations)}</tr>`).join("");
+</script></body></html>

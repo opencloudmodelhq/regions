@@ -1,0 +1,40 @@
+status,provider,region_id,city,grade,iata_nearest_airport,iata_major_hub,iata_nearby_hub,rival,basis,source,rival_km,rival_nearest_airport,rival_major_hub,rival_nearby_hub,changes_nearest_airport,changes_major_hub,changes_nearby_hub
+code-at-risk,azure,uaecentral,Abu Dhabi,vendor-stated,AUH,DXB,AUH,Dubai,feed,azure IP location feed,115,DXB,DXB,DXB,yes,no,yes
+code-at-risk,gcp,asia-east1,Changhua,vendor-stated,RMQ,TPE,RMQ,Taipei,feed,gcp IP location feed,147,TSA,TPE,TPE,yes,no,yes
+code-at-risk,ovhcloud,HIL,Seattle,vendor-stated,BFI,SEA,SEA,Hillsboro,vendor,3,237,PDX,PDX,PDX,yes,yes,yes
+no-rival-named,alibaba,na-south-1,Mexico City,partial,MEX,MEX,MEX,,,,,,,,,,
+no-rival-named,alibaba,us-west-1,San Jose,partial,SJC,SFO,SFO,,,,,,,,,,
+no-rival-named,aws,ap-southeast-5,Kuala Lumpur,vendor-feed,SZB,KUL,KUL,,,,,,,,,,
+no-rival-named,aws,ap-southeast-6,Auckland,vendor-feed,AKL,AKL,AKL,,,,,,,,,,
+no-rival-named,aws,ap-southeast-7,Bangkok,vendor-feed,DMK,DMK,DMK,,,,,,,,,,
+no-rival-named,aws,cn-northwest-1,Zhongwei,reported,ZHY,LHW,ZHY,,,,,,,,,,
+no-rival-named,aws,eu-west-1,Dublin,vendor-feed,DUB,DUB,DUB,,,,,,,,,,
+no-rival-named,aws,eusc-de-east-1,Berlin,vendor-feed,BER,BER,BER,,,,,,,,,,
+no-rival-named,aws,me-central-1,Dubai,vendor-feed,DXB,DXB,DXB,,,,,,,,,,
+no-rival-named,aws,me-south-1,Manama,partial,BAH,BAH,BAH,,,,,,,,,,
+no-rival-named,aws,mx-central-1,Queretaro,vendor-feed,QRO,MEX,QRO,,,,,,,,,,
+no-rival-named,aws,us-east-1,Ashburn,vendor-feed,IAD,IAD,IAD,,,,,,,,,,
+no-rival-named,aws,us-east-2,Columbus,vendor-feed,CMH,CMH,CMH,,,,,,,,,,
+no-rival-named,aws,us-west-1,San Jose,vendor-feed,SJC,SFO,SFO,,,,,,,,,,
+no-rival-named,aws,us-west-2,Boardman,vendor-feed,PSC,PSC,PSC,,,,,,,,,,
+no-rival-named,azure,australiaeast,Sydney,vendor-feed,SYD,SYD,SYD,,,,,,,,,,
+no-rival-named,azure,australiasoutheast,Melbourne,vendor-feed,MEB,MEL,MEL,,,,,,,,,,
+no-rival-named,azure,centralus,Des Moines,public-record,DSM,OMA,DSM,,,,,,,,,,
+no-rival-named,azure,eastus2,Boydton,public-record,RDU,RDU,RDU,,,,,,,,,,
+no-rival-named,azure,israelcentral,Tel Aviv,vendor-feed,TLV,TLV,TLV,,,,,,,,,,
+no-rival-named,azure,mexicocentral,Queretaro,vendor-feed,QRO,MEX,QRO,,,,,,,,,,
+no-rival-named,azure,northcentralus,Chicago,vendor-feed,MDW,ORD,ORD,,,,,,,,,,
+no-rival-named,azure,southcentralus,San Antonio,vendor-feed,SAT,AUS,SAT,,,,,,,,,,
+no-rival-named,azure,westus2,Quincy-Moses Lake,public-record,EAT,SEA,EAT,,,,,,,,,,
+no-rival-named,gcp,europe-west4,Groningen,vendor-feed,GRQ,AMS,GRQ,,,,,,,,,,
+no-rival-named,huawei,cn-north-12,Shijiazhuang,partial,SJW,TYN,SJW,,,,,,,,,,
+no-rival-named,oracle,eu-jovanovac-1,Kragujevac,partial,KVO,BEG,KVO,,,,,,,,,,
+no-rival-named,tencent,na-ashburn,Ashburn,partial,IAD,IAD,IAD,,,,,,,,,,
+no-rival-named,tencent,na-siliconvalley,San Jose,partial,SJC,SFO,SFO,,,,,,,,,,
+code-safe,azure,eastus,Dulles,public-record,IAD,IAD,IAD,Leesburg,regulator,Commonwealth of Virginia,16,IAD,IAD,IAD,no,no,no
+code-safe,azure,westeurope,Amsterdam,public-record,AMS,AMS,AMS,Middenmeer,regulator,Verzenddatum,49,AMS,AMS,AMS,no,no,no
+code-safe,azure,westeurope,Amsterdam,public-record,AMS,AMS,AMS,Noord,regulator,evings,2,AMS,AMS,AMS,no,no,no
+code-safe,azure,westus,San Jose,vendor-feed,SJC,SFO,SFO,San Francisco,press,Microsoft to Build Arizona Cloud Data Centers for Fifth US West Region,67,SFO,SFO,SFO,yes,no,no
+code-safe,gcp,europe-north1,Hamina,vendor-stated,LPP,HEL,LPP,Lappeenranta,feed,gcp IP location feed,76,LPP,HEL,LPP,no,no,no
+code-safe,gcp,europe-west1,Saint-Ghislain,vendor-stated,CRL,BRU,BRU,Brussels,feed,gcp IP location feed,58,BRU,BRU,BRU,yes,no,no
+code-safe,vultr,sjc,San Jose,partial,SJC,SFO,SFO,Santa Clara,feed,vultr IP location feed,6,SJC,SFO,SFO,no,no,no

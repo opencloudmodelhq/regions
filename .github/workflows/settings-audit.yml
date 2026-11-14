@@ -1,0 +1,57 @@
+---
+name: Settings audit
+on:
+  schedule:
+    - cron: "41 2 * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  audit:
+    name: repository settings match policy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: audit
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        id: app
+        with:
+          app-id: ${{ vars.AUDIT_APP_ID }}
+          private-key: ${{ secrets.AUDIT_APP_KEY }}
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: stable
+          cache: false
+      - name: Export settings with the read-only audit App
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: .github/scripts/export-settings.sh "${REPOSITORY}" > settings.json
+      - name: Check settings against policy
+        id: check
+        run: >
+          go run github.com/open-policy-agent/conftest@v0.71.1
+          test --policy policy/settings --namespace settings --output table settings.json | tee findings.txt
+      - name: Open or update the drift issue
+        if: failure() && steps.check.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Settings drift found by the nightly audit"
+          number=$(gh issue list --state open --search "in:title \"${title}\"" --json number --jq '.[0].number')
+          if [ -n "${number}" ]; then
+            gh issue comment "${number}" --body-file findings.txt
+          else
+            gh issue create --title "${title}" --body-file findings.txt --label "kind:security"
+          fi

@@ -1,0 +1,504 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in,columnsep=0.25in]{geometry}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{positioning,arrows.meta}
+\usepackage{microtype}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\dbltopfraction}{0.9}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.7}
+\renewcommand{\dblfloatpagefraction}{0.7}
+\setcounter{topnumber}{3}
+\setcounter{dbltopnumber}{3}
+\setcounter{totalnumber}{5}
+\usepackage[round,authoryear]{natbib}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{doi}
+\usepackage{orcidlink}
+\hypersetup{pdftitle={OpenCloudModel Regions: An Evidence-Linked Dataset of Cloud Region Locations and Codes},pdfauthor={Andrew Broekman},pdfkeywords={cloud regions, location codes, IATA, UN/LOCODE, data provenance}}
+\input{generated/macros.tex}
+\input{generated/cap_macros.tex}
+\input{generated/placer_macros.tex}
+\input{generated/llm_macros.tex}
+\input{generated/method_macros.tex}
+\input{generated/method_stats_macros.tex}
+\input{generated/release_macros.tex}
+\input{generated/external_macros.tex}
+\input{generated/heldout_macros.tex}
+\input{generated/review_macros.tex}
+\newcommand{\code}[1]{\texttt{#1}}
+
+\title{OpenCloudModel Regions: An Evidence-Linked Dataset of Cloud Region Locations and Codes}
+\author{Andrew Broekman~\orcidlink{0000-0003-0338-4567}\\Mosox Digital Ltd., United Kingdom\\\small\url{https://orcid.org/0000-0003-0338-4567}}
+\date{November 2026}
+
+\begin{document}
+\sloppy
+\twocolumn[\begin{@twocolumnfalse}
+\maketitle
+
+\begin{abstract}
+Cloud computing is sold from regions: groups of data centres that each vendor names in its own way. Software that compares clouds, names resources or estimates the carbon cost of computing must know where each region is, yet many vendors do not say, and the mappings in public use rarely show their sources. Each study therefore builds its own table, and those tables cannot easily be checked against each other. Here we show that the \regionCount{} published regions of \providerCount{} vendors can be mapped to places and to standard location codes by script from a fixed list of documents that we chose. After that list, every step is code or a locally run language model with fixed settings, so the mapping replays without further human judgement. Each region carries its evidence, a grade and a stated precision. For \gradeVendorStated{} regions the vendor's own list names the city; the rest rely on weaker evidence, some are known only to a country, and \placedNone{} could not be placed. Two reasonable naming rules give different codes for \tableDiffCount{} regions, nearly half, so the rule must be stated with the code. The resulting dataset, OpenCloudModel Regions, gives cloud regions a shared, auditable naming and makes clear which locations are vendor claims rather than measurements.
+\end{abstract}
+\vspace{1em}
+\end{@twocolumnfalse}]
+
+
+\section{Introduction}
+
+A cloud region identifier such as \code{us-east-1} or \code{westus2} tells a reader little about geography. Some vendors publish a city. Others publish a state, a country or only a marketing name. Anyone comparing vendors needs to join these identifiers to something geographic. Carbon accounting is one such use, since the emissions of a cloud workload depend on the grid where its region sits~\citep{dodge2022measuring,radovanovic2023carbon,sukprasert2024limitations}. Yet existing open mappings usually record the result without recording how it was reached. Researchers meet the same gap: one study notes that AWS data centre street addresses ``are not explicitly published by Amazon'', that the mapping of availability zones to locations ``is not known'', and takes site locations from press reports, a web directory and a leaked document~\citep{yeganeh2019how}.
+
+This paper treats that join as a data provenance problem. We ask three questions. Which code scheme can name the most regions? How strong is the evidence for where each region is? And can the whole mapping be rebuilt, checked and challenged region by region?
+
+Our contributions are:
+\begin{itemize}
+\item A taxonomy that separates a vendor region, the place it maps to, the codes for that place and the evidence behind the mapping (Section~\ref{sec:design}).
+\item An evidence grade and a separate precision for each region, so that a label such as ``Ashburn'' is not mistaken for proof at city level.
+\item A coverage comparison of IATA airport codes, IATA metropolitan codes, UN/LOCODE and CLLI across \regionCount{} regions (Section~\ref{sec:results}).
+\item Three naming tables and a register of every gap and conflict, built by a script from a published list of document links and released as the OpenCloudModel Regions dataset.
+\end{itemize}
+Each part has precedents, described next. The combination is what is new.
+
+\section{Related work}
+\label{sec:related}
+
+\paragraph{Geographic hints in names.} Rocketfuel inferred router locations from ISP naming conventions, including city codes~\citep{spring2002measuring}. DRoP built a dictionary from GeoNames, IATA, ICAO, UN/LOCODE and a small CLLI subset, and recorded that the CLLI database is proprietary~\citep{huffaker2014drop}. HLOC extracted hints from reverse DNS and tested them with latency measurements~\citep{scheitle2017hloc}. Hoiho learned per-suffix patterns from dictionaries of airport codes, place names, UN/LOCODE, CLLI prefixes and PeeringDB facilities, and is our closest methodological precedent~\citep{luckie2021learning}. These systems decode names that operators already chose. Our problem runs the other way: choosing a code for a region whose location may be undisclosed.
+
+\paragraph{Region-to-place datasets.} The Green Software Foundation's real-time cloud dataset gives AWS, Azure and Google Cloud regions, with locations as reported by the provider, coordinates and grid zones~\citep{gsf_real_time_cloud}. Other open lists map regions to coordinates or country codes~\citep{dgl_cloud_regions,wilbur_mcp_cloud_regions,ipregistry_aws_regions,cloudregion_pypi}. Carbon research also depends on such mappings~\citep{sukprasert2024limitations}. TeleGeography sells metro-level cloud region data under licence~\citep{telegeography_geocoded_license}. Studies also build such tables for their own use. One study places 187 regions of six vendors through a city database~\citep{lehdonvirta2024compute}, CloudCast publishes 11 cross-vendor hubs~\citep{rotman2022cloudcast}, CATS combines a TeleGeography map, a geocoder and grid polygons for 140 sites~\citep{chen2026cats}, and another sources AWS sites from press and leaks~\citep{yeganeh2019how}. The need we argue from is this repeated rebuilding. The closest precedent for codes with evidence is \code{awsgo}, an MIT-licensed repository with UN/LOCODE for 18 Azure and 11 AWS regions, with reference links on its Azure rows, most of them secondary~\citep{grokify_awsgo}. So neither a mapping to place nor UN/LOCODE on regions is new. What is new is the combination: all three code families, across many vendors, with a grade, a precision and evidence on each row. To our knowledge, no published source combines these.
+
+\paragraph{Infrastructure-as-code tools.} Terraform modules are where region names meet practice, and most stop at short names. Cloud Posse covers AWS~\citep{tf_cloudposse_utils}, Claranet and Microsoft's own module cover Azure~\citep{tf_claranet_regions,tf_avm_regions}, and one family of modules gives short codes for six vendors, one module each~\citep{tf_abbreviation}. One Google Cloud module adds a city and coordinates, with estimates marked only in source comments~\citep{tf_memes_region}, and some providers' data sources return a city or a display name for that vendor alone. The closest cross-vendor tool we found is a Python package, not a Terraform module, with coordinates for nine clouds and no source per row~\citep{cloud_regions_info}. None of these returns IATA, UN/LOCODE or CLLI codes or per-row evidence.
+
+\paragraph{Vendor-neutral naming.} FOCUS defines a Region ID column assigned by the host provider~\citep{focus_region_id}, and Kubernetes defines a region label filled in by the provider~\citep{kubernetes_labels}. Both standardise the field and leave its value to the vendor.
+
+\paragraph{Auditing stated locations.} Constraint-Based Geolocation turns delay into distance limits and a confidence region~\citep{gueye2006constraint}. One-third of 2{,}269 commercial proxies tested were definitely not in their advertised country~\citep{weinberg2018how}. GeoFINDR proposes checking a cloud instance's location with RIPE Atlas landmarks, though its test machine sat on a university campus, so it reports nothing about a real provider~\citep{ider2025geofindr}. One study measured a real service~\citep{gondree2013geolocation}: using PlanetLab landmarks, it placed data in Amazon S3's Northern California region within about 11{,}000~km$^2$ when nearby landmarks were included, which its authors describe as small enough to identify a state or service region. That tests one region of one vendor, and it was not designed to check a stated city. Methods have been evaluated on commercial clouds more widely than this suggests: one study reports results on four providers from US landmarks~\citep{biswal2015enhanced}, another covers 14 AWS regions~\citep{stephanow2017continuous}, taking AWS's labels as the truth, and CDGeB offers a measurement benchmark, also on AWS with AWS's labels~\citep{offer2023cdgeb}. These evaluate methods and do not set out to test whether vendors' stated locations are true. IGOD proposes choosing fewer landmarks to locate a data centre~\citep{jaiswal2015igod,jaiswal2016igod}. Its workshop version reports no results for a real provider and describes a test on Amazon S3 as future work.
+
+\paragraph{PeeringDB.} PeeringDB records are often used in this area, with mixed support. Network records are mostly current~\citep{lodhi2014using}, yet a check of 152 networks found substantial missing facility links~\citep{giotsas2015mapping}. In our data, PeeringDB shows where a network peers. We never use it to establish where a region is hosted.
+
+\section{Taxonomy design}
+\label{sec:design}
+
+\paragraph{Layers.} The taxonomy has three layers. A \emph{region} is an identifier published by a vendor. A \emph{place} is a geographic entity with coordinates and a stable identifier we assign, such as \code{us-va-ashburn}. \emph{Codes} are attributes of a place: IATA, UN/LOCODE, CLLI prefix and an optional metropolitan code. Keeping our own place identifier avoids depending on a scheme with gaps or unclear reuse terms.
+
+\paragraph{Evidence grades.} Each region takes the strongest grade its evidence supports, in this order: \code{vendor-stated} (the vendor's region list names the place), \code{vendor-document}, \code{audit-document}, \code{public-record} (an audit list ties the region to a facility code, and a government record puts the same operator and code in the area), \code{measured} (reserved, as we have run no measurements), \code{vendor-feed}, \code{reported} (press, government or directory), \code{network-presence} (PeeringDB only), \code{partial} and \code{assumed}. These rules decide a grade. A source that names the region and ties it to an area keeps its grade, and precision records how coarse the area is. A source that shows only the vendor's presence in a place, without naming the region, is \code{partial} whatever its type, so a vendor fact sheet naming a site in a state with one region is \code{partial}, because the link to the region is an inference. Any source we could not open is also \code{partial}, as is any collected record whose quote fails the check in Section~\ref{sec:method}. A vendor feed supports an area and never moves a place. A source that contradicts the placement grades only itself, as \code{assumed}. It does not lower the region's grade, and it raises a call for a person to read instead.
+
+\paragraph{Precision.} Grade says how strong the source is. Precision says how fine it is: \code{city} when the vendor's label names a city, and \code{metro} otherwise. A rule sets it, so a label such as ``Ashburn'' on a region the vendor describes only as Virginia carries metro precision.
+
+\paragraph{Evidence records.} Each record holds the claim, value, source type, publisher, URL, verbatim quote, stance and a note, following W3C PROV~\citep{w3c2013provdm} and the FAIR principle of detailed provenance~\citep{wilkinson2016fair}. The build exports this chain in PROV-O~\citep{w3c2013provo} as \code{output/provenance.jsonld}: each placement derives from its evidence records, each record names the document it quotes and the step that made it, and each step names the code digest, the model build and the frozen prompt it used. The file parses as RDF; we have not checked it against the PROV constraints. An RO-Crate description~\citep{soilandreyes2022rocrate} and a citation file~\citep{cff_format} describe the dataset as a whole.
+
+\paragraph{Calls.} The build raises a call for every gap or doubt: no code available, a place resting on weak evidence, sources in conflict, two tables disagreeing, an airport serving several towns, or a vendor code that is really another airport's. Each call has a severity, and calls are published as data rather than resolved silently.
+
+\paragraph{Three naming tables.} Resource names commonly need a short code, and three letters are the constraint we started from. The \emph{nearest-airport} table takes the nearest scheduled large or medium airport in the same country, using OurAirports~\citep{ourairports_data}. The \emph{major-hub} table takes the best-connected such airport in the same country within 200~km, by OpenTravelData page rank~\citep{opentraveldata}. Page rank is not passenger traffic, and 200~km is a parameter we set. A major hub must be in the region's own country. A code shared across a border would hide differences in law and data residency, so we accept the lower overlap. The \emph{nearby-hub} table uses the major hub when it is within the cap, \capUsed{}~km, of the region and the nearest airport otherwise; Section~\ref{sec:cap} explains how code selects the cap. All three append a number when one vendor has several regions on a code (\code{iad}, \code{iad2}). Assigned codes live in an append-only register, so a new region cannot renumber an existing one.
+
+\paragraph{Released files.} Table~\ref{tab:files} lists the main files of the dataset. Each is plain CSV or JSON, and \code{README.md} describes them.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{p{0.41\columnwidth}p{0.51\columnwidth}}
+\toprule
+File & Contents \\
+\midrule
+\code{output/\allowbreak regions.csv} & One row for each of the \regionCount{} regions: vendor, region ID and name, place, coordinates, grade, precision, the three codes with the reason for each, the class of the nearby hub's airport, UN/LOCODE, CLLI prefix and evidence links \\
+\code{output/\allowbreak codes\_*.csv} & The three naming tables, one file each, with the code, its basis and its evidence links \\
+\code{output/\allowbreak evidence.csv} & \evidenceCount{} evidence records: claim, value, source type, publisher, URL, quote, stance and the result of the quote check \\
+\code{output/\allowbreak calls.csv} & \callCount{} gaps and judgement calls, with kind, severity and detail \\
+\code{output/\allowbreak excluded\_regions.csv} & \excludedCount{} regions out of scope, with the reason and the mark it rests on \\
+\code{output/\allowbreak provenance.jsonld} & The chain from placement to evidence, document and step, in PROV-O \\
+\code{sources/\allowbreak documents.csv} & The \corpusDocuments{} documents of the corpus, by URL, hash and archive copy \\
+\bottomrule
+\end{tabular}
+\caption{The main released files.}
+\label{tab:files}
+\end{table}
+
+\section{Method}
+\label{sec:method}
+
+\begin{figure*}[tp]
+\centering
+\input{figures/pipeline.tex}
+\caption{How the data is built. Each box is a command a reader can run. Steps 1 to 8 produce the tables, and the bottom row checks them and builds this paper. Dashed boxes use a local model at temperature 0 with a frozen prompt.}
+\label{fig:pipeline}
+\end{figure*}
+
+\paragraph{Pipeline.} Figure~\ref{fig:pipeline} shows the steps. A script installs the corpus, parses every vendor list, places regions by rule, reads evidence from the documents, computes codes and writes all outputs, including this paper's numbers and tables. It needs Python with \code{numpy}~\citep{harris2020numpy}, and \code{pdftotext}~\citep{poppler} for PDFs. Tests check behaviour and output invariants: every code exists in its source, codes are unique per vendor, and every region has reasoning and links. A region a vendor adds later is placed by the same rules, and \code{make changes} lists what moved.
+
+\paragraph{Vendors.} We cover \providerCount{} vendors: AWS, Azure, Google Cloud, Alibaba, Oracle, Tencent, Huawei, IBM, OVHcloud, Akamai, Hetzner, Vultr and DigitalOcean. We chose them ourselves, as vendors that sell computing from named regions and publish a region list a script can read. We applied no threshold of revenue or market share, so the set is a sample and not a census, and adding a vendor means adding a parser for its list.
+
+\paragraph{Sources.} Region lists come from the vendors' own pages and APIs, plus botocore for non-commercial AWS partitions~\citep{botocore_endpoints}. We read the region lists and reference datasets on \listsRetrieved{} and last fetched the documents on \documentsRetrieved{}, so every number in this paper describes the lists as they stood then. Our scope is regions open to ordinary customers. The rule is: a region is out of scope when the vendor's own data marks it as sold only to government, classified, financial, self-driving or invited customers. The mark is a botocore partition label for AWS, a region ID pattern for Alibaba and Tencent, and the region name for Huawei. \code{output/excluded\_regions.csv} lists the \excludedCount{} regions this removes, each with its reason and the mark it rests on, and a partition the code has not seen stops the build. The Azure and Oracle lists we read hold commercial regions only; Azure US Government and China and Oracle's government realms are published elsewhere and are not in the corpus. We kept AWS China and the AWS European Sovereign Cloud, which are separate partitions that ordinary businesses can use. Coordinates come from GeoNames~\citep{geonames_readme}. UN/LOCODE comes from a public mirror of the UNECE list~\citep{datasets_unlocode}. Metropolitan codes come from OpenTravelData, an open dataset that is not published by IATA~\citep{opentraveldata}. IATA's official list is a subscription product~\citep{iata_location_database}. CLLI values are six-character city prefixes seen on PeeringDB facilities. They are inferred for an area and were never assigned to a region, as the official registry is proprietary~\citep{iconectiv_ip_faq}.
+
+\paragraph{Corpus.} The input is a fixed list of documents, not a search. \code{sources/documents.csv} holds \corpusDocuments{} documents, \corpusFetched{} of them fetchable, by URL, hash and, where one exists, archive copy, in the manner of LAION's lists of links~\citep{schuhmann2022laion}, and \code{sources/datasets.csv} does the same for datasets. We sourced these documents and built the corpus from them; the choice is ours and is not repeatable. Everything after the list is code or a frozen prompt: a local model reads each document once and says who published it and what kind it is, and that answer sets the source type a grade rests on. A reader's \code{make fetch} downloads each document, prefers an archive copy when a live page no longer matches its hash, installs hand-saved files by hash, and lists what is still missing and where to find it. We list gated documents without storing or quoting them.
+
+\paragraph{Reading evidence from the corpus.} Code reads every record, in three ways. A quote search takes lines that name a region and a place. A retrieval step asks a local model, whose answer code then checks (Section~\ref{sec:llm}). A join reads the facility codes printed under a region's heading in an audit certificate and looks for the same codes in government records that name the operator and a place in the area. A quote counts only if it names the region, names the place outside the region's own names, and is not about a network site such as a Direct Connect location. A place within 100~km of the placed city supports the area, whatever its exact name, because the area is what the tables publish. A checked model answer further away raises a call and moves nothing; a quote-search hit further away is discarded as noise, since documents list many cities. A separate script checks every quote against the cited document, reading PDFs in both text orders, and falls back on that document's saved copy where the live page refuses a script. Of \verifyTotal{} records, \verifyFound{} quotes were found on the live page and \verifySaved{} in a saved copy; \verifyNotFound{} were not found, \verifyUnreachable{} could not be fetched and \verifyNoQuote{} have no quote. A record that fails counts as \code{partial}. A match shows only that the words exist at the source, not that they support the claim, and no person has audited a sample. We publish at city level: a quote holding a street address is cut back to the city.
+
+\paragraph{Testing the quote check.} A quote check only means something if a wrong quote would fail. We broke quotes on purpose, using saved documents, in the manner of mutation testing~\citep{demillo1978hints,jia2011analysis}. Of \mutationControlTotal{} records with a saved document, \mutationControl{} real quotes passed. We then gave each document a quote from a different source: \mutationQuoteFalse{} of \mutationQuoteRecords{} still passed (\mutationQuoteShare{}\%, 95\% interval \mutationQuoteLow{} to \mutationQuoteHigh{}\%). Replacing the city inside the right quote gave \mutationCityFalse{} of \mutationCityRecords{} (\mutationCityShare{}\%, \mutationCityLow{} to \mutationCityHigh{}\%). Length matters here: \mutationShortFalse{} of \mutationShortRecords{} quotes under 20 characters passed wrongly, against \mutationLongFalse{} of \mutationLongRecords{} of 50 characters or more. So short quotes are weak evidence, and the scripted rules ignore them. The test measures whether wrong words get through; it cannot show that right words support a claim.
+
+\section{Results}
+\label{sec:results}
+
+\paragraph{Coverage.} Table~\ref{tab:coverage} compares the schemes. Airport codes name every region that has a place, and \placedNone{} has none. Metropolitan codes alone name far fewer, because they exist mainly for cities with several airports, and falling back to airports adds no coverage over airports alone. UN/LOCODE also misses places such as Jerusalem and Zhongwei, and CLLI prefixes mostly cover North America, with some European and a few Asia-Pacific cities.
+
+\begin{table*}[tp]
+\centering
+\small
+\input{generated/coverage.tex}
+\caption{How many of the \regionCount{} regions each scheme can name. Coverage depends on the derived places, including low-confidence ones.}
+\label{tab:coverage}
+\end{table*}
+
+\paragraph{Evidence.} Table~\ref{tab:grades} shows grades by vendor. Hetzner, DigitalOcean, OVHcloud, IBM and Akamai name a place in their lists for every region, and Google Cloud and Oracle for all but one. AWS and Azure account for most regions without one. \gradeVendorDocument{} regions rest on vendor documents, \gradePublicRecord{} on public records, \feedRegions{} on vendor feeds, \gradeReported{} on third-party reporting, \gradePartial{} on partial evidence, \gradeNetwork{} on network presence alone and \gradeAssumed{} on nothing. Precision is coarser than a city for \precisionCoarse{} regions.
+
+\begin{table*}[tp]
+\centering
+\small
+\input{generated/grades.tex}
+\caption{Strongest evidence grade per region, by vendor.}
+\label{tab:grades}
+\end{table*}
+
+\paragraph{Audit documents rarely locate regions.} We expected certifications to settle many cases. They mostly did not. AWS's public audit material gives a site count per region and lists cities only for edge and Local Zone sites~\citep{aws_soc3}, and much vendor audit material is gated. Vendor fact sheets name areas, though rarely a region.
+
+\paragraph{Public records.} Government records do not name cloud regions, but some name a vendor's facility codes, and audit certificates tie the same codes to regions. Joining the two gives a route to a place that does not depend on the vendor saying so. \code{make joins} found one for \gradePublicRecord{} Azure regions, from air permits, a federal facility registry, licence filings and a provincial letter, and reports the share of each region's audited codes it joined, from 1 of 10 for \code{centralus} to all 15 for \code{eastus2}. The certificate expired in June 2025~\citep{gsma_microsoft_2024}; we note it, though sites rarely move in a year. The 2024 certificate listed some codes under a different region, so a code list is not fixed, and a code can collide with another operator's, so a join requires the operator's name in the same document. Only Microsoft has such a code list in our corpus.
+
+\paragraph{Vendor IP feeds.} Seven vendors publish IP location feeds, most in the format of RFC~8805~\citep{rfc8805}: AWS, Google Cloud, Microsoft, Akamai, Vultr, DigitalOcean and Hetzner. AWS, Google and Microsoft also publish IP ranges by region, so we take each region's most common city as evidence, and it supports a place only if that city is within 50~km and holds at least half the addresses the feed covers. A feed can support a place but never override one, and it gives metro precision at most. A study of geofeeds found wrong entries for 8.5\% of server addresses and treats feeds as location hints at a 50~km metro level, not as ground truth~\citep{livadariu2024geofeeds}. Our data shows why. Microsoft's file says Dubai for \code{uaecentral}~\citep{azure_geofeed}, which Microsoft lists as Abu Dhabi, and Google's says Taipei for \code{asia-east1}~\citep{gcp_geofeed}, where Google names Changhua County. The strongest evidence for \feedRegions{} regions is a vendor feed, and \feedConflicts{} regions raise a call because the feed disagrees with the place. Microsoft says its file is for geolocation providers, so we cite it and do not redistribute it.
+
+\paragraph{Candidate regions.} The IP ranges of AWS and Google include \candidateCount{} region IDs absent from their published lists. We report them separately and do not count them.
+
+\paragraph{How a place is chosen.} Code applies one order to every region, and the \code{place\_basis} column records which step set the place. The vendor's label or ID comes first (\code{label}). Next comes the vendor's IP feed (\code{feed}), unless a document names another place (\code{document}): a local model read it there, code found its quote, the quote names the region and the document is not a listing or a network page. For a region with no feed the quote need not name the region. A document also sets the place when the label names a town our town list lacks and a vendor sentence locates that town. Then comes the capital when a label names only a country (\code{capital}), and last the place the model recalls with no document (\code{memory}, Section~\ref{sec:llm}). A separate \code{cross\_check} column says whether a second signal agrees or conflicts. \placedByDocument{} regions took their place from a document, \placedByMemory{} from memory alone, and \placedNone{} have no place. No region has a hand-set place.
+
+\paragraph{Vendors label one site several ways.} OVHcloud's regions page lists \code{HIL} as Seattle~\citep{ovh_regions}, while its locations page gives Portland (Hillsboro, Oregon)~\citep{ovh_locations_us}. The same pages give Toronto and Toronto (Cambridge), and Frankfurt and Frankfurt (Limburg). The label comes first, so \code{HIL} is Seattle, and the build raises a call for the other name.
+
+\paragraph{Sources disagree.} Vendors' IP feeds contradict their own lists, as above, and press can differ from both. A disagreement raises a call and leaves the place alone unless a stronger source supports it, in this order: the vendor's list, then a model answer whose quote names the region, then a feed. \code{make area-risk} then sorts weak regions by whether a rival city would change the code, or only the label: \areaRiskSafe{} keep their code against every rival we list, and \areaRiskAtRisk{} could change.
+
+\paragraph{Vendor codes are not always IATA codes.} Oracle's region keys look like airport codes~\citep{oracle_regions}, but \code{LEJ} for Casablanca is Leipzig/Halle, \code{ORF} for Madrid is Norfolk, and \code{HSG} for Batam is Saga in Japan. Vultr's \code{sgp}~\citep{vultr_regions_api} is Shay Gap in Australia~\citep{ourairports_data}, and OVHcloud's \code{LIM} for its Limburg site is Lima's airport code. Importing vendor keys as IATA codes would be wrong.
+
+\paragraph{The tables.} The nearest-airport and major-hub tables disagree on \tableDiffCount{} regions and use \tableADistinct{} and \tableBDistinct{} distinct codes respectively. The nearby-hub table uses \tableCDistinct{} codes, differing from the nearest-airport table on \tableDiffAC{} regions and from the major-hub table on \tableDiffBC{}. Appendix~\ref{app:codes} lists every region in all three. The mechanical rule is repeatable but picks smaller airports: \code{lcy} for London, \code{lga} for New York and \code{mdw} for Chicago, because those airports are closest to the city coordinates. It can also cross a state line: Boydton, Virginia is \code{rdu}, in North Carolina, in the nearest-airport and nearby-hub tables. The major-hub table can reach further: Quincy-Moses Lake, the name Microsoft's feed gives, is \code{eat} by nearest airport and \code{sea} by major hub.
+
+\paragraph{Calls.} The build raised \callCount{} calls, of which \highCallCount{} are high severity (Table~\ref{tab:calls}).
+
+\begin{table}[t]
+\centering
+\small
+\input{generated/calls.tex}
+\caption{Gaps and judgement calls raised by the build.}
+\label{tab:calls}
+\end{table}
+
+\section{Choosing a distance cap}
+\label{sec:cap}
+
+The nearest-airport and major-hub tables are the two ends of one family of rules. A distance cap $c$ blends them: a region keeps its hub if the hub is within $c$ kilometres, and otherwise takes its nearest airport. A cap of zero gives the nearest-airport table and no cap gives the major-hub table. The cap controls a trade-off between overlap across vendors and how accurately a code describes a place. The nearby-hub table uses the cap that a fixed rule selects from the other two, \capUsed{}~km. The rule needs a market radius, which we take from what vendors say a region is.
+
+\paragraph{Where 100~km comes from.} AWS states that all Availability Zones in a region are ``within 100~km (60 miles) of each other''~\citep{aws_regions_az,aws_fault_isolation}, and Microsoft that Azure's zones ``usually are within 100 kilometers of each other''~\citep{azure_availability_zones}. We read these as the largest span vendors publish for one region, so a hub farther than this lies outside what those vendors call one place. We set the market radius $\rho$ to that distance, and use the same 100~km when matching a quote, join or record to a placed city. Only two of our \providerCount{} vendors state such a maximum; Appendix~\ref{app:cap} gives the other vendors' statements and related figures from database engineering.
+
+\paragraph{Rule.} We count pairs of regions from different vendors, and treat regions within $\rho$ kilometres as one market. \emph{Pair recall} is the share of those nearby pairs that have the same code, \emph{false merges} are pairs with the same code that are over $\rho$ apart, and F1 combines the two~\citep{vanrijsbergen1979information}. The result changes only at the distance of a region whose codes differ between the tables, so the script evaluates all \capCount{} candidate caps. Among caps within 0.01 of the best F1, it takes the widest range in which the counts of correct and false pairs do not change, and rounds its midpoint to the nearest 10~km.
+
+\paragraph{Result.} At $\rho=\capRadius$~km the rule selects a cap of \capSelected{}~km: the stable range runs from \capLow{} to \capHigh{}~km, and every cap in it gives the same nearby-hub table (Table~\ref{tab:capnamed}). The vendors' 100~km lies inside that range. Resampling regions or whole cities moves the selected value, so the data fixes a range of equivalent caps, not one value; Appendix~\ref{app:cap} reports the resampling, the sensitivity to $\rho$ and the regions the cap moves off their hub.
+
+\begin{table*}[tp]
+\centering
+\small
+\input{generated/cap_named.tex}
+\caption{Selected caps at $\rho=\capRadius$~km. Codes: distinct codes. Shared: regions on a code used by at least two vendors. FM: false merges over the stated distance in kilometres.}
+\label{tab:capnamed}
+\end{table*}
+
+\paragraph{What a cap cannot fix.} At the selected cap, \capSplits{} nearby pairs still have different codes. \capBorderSplits{} of them cross a border, such as Singapore with Johor or Batam, Hong Kong with Shenzhen, and Roubaix with Brussels. The same-country rule keeps those apart on purpose. The other \capOtherSplits{} are mostly the Chuncheon pairs. Maximum recall is below 100\% for this reason, and it is a deliberate limit rather than an error.
+
+\section{Placing regions by rule}
+\label{sec:placer}
+
+Our reference placements, in \code{evaluation/reference\_placements.csv}, are an earlier placement made outside this pipeline. They feed no table, and we use them only to score methods. The placer uses fixed rules and never reads them. It looks for a city in the vendor's label and region ID, using GeoNames, takes the most common city in the vendor's IP feed where one is tied to the region, and falls back on a country's capital when a label names only a country. It then records two things for each region. The \emph{basis} says what gave the place: \code{label} (the vendor's label or region ID), \code{feed}, \code{capital} or \code{none}; later steps add \code{document} and \code{memory} (Section~\ref{sec:llm}). The \emph{cross-check} says whether a second signal falls within 50~km of the first: \code{agrees}, \code{conflicts}, or blank when there is only one.
+
+The placer gives a place for \placerPlaced{} of \placerRegions{} regions and abstains on \placerAbstained{}. It matches our reference placement within 50~km for \placerAccuracy{}\% of the regions it places (95\% Wilson interval~\citep{wilson1927probable,brown2001interval} \placerAllLow{} to \placerAllHigh{}\%). All \placerAgreedMatched{} of the \placerAgreedRegions{} label placements that a second signal agrees with match. Of the \placerOverturnedTotal{} placements that evidence overturned by hand, it sends \placerOverturnedFlagged{} to review, accepts \placerOverturnedMatching{} at a place matching ours, and accepts \placerOverturnedAccepted{} at the vendor's misleading label. Review means a cross-check that conflicts, or a basis of \code{feed}, \code{capital} or \code{none}. The rules were tuned on these same regions, so this is a description of fit, with no separate test set. Changing the agreement radius, the population limit or the feed share moves the score by a few regions at most (Appendix~\ref{app:methods}).
+
+\section{Placing regions with a local model}
+\label{sec:llm}
+
+We then asked whether a language model running on the reader's own machine does better than the rules. All models ran at temperature 0 and a fixed seed, served locally by Docker Model Runner~\citep{docker_model_runner}. We tested three methods with Qwen 3.8~\citep{hf_qwen38}, from the Qwen3 family~\citep{yang2025qwen3}. The \emph{label} method sees only the vendor's region text. The \emph{no documents} method sees only the region ID and name, and answers from what the model remembers. The \emph{RAG} method, retrieval-augmented generation~\citep{lewis2020rag}, cuts each document into passages, embeds them with Qwen's embedding model~\citep{zhang2025qwen3embedding}, keeps only passages that name the region, retrieves the 30 most similar by cosine similarity, as in dense passage retrieval~\citep{karpukhin2020dense}, reranks them with Qwen's reranker~\citep{zhang2025qwen3embedding,nogueira2019passage} and passes the top six to the model. If no passage names the region, the model is not called and the region is left unplaced. Prompts are fixed files in \code{prompts/}, and their hashes are recorded with the results.
+
+Code checks every answer. A quote must appear in the source text and contain the city as a whole word, the city must exist in GeoNames in the stated country, and a state or country given as a city is rejected. Answers that fail are counted, not placed. The no-documents method has no source text, so nothing checks it beyond the GeoNames lookup.
+
+\begin{table*}[tp]
+\centering
+\small
+\input{generated/llm_table}
+\caption{Agreement with the reference placements within 50~km. Each match column gives matches out of answers given in that group. The review set is the \llmRulesReviewRegions{} regions the rules send to review, and overturned is the \llmRulesTurnedRegions{} placements changed by hand after reading evidence. The last column counts regions each method matched that the rules did not.}
+\label{tab:llm}
+\end{table*}
+
+Table~\ref{tab:llm} shows that no model method placed as many regions in agreement as the rules, which answer \llmRulesAnswered{} of \llmRulesRegions{} regions and match \llmRulesMatched{} without a model. Retrieval is the weakest on coverage, answering \llmRagAnswered{}, because for most regions it left unplaced, no text in the vendor's documents named the region. Where it answers it is strong. On the review set, where help is most needed, it matched \llmRagReviewMatched{} of the \llmRagReviewAnswered{} it answered, and it matched \llmRagTurnedMatched{} of the \llmRagTurnedAnswered{} overturned placements it answered, each with a quote. The rules matched \llmRulesTurnedMatched{} of the overturned placements, each from a vendor IP feed.
+
+Retrieval therefore adds to the rules rather than replacing them. It matched \llmRagRescued{} regions the rules did not, each with a quote a reader can check. Its errors include reading a list entry for a US state as the city. A checked quote therefore shows that the words exist in the source, not that the model read them correctly; work on citations from language models separates a quote's presence from its support for the same reason~\citep{gao2023enabling}. Across chat models on the same retrieval, Qwen 3.8 answered \extractRagAnswered{} regions and matched \extractRagMatched{}; Qwen 3.6~\citep{hf_qwen36} \extractRagQwenSixMatched{} of \extractRagQwenSixAnswered{}; and GLM 4.7 Flash~\citep{hf_glm47flash,glm2025glm45} \extractRagGlmMatched{} of \extractRagGlmAnswered{}.
+
+Retrieval needs its filter. Similarity alone retrieves passages that never name the region, so we require retrieved passages to name the region and quotes to name the city.
+
+On regions that two methods both answer, no pair of methods differs after adjustment for multiple tests, so the model methods placed fewer regions, not worse ones. Appendix~\ref{app:methods} gives the paired tests, the agreement between models and the distances of the misses.
+
+\paragraph{What the model adds.} We also compared simpler ways of choosing a city per region from documents. A dictionary-and-rule extractor picked the most common city on lines naming the region: \extractTraditionalMatched{} of \extractTraditionalAnswered{} (\extractTraditionalLow{} to \extractTraditionalHigh{}\%). A statistical version picked the city most over-represented for a region against the vendor's other regions, using smoothed log-odds, a simple form of the measures compared for this task elsewhere~\citep{monroe2008fightin}, which discounts boilerplate: \extractStatisticalMatched{} of \extractStatisticalAnswered{} (\extractStatisticalLow{} to \extractStatisticalHigh{}\%). RAG gave \extractRagMatched{} of \extractRagAnswered{} (\extractRagLow{} to \extractRagHigh{}\%), and a local model reading only the vendor label gave \extractLabelMatched{} of \extractLabelAnswered{} (\extractLabelLow{} to \extractLabelHigh{}\%), which mostly restates labels. For grades, the model changes \modelGainRegions{} regions: \vendorDocWithModel{} reach \code{vendor-document} with its answers and \vendorDocWithoutModel{} without. So most placement needs no model, and recorded answers let a reader rebuild without one.
+
+\section{Comparison with outside sources}
+\label{sec:external}
+
+The scores above compare the rules with our own placements. Outside sources give checks we did not make ourselves; none is ground truth. Each comparison was added after the rules it tests were fixed, and those rules have not changed since; later corrections to the choice of UN/LOCODE and to evidence records left the result of every such comparison unchanged.
+
+\paragraph{Codes an operator chose.} Cloudflare names each of its sites with a three-letter code and a city on its public status page~\citep{cloudflare_status}. That is \operatorSites{} choices, made by an operator, of a short code for a known city. We gave our rules each city our town list holds (\operatorSitesResolved{} of them) and counted how often each table gives the code Cloudflare chose. The nearby-hub table agrees on \operatorNearbyHub{} (\operatorNearbyHubShare{}\%), the nearest-airport table on \operatorNearest{} (\operatorNearestShare{}\%) and the major-hub table on \operatorMajorHub{} (\operatorMajorHubShare{}\%). Where they differ, Cloudflare often prefers a city's main international airport to a closer one, as with Bangkok, Buenos Aires and Nairobi, or keeps a code after an airport closed, as with Berlin. These are network sites in city centres, not cloud regions, so the comparison tests naming practice and not where a region is.
+
+\paragraph{Places in another dataset.} The Green Software Foundation's dataset gives a coordinate for AWS, Azure and Google Cloud regions~\citep{gsf_real_time_cloud}. Of the \outsidePlacesCompared{} regions both hold, \outsidePlacesNear{} lie within 50~km of our place (\outsidePlacesShare{}\%, 95\% Wilson interval \outsidePlacesLow{} to \outsidePlacesHigh{}\%), with a median distance of \outsidePlacesMedianKm{}~km. For \outsidePlacesFarStated{} of the \outsidePlacesFar{} that differ, the vendor's own list names our city, such as The Dalles, Council Bluffs or Hamina, and the other dataset gives a point for the wider area or the grid zone. The rest are regions we grade below \code{vendor-stated}, and they are the ones a reader should check first; \code{output/external\_places.csv} lists every distance.
+
+\paragraph{Vendors held out from rule development.} We then fixed the rules and scored them, once, on two vendors that had no part in building them. Each publishes its own sites with a stated city and no login. Both lists were seen when we chose them, so this is a test held out from rule development and not one made unseen. Fastly lists \fastlySites{} sites by city name alone, each with a three-letter code and an approximate coordinate~\citep{fastly_pops}. From the name, the label rule placed \fastlyPlaced{} and abstained on the rest, among them names that several cities share, such as San Jose and Manchester. Of those placed, \fastlyNear{} lie within 50~km of Fastly's own coordinate (\fastlyNearShare{}\%). The misses are mostly namesakes: Naples in Florida was placed in Italy and Santa Clara in California was placed in Cuba. A bare city name is a harder input than a vendor's label, which usually carries a state or country. The code tables agree with Fastly less often than with Cloudflare: the nearby-hub table on \fastlyNearbyHub{} of the \fastlyPlaced{} placed sites (\fastlyNearbyHubShare{}\%), the nearest-airport table on \fastlyNearest{} (\fastlyNearestShare{}\%) and the major-hub table on \fastlyMajorHub{} (\fastlyMajorHubShare{}\%). Fastly's code is an airport in our list for only \fastlyCodeIsAirport{} of those sites, and it often gives several sites in one city different codes. Zenlayer's bare-metal page gives \zenlayerZonesSites{} pairs of a city and a three-letter zone code~\citep{zenlayer_bare_metal}. The rule placed \zenlayerZonesPlaced{} of them, and the nearby-hub table agrees with Zenlayer on \zenlayerZonesNearbyHub{} (\zenlayerZonesNearbyHubShare{}\%), the major-hub table on \zenlayerZonesMajorHub{} (\zenlayerZonesMajorHubShare{}\%) and the nearest-airport table on \zenlayerZonesNearest{} (\zenlayerZonesNearestShare{}\%). Zenlayer's \zenlayerRegions{} compute regions have identifiers such as \code{na-central-2}, printed with the city in brackets~\citep{zenlayer_compute}. The label rule placed \zenlayerRegionsPlaced{} of them. Shown only the identifier and not the city, the local model answered for \zenlayerMemoryAnswered{}, and \zenlayerMemoryNear{} of its answers lie within 50~km of the stated city. The files \code{output/heldout\_*.csv} hold every row. In all three operator lists the nearby-hub table agrees most often.
+
+\section{Threats to validity}
+\label{sec:threats}
+
+\paragraph{Agreement is not accuracy.} The scores in Sections~\ref{sec:placer} and~\ref{sec:llm} measure agreement with our reference placements, not truth, and the outside sources of Section~\ref{sec:external} are compiled from vendor statements too. Those placements are ours and draw heavily on the same vendor labels the rules read. The rules, their parameters and the frozen prompts were tuned against them, and we kept no separate test set of regions; Section~\ref{sec:external} scores the fixed rules on two further vendors.
+
+\paragraph{Vendor statements are unverified.} We have no location measurements, so no grade is an independent test of a vendor's claim. Labels and feeds are both the vendor's own statements, so a cross-check that agrees does not mean independently confirmed. The placer cannot find a site that no label, feed or document names.
+
+\paragraph{A label can name a market, not a site.} Four kinds of name are easy to confuse. A \emph{site town} is the town where the buildings stand, as a permit, an audit report or the vendor's own reports give it. A \emph{market name} is the city a vendor sells the region under, usually the nearest large city, and it is what marketing pages and many technical papers use. The \emph{nearest airport} and the \emph{hub} are codes we derive from a place; they name an airport that serves it, not where the region is. Our place is whatever the strongest source names, and a vendor's region list comes first, so where that list gives a market name the place is a market name. We know two such cases, both OVHcloud, and we have not corrected them. The list calls \code{HIL} Seattle, while the vendor's locations page and reports give Hillsboro, Oregon, about 240~km away~\citep{ovh_regions,ovh_locations_us}; its airport codes and UN/LOCODE are therefore Seattle's and not Portland's. The list calls \code{VIN} Washington DC, while the same sources give Vint Hill, Virginia, about 60~km away; the nearby-hub code is Dulles either way, but the nearest-airport code and the UN/LOCODE are Washington's. Other regions graded \code{vendor-stated} may carry a market name that no document in our corpus exposes. A reader who needs the site town should use the evidence records, not the place label.
+
+\paragraph{A quote check shows presence, not support.} A match shows that the words exist at the source, and a model can read the wrong table row: one model placed Google's \code{europe-west4} in Zurich from words that do stand together on the page. To test this, the author opened the source of each of the \reviewRecords{} quoted records, or its archived copy where the live link was dead, and judged whether the page says what the record claims. The author could open \reviewOpened{} of them (\reviewCannotOpen{} failed). In those, the quoted words were on the page in \reviewOnPage{}, and the verdict disagreed with the stance the record carries in \reviewDisagree{}; we withdrew \reviewWithdrawn{} such record from the table afterwards. One person, the author, did this review, so it is not an independent audit.
+
+\paragraph{The corpus was chosen.} We chose the documents, and looked hardest for regions with weak support. A different search would find other documents.
+
+\paragraph{The cap test is partly circular.} The cap and the pair outcome are distances over the same coordinates, so by the triangle inequality a hub within half the radius cannot create a false merge. The market radius, the cap selection rule and the 200~km hub radius are choices we state. Distance is measured to the airport: Chuncheon is about 75~km from Seoul, yet about 120~km from Incheon. The test says nothing about latency.
+
+\paragraph{Places are approximate.} Most places use a city-centre coordinate, while campuses can be far away, and a region can span more than one area: press reports AWS's UAE region in both Abu Dhabi and Dubai~\citep{meed_aws_uae}. Public permits place many cloud buildings in suburbs or nearby towns, and few tie a building to a region. Aragón's orders name AWS's Spanish region and its four towns~\citep{boa_aws_2026a,boa_aws_2026b}, and they agree with Zaragoza. A place the town list lacks falls back on weaker evidence: Google names the port of Eemshaven, and the table gives Groningen from the feed. Oracle's label names Jovanovac, which the list also lacks; its guide locates that region in Kragujevac~\citep{oracle_serbia_realm}, and the rule for such labels places it there.
+
+\paragraph{Models and memory.} The no-documents method cites nothing, a model can state a wrong fact fluently~\citep{ji2023survey}, and its training data may overlap with the vendor labels our placements draw on~\citep{sainz2023nlp}, so its agreement is not independent evidence. Repeated runs gave identical answers on this machine, but settings meant to be deterministic can still vary across runs and hardware~\citep{atil2024nondeterminism}.
+
+\paragraph{Sources drift.} Document access is uneven: one vendor's website refused our client, so its documents were saved by hand and are pinned by hash, and some vendors keep audit reports behind a login, which we did not use. Vendor pages change without notice, as links do across the scholarly web~\citep{klein2014scholarly,jones2016scholarly}, and we cannot redistribute them. A reader without an exact copy gets a run on a different corpus, and possibly different numbers; \code{make fetch} says which files differ, and archive copies restore some.
+
+\section{Discussion}
+
+\paragraph{Which scheme?} For a three-letter resource name, IATA airport codes are the practical choice: they cover the most regions in that length. UN/LOCODE is better for identifying a place, since it covers towns without airports, but it needs five characters. Metropolitan codes group sites usefully yet cannot name most regions on their own. We would not use CLLI as an identifier in open work. We recommend keeping these jobs separate: a stable place identifier in the data, UN/LOCODE as an attribute, and an airport code as the short label.
+
+\paragraph{Regions without a clear city.} A place label is an anchor, not a claim of a site. Where a region has no clear city, or its city rests on weak evidence (\code{vendor-feed} or below), we name it for its metro hub, the airport that serves the market, within the same \capUsed{}~km cap. If the hub is further away, the region takes its nearest airport, and the \code{area\_basis} column records which rule applied. So doubt between towns in one metro does not change the code.
+
+\paragraph{Which table?} For names shared across clouds we suggest the nearby-hub table. It keeps most of the major-hub table's overlap without its long-distance merges, its rule can be stated in one sentence, its limit comes from vendors' own statements, and it agrees most often with the codes each of three operator lists gives its own sites (Section~\ref{sec:external}). We have not tested with users whether any table is easier to work with. The nearest-airport table remains useful where the nearest airport is wanted, and the major-hub table where a single hub name matters more than distance.
+
+\paragraph{Ethics.} The work uses no personal data and involves no human subjects. Every source is a public document. We used no leaked material and no page behind a login, and we list gated documents without storing or quoting them. Where a data centre is can be sensitive, so we publish places at city level only: street addresses, parcel numbers and site coordinates are left out, even where a public filing gives them. Our client identifies itself in every request as \code{OpenCloudModelBot}, with a contact address. \url{https://opencloudmodel.org/crawler} describes it, lists the addresses its requests come from and says how to block it. Before an automated request it reads the site's \code{robots.txt}, and it sends no request that file disallows. Where automated fetching of a document failed, the author opened the page in a browser and saved it.
+
+\paragraph{Reuse terms.} UN/LOCODE is a UN/CEFACT standard, licensed CC BY 4.0~\citep{unece_unlocode_terms}, and we attribute its codes to UNECE. IATA's website terms limit its website content~\citep{iata_terms_of_use}, and we could not read Resolution 763 itself. We found no IATA document that addresses third-party use of location codes, and our airport codes come from OurAirports, not from IATA. We report these statements without drawing legal conclusions, and anyone redistributing these tables should check with the owners.
+
+\paragraph{Next step.} The obvious next step is active measurement, building on constraint-based work~\citep{gondree2013geolocation}: start small instances in each region, measure delay to independent landmarks, and test whether results fit one candidate place. Known-answer controls would come first, using regions whose vendors name a city far from major hubs. Landmark quality matters, since at least 2\% of RIPE Atlas vantage points appear not to be at their reported location~\citep{izhikevich2024rooting}, and close candidates such as Quincy and Seattle may not be separable. A hardware route also exists, in which a host attests a location read from a satellite receiver~\citep{abbas2023enforcing}, but it needs access to the host, so only a provider could deploy it. Results would enter the taxonomy under the reserved \code{measured} grade.
+
+\section{Conclusion}
+
+Most cloud regions can be given a short code, and a majority have a place the vendor names outright. The harder part is being honest about the rest. By publishing evidence, precision and judgement calls with every code, and rebuilding it all from a script, this taxonomy lets a reader see how well each placement is supported, and challenge one region without redoing the table.
+
+\section*{Availability}
+The OpenCloudModel Regions code, corpus list and outputs are at \url{https://github.com/opencloudmodelhq/regions}. This paper describes version \datasetVersion{} of the dataset, tagged \code{v\datasetVersion{}} in that repository. The code is under the Apache License 2.0. The tables, corpus list and other outputs are under CC BY 4.0. This paper is not under that licence; all rights in it are reserved. The outputs draw on GeoNames, OpenTravelData and UN/LOCODE (CC BY 4.0), OurAirports (public domain) and PeeringDB, whose terms still apply to that content, and the reuse terms above apply to the codes. Quotes from vendor and other documents are short quotations; those documents stay under their owners' terms and are not redistributed. The harness downloads them and records their hashes.
+
+\section*{Acknowledgements}
+Anthropic's Claude, a large language model, was used for software development, evidence collection and drafting. The author directed this use, checked the results and is responsible for the content. Evidence quotes were checked by a script, as described in Section~\ref{sec:method}, not by a person.
+
+\onecolumn
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\clearpage
+\appendix
+\section{Distance cap: details}
+\label{app:cap}
+
+\paragraph{Limits of that source.} Only two of our \providerCount{} vendors state a maximum, and Microsoft's is hedged by ``usually''. On the pages we read, Google Cloud, Alibaba, Oracle, Tencent and Huawei describe zones only in words such as ``low latency''. IBM and OVHcloud publish minimums instead, at least one mile and at least 30~km in Paris~\citep{ibm_locations,ovh_3az}, and neither bounds a region from above. Some regions are much smaller: IBM describes zones within one campus, and Google says some regions house their zones in one or two data centres~\citep{google_geography}. Some are larger: OVHcloud's SecNumCloud region spans Gravelines, Roubaix and Strasbourg, which by our coordinates lie well over 100~km apart~\citep{ovh_regions}. BSI also uses the same number the other way, as the floor below which two sites should never count as geo-redundant. The figure is a vendor-stated ceiling for zones, which we apply to markets by analogy. It is not a law of networks, since light in fibre covers about 200~km per millisecond, so a 2~ms round trip allows far more than 100~km of path~\citep{singla2014internet}.
+
+\paragraph{Search.} The result changes only at the distance of a region whose codes differ between the tables, so there are \capCount{} candidate caps for the \capRegions{} regions in scope. The script evaluates them all, so no optimiser is needed.
+
+\paragraph{Measures.} We count pairs of regions from different vendors. Fixing a market radius $\rho$ treats regions within $\rho$ kilometres as one market. \emph{Pair recall}, to maximise, is the share of those nearby pairs that have the same code. \emph{False merges}, to minimise, are pairs with the same code that are over $\rho$ apart. F1, their harmonic mean, combines the two~\citep{vanrijsbergen1979information}. We also report regions on a code used by at least two vendors, which is the plain measure of overlap but also rises with false merges, along with distance from a region to its code and the number of distinct codes.
+
+\paragraph{Selection rule.} Code selects the cap. Among caps within 0.01 of the best F1, take the widest range in which the counts of correct and false pairs do not change, then round its midpoint to the nearest 10~km. We prefer this to the raw F1 peak because a peak can rest on a single region.
+
+\paragraph{Result.} At $\rho=\capRadius$~km the rule selects a cap of \capSelected{}~km: the stable range runs from \capLow{} to \capHigh{}~km, with a midpoint of \capMidpoint{}~km. The nearby-hub table uses this cap. The vendors' 100~km also lies inside the range, where the pair counts do not change, so it would give the same codes. The rule is not steady, however. Across \capRuleRuns{} resamples of the regions it chose \capSelected{}~km \capRuleShare{}\% of the time, with a median of \capRuleMedian{}~km and a 5th to 95th percentile range of \capRuleLow{} to \capRuleHigh{}~km. Dropping one vendor at a time keeps \capSelected{}~km for \capRuleKept{} of \capRuleVendors{} vendors and moves it for the others: \capRuleMoved{}. Regions in one city are not independent, so we also resampled whole cities, as in a cluster bootstrap~\citep{field2007bootstrapping}. That is less steady still: \capCityShare{}\% at \capSelected{}~km, with a median of \capCityMedian{}~km and a range of \capCityLow{} to \capCityHigh{}~km. So the data fixes a range of equivalent caps rather than one value, and any cap in it gives the same nearby-hub table.
+
+\paragraph{A merge interval.} A single cap is not well determined, so we also report an interval: caps that add no false merge and keep at least 99\% of the correct pairs reachable without one. At $\rho=\capRadius$~km it runs from \capIntervalLow{}~km up to, but not including, \capIntervalHigh{}~km, the cap at which the first new false merge appears. Every cap in it gives \capIntervalPairs{} correct pairs and \capIntervalFalse{} false merges, all of them already in the nearest-airport table. Here it is the same as the stable range, and it holds the selected \capSelected{}~km. Resampling cities moves both edges. The upper edge has a median of \capCityUpperMedian{}~km (5th to 95th percentile \capCityUpperLow{} to \capCityUpperHigh{}~km), so it rarely falls below the full-data value. The lower edge moves far more, with a median of \capCityLowerMedian{}~km and a range of \capCityLowerLow{} to \capCityLowerHigh{}~km. The interval contains \capSelected{}~km in \capRegionHolds{}\% of region resamples and \capCityHolds{}\% of city resamples. The 99\% is our choice. Figure~\ref{fig:capbands} shows why overlap stops being useful. The new pairs are all correct until the \capMixedLow{} to \capMixedHigh{}~km band, which contains both Chuncheon joining Seoul (\capMixedGood{} correct pairs) and G\"avle joining Stockholm (\capMixedBad{} false pairs). Every later pair is a false merge.
+
+\paragraph{The raw peak.} F1 is highest at \capPeak{}~km, the start of the stable range, so that value and \capUsed{}~km give the same pairs. Dropping one vendor mostly leaves the peak there (Table~\ref{tab:capstability}). In a bootstrap of the regions~\citep{efron1979bootstrap}, the 5th to 95th percentile of the best cap runs from \capBootLow{} to \capBootHigh{}~km. A cap above the range would gain \capMixedGood{} Chuncheon pairs at the cost of \capMixedBad{} G\"avle pairs. A named exception could restore the first without the second.
+
+\paragraph{Sensitivity to the radius.} The answer depends on $\rho$ (Figure~\ref{fig:capf1}, Table~\ref{tab:capradius}), and the data cannot choose $\rho$, because a larger market radius simply tolerates larger merges. The rule selects the same cap at 75 and 100~km but very different ones at 50 and 150~km. In OpenTravelData~\citep{opentraveldata}, an unofficial source, 95\% of \metroLinks{} links between an airport and its metropolitan code are within \metroNinetyFive{}~km and 99\% are within \metroNinetyNine{}~km, so airline practice brackets the figure without pointing to it.
+
+\begin{figure}[htbp]
+\centering
+\input{generated/cap_bands.tex}
+\caption{New cross-vendor pairs that come to share a code as the cap rises, in 25~km bands, at $\rho=\capRadius$~km.}
+\label{fig:capbands}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\input{generated/cap_measures.tex}
+\caption{Four measures across all candidate caps. The shaded range is where pair counts do not change, and the dashed line is the selected cap.}
+\label{fig:capmeasures}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\input{generated/cap_tradeoff.tex}
+\caption{Recall against false merges, with one point for each candidate cap. Beyond the F1 peak, recall does not rise and false merges do.}
+\label{fig:captradeoff}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\input{generated/cap_f1.tex}
+\caption{F1 by cap for four market radii. The shaded range and dashed line are those for $\rho=\capRadius$~km.}
+\label{fig:capf1}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\small
+\input{generated/cap_radius.tex}
+\caption{Results by market radius.}
+\label{tab:capradius}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\small
+\input{generated/cap_stability.tex}
+\caption{F1 peak at $\rho=\capRadius$~km on subsets.}
+\label{tab:capstability}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\small
+\input{generated/cap_moved.tex}
+\caption{Regions a \capUsed{}~km cap moves off their hub, with distances in kilometres.}
+\label{tab:capmoved}
+\end{table}
+
+\clearpage
+\section{Placement methods: details}
+\label{app:methods}
+
+\paragraph{Sensitivity to our round numbers.} The agreement radius, the population limit and the feed share are round numbers we chose, so we reran the placer with other values (Table~\ref{tab:sensitivity}). Scores change little: agreement moves by a few regions across the radii, a lower population limit places a few more regions and mostly gets them wrong, and the feed share changes nothing, because every share in our data is above 90\%. That share counts only addresses the feed covers, and it says nothing about how many it misses, so this limit does not test what it appears to.
+
+\paragraph{Comparing methods region by region.} Comparing two intervals is a weak test of a difference~\citep{schenker2001judging}, and the methods answer the same regions, so we compared each pair on those regions with an exact McNemar test~\citep{mcnemar1947note} and adjusted each family of tests with Holm's method~\citep{holm1979simple}. The exact test is conservative~\citep{fagerland2013mcnemar}, so these p-values err towards finding no difference. They use only the saved answers. Counting a region a method left unplaced as a miss, the rules beat every model method (Table~\ref{tab:pairs}). That gap is coverage. On regions both methods answered, no pair differs after adjustment. The rules and RAG disagree on only \statRulesVsRagAnsweredOnlyFirst{} and \statRulesVsRagAnsweredOnlySecond{} of \statRulesVsRagAnsweredPairs{} regions (adjusted $p=\statRulesVsRagAnsweredHolm{}$), and the rules and the no-documents method on \statRulesVsMemoryAnsweredOnlyFirst{} and \statRulesVsMemoryAnsweredOnlySecond{} of \statRulesVsMemoryAnsweredPairs{} (adjusted $p=\statRulesVsMemoryAnsweredHolm{}$). So the model methods placed fewer regions, not worse ones (Figure~\ref{fig:coverage}). Figure~\ref{fig:tiers} shows the trade-off. Label placements that a second signal agrees with cover half the regions with no miss, each weaker step adds regions at a small cost, and no model method lies above that curve.
+
+\paragraph{Agreement between models.} The three chat models given the same passages mostly reach the same outcome: Cohen's $\kappa$~\citep{cohen1960coefficient} is \statRagAndRagQwenthreeSixKappa{} between Qwen 3.8 and Qwen 3.6, \statRagAndRagGlmFourSevenKappa{} between Qwen 3.8 and GLM 4.7 Flash, and \statRagQwenthreeSixAndRagGlmFourSevenKappa{} between the last two (Table~\ref{tab:kappa}). RAG and the no-documents method agree far less ($\kappa=\statRagAndMemoryKappa{}$), so retrieval and memory succeed on different regions. All six methods reach the same outcome for \statAllAgree{} of \llmRulesRegions{} regions.
+
+\paragraph{How far the misses fall.} Most answers land on the same GeoNames point as the reference, so the median error is 0~km for every method, and Table~\ref{tab:errors} describes the misses instead. The rules' \statRulesMisses{} misses lie a median \statRulesMissMedianKm{}~km away. RAG with Qwen 3.6 misses by a median \statRagQwenthreeSixMissMedianKm{}~km, partly because it reads across table rows: it placed Google's \code{europe-west4} in Zurich from a row of Google's location table, and the quote passed the check because those words do stand together on the page. Moving the threshold from 10 to 100~km changes each method's share by three points or less (Figure~\ref{fig:thresholds}), so the results do not hang on the 50~km choice. By vendor, four of the rules' six misses are OVHcloud regions whose labels name a large city, Frankfurt, Toronto, Seattle or Washington, while the reference places them in Limburg, Cambridge, Hillsboro and Vint Hill, 54 to 237~km away (Table~\ref{tab:vendors}).
+
+\begin{table}[htbp]
+\centering
+\small
+\input{generated/sensitivity.tex}
+\caption{The placer under other settings. An asterisk marks the value in use. The 95\% range is a Wilson interval on agreement with our placements.}
+\label{tab:sensitivity}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\input{generated/method_coverage.tex}
+\caption{Coverage and agreement for each method. Left: the share of the \llmRulesRegions{} regions a method answered. Right: the share of its answers within 50~km of the reference place, with 95\% Wilson intervals. The methods differ mainly in how many regions they answer.}
+\label{fig:coverage}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\small
+\input{generated/method_pairs_table.tex}
+\caption{Exact McNemar tests for each pair of methods. ``Only A'' counts regions method A matched and method B did not. All regions counts an unplaced region as a miss; both answered keeps only regions both methods answered. Each family is adjusted with Holm's method.}
+\label{tab:pairs}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\input{generated/method_tiers.tex}
+\caption{Coverage against agreement. The line adds the rules' steps from strongest to weakest; squares are the model methods.}
+\label{fig:tiers}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\small
+\input{generated/method_kappa_table.tex}
+\caption{Agreement on whether each region is matched. Same outcome is the raw share; $\kappa$ corrects it for chance.}
+\label{tab:kappa}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\small
+\input{generated/method_stats_table.tex}
+\caption{Answers, misses beyond 50~km, the median distance of those misses, and the share of answers within each distance of the reference place.}
+\label{tab:errors}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\input{generated/method_thresholds.tex}
+\caption{Share of answers within a given distance of the reference place, on a log scale. The dashed line marks 50~km.}
+\label{fig:thresholds}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\small
+\input{generated/method_vendor_table.tex}
+\caption{Matches within 50~km out of answers, by vendor and method.}
+\label{tab:vendors}
+\end{table}
+
+\clearpage
+\section{Commands}
+\label{sec:steps}
+
+Each stage is a command run from the repository (Table~\ref{tab:steps}). \code{make chain} runs them in order, and \code{make experiment} does the same using the recorded model answers, with no model installed. A reader can run them in order and inspect each output, and \code{README.md} gives the rule parameters and the known limits.
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{lp{0.72\textwidth}}
+\toprule
+Command & What it does and writes \\
+\midrule
+\code{make fetch} & Installs the corpus: downloads vendor lists, IP feeds, reference data and documents, checks hashes, uses archive copies and hand downloads, and lists what is missing \\
+\code{make regions} & Parses every published region into \code{output/published\_regions.csv} \\
+\code{make document-types} & Optional, needs a model. Reads each document and records its publisher and kind in \code{output/llm/<model>/document\_types.csv} \\
+\code{make rag} & Optional, needs models. Embeds, retrieves, reranks and asks the model, then asks with no documents; writes \code{output/llm/<model>/rag.csv} and \code{memory.csv} \\
+\code{make place} & Places regions by rule and scores them against the reference; writes \code{output/placer.csv} \\
+\code{make joins} & Joins audit codes to government records; writes \code{output/joins.jsonl} and \code{output/joins\_report.csv} \\
+\code{make extract} & Finds lines naming a region and a place; writes \code{data/raw/extracted.csv} \\
+\code{make scripted} & Applies the quote rules; writes \code{output/scripted\_evidence.jsonl} \\
+\code{make evidence} & Attaches every record to its region; writes \code{output/evidence.csv} \\
+\code{make verify} & Checks every quote against its source and writes \code{output/evidence\_verification.csv}, which caps grades on the next step; needs network access \\
+\code{make build} & Runs \code{grade}, \code{codes}, \code{calls} and \code{report}: grades evidence, assigns codes, raises calls and writes the three code tables, the report and the paper's numbers \\
+\code{make caps} & Tests every distance cap; writes \code{output/cap\_sweep.csv} and the figures \\
+\code{make sensitivity} & Reruns the placer with other values of its round numbers; writes \code{output/sensitivity.csv} \\
+\code{make mutation} & Breaks quotes on purpose and counts false passes; writes \code{output/quote\_mutation.json} \\
+\code{make area-risk} & Sorts weak regions by whether a rival city changes the area code; writes \code{output/area\_risk.csv} \\
+\code{make extract-methods} & Scores each method and measures what the model adds; writes \code{output/extraction\_methods.json} \\
+\code{make compare} & Scores the rules and model methods from the recorded files; needs no model \\
+\code{make method-stats} & Runs paired tests, agreement and error measures on the saved answers; writes \code{output/method\_stats.json} and the comparison figures and tables. Needs no model \\
+\code{make test} & Runs the test suite \\
+\code{make paper} & Builds this PDF from the generated numbers \\
+\code{make changes} & Lists regions whose place, code or grade moved since the last commit \\
+\bottomrule
+\end{tabular}
+\caption{The commands behind each step, in order.}
+\label{tab:steps}
+\end{table}
+
+\clearpage
+\begin{landscape}
+\section{Full code table}
+\label{app:codes}
+Each row is a cloud region, not a data centre. A region can span several sites, and vendors rarely publish them, so Place is the label we assign to the region at the precision its evidence supports. A dash means we have no place for the region. Evidence is the strongest grade for the place. These codes are labels and do not prove where a region is.
+
+\footnotesize
+\input{generated/code_table.tex}
+\end{landscape}
+\end{document}

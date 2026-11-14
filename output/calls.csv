@@ -1,0 +1,305 @@
+provider,region_id,kind,severity,detail
+aws,us-east-1,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+aws,us-east-1,shared-airport,low,Airport also serves Dulles.
+aws,us-east-2,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+aws,us-west-1,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+aws,us-west-1,nearest-differs-from-hub,low,Nearest airport SJC; market hub SFO.
+aws,us-west-1,shared-airport,low,Airport also serves Fremont.
+aws,us-west-2,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+aws,ap-southeast-3,nearest-differs-from-hub,low,Nearest airport HLP; market hub CGK.
+aws,ap-southeast-5,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+aws,ap-southeast-5,nearest-differs-from-hub,low,Nearest airport SZB; market hub KUL.
+aws,ap-southeast-4,nearest-differs-from-hub,low,Nearest airport MEB; market hub MEL.
+aws,ap-southeast-6,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+aws,ap-northeast-2,nearest-differs-from-hub,low,Nearest airport GMP; market hub ICN.
+aws,ap-southeast-1,nearest-differs-from-hub,low,Nearest airport XSP; market hub SIN.
+aws,ap-southeast-1,shared-airport,low,Airport also serves Jurong West.
+aws,ap-east-2,nearest-differs-from-hub,low,Nearest airport TSA; market hub TPE.
+aws,ap-southeast-7,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+aws,eu-west-1,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+aws,eu-west-2,nearest-differs-from-hub,low,Nearest airport LCY; market hub LHR.
+aws,eu-south-1,nearest-differs-from-hub,low,Nearest airport LIN; market hub MXP.
+aws,eu-west-3,nearest-differs-from-hub,low,Nearest airport ORY; market hub CDG.
+aws,eu-south-2,nearest-differs-from-hub,low,Nearest airport ZAZ; market hub PNA.
+aws,eu-north-1,nearest-differs-from-hub,low,Nearest airport BMA; market hub ARN.
+aws,il-central-1,shared-airport,low,Airport also serves Jerusalem.
+aws,mx-central-1,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+aws,mx-central-1,nearest-differs-from-hub,low,Nearest airport QRO; market hub MEX.
+aws,me-south-1,city-partial,medium,"Place rests on 'partial' evidence, not a vendor statement."
+aws,me-south-1,gap-unlocode,medium,UN/LOCODE has no entry for this place.
+aws,me-central-1,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+aws,sa-east-1,nearest-differs-from-hub,low,Nearest airport CGH; market hub GRU.
+aws,sa-east-1,shared-airport,low,Airport also serves Osasco.
+aws,cn-northwest-1,city-reported,low,"Place rests on 'reported' evidence, not a vendor statement."
+aws,cn-northwest-1,gap-unlocode,medium,UN/LOCODE has no entry for this place.
+aws,cn-northwest-1,nearest-differs-from-hub,low,Nearest airport ZHY; market hub LHW.
+aws,eusc-de-east-1,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+azure,australiaeast,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+azure,australiasoutheast,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+azure,australiasoutheast,nearest-differs-from-hub,low,Nearest airport MEB; market hub MEL.
+azure,brazilsouth,nearest-differs-from-hub,low,Nearest airport VCP; market hub GRU.
+azure,brazilsouth,shared-airport,low,Airport also serves Vinhedo.
+azure,brazilsoutheast,nearest-differs-from-hub,low,Nearest airport SDU; market hub GIG.
+azure,canadacentral,nearest-differs-from-hub,low,Nearest airport YTZ; market hub YYZ.
+azure,centralindia,nearest-differs-from-hub,low,Nearest airport PNQ; market hub BOM.
+azure,centralus,nearest-differs-from-hub,low,Nearest airport DSM; market hub OMA.
+azure,chilecentral,shared-airport,low,Airport also serves Valparaíso.
+azure,eastus,shared-airport,low,Airport also serves Ashburn.
+azure,francecentral,nearest-differs-from-hub,low,Nearest airport ORY; market hub CDG.
+azure,indonesiacentral,nearest-differs-from-hub,low,Nearest airport HLP; market hub CGK.
+azure,israelcentral,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+azure,israelcentral,shared-airport,low,Airport also serves Jerusalem.
+azure,italynorth,nearest-differs-from-hub,low,Nearest airport LIN; market hub MXP.
+azure,koreacentral,nearest-differs-from-hub,low,Nearest airport GMP; market hub ICN.
+azure,malaysiawest,nearest-differs-from-hub,low,Nearest airport SZB; market hub KUL.
+azure,mexicocentral,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+azure,mexicocentral,nearest-differs-from-hub,low,Nearest airport QRO; market hub MEX.
+azure,northcentralus,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+azure,northcentralus,nearest-differs-from-hub,low,Nearest airport MDW; market hub ORD.
+azure,norwaywest,nearest-differs-from-hub,low,Nearest airport SVG; market hub BGO.
+azure,southcentralus,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+azure,southcentralus,nearest-differs-from-hub,low,Nearest airport SAT; market hub AUS.
+azure,southeastasia,nearest-differs-from-hub,low,Nearest airport XSP; market hub SIN.
+azure,southeastasia,shared-airport,low,Airport also serves Jurong West.
+azure,southeastasia3,shared-airport,low,Airport also serves Kulai.
+azure,swedencentral,nearest-differs-from-hub,low,Nearest airport BLE; market hub ARN.
+azure,taiwannorth,nearest-differs-from-hub,low,Nearest airport TSA; market hub TPE.
+azure,uaecentral,feed-conflict,medium,"The vendor's IP feed says Dubai, 115 km from the place. A feed cannot override a place."
+azure,uaecentral,nearest-differs-from-hub,low,Nearest airport AUH; market hub DXB.
+azure,uksouth,nearest-differs-from-hub,low,Nearest airport LCY; market hub LHR.
+azure,ukwest,nearest-differs-from-hub,low,Nearest airport CWL; market hub LHR.
+azure,westcentralus,nearest-differs-from-hub,low,Nearest airport CYS; market hub DEN.
+azure,westus,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+azure,westus,nearest-differs-from-hub,low,Nearest airport SJC; market hub SFO.
+azure,westus,shared-airport,low,Airport also serves Fremont.
+azure,westus2,gap-unlocode,medium,UN/LOCODE has no entry for this place.
+azure,westus2,nearest-differs-from-hub,low,Nearest airport EAT; market hub SEA.
+gcp,asia-east1,feed-conflict,medium,"The vendor's IP feed says Taipei, 147 km from the place. A feed cannot override a place."
+gcp,asia-east1,nearest-differs-from-hub,low,Nearest airport RMQ; market hub TPE.
+gcp,asia-northeast3,nearest-differs-from-hub,low,Nearest airport GMP; market hub ICN.
+gcp,asia-southeast1,gap-unlocode,medium,UN/LOCODE has no entry for this place.
+gcp,asia-southeast1,nearest-differs-from-hub,low,Nearest airport XSP; market hub SIN.
+gcp,asia-southeast1,shared-airport,low,Airport also serves Singapore.
+gcp,asia-southeast2,nearest-differs-from-hub,low,Nearest airport HLP; market hub CGK.
+gcp,australia-southeast2,nearest-differs-from-hub,low,Nearest airport MEB; market hub MEL.
+gcp,europe-north1,feed-conflict,medium,"The vendor's IP feed says Lappeenranta, 76 km from the place. A feed cannot override a place."
+gcp,europe-north1,nearest-differs-from-hub,low,Nearest airport LPP; market hub HEL.
+gcp,europe-north2,nearest-differs-from-hub,low,Nearest airport BMA; market hub ARN.
+gcp,europe-west1,feed-conflict,medium,"The vendor's IP feed says Brussels, 58 km from the place. A feed cannot override a place."
+gcp,europe-west1,nearest-differs-from-hub,low,Nearest airport CRL; market hub BRU.
+gcp,europe-west12,nearest-differs-from-hub,low,Nearest airport TRN; market hub MXP.
+gcp,europe-west2,nearest-differs-from-hub,low,Nearest airport LCY; market hub LHR.
+gcp,europe-west4,city-feed,low,"Place rests on 'vendor-feed' evidence, not a vendor statement."
+gcp,europe-west4,nearest-differs-from-hub,low,Nearest airport GRQ; market hub AMS.
+gcp,europe-west8,nearest-differs-from-hub,low,Nearest airport LIN; market hub MXP.
+gcp,europe-west9,nearest-differs-from-hub,low,Nearest airport ORY; market hub CDG.
+gcp,me-west1,shared-airport,low,Airport also serves Jerusalem.
+gcp,northamerica-northeast2,nearest-differs-from-hub,low,Nearest airport YTZ; market hub YYZ.
+gcp,northamerica-south1,nearest-differs-from-hub,low,Nearest airport QRO; market hub MEX.
+gcp,southamerica-east1,nearest-differs-from-hub,low,Nearest airport CGH; market hub GRU.
+gcp,southamerica-east1,shared-airport,low,Airport also serves São Paulo.
+gcp,southamerica-west1,shared-airport,low,Airport also serves Valparaíso.
+gcp,us-east4,shared-airport,low,Airport also serves Dulles.
+gcp,us-south1,nearest-differs-from-hub,low,Nearest airport DAL; market hub DFW.
+gcp,us-west1,far-airport,low,Nearest airport is 110 km away.
+gcp,us-west1,shared-airport,low,Airport also serves Hillsboro.
+gcp,us-west2,nearest-differs-from-hub,low,Nearest airport HHR; market hub LAX.
+alibaba,cn-zhangjiakou,nearest-differs-from-hub,low,Nearest airport ZQZ; market hub PEK.
+alibaba,cn-wulanchabu,gap-unlocode,medium,UN/LOCODE has no entry for this place.
+alibaba,cn-wulanchabu,nearest-differs-from-hub,low,Nearest airport UCB; market hub HET.
+alibaba,cn-hangzhou,nearest-differs-from-hub,low,Nearest airport HGH; market hub PVG.
+alibaba,cn-shanghai,nearest-differs-from-hub,low,Nearest airport SHA; market hub PVG.
+alibaba,cn-shenzhen,nearest-differs-from-hub,low,Nearest airport SZX; market hub CAN.
+alibaba,cn-heyuan,nearest-differs-from-hub,low,Nearest airport HUZ; market hub CAN.
+alibaba,cn-guangzhou,nearest-differs-from-hub,low,Nearest airport FUO; market hub CAN.
+alibaba,cn-zhongwei,gap-unlocode,medium,UN/LOCODE has no entry for this place.
+alibaba,cn-zhongwei,nearest-differs-from-hub,low,Nearest airport ZHY; market hub LHW.
+alibaba,ap-southeast-1,nearest-differs-from-hub,low,Nearest airport XSP; market hub SIN.
+alibaba,ap-southeast-1,shared-airport,low,Airport also serves Jurong West.
+alibaba,ap-southeast-3,nearest-differs-from-hub,low,Nearest airport SZB; market hub KUL.
+alibaba,ap-southeast-5,nearest-differs-from-hub,low,Nearest airport HLP; market hub CGK.
+alibaba,ap-southeast-8,shared-airport,low,Airport also serves Kulai.
+alibaba,ap-northeast-2,nearest-differs-from-hub,low,Nearest airport GMP; market hub ICN.
+alibaba,us-west-1,city-partial,medium,"Place rests on 'partial' evidence, not a vendor statement."
+alibaba,us-west-1,nearest-differs-from-hub,low,Nearest airport SJC; market hub SFO.
+alibaba,us-west-1,shared-airport,low,Airport also serves Fremont.
+alibaba,us-east-1,city-assumed,medium,"Place rests on 'assumed' evidence, not a vendor statement."
+alibaba,us-east-1,gap-iata,high,"No place, so no airport code."
+alibaba,us-east-1,gap-unlocode,medium,UN/LOCODE has no entry for this place.
+alibaba,us-east-1,gap-unmapped,high,No place mapped for us-east-1.
+alibaba,eu-west-1,nearest-differs-from-hub,low,Nearest airport LCY; market hub LHR.
+alibaba,eu-west-2,nearest-differs-from-hub,low,Nearest airport ORY; market hub CDG.
+alibaba,na-south-1,city-partial,medium,"Place rests on 'partial' evidence, not a vendor statement."
+alibaba,sa-east-1,nearest-differs-from-hub,low,Nearest airport CGH; market hub GRU.
+alibaba,sa-east-1,shared-airport,low,Airport also serves Osasco.
+oracle,ap-melbourne-1,nearest-differs-from-hub,low,Nearest airport MEB; market hub MEL.
+oracle,sa-saopaulo-1,nearest-differs-from-hub,low,Nearest airport CGH; market hub GRU.
+oracle,sa-saopaulo-1,shared-airport,low,Airport also serves Osasco.
+oracle,sa-vinhedo-1,nearest-differs-from-hub,low,Nearest airport VCP; market hub GRU.
+oracle,sa-vinhedo-1,shared-airport,low,Airport also serves Campinas.
+oracle,ca-toronto-1,nearest-differs-from-hub,low,Nearest airport YTZ; market hub YYZ.
+oracle,sa-santiago-1,shared-airport,low,Airport also serves Valparaíso.
+oracle,sa-valparaiso-1,shared-airport,low,Airport also serves Santiago.
+oracle,eu-paris-1,nearest-differs-from-hub,low,Nearest airport ORY; market hub CDG.
+oracle,ap-batam-1,vendor-code-conflict,high,Vendor code HSG is really Kyushu Saga International Airport (JP).
+oracle,il-jerusalem-1,gap-unlocode,medium,UN/LOCODE has no entry for this place.
+oracle,il-jerusalem-1,shared-airport,low,Airport also serves Tel Aviv.
+oracle,eu-milan-1,nearest-differs-from-hub,low,Nearest airport LIN; market hub MXP.
+oracle,eu-turin-1,nearest-differs-from-hub,low,Nearest airport TRN; market hub MXP.
+oracle,eu-turin-1,vendor-code-not-iata,low,Vendor code NRQ is not in OurAirports.
+oracle,ap-kulai-2,shared-airport,low,Airport also serves Johor Bahru.
+oracle,ap-kulai-2,vendor-code-not-iata,low,Vendor code JBP is not in OurAirports.
+oracle,mx-queretaro-1,nearest-differs-from-hub,low,Nearest airport QRO; market hub MEX.
+oracle,af-casablanca-1,vendor-code-conflict,high,Vendor code LEJ is really Leipzig/Halle Airport (DE).
+oracle,eu-jovanovac-1,city-partial,medium,"Place rests on 'partial' evidence, not a vendor statement."
+oracle,eu-jovanovac-1,nearest-differs-from-hub,low,Nearest airport KVO; market hub BEG.
+oracle,ap-singapore-1,nearest-differs-from-hub,low,Nearest airport XSP; market hub SIN.
+oracle,ap-singapore-1,shared-airport,low,Airport also serves Jurong West.
+oracle,ap-singapore-2,nearest-differs-from-hub,low,Nearest airport XSP; market hub SIN.
+oracle,ap-singapore-2,shared-airport,low,Airport also serves Jurong West.
+oracle,ap-seoul-1,nearest-differs-from-hub,low,Nearest airport GMP; market hub ICN.
+oracle,ap-chuncheon-1,nearest-differs-from-hub,low,Nearest airport WJU; market hub ICN.
+oracle,eu-madrid-3,vendor-code-conflict,high,Vendor code ORF is really Norfolk International Airport (US).
+oracle,eu-stockholm-1,nearest-differs-from-hub,low,Nearest airport BMA; market hub ARN.
+oracle,me-abudhabi-1,nearest-differs-from-hub,low,Nearest airport AUH; market hub DXB.
+oracle,uk-london-1,nearest-differs-from-hub,low,Nearest airport LCY; market hub LHR.
+oracle,uk-cardiff-1,nearest-differs-from-hub,low,Nearest airport BRS; market hub LHR.
+oracle,us-ashburn-1,shared-airport,low,Airport also serves Dulles.
+oracle,us-chicago-1,nearest-differs-from-hub,low,Nearest airport MDW; market hub ORD.
+oracle,us-sanjose-1,nearest-differs-from-hub,low,Nearest airport SJC; market hub SFO.
+oracle,us-sanjose-1,shared-airport,low,Airport also serves Fremont.
+hetzner,fsn1,nearest-differs-from-hub,low,Nearest airport LEJ; market hub NUE.
+hetzner,fsn1,far-airport,low,Nearest airport is 105 km away.
+hetzner,ash,shared-airport,low,Airport also serves Dulles.
+hetzner,hil,shared-airport,low,Airport also serves The Dalles.
+hetzner,sin,nearest-differs-from-hub,low,Nearest airport XSP; market hub SIN.
+hetzner,sin,shared-airport,low,Airport also serves Jurong West.
+hetzner,nbg1,nearest-differs-from-hub,low,Nearest airport NUE; market hub FRA.
+vultr,cdg,nearest-differs-from-hub,low,Nearest airport ORY; market hub CDG.
+vultr,dfw,nearest-differs-from-hub,low,Nearest airport DAL; market hub DFW.
+vultr,ewr,nearest-differs-from-hub,low,Nearest airport EWR; market hub JFK.
+vultr,icn,nearest-differs-from-hub,low,Nearest airport GMP; market hub ICN.
+vultr,lax,nearest-differs-from-hub,low,Nearest airport HHR; market hub LAX.
+vultr,lhr,nearest-differs-from-hub,low,Nearest airport LCY; market hub LHR.
+vultr,mel,nearest-differs-from-hub,low,Nearest airport MEB; market hub MEL.
+vultr,mxp,nearest-differs-from-hub,low,Nearest airport LIN; market hub MXP.
+vultr,ord,nearest-differs-from-hub,low,Nearest airport MDW; market hub ORD.
+vultr,sao,nearest-differs-from-hub,low,Nearest airport CGH; market hub GRU.
+vultr,sao,shared-airport,low,Airport also serves Osasco.
+vultr,scl,shared-airport,low,Airport also serves Valparaíso.
+vultr,sea,nearest-differs-from-hub,low,Nearest airport BFI; market hub SEA.
+vultr,sgp,nearest-differs-from-hub,low,Nearest airport XSP; market hub SIN.
+vultr,sgp,shared-airport,low,Airport also serves Jurong West.
+vultr,sgp,vendor-code-conflict,high,Vendor code SGP is really Shay Gap Airport (AU).
+vultr,sjc,city-partial,medium,"Place rests on 'partial' evidence, not a vendor statement."
+vultr,sjc,nearest-differs-from-hub,low,Nearest airport SJC; market hub SFO.
+vultr,sjc,shared-airport,low,Airport also serves Fremont.
+vultr,sto,nearest-differs-from-hub,low,Nearest airport BMA; market hub ARN.
+vultr,tlv,shared-airport,low,Airport also serves Jerusalem.
+vultr,yto,nearest-differs-from-hub,low,Nearest airport YTZ; market hub YYZ.
+digitalocean,nyc1,nearest-differs-from-hub,low,Nearest airport LGA; market hub JFK.
+digitalocean,nyc2,nearest-differs-from-hub,low,Nearest airport LGA; market hub JFK.
+digitalocean,nyc3,nearest-differs-from-hub,low,Nearest airport LGA; market hub JFK.
+digitalocean,sgp1,nearest-differs-from-hub,low,Nearest airport XSP; market hub SIN.
+digitalocean,sgp1,shared-airport,low,Airport also serves Jurong West.
+digitalocean,lon1,nearest-differs-from-hub,low,Nearest airport LCY; market hub LHR.
+digitalocean,tor1,nearest-differs-from-hub,low,Nearest airport YTZ; market hub YYZ.
+digitalocean,ric1,nearest-differs-from-hub,low,Nearest airport RIC; market hub IAD.
+tencent,ap-shanghai,nearest-differs-from-hub,low,Nearest airport SHA; market hub PVG.
+tencent,ap-guangzhou,nearest-differs-from-hub,low,Nearest airport FUO; market hub CAN.
+tencent,ap-zhongwei,gap-unlocode,medium,UN/LOCODE has no entry for this place.
+tencent,ap-zhongwei,nearest-differs-from-hub,low,Nearest airport ZHY; market hub LHW.
+tencent,ap-singapore,nearest-differs-from-hub,low,Nearest airport XSP; market hub SIN.
+tencent,ap-singapore,shared-airport,low,Airport also serves Jurong West.
+tencent,ap-johorbahru,shared-airport,low,Airport also serves Kulai.
+tencent,ap-jakarta,nearest-differs-from-hub,low,Nearest airport HLP; market hub CGK.
+tencent,ap-seoul,nearest-differs-from-hub,low,Nearest airport GMP; market hub ICN.
+tencent,sa-saopaulo,nearest-differs-from-hub,low,Nearest airport CGH; market hub GRU.
+tencent,sa-saopaulo,shared-airport,low,Airport also serves Osasco.
+tencent,na-queretaro,nearest-differs-from-hub,low,Nearest airport QRO; market hub MEX.
+tencent,na-siliconvalley,city-partial,medium,"Place rests on 'partial' evidence, not a vendor statement."
+tencent,na-siliconvalley,nearest-differs-from-hub,low,Nearest airport SJC; market hub SFO.
+tencent,na-siliconvalley,shared-airport,low,Airport also serves Fremont.
+tencent,na-ashburn,city-partial,medium,"Place rests on 'partial' evidence, not a vendor statement."
+tencent,na-ashburn,shared-airport,low,Airport also serves Dulles.
+ovhcloud,SBG,nearest-differs-from-hub,low,Nearest airport SXB; market hub BSL.
+ovhcloud,SBG,vendor-code-conflict,high,Vendor code SBG is really Maimun Saleh Airport (ID).
+ovhcloud,GRA,nearest-differs-from-hub,low,Nearest airport LIL; market hub BVA.
+ovhcloud,GRA,shared-airport,low,Airport also serves Roubaix.
+ovhcloud,GRA,vendor-code-conflict,high,Vendor code GRA is really Gamarra Airport (CO).
+ovhcloud,RBX,nearest-differs-from-hub,low,Nearest airport LIL; market hub CDG.
+ovhcloud,RBX,shared-airport,low,Airport also serves Gravelines.
+ovhcloud,RBX,vendor-code-conflict,high,Vendor code RBX is really Rumbek Airport (SS).
+ovhcloud,PAR,nearest-differs-from-hub,low,Nearest airport ORY; market hub CDG.
+ovhcloud,MIL,nearest-differs-from-hub,low,Nearest airport LIN; market hub MXP.
+ovhcloud,ERI,nearest-differs-from-hub,low,Nearest airport LCY; market hub LHR.
+ovhcloud,ERI,vendor-code-conflict,high,Vendor code ERI is really Erie International Tom Ridge Field (US).
+ovhcloud,LIM,vendor-code-conflict,high,Vendor code LIM is really Jorge Chávez International Airport (PE).
+ovhcloud,BHS,vendor-code-conflict,high,Vendor code BHS is really Bathurst Airport (AU).
+ovhcloud,TOR,nearest-differs-from-hub,low,Nearest airport YTZ; market hub YYZ.
+ovhcloud,TOR,vendor-code-conflict,high,Vendor code TOR is really Torrington Municipal Airport (US).
+ovhcloud,HIL,evidence-conflict,high,Sources disagree on this region's place.
+ovhcloud,HIL,nearest-differs-from-hub,low,Nearest airport BFI; market hub SEA.
+ovhcloud,HIL,vendor-code-conflict,high,Vendor code HIL is really Shilavo Airport (ET).
+ovhcloud,VIN,nearest-differs-from-hub,low,Nearest airport DCA; market hub IAD.
+ovhcloud,VIN,vendor-code-conflict,high,Vendor code VIN is really Vinnytsia/Gavyryshivka International Airport (UA).
+ovhcloud,SGP,nearest-differs-from-hub,low,Nearest airport XSP; market hub SIN.
+ovhcloud,SGP,shared-airport,low,Airport also serves Jurong West.
+ovhcloud,SGP,vendor-code-conflict,high,Vendor code SGP is really Shay Gap Airport (AU).
+ovhcloud,MUM,vendor-code-conflict,high,Vendor code MUM is really Muli Airport (MV).
+ibm,us-south,nearest-differs-from-hub,low,Nearest airport DAL; market hub DFW.
+ibm,br-sao,nearest-differs-from-hub,low,Nearest airport CGH; market hub GRU.
+ibm,br-sao,shared-airport,low,Airport also serves Osasco.
+ibm,ca-tor,nearest-differs-from-hub,low,Nearest airport YTZ; market hub YYZ.
+ibm,us-east,nearest-differs-from-hub,low,Nearest airport DCA; market hub IAD.
+ibm,eu-gb,nearest-differs-from-hub,low,Nearest airport LCY; market hub LHR.
+akamai,gb-lon,nearest-differs-from-hub,low,Nearest airport LCY; market hub LHR.
+akamai,se-sto,nearest-differs-from-hub,low,Nearest airport BMA; market hub ARN.
+akamai,it-mil,nearest-differs-from-hub,low,Nearest airport LIN; market hub MXP.
+akamai,id-cgk,nearest-differs-from-hub,low,Nearest airport HLP; market hub CGK.
+akamai,us-lax,nearest-differs-from-hub,low,Nearest airport HHR; market hub LAX.
+akamai,au-mel,nearest-differs-from-hub,low,Nearest airport MEB; market hub MEL.
+akamai,sg-sin-2,nearest-differs-from-hub,low,Nearest airport XSP; market hub SIN.
+akamai,sg-sin-2,shared-airport,low,Airport also serves Jurong West.
+akamai,us-iad-2,nearest-differs-from-hub,low,Nearest airport DCA; market hub IAD.
+akamai,fr-par-2,nearest-differs-from-hub,low,Nearest airport ORY; market hub CDG.
+akamai,br-gru,nearest-differs-from-hub,low,Nearest airport CGH; market hub GRU.
+akamai,br-gru,shared-airport,low,Airport also serves Osasco.
+akamai,us-sea,nearest-differs-from-hub,low,Nearest airport BFI; market hub SEA.
+akamai,fr-par,nearest-differs-from-hub,low,Nearest airport ORY; market hub CDG.
+akamai,us-ord,nearest-differs-from-hub,low,Nearest airport MDW; market hub ORD.
+akamai,us-iad,nearest-differs-from-hub,low,Nearest airport DCA; market hub IAD.
+akamai,ca-central,nearest-differs-from-hub,low,Nearest airport YTZ; market hub YYZ.
+akamai,us-central,nearest-differs-from-hub,low,Nearest airport DAL; market hub DFW.
+akamai,ap-south,nearest-differs-from-hub,low,Nearest airport XSP; market hub SIN.
+akamai,ap-south,shared-airport,low,Airport also serves Jurong West.
+akamai,eu-west,nearest-differs-from-hub,low,Nearest airport LCY; market hub LHR.
+akamai,us-east,nearest-differs-from-hub,low,Nearest airport EWR; market hub JFK.
+akamai,us-west,nearest-differs-from-hub,low,Nearest airport SJC; market hub SFO.
+akamai,us-west,shared-airport,low,Airport also serves San Jose.
+huawei,ap-southeast-3,nearest-differs-from-hub,low,Nearest airport XSP; market hub SIN.
+huawei,ap-southeast-3,shared-airport,low,Airport also serves Jurong West.
+huawei,ap-southeast-4,nearest-differs-from-hub,low,Nearest airport HLP; market hub CGK.
+huawei,cn-east-3,nearest-differs-from-hub,low,Nearest airport SHA; market hub PVG.
+huawei,cn-east-2,nearest-differs-from-hub,low,Nearest airport SHA; market hub PVG.
+huawei,cn-south-1,nearest-differs-from-hub,low,Nearest airport FUO; market hub CAN.
+huawei,cn-north-9,gap-unlocode,medium,UN/LOCODE has no entry for this place.
+huawei,cn-north-9,nearest-differs-from-hub,low,Nearest airport UCB; market hub HET.
+huawei,tr-west-1,nearest-differs-from-hub,low,Nearest airport SAW; market hub IST.
+huawei,sa-brazil-1,nearest-differs-from-hub,low,Nearest airport CGH; market hub GRU.
+huawei,sa-brazil-1,shared-airport,low,Airport also serves Osasco.
+huawei,la-south-2,shared-airport,low,Airport also serves Valparaíso.
+huawei,cn-east-4,nearest-differs-from-hub,low,Nearest airport WHA; market hub NKG.
+huawei,cn-north-12,city-partial,medium,"Place rests on 'partial' evidence, not a vendor statement."
+huawei,cn-north-12,nearest-differs-from-hub,low,Nearest airport SJW; market hub TYN.
+huawei,cn-south-2,nearest-differs-from-hub,low,Nearest airport SZX; market hub CAN.
+huawei,eu-west-0,nearest-differs-from-hub,low,Nearest airport ORY; market hub CDG.
+huawei,my-kualalumpur-1,nearest-differs-from-hub,low,Nearest airport SZB; market hub KUL.
+huawei,ru-northwest-2,nearest-differs-from-hub,low,Nearest airport VKO; market hub SVO.
+aws,me-west-1,candidate-region,medium,In the vendor's IP ranges (Riyadh) but not its region list.
+aws,sa-west-1,candidate-region,medium,In the vendor's IP ranges (Santiago) but not its region list.
+aws,us-south-1,candidate-region,medium,In the vendor's IP ranges (Dallas) but not its region list.
+gcp,europe-west15,candidate-region,medium,In the vendor's IP ranges (Heringsdorf) but not its region list.
+gcp,us-central2,candidate-region,medium,In the vendor's IP ranges (Tulsa) but not its region list.
+gcp,us-east7,candidate-region,medium,In the vendor's IP ranges (Huntsville) but not its region list.
+gcp,us-west8,candidate-region,medium,In the vendor's IP ranges (Phoenix) but not its region list.

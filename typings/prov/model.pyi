@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: 2026 Mosox Digital Ltd.
+# SPDX-License-Identifier: Apache-2.0
+
+class ProvRecord: ...
+
+class ProvDocument:
+    @staticmethod
+    def deserialize(source: object = ..., content: str | None = ..., format: str = ..., **args: str) -> ProvDocument: ...
+    def get_records(self) -> list[ProvRecord]: ...

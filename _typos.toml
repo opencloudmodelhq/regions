@@ -1,0 +1,2 @@
+[files]
+extend-exclude = ["LICENSE*", "LICENSES/", "output/", "sources/", "config/", "registers/", "evaluation/", "paper/", "site/", "uv.lock", "tests/", "src/ocm_regions/publish/site_template.html"]

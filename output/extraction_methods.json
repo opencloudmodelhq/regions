@@ -1,0 +1,51 @@
+{
+ "traditional": {
+  "regions": 391,
+  "answered": 207,
+  "matched": 121,
+  "low": 0.5164632878233985,
+  "high": 0.6495381084854894
+ },
+ "statistical": {
+  "regions": 391,
+  "answered": 207,
+  "matched": 127,
+  "low": 0.5456969335908336,
+  "high": 0.6772192271668157
+ },
+ "chain-glm-4.7/rag": {
+  "regions": 391,
+  "answered": 313,
+  "matched": 303,
+  "low": 0.9421969833860228,
+  "high": 0.9825553218668229
+ },
+ "chain-qwen3.6/rag": {
+  "regions": 391,
+  "answered": 313,
+  "matched": 305,
+  "low": 0.950383656929059,
+  "high": 0.9869932531736548
+ },
+ "chain-qwen3.8/label": {
+  "regions": 391,
+  "answered": 333,
+  "matched": 329,
+  "low": 0.9695260028746242,
+  "high": 0.9953191943931717
+ },
+ "chain-qwen3.8/memory": {
+  "regions": 391,
+  "answered": 363,
+  "matched": 348,
+  "low": 0.9329477938015431,
+  "high": 0.974800945708916
+ },
+ "chain-qwen3.8/rag": {
+  "regions": 391,
+  "answered": 321,
+  "matched": 317,
+  "low": 0.9684027055917633,
+  "high": 0.9951438352453709
+ }
+}

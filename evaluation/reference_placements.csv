@@ -1,0 +1,392 @@
+provider,region_id,city,lat,lon
+aws,us-east-1,Ashburn,39.04372,-77.48749
+aws,us-east-2,Columbus,39.96118,-82.99879
+aws,us-west-1,San Jose,37.33939,-121.89496
+aws,us-west-2,Boardman,45.83986,-119.70058
+aws,af-south-1,Cape Town,-33.92584,18.42322
+aws,ap-east-1,Hong Kong,22.27832,114.17469
+aws,ap-east-2,Taipei,25.05306,121.52639
+aws,ap-south-1,Mumbai,19.07283,72.88261
+aws,ap-south-2,Hyderabad,17.38405,78.45636
+aws,ap-southeast-1,Singapore,1.28967,103.85007
+aws,ap-southeast-2,Sydney,-33.86785,151.20732
+aws,ap-southeast-3,Jakarta,-6.21462,106.84513
+aws,ap-southeast-4,Melbourne,-37.814,144.96332
+aws,ap-southeast-5,Kuala Lumpur,3.1412,101.68653
+aws,ap-southeast-6,Auckland,-36.84853,174.76349
+aws,ap-southeast-7,Bangkok,13.75398,100.50144
+aws,ap-northeast-1,Tokyo,35.6895,139.69171
+aws,ap-northeast-2,Seoul,37.566,126.9784
+aws,ap-northeast-3,Osaka,34.69379,135.50107
+aws,ca-central-1,Montreal,45.50884,-73.58781
+aws,ca-west-1,Calgary,51.05011,-114.08529
+aws,eu-central-1,Frankfurt,50.11552,8.68417
+aws,eu-central-2,Zurich,47.36667,8.55
+aws,eu-north-1,Stockholm,59.32938,18.06871
+aws,eu-south-1,Milan,45.46427,9.18951
+aws,eu-south-2,Zaragoza,41.65606,-0.87734
+aws,eu-west-1,Dublin,53.33306,-6.24889
+aws,eu-west-2,London,51.50853,-0.12574
+aws,eu-west-3,Paris,48.85341,2.3488
+aws,il-central-1,Tel Aviv,32.08088,34.78057
+aws,me-central-1,Abu Dhabi,24.45118,54.39696
+aws,me-south-1,Manama,26.22787,50.58565
+aws,mx-central-1,Queretaro,20.58806,-100.38806
+aws,sa-east-1,Sao Paulo,-23.5475,-46.63611
+aws,cn-north-1,Beijing,39.9075,116.39723
+aws,cn-northwest-1,Zhongwei,37.51129,105.19067
+aws,eusc-de-east-1,Berlin,52.52437,13.41053
+azure,australiacentral,Canberra,-35.28346,149.12807
+azure,australiacentral2,Canberra,-35.28346,149.12807
+azure,australiaeast,Sydney,-33.86785,151.20732
+azure,australiasoutheast,Melbourne,-37.814,144.96332
+azure,austriaeast,Vienna,48.20849,16.37208
+azure,belgiumcentral,Brussels,50.85045,4.34878
+azure,brazilsouth,Campinas,-22.90556,-47.06083
+azure,brazilsoutheast,Rio de Janeiro,-22.90642,-43.18223
+azure,canadacentral,Toronto,43.65333,-79.38389
+azure,canadaeast,Quebec City,46.81228,-71.21454
+azure,centralindia,Pune,18.51957,73.85535
+azure,centralus,Des Moines,41.60054,-93.60911
+azure,chilecentral,Santiago,-33.45694,-70.64827
+azure,denmarkeast,Copenhagen,55.67594,12.56553
+azure,eastasia,Hong Kong,22.27832,114.17469
+azure,eastus,Ashburn,39.04372,-77.48749
+azure,eastus2,Boydton,36.66764,-78.3875
+azure,francecentral,Paris,48.85341,2.3488
+azure,francesouth,Marseille,43.29695,5.38107
+azure,germanynorth,Berlin,52.52437,13.41053
+azure,germanywestcentral,Frankfurt,50.11552,8.68417
+azure,indiasouthcentral,Hyderabad,17.38405,78.45636
+azure,indonesiacentral,Jakarta,-6.21462,106.84513
+azure,israelcentral,Tel Aviv,32.08088,34.78057
+azure,italynorth,Milan,45.46427,9.18951
+azure,japaneast,Tokyo,35.6895,139.69171
+azure,japanwest,Osaka,34.69379,135.50107
+azure,koreacentral,Seoul,37.566,126.9784
+azure,koreasouth,Busan,35.10168,129.03004
+azure,malaysiawest,Kuala Lumpur,3.1412,101.68653
+azure,mexicocentral,Queretaro,20.58806,-100.38806
+azure,newzealandnorth,Auckland,-36.84853,174.76349
+azure,northcentralus,Chicago,41.85003,-87.65005
+azure,northeurope,Dublin,53.33306,-6.24889
+azure,norwayeast,Oslo,59.91273,10.74609
+azure,norwaywest,Stavanger,58.97005,5.73332
+azure,polandcentral,Warsaw,52.22977,21.01178
+azure,qatarcentral,Doha,25.28545,51.53096
+azure,southafricanorth,Johannesburg,-26.20227,28.04363
+azure,southafricawest,Cape Town,-33.92584,18.42322
+azure,southcentralus,San Antonio,29.42412,-98.49363
+azure,southindia,Chennai,13.08784,80.27847
+azure,southeastasia,Singapore,1.28967,103.85007
+azure,southeastasia3,Johor Bahru,1.4655,103.7578
+azure,spaincentral,Madrid,40.4165,-3.70256
+azure,swedencentral,Gavle,60.67452,17.14174
+azure,switzerlandnorth,Zurich,47.36667,8.55
+azure,switzerlandwest,Geneva,46.20222,6.14569
+azure,taiwannorth,Taipei,25.05306,121.52639
+azure,uaecentral,Abu Dhabi,24.45118,54.39696
+azure,uaenorth,Dubai,25.07725,55.30927
+azure,uksouth,London,51.50853,-0.12574
+azure,ukwest,Cardiff,51.48,-3.18
+azure,westcentralus,Cheyenne,41.13998,-104.82025
+azure,westeurope,Middenmeer,52.80667,4.99861
+azure,westindia,Mumbai,19.07283,72.88261
+azure,westus,San Jose,37.33939,-121.89496
+azure,westus2,Quincy,47.2343,-119.85255
+azure,westus3,Phoenix,33.44838,-112.07404
+gcp,africa-south1,Johannesburg,-26.20227,28.04363
+gcp,asia-east1,Changhua County,24.07327,120.56276
+gcp,asia-east2,Hong Kong,22.27832,114.17469
+gcp,asia-northeast1,Tokyo,35.6895,139.69171
+gcp,asia-northeast2,Osaka,34.69379,135.50107
+gcp,asia-northeast3,Seoul,37.566,126.9784
+gcp,asia-south1,Mumbai,19.07283,72.88261
+gcp,asia-south2,Delhi,28.65195,77.23149
+gcp,asia-southeast1,Singapore,1.28967,103.85007
+gcp,asia-southeast2,Jakarta,-6.21462,106.84513
+gcp,asia-southeast3,Bangkok,13.75398,100.50144
+gcp,australia-southeast1,Sydney,-33.86785,151.20732
+gcp,australia-southeast2,Melbourne,-37.814,144.96332
+gcp,europe-central2,Warsaw,52.22977,21.01178
+gcp,europe-north1,Hamina,60.56974,27.19794
+gcp,europe-north2,Stockholm,59.32938,18.06871
+gcp,europe-southwest1,Madrid,40.4165,-3.70256
+gcp,europe-west1,Saint-Ghislain,50.44816,3.81886
+gcp,europe-west10,Berlin,52.52437,13.41053
+gcp,europe-west12,Turin,45.07049,7.68682
+gcp,europe-west2,London,51.50853,-0.12574
+gcp,europe-west3,Frankfurt,50.11552,8.68417
+gcp,europe-west4,Eemshaven,53.4386,6.8347
+gcp,europe-west6,Zurich,47.36667,8.55
+gcp,europe-west8,Milan,45.46427,9.18951
+gcp,europe-west9,Paris,48.85341,2.3488
+gcp,me-central1,Doha,25.28545,51.53096
+gcp,me-central2,Dammam,26.43442,50.10326
+gcp,me-west1,Tel Aviv,32.08088,34.78057
+gcp,northamerica-northeast1,Montreal,45.50884,-73.58781
+gcp,northamerica-northeast2,Toronto,43.65333,-79.38389
+gcp,northamerica-south1,Queretaro,20.58806,-100.38806
+gcp,southamerica-east1,Osasco,-23.5325,-46.79167
+gcp,southamerica-west1,Santiago,-33.45694,-70.64827
+gcp,us-central1,Council Bluffs,41.26194,-95.86083
+gcp,us-east1,Moncks Corner,33.19632,-80.01429
+gcp,us-east4,Ashburn,39.04372,-77.48749
+gcp,us-east5,Columbus,39.96118,-82.99879
+gcp,us-south1,Dallas,32.78306,-96.80667
+gcp,us-west1,The Dalles,45.59456,-121.17868
+gcp,us-west2,Los Angeles,34.05223,-118.24368
+gcp,us-west3,Salt Lake City,40.76078,-111.89105
+gcp,us-west4,Las Vegas,36.17497,-115.13722
+alibaba,cn-qingdao,Qingdao,36.06488,120.38042
+alibaba,cn-beijing,Beijing,39.9075,116.39723
+alibaba,cn-zhangjiakou,Zhangjiakou,40.78341,114.87139
+alibaba,cn-huhehaote,Hohhot,40.81056,111.65222
+alibaba,cn-wulanchabu,Ulanqab,41.0273,113.1341
+alibaba,cn-hangzhou,Hangzhou,30.29365,120.16142
+alibaba,cn-shanghai,Shanghai,31.22222,121.45806
+alibaba,cn-wuhan-lr,Wuhan,30.58333,114.26667
+alibaba,cn-shenzhen,Shenzhen,22.54554,114.0683
+alibaba,cn-heyuan,Heyuan,23.73333,114.68333
+alibaba,cn-guangzhou,Guangzhou,23.11667,113.25
+alibaba,cn-chengdu,Chengdu,30.66667,104.06667
+alibaba,cn-zhongwei,Zhongwei,37.51129,105.19067
+alibaba,cn-hongkong,Hong Kong,22.27832,114.17469
+alibaba,ap-southeast-1,Singapore,1.28967,103.85007
+alibaba,ap-southeast-3,Kuala Lumpur,3.1412,101.68653
+alibaba,ap-southeast-5,Jakarta,-6.21462,106.84513
+alibaba,ap-southeast-6,Manila,14.6042,120.9822
+alibaba,ap-southeast-7,Bangkok,13.75398,100.50144
+alibaba,ap-southeast-8,Johor Bahru,1.4655,103.7578
+alibaba,ap-northeast-1,Tokyo,35.6895,139.69171
+alibaba,ap-northeast-2,Seoul,37.566,126.9784
+alibaba,us-west-1,Santa Clara,37.35411,-121.95524
+alibaba,us-east-1,Ashburn,39.04372,-77.48749
+alibaba,eu-central-1,Frankfurt,50.11552,8.68417
+alibaba,eu-west-1,London,51.50853,-0.12574
+alibaba,eu-west-2,Paris,48.85341,2.3488
+alibaba,me-east-1,Dubai,25.07725,55.30927
+alibaba,me-central-1,Riyadh,24.68773,46.72185
+alibaba,na-south-1,Queretaro,20.58806,-100.38806
+alibaba,sa-east-1,Sao Paulo,-23.5475,-46.63611
+alibaba,cn-hangzhou-finance,Hangzhou,30.29365,120.16142
+alibaba,cn-shanghai-finance-1,Shanghai,31.22222,121.45806
+alibaba,cn-shenzhen-finance-1,Shenzhen,22.54554,114.0683
+alibaba,cn-beijing-finance-1,Beijing,39.9075,116.39723
+alibaba,cn-north-2-gov-1,Beijing,39.9075,116.39723
+oracle,ap-sydney-1,Sydney,-33.86785,151.20732
+oracle,ap-melbourne-1,Melbourne,-37.814,144.96332
+oracle,sa-saopaulo-1,Sao Paulo,-23.5475,-46.63611
+oracle,sa-vinhedo-1,Vinhedo,-23.02972,-46.97528
+oracle,ca-montreal-1,Montreal,45.50884,-73.58781
+oracle,ca-toronto-1,Toronto,43.65333,-79.38389
+oracle,sa-santiago-1,Santiago,-33.45694,-70.64827
+oracle,sa-valparaiso-1,Valparaiso,-33.036,-71.62963
+oracle,sa-bogota-1,Bogota,4.60971,-74.08175
+oracle,eu-paris-1,Paris,48.85341,2.3488
+oracle,eu-marseille-1,Marseille,43.29695,5.38107
+oracle,eu-frankfurt-1,Frankfurt,50.11552,8.68417
+oracle,ap-hyderabad-1,Hyderabad,17.38405,78.45636
+oracle,ap-mumbai-1,Mumbai,19.07283,72.88261
+oracle,ap-batam-1,Batam,1.14937,104.02491
+oracle,il-jerusalem-1,Jerusalem,31.76904,35.21633
+oracle,eu-milan-1,Milan,45.46427,9.18951
+oracle,eu-turin-1,Turin,45.07049,7.68682
+oracle,ap-osaka-1,Osaka,34.69379,135.50107
+oracle,ap-tokyo-1,Tokyo,35.6895,139.69171
+oracle,ap-kulai-2,Kulai,1.6561,103.6032
+oracle,mx-queretaro-1,Queretaro,20.58806,-100.38806
+oracle,mx-monterrey-1,Monterrey,25.68435,-100.31721
+oracle,af-casablanca-1,Casablanca,33.58831,-7.61138
+oracle,eu-amsterdam-1,Amsterdam,52.37403,4.88969
+oracle,me-riyadh-1,Riyadh,24.68773,46.72185
+oracle,me-jeddah-1,Jeddah,21.49012,39.18624
+oracle,eu-jovanovac-1,Jovanovac,44.01667,20.91667
+oracle,ap-singapore-1,Singapore,1.28967,103.85007
+oracle,ap-singapore-2,Singapore,1.28967,103.85007
+oracle,af-johannesburg-1,Johannesburg,-26.20227,28.04363
+oracle,ap-seoul-1,Seoul,37.566,126.9784
+oracle,ap-chuncheon-1,Chuncheon,37.88302,127.7289
+oracle,eu-madrid-1,Madrid,40.4165,-3.70256
+oracle,eu-madrid-3,Madrid,40.4165,-3.70256
+oracle,eu-stockholm-1,Stockholm,59.32938,18.06871
+oracle,eu-zurich-1,Zurich,47.36667,8.55
+oracle,me-abudhabi-1,Abu Dhabi,24.45118,54.39696
+oracle,me-dubai-1,Dubai,25.07725,55.30927
+oracle,uk-london-1,London,51.50853,-0.12574
+oracle,uk-cardiff-1,Newport,51.58774,-2.99835
+oracle,us-ashburn-1,Ashburn,39.04372,-77.48749
+oracle,us-chicago-1,Chicago,41.85003,-87.65005
+oracle,us-phoenix-1,Phoenix,33.44838,-112.07404
+oracle,us-sanjose-1,San Jose,37.33939,-121.89496
+hetzner,fsn1,Falkenstein,50.47788,12.37129
+hetzner,nbg1,Nuremberg,49.45421,11.07752
+hetzner,hel1,Tuusula,60.40368,25.02638
+hetzner,ash,Ashburn,39.04372,-77.48749
+hetzner,hil,Hillsboro,45.52289,-122.98983
+hetzner,sin,Singapore,1.28967,103.85007
+vultr,ams,Amsterdam,52.37403,4.88969
+vultr,atl,Atlanta,33.749,-84.38798
+vultr,blr,Bangalore,12.97194,77.59369
+vultr,bom,Mumbai,19.07283,72.88261
+vultr,cdg,Paris,48.85341,2.3488
+vultr,del,Delhi,28.65195,77.23149
+vultr,dfw,Dallas,32.78306,-96.80667
+vultr,ewr,Newark,40.73566,-74.17237
+vultr,fra,Frankfurt,50.11552,8.68417
+vultr,hnl,Honolulu,21.30694,-157.85833
+vultr,icn,Seoul,37.566,126.9784
+vultr,itm,Osaka,34.69379,135.50107
+vultr,jnb,Johannesburg,-26.20227,28.04363
+vultr,lax,Los Angeles,34.05223,-118.24368
+vultr,lhr,London,51.50853,-0.12574
+vultr,mad,Madrid,40.4165,-3.70256
+vultr,man,Manchester,53.48095,-2.23743
+vultr,mel,Melbourne,-37.814,144.96332
+vultr,mex,Mexico City,19.42847,-99.12766
+vultr,mia,Miami,25.77427,-80.19366
+vultr,mxp,Milan,45.46427,9.18951
+vultr,nrt,Tokyo,35.6895,139.69171
+vultr,ord,Chicago,41.85003,-87.65005
+vultr,sao,Sao Paulo,-23.5475,-46.63611
+vultr,scl,Santiago,-33.45694,-70.64827
+vultr,sea,Seattle,47.60621,-122.33207
+vultr,sgp,Singapore,1.28967,103.85007
+vultr,sjc,Santa Clara,37.35411,-121.95524
+vultr,sto,Stockholm,59.32938,18.06871
+vultr,syd,Sydney,-33.86785,151.20732
+vultr,tlv,Tel Aviv,32.08088,34.78057
+vultr,waw,Warsaw,52.22977,21.01178
+vultr,yto,Toronto,43.65333,-79.38389
+digitalocean,nyc1,New York,40.71427,-74.00597
+digitalocean,nyc2,New York,40.71427,-74.00597
+digitalocean,nyc3,New York,40.71427,-74.00597
+digitalocean,ams3,Amsterdam,52.37403,4.88969
+digitalocean,sfo2,San Francisco,37.77493,-122.41942
+digitalocean,sfo3,San Francisco,37.77493,-122.41942
+digitalocean,sgp1,Singapore,1.28967,103.85007
+digitalocean,lon1,London,51.50853,-0.12574
+digitalocean,fra1,Frankfurt,50.11552,8.68417
+digitalocean,tor1,Toronto,43.65333,-79.38389
+digitalocean,blr1,Bangalore,12.97194,77.59369
+digitalocean,syd1,Sydney,-33.86785,151.20732
+digitalocean,atl1,Atlanta,33.749,-84.38798
+digitalocean,ric1,Richmond,37.55376,-77.46026
+digitalocean,mkc1,Kansas City,39.09973,-94.57857
+digitalocean,mem1,Memphis,35.14953,-90.04898
+tencent,ap-beijing,Beijing,39.9075,116.39723
+tencent,ap-shanghai,Shanghai,31.22222,121.45806
+tencent,ap-nanjing,Nanjing,32.06167,118.77778
+tencent,ap-guangzhou,Guangzhou,23.11667,113.25
+tencent,ap-chengdu,Chengdu,30.66667,104.06667
+tencent,ap-chongqing,Chongqing,29.56026,106.55771
+tencent,ap-zhongwei,Zhongwei,37.51129,105.19067
+tencent,ap-hongkong,Hong Kong,22.27832,114.17469
+tencent,ap-beijing-fsi,Beijing,39.9075,116.39723
+tencent,ap-shanghai-fsi,Shanghai,31.22222,121.45806
+tencent,ap-shenzhen-fsi,Shenzhen,22.54554,114.0683
+tencent,ap-shanghai-adc,Shanghai,31.22222,121.45806
+tencent,ap-zhongwei-adc,Zhongwei,37.51129,105.19067
+tencent,ap-singapore,Singapore,1.28967,103.85007
+tencent,ap-johorbahru,Johor Bahru,1.4655,103.7578
+tencent,ap-jakarta,Jakarta,-6.21462,106.84513
+tencent,ap-seoul,Seoul,37.566,126.9784
+tencent,ap-tokyo,Tokyo,35.6895,139.69171
+tencent,ap-osaka,Osaka,34.69379,135.50107
+tencent,ap-bangkok,Bangkok,13.75398,100.50144
+tencent,me-saudi-arabia,Riyadh,24.68773,46.72185
+tencent,sa-saopaulo,Sao Paulo,-23.5475,-46.63611
+tencent,na-queretaro,Queretaro,20.58806,-100.38806
+tencent,eu-frankfurt,Frankfurt,50.11552,8.68417
+tencent,na-siliconvalley,San Jose,37.33939,-121.89496
+tencent,na-ashburn,Ashburn,39.04372,-77.48749
+ovhcloud,SBG,Strasbourg,48.58392,7.74553
+ovhcloud,GRA,Gravelines,50.98651,2.12807
+ovhcloud,RBX,Roubaix,50.69421,3.17456
+ovhcloud,PAR,Paris,48.85341,2.3488
+ovhcloud,MIL,Milan,45.46427,9.18951
+ovhcloud,SGP,Singapore,1.28967,103.85007
+ovhcloud,SYD,Sydney,-33.86785,151.20732
+ovhcloud,MUM,Mumbai,19.07283,72.88261
+ovhcloud,ERI,Erith,51.48315,0.17484
+ovhcloud,LIM,Limburg,50.3836,8.0503
+ovhcloud,WAW,Ozarow,52.21039,20.79716
+ovhcloud,BHS,Beauharnois,45.31341,-73.8725
+ovhcloud,TOR,Cambridge,43.3601,-80.31269
+ovhcloud,HIL,Hillsboro,45.52289,-122.98983
+ovhcloud,VIN,Vint Hill,38.7479,-77.6747
+ibm,us-south,Dallas,32.78306,-96.80667
+ibm,br-sao,Sao Paulo,-23.5475,-46.63611
+ibm,ca-tor,Toronto,43.65333,-79.38389
+ibm,eu-de,Frankfurt,50.11552,8.68417
+ibm,eu-gb,London,51.50853,-0.12574
+ibm,eu-es,Madrid,40.4165,-3.70256
+ibm,au-syd,Sydney,-33.86785,151.20732
+ibm,jp-tok,Tokyo,35.6895,139.69171
+ibm,in-che,Chennai,13.08784,80.27847
+ibm,ca-mon,Montreal,45.50884,-73.58781
+ibm,in-mum,Mumbai,19.07283,72.88261
+ibm,jp-osa,Osaka,34.69379,135.50107
+ibm,us-east,Ashburn,39.04372,-77.48749
+akamai,gb-lon,London,51.50853,-0.12574
+akamai,se-sto,Stockholm,59.32938,18.06871
+akamai,es-mad,Madrid,40.4165,-3.70256
+akamai,in-maa,Chennai,13.08784,80.27847
+akamai,jp-osa,Osaka,34.69379,135.50107
+akamai,it-mil,Milan,45.46427,9.18951
+akamai,us-mia,Miami,25.77427,-80.19366
+akamai,id-cgk,Jakarta,-6.21462,106.84513
+akamai,us-lax,Los Angeles,34.05223,-118.24368
+akamai,nl-ams,Amsterdam,52.37403,4.88969
+akamai,au-mel,Melbourne,-37.814,144.96332
+akamai,in-bom-2,Mumbai,19.07283,72.88261
+akamai,de-fra-2,Frankfurt,50.11552,8.68417
+akamai,sg-sin-2,Singapore,1.28967,103.85007
+akamai,jp-tyo-3,Tokyo,35.6895,139.69171
+akamai,fr-par-2,Paris,48.85341,2.3488
+akamai,br-gru,Sao Paulo,-23.5475,-46.63611
+akamai,us-sea,Seattle,47.60621,-122.33207
+akamai,fr-par,Paris,48.85341,2.3488
+akamai,us-ord,Chicago,41.85003,-87.65005
+akamai,ap-southeast,Sydney,-33.86785,151.20732
+akamai,ca-central,Toronto,43.65333,-79.38389
+akamai,ap-west,Mumbai,19.07283,72.88261
+akamai,us-central,Dallas,32.78306,-96.80667
+akamai,ap-northeast,Tokyo,35.6895,139.69171
+akamai,eu-central,Frankfurt,50.11552,8.68417
+akamai,ap-south,Singapore,1.28967,103.85007
+akamai,eu-west,London,51.50853,-0.12574
+akamai,us-east,Newark,40.73566,-74.17237
+akamai,us-southeast,Atlanta,33.749,-84.38798
+akamai,us-west,Fremont,37.54827,-121.98857
+akamai,us-iad,Washington,38.89511,-77.03637
+akamai,us-iad-2,Washington,38.89511,-77.03637
+huawei,af-south-1,Johannesburg,-26.20227,28.04363
+huawei,ap-southeast-1,Hong Kong,22.27832,114.17469
+huawei,ap-southeast-2,Bangkok,13.75398,100.50144
+huawei,ap-southeast-3,Singapore,1.28967,103.85007
+huawei,ap-southeast-4,Jakarta,-6.21462,106.84513
+huawei,ap-southeast-5,Manila,14.6042,120.9822
+huawei,cn-east-2,Shanghai,31.22222,121.45806
+huawei,cn-east-3,Shanghai,31.22222,121.45806
+huawei,cn-east-5,Qingdao,36.06488,120.38042
+huawei,cn-north-1,Beijing,39.9075,116.39723
+huawei,cn-north-2,Beijing,39.9075,116.39723
+huawei,cn-north-4,Beijing,39.9075,116.39723
+huawei,cn-north-9,Ulanqab,41.0273,113.1341
+huawei,cn-south-1,Guangzhou,23.11667,113.25
+huawei,cn-south-2,Shenzhen,22.54554,114.0683
+huawei,cn-south-4,Guangzhou,23.11667,113.25
+huawei,cn-southwest-2,Guiyang,26.58333,106.71667
+huawei,eu-west-0,Paris,48.85341,2.3488
+huawei,la-north-2,Mexico City,19.42847,-99.12766
+huawei,la-south-2,Santiago,-33.45694,-70.64827
+huawei,me-east-1,Riyadh,24.68773,46.72185
+huawei,my-kualalumpur-1,Kuala Lumpur,3.1412,101.68653
+huawei,na-mexico-1,Mexico City,19.42847,-99.12766
+huawei,ru-northwest-2,Moscow,55.75204,37.61781
+huawei,sa-brazil-1,Sao Paulo,-23.5475,-46.63611
+huawei,tr-west-1,Istanbul,41.01384,28.94966
+huawei,af-north-1,Cairo,30.06263,31.24967
+huawei,cn-east-4,Wuhu,31.35259,118.42947
+huawei,cn-north-12,Hohhot,40.81056,111.65222

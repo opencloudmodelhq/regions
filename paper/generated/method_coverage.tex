@@ -1,0 +1,15 @@
+\definecolor{ocmblue}{HTML}{2A78D6}
+\definecolor{ocmorange}{HTML}{EB6834}
+\definecolor{ocmaqua}{HTML}{1BAF7A}
+\definecolor{ocmviolet}{HTML}{6250D6}
+\definecolor{ocmgrey}{HTML}{8A8984}
+\begin{tikzpicture}
+\begin{axis}[scale only axis,width=6cm,height=3.60cm,xmin=0,xmax=100,title={Regions answered, \%},symbolic y coords={Rules,{RAG, Qwen 3.8},{Model, no documents},{Model, label only},{RAG, Qwen 3.6},{RAG, GLM 4.7 Flash}},ytick=data,y dir=reverse,enlarge y limits=0.12,xmajorgrids,major grid style={gray!25},tick label style={font=\footnotesize},label style={font=\footnotesize},title style={font=\footnotesize\bfseries}]
+\addplot[xbar,bar width=5pt,fill=ocmblue,draw=none] coordinates {(97.6,Rules) (84.5,{RAG, Qwen 3.8}) (95.5,{Model, no documents}) (87.6,{Model, label only}) (82.4,{RAG, Qwen 3.6}) (82.4,{RAG, GLM 4.7 Flash})};
+\end{axis}
+\end{tikzpicture}\quad
+\begin{tikzpicture}
+\begin{axis}[scale only axis,width=6cm,height=3.60cm,xmin=90,xmax=100,title={Within 50~km, \% (95\% interval)},symbolic y coords={Rules,{RAG, Qwen 3.8},{Model, no documents},{Model, label only},{RAG, Qwen 3.6},{RAG, GLM 4.7 Flash}},ytick=data,yticklabels={},y dir=reverse,enlarge y limits=0.12,xmajorgrids,major grid style={gray!25},tick label style={font=\footnotesize},label style={font=\footnotesize},title style={font=\footnotesize\bfseries}]
+\addplot[only marks,mark=*,mark size=2.2pt,ocmblue,error bars/.cd,x dir=both,x explicit] coordinates {(98.4,Rules) += (0.9,0) -= (1.9,0) (98.8,{RAG, Qwen 3.8}) += (0.8,0) -= (1.9,0) (95.9,{Model, no documents}) += (1.6,0) -= (2.6,0) (98.8,{Model, label only}) += (0.7,0) -= (1.8,0) (97.4,{RAG, Qwen 3.6}) += (1.3,0) -= (2.4,0) (96.8,{RAG, GLM 4.7 Flash}) += (1.5,0) -= (2.6,0)};
+\end{axis}
+\end{tikzpicture}

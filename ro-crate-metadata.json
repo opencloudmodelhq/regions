@@ -1,0 +1,77 @@
+{
+ "@context": "https://w3id.org/ro/crate/1.1/context",
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": {"@id": "https://w3id.org/ro/crate/1.1"},
+   "about": {"@id": "./"}
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "name": "OpenCloudModel Regions",
+   "description": "An evidence-linked mapping of cloud regions to places and to IATA, UN/LOCODE and CLLI codes, rebuilt by script from a published list of documents. Every placement carries its evidence, a grade and a stated precision; output/provenance.jsonld records how each was reached in W3C PROV-O.",
+   "version": "1.0.0",
+   "datePublished": "2026-11-07",
+   "license": {"@id": "https://creativecommons.org/licenses/by/4.0/"},
+   "author": {"@id": "https://orcid.org/0000-0003-0338-4567"},
+   "publisher": {"@id": "https://github.com/opencloudmodelhq"},
+   "url": "https://github.com/opencloudmodelhq/regions",
+   "citation": {"@id": "#paper"},
+   "keywords": "cloud regions, location codes, IATA, UN/LOCODE, CLLI, data provenance, W3C PROV",
+   "hasPart": [
+    {"@id": "output/regions.csv"},
+    {"@id": "output/evidence.csv"},
+    {"@id": "output/codes_nearest_airport.csv"},
+    {"@id": "output/codes_major_hub.csv"},
+    {"@id": "output/codes_nearby_hub.csv"},
+    {"@id": "output/calls.csv"},
+    {"@id": "output/excluded_regions.csv"},
+    {"@id": "output/provenance.jsonld"},
+    {"@id": "sources/documents.csv"},
+    {"@id": "sources/datasets.csv"}
+   ]
+  },
+  {
+   "@id": "#paper",
+   "@type": "ScholarlyArticle",
+   "name": "OpenCloudModel Regions: An Evidence-Linked Dataset of Cloud Region Locations and Codes",
+   "author": {"@id": "https://orcid.org/0000-0003-0338-4567"}
+  },
+  {
+   "@id": "https://orcid.org/0000-0003-0338-4567",
+   "@type": "Person",
+   "name": "Andrew Broekman",
+   "affiliation": {"@id": "#mosox-digital"}
+  },
+  {
+   "@id": "#mosox-digital",
+   "@type": "Organization",
+   "name": "Mosox Digital Ltd.",
+   "url": "https://mosox.com",
+   "address": "United Kingdom"
+  },
+  {
+   "@id": "https://github.com/opencloudmodelhq",
+   "@type": "Organization",
+   "name": "OpenCloudModel",
+   "url": "https://github.com/opencloudmodelhq"
+  },
+  {
+   "@id": "https://creativecommons.org/licenses/by/4.0/",
+   "@type": "CreativeWork",
+   "name": "Creative Commons Attribution 4.0 International"
+  },
+  {"@id": "output/regions.csv", "@type": "File", "name": "One row per region: place, codes, grade, precision and evidence links", "encodingFormat": "text/csv"},
+  {"@id": "output/evidence.csv", "@type": "File", "name": "Evidence records with verbatim quotes, stance and quote check", "encodingFormat": "text/csv"},
+  {"@id": "output/codes_nearest_airport.csv", "@type": "File", "name": "Codes by nearest airport", "encodingFormat": "text/csv"},
+  {"@id": "output/codes_major_hub.csv", "@type": "File", "name": "Codes by major hub: the best-connected airport within 200 km", "encodingFormat": "text/csv"},
+  {"@id": "output/codes_nearby_hub.csv", "@type": "File", "name": "Codes by nearby hub: the major hub within the cap, otherwise the nearest airport", "encodingFormat": "text/csv"},
+  {"@id": "output/calls.csv", "@type": "File", "name": "Every gap and judgement call raised by the build, with kind and severity", "encodingFormat": "text/csv"},
+  {"@id": "output/excluded_regions.csv", "@type": "File", "name": "Regions out of scope, with the reason and the vendor mark it rests on", "encodingFormat": "text/csv"},
+  {"@id": "output/provenance.jsonld", "@type": "File", "name": "W3C PROV-O record of how each placement was reached", "encodingFormat": "application/ld+json", "conformsTo": {"@id": "http://www.w3.org/ns/prov-o#"}},
+  {"@id": "sources/documents.csv", "@type": "File", "name": "Corpus list: document URLs, hashes, retrieval dates and archive copies", "encodingFormat": "text/csv"},
+  {"@id": "sources/datasets.csv", "@type": "File", "name": "Outside datasets: URLs, hashes, retrieval dates and licence notes", "encodingFormat": "text/csv"}
+ ]
+}

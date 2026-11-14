@@ -1,0 +1,36 @@
+\begin{tikzpicture}[
+  node distance=3mm and 3mm, every node/.style={font=\footnotesize},
+  box/.style={draw, rounded corners=1pt, text width=0.222\textwidth, align=left, inner sep=4pt, minimum height=21mm, anchor=north west},
+  coded/.style={box, fill=blue!7},
+  recorded/.style={box, fill=orange!18, densely dashed, thick},
+  check/.style={box, fill=black!5, minimum height=17mm},
+  flow/.style={-{Latex[length=2mm]}, thick},
+]
+\node[coded] (fetch) {\textbf{1. \code{make fetch}}\\Installs the listed documents and datasets, checks hashes, and uses archive copies.};
+\node[coded, right=of fetch] (regions) {\textbf{2. \code{make regions}}\\Parses every published region into one table.};
+\node[recorded, right=of regions] (place) {\textbf{3. \code{make place}}\\Rules choose each city; a frozen model prompt reads documents for what rules leave open.};
+\node[coded, right=of place] (evidence) {\textbf{4. \code{make evidence}}\\Attaches joins, quote searches and checked model answers from the documents to each region.};
+\node[coded, below=of evidence] (grade) {\textbf{5. \code{make grade}}\\Sets each region's grade from its best source, and a separate precision.};
+\node[coded, left=of grade] (codes) {\textbf{6. \code{make codes}}\\Assigns Tables A, B and C by rule from the airport data.};
+\node[coded, left=of codes] (calls) {\textbf{7. \code{make calls}}\\Lists every gap, conflict and judgement call as data.};
+\node[coded, left=of calls] (report) {\textbf{8. \code{make report}}\\Writes the report, the explorer page and this paper's numbers.};
+\draw[flow] (fetch) -- (regions);
+\draw[flow] (regions) -- (place);
+\draw[flow] (place) -- (evidence);
+\draw[flow] (evidence) -- (grade);
+\draw[flow] (grade) -- (codes);
+\draw[flow] (codes) -- (calls);
+\draw[flow] (calls) -- (report);
+\node[check, below=of report] (caps) {\textbf{\code{make caps}}\\Tests every distance cap and draws the cap figures.};
+\node[check, right=of caps] (verify) {\textbf{\code{make verify}}\\Checks each collected quote against its source. A failure caps that record's grade on the next build.};
+\node[check, right=of verify] (compare) {\textbf{\code{make compare}}\\Scores the rules and local models on the same regions.};
+\node[check, right=of compare] (paper) {\textbf{\code{make paper}}\\Builds this PDF from the generated numbers.};
+\draw[flow] (report) -- (caps);
+\draw[flow] (caps) -- (verify);
+\draw[flow] (verify) -- (compare);
+\draw[flow] (compare) -- (paper);
+\node[anchor=north west, below=2mm of caps.south west, anchor=north west, text width=\textwidth, align=left] {%
+  \tikz\node[draw, fill=blue!7, minimum width=4mm, minimum height=3mm]{}; computed from downloaded sources \quad
+  \tikz\node[draw, fill=orange!18, densely dashed, thick, minimum width=4mm, minimum height=3mm]{}; uses a local model at temperature 0 with a frozen prompt \quad
+  \tikz\node[draw, fill=black!5, minimum width=4mm, minimum height=3mm]{}; checks and outputs};
+\end{tikzpicture}

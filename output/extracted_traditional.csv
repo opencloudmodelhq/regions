@@ -1,0 +1,208 @@
+provider,region_id,city,country,score,document,quote
+akamai,ap-southeast,Sydney,AU,7,5157bc42f1d3.html,AP-Southeast (Sydney)
+akamai,ap-west,Mumbai,IN,7,5157bc42f1d3.html,AP-West (Mumbai)
+akamai,au-mel,Melbourne,AU,9,5157bc42f1d3.html,AU-MEL (Melbourne)
+akamai,ca-central,Toronto,CA,6,5157bc42f1d3.html,CA-Central (Toronto)
+akamai,de-fra-2,Frankfurt am Main,DE,7,5157bc42f1d3.html,DE-FRA-2 (Frankfurt 2)
+akamai,eu-central,Frankfurt am Main,DE,9,5157bc42f1d3.html,EU-Central (Frankfurt)
+akamai,eu-west,London,GB,9,5157bc42f1d3.html,EU-West (London)
+akamai,fr-par,Paris,FR,12,2b5acc712707.html,"Paris 2, France Available to all customers fr-par-2"
+akamai,fr-par-2,Gateway,US,4,2b5acc712707.html,Lish SSH Gateway: lish-fr-par-2.linode.com
+akamai,gb-lon,London,GB,8,5157bc42f1d3.html,GB-LON (London 2)
+akamai,in-bom-2,Mumbai,IN,8,5157bc42f1d3.html,IN-BOM-2 (Mumbai 2)
+akamai,in-maa,Chennai,IN,9,5157bc42f1d3.html,IN-MAA (Chennai)
+akamai,it-mil,Milan,IT,8,5157bc42f1d3.html,IT-MIL (Milan)
+akamai,nl-ams,Amsterdam,NL,8,5157bc42f1d3.html,NL-AMS (Amsterdam)
+akamai,us-central,Dallas,US,15,5157bc42f1d3.html,Scheduled Longview Maintenance - US-Central (Dallas)
+akamai,us-east,Newark,US,8,5157bc42f1d3.html,US-East (Newark)
+akamai,us-iad,Gateway,US,4,2b5acc712707.html,Lish SSH Gateway: lish-us-iad-2.linode.com
+akamai,us-iad-2,Gateway,US,4,2b5acc712707.html,Lish SSH Gateway: lish-us-iad-2.linode.com
+akamai,us-lax,Angeles City,PH,8,5157bc42f1d3.html,US-LAX (Los Angeles)
+akamai,us-mia,Miami,US,8,5157bc42f1d3.html,US-MIA (Miami)
+akamai,us-ord,Chicago,US,8,5157bc42f1d3.html,US-ORD (Chicago)
+akamai,us-sea,Seattle,US,8,5157bc42f1d3.html,US-SEA (Seattle)
+akamai,us-southeast,Atlanta,US,8,5157bc42f1d3.html,US-Southeast (Atlanta)
+akamai,us-west,Fremont,US,7,5157bc42f1d3.html,US-West (Fremont)
+alibaba,ap-northeast-2,Koréa,CI,8,0b456ce7d99a.html,South Korea (Seoul)
+alibaba,ap-southeast-1,Kong,CI,3,0b456ce7d99a.html,"Indonesia, India, Philippines, Australia, Thailand, Malaysia, Singapore, Japan, South Korea, Hong Kong (China)"
+alibaba,ap-southeast-6,Manila,PH,8,0b456ce7d99a.html,Philippines (Manila)
+alibaba,cn-beijing,Purchase,US,2,5d83de88596d.html,For services in Beijing: Purchase ECS instances in the China (Beijing) region.
+alibaba,cn-chengdu,Chengdu,CN,8,0b456ce7d99a.html,China (Chengdu)
+alibaba,cn-guangzhou,Guangzhou,CN,8,0b456ce7d99a.html,China (Guangzhou)
+alibaba,cn-hangzhou,Hangzhou,CN,11,0b456ce7d99a.html,China (Hangzhou)
+alibaba,cn-heyuan,Heyuan,CN,8,0b456ce7d99a.html,China (Heyuan)
+alibaba,cn-hongkong,Kong,CI,11,0b456ce7d99a.html,China (Hong Kong)
+alibaba,cn-huhehaote,Hohhot,CN,8,0b456ce7d99a.html,China (Hohhot)
+alibaba,cn-qingdao,Qingdao,CN,8,0b456ce7d99a.html,China (Qingdao)
+alibaba,cn-shenzhen,Shenzhen,CN,10,0b456ce7d99a.html,China (Shenzhen)
+alibaba,cn-wuhan-lr,Wuhan,CN,7,0b456ce7d99a.html,China (Wuhan - Local Region)
+alibaba,cn-wulanchabu,Ulanqab,CN,8,0b456ce7d99a.html,China (Ulanqab)
+alibaba,cn-zhangjiakou,Zhangjiakou,CN,8,0b456ce7d99a.html,China (Zhangjiakou)
+alibaba,cn-zhongwei,Zhongwei,CN,8,0b456ce7d99a.html,China (Zhongwei)
+alibaba,eu-central-1,Frankfurt am Main,DE,10,0b456ce7d99a.html,Germany (Frankfurt)
+alibaba,eu-west-1,London,GB,10,0b456ce7d99a.html,UK (London)
+alibaba,eu-west-2,Paris,FR,8,0b456ce7d99a.html,France (Paris)
+alibaba,me-central-1,Riyadh,SA,7,0b456ce7d99a.html,SAU (Riyadh - Partner Region)
+alibaba,us-east-1,Ashburn,US,1,76f190ef1247.html,US (Virginia) US-Ashburn-A USA Virginia Equinix DC11
+alibaba,us-west-1,Valley,US,9,0b456ce7d99a.html,US (Silicon Valley)
+aws,af-south-1,Cape Town,ZA,4,56b665c7b6ed.html,AWS Region: South Africa (Cape Town)
+aws,ap-east-1,Asia,PH,3,56b665c7b6ed.html,AWS Region: Asia Pacific (Hong Kong)
+aws,ap-east-2,Asia,PH,1,9826f1450b88.pdf,Taiwan: Asia Pacific (Taipei) (ap-east-2)**
+aws,ap-northeast-1,Asia,PH,5,56b665c7b6ed.html,AWS Region: Asia Pacific (Osaka) / Asia Pacific (Tokyo)
+aws,ap-northeast-2,Asia,PH,4,56b665c7b6ed.html,AWS Region: Asia Pacific (Seoul)
+aws,ap-northeast-3,Asia,PH,3,56b665c7b6ed.html,AWS Region: Asia Pacific (Osaka) / Asia Pacific (Tokyo)
+aws,ap-south-1,Asia,PH,4,56b665c7b6ed.html,AWS Region: Asia Pacific (Mumbai)
+aws,ap-south-2,Asia,PH,1,9826f1450b88.pdf,"India: Asia Pacific (Mumbai) (ap-south-1), Asia Pacific (Hyderabad) (ap-south-2)"
+aws,ap-southeast-1,Asia,PH,4,56b665c7b6ed.html,AWS Region: Asia Pacific (Singapore)
+aws,ap-southeast-2,Asia,PH,4,56b665c7b6ed.html,AWS Region: Asia Pacific (Sydney)
+aws,ap-southeast-3,Asia,PH,2,8db9262d1422.html,Asia Pacific (Jakarta)
+aws,ap-southeast-4,Asia,PH,1,9826f1450b88.pdf,"Australia: Asia Pacific (Sydney) (ap-southeast-2), Asia Pacific (Melbourne) (ap-southeast-4)"
+aws,ap-southeast-5,Asia,PH,5,817711a8ec58.html,.q4default .bwalignc { text-align: center; list-style-position: inside } The AWS Asia Pacific (Malaysia) Region gives customers more choice to run workloads and
+aws,ap-southeast-6,Asia,PH,16,9826f1450b88.pdf,New Zealand: Asia Pacific (New Zealand) (ap-southeast-6)*
+aws,ap-southeast-7,Asia,PH,9,8345c078f002.html,AWS Direct Connect – AWS established a AWS Direct Connect location in Bangkok in 2023 to enhance connectivity options and added a new AWS Direct Connect locatio
+aws,ca-central-1,Calgary,CA,1,9826f1450b88.pdf,"Canada: Canada (Central) (ca-central-1), Canada West (Calgary) (ca-west-1)"
+aws,ca-west-1,Calgary,CA,4,7cd1511c7e4a.html,"AWS Canada West (Calgary) Region provides customers with more options to run workloads with even greater resilience and availability, securely store data in Can"
+aws,cn-north-1,Asia,PH,1,6c3783f39854.html,"AWS, the AWS China (Beijing) Region which is operated by Sinnet, and seven other regions in total in Asia Pacific across Beijing, Mumbai, Seoul, Singapore, Sydn"
+aws,cn-northwest-1,Iaşi,RO,1,6c3783f39854.html,"Andy Jassy, AWS's CEO, comments on the launch. ""With appreciation of the support we've received from the Zhongwei municipal government and Ningxia government, w"
+aws,eu-central-1,Frankfurt am Main,DE,4,56b665c7b6ed.html,AWS Region: Europe (Frankfurt)
+aws,eu-south-1,Milan,IT,4,56b665c7b6ed.html,AWS Region: Europe (Milan)
+aws,eu-south-2,Huesca,ES,1,55b805ab507e.html,Aragón has become one of the reference places for Amazon Web Services (AWS) in Europe. This location hosts the AWS Europe (Spain) Region — launched in November 
+aws,eu-west-2,London,GB,4,56b665c7b6ed.html,AWS Region: Europe (London)
+aws,eu-west-3,Paris,FR,6,56b665c7b6ed.html,AWS Region: Europe (Paris)
+aws,eusc-de-east-1,Eine,BE,1,a8059ff84e3d.html,"Die AWS European Sovereign Cloud steht allen Kunden zur Verfügung, unabhängig davon, wo sie sich befinden. Sie können mit dem Partitionsnamen aws-eusc und dem R"
+aws,me-central-1,Middle East,US,13,00b1906e2e8c.html,"Amazon Web Services (AWS) this week announced the launch of a new region in the Middle East. The new region, called “me-central-1,” is located in the United Ara"
+aws,me-south-1,Middle East,US,11,56b665c7b6ed.html,AWS Region: Middle East (Bahrain)
+aws,mx-central-1,América,AR,1,0bbe9d272841.html,"Today, I am happy to announce that we are working on an AWS Region in Mexico. This AWS Mexico (Central) Region will be the second Region in Latin America joinin"
+aws,sa-east-1,América,AR,3,0bbe9d272841.html,"Today, I am happy to announce that we are working on an AWS Region in Mexico. This AWS Mexico (Central) Region will be the second Region in Latin America joinin"
+aws,us-east-2,Asia,PH,1,9826f1450b88.pdf,"Virginia), US East (Ohio), Asia Pacific (Tokyo), Asia Pacific (Thailand), Asia Pacific (Malaysia), and Europe"
+aws,us-west-1,Las Vegas,US,2,51e3cc1ca066.html,"I live in San Francisco, and the very Amazonian-named San Francisco Wavelength Zone us-west-2-wl1-sfo-wlz-1 is, as you can tell by the -2 hidden in there, a chi"
+aws,us-west-2,Las Vegas,US,2,51e3cc1ca066.html,"I live in San Francisco, and the very Amazonian-named San Francisco Wavelength Zone us-west-2-wl1-sfo-wlz-1 is, as you can tell by the -2 hidden in there, a chi"
+azure,australiaeast,Sydney,AU,2,6ef0301727f8.html,"The vendor said the Australia Southeast region has grown significantly since it launched in 2014 alongside the Australia East region in Sydney, and now encompas"
+azure,australiasoutheast,Melbourne,AU,4,6ef0301727f8.html,Microsoft has announced it will launch a new Azure Availability Zone (AZ) in Melbourne to improve infrastructure redundancy in the vendor’s Australia Southeast 
+azure,brazilsouth,Campinas,BR,1,c31629408fc4.html,Microsoft launched a São Paulo Azure cloud region – known as Brazil South – in Campinas in 2014 . It was expanded to three availability zones in 2021 .
+azure,canadaeast,Home,US,1,fdf5c3f47efa.html,Azure Speed Test Home / Azure regions / Canada East Canada East (canadaeast)
+azure,centralindia,Asia,PH,1,83121bd04f3c.html,"Central India, Asia"
+azure,centralus,North Central,CA,21,2c441e6044ca.html,"Brazil South is paired with South Central US, but South Central US is paired with North Central US. This pairing is one-way."
+azure,chilecentral,América,AR,1,83121bd04f3c.html,"Chile Central, Latin America"
+azure,eastasia,Asia,PH,10,83121bd04f3c.html,East Asia
+azure,indonesiacentral,Asia,PH,1,83121bd04f3c.html,"Indonesia Central, Asia"
+azure,israelcentral,Asia,PH,1,83121bd04f3c.html,"Israel Central, Asia"
+azure,japaneast,Asia,PH,3,83121bd04f3c.html,"Japan East, Asia"
+azure,japanwest,Asia,PH,1,83121bd04f3c.html,"Japan West, Asia"
+azure,koreacentral,Koréa,CI,10,83121bd04f3c.html,"Korea Central, Asia"
+azure,koreasouth,Koréa,CI,7,83121bd04f3c.html,"Korea South, Asia"
+azure,malaysiawest,Asia,PH,1,83121bd04f3c.html,"Malaysia West, Asia"
+azure,newzealandnorth,Asia,PH,1,83121bd04f3c.html,"New Zealand North, Asia"
+azure,northcentralus,North Central,CA,21,2c441e6044ca.html,"Brazil South is paired with South Central US, but South Central US is paired with North Central US. This pairing is one-way."
+azure,northeurope,Amsterdam,NL,1,5647088bd040.html,"1 Min Read Microsoft's Windows Azure cloud computing platform is experiencing a significant service outage in western Europe, the company said this morning. Azu"
+azure,southafricanorth,África 70,CV,10,83121bd04f3c.html,South Africa North
+azure,southafricawest,África 70,CV,6,b19439dd1c76.html,South Africa West
+azure,southcentralus,North Central,CA,5,2c441e6044ca.html,"Brazil South is paired with South Central US, but South Central US is paired with North Central US. This pairing is one-way."
+azure,southeastasia,Asia,PH,14,83121bd04f3c.html,Southeast Asia
+azure,southeastasia3,Asia,PH,2,b19439dd1c76.html,Southeast Asia 3
+azure,taiwannorth,Asia,PH,1,83121bd04f3c.html,"Taiwan North, Asia"
+azure,westcentralus,Cheyenne,US,3,1742f4be9280.html,"Today, I’m thrilled to share that we are announcing the launch of two new Microsoft datacenters in Cheyenne, Wyoming—one in Cheyenne Business Parkway and anothe"
+azure,westeurope,Amsterdam,NL,1,5647088bd040.html,"1 Min Read Microsoft's Windows Azure cloud computing platform is experiencing a significant service outage in western Europe, the company said this morning. Azu"
+azure,westindia,Asia,PH,3,83121bd04f3c.html,"West India, Asia"
+azure,westus,Home,US,1,77c36ab28311.html,Azure Speed Test Home / Azure regions / West US West US (westus)
+azure,westus2,San Francisco,US,1,e2bc872824bd.html,"Microsoft’s existing Western US cloud regions are West Central US in Utah, West US 2 in Washington State, West US in the San Francisco Bay Area, and US Gov in A"
+digitalocean,sfo2,San Francisco,US,1,8a55c2ebec69.html,What is the difference between a region and a data center? A region is a location or city where our physical data centers are located. A region (say San Francis
+gcp,us-central1,Project 6,PH,1,702d48e2a2a3.html,projects/PROJECT_ID/locations/us-central1/workerPools/WORKER_POOL_ID
+gcp,us-east4,Project 6,PH,1,702d48e2a2a3.html,projects/PROJECT_ID/locations/us-east4/workerPools/WORKER_POOL_ID
+hetzner,ash,Ashburn,US,3,3103d8bd88cb.html,"Ashburn, VA"
+hetzner,fsn1,Falkenstein,DE,6,3103d8bd88cb.html,DE Falkenstein fsn1
+hetzner,hel1,Helsinki,FI,7,3103d8bd88cb.html,FI Helsinki hel1
+hetzner,hil,Hillsboro,US,3,3103d8bd88cb.html,"Ashburn, VA, Hillsboro, OR, and Singapore are currently only available for cloud products (Cloud Shared AMD , Cloud Dedicated AMD , and Cloud features). This me"
+hetzner,nbg1,Nuremberg,DE,6,3103d8bd88cb.html,DE Nuremberg nbg1
+hetzner,sin,Ashburn,US,1,3103d8bd88cb.html,"Ashburn, VA, Hillsboro, OR, and Singapore are currently only available for cloud products (Cloud Shared AMD , Cloud Dedicated AMD , and Cloud features). This me"
+huawei,af-south-1,Johannesburg,ZA,6,0c6ca6bf51ad.html,AF-Johannesburg
+huawei,ap-southeast-1,Kong,CI,7,0c6ca6bf51ad.html,CN-Hong Kong
+huawei,ap-southeast-5,Manila,PH,3,0c6ca6bf51ad.html,AP-Manila
+huawei,cn-east-4,Wuhu,CN,3,3322441d5079.html,CN East2 (CN-East-Wuhu)
+huawei,cn-east-5,Qingdao,CN,3,0c6ca6bf51ad.html,CN East-Qingdao
+huawei,cn-north-12,Ulanqab,CN,1,cc92d48ad9b6.md,| `cn-north-12` | China (Ulanqab-12) |
+huawei,cn-north-9,Ulanqab,CN,5,0c6ca6bf51ad.html,CN North-Ulanqab1
+huawei,cn-south-1,Guangzhou,CN,8,0c6ca6bf51ad.html,CN South-Guangzhou
+huawei,cn-south-2,Guangzhou,CN,1,cc92d48ad9b6.md,| `cn-south-2` | China (Guangzhou-2) |
+huawei,cn-southwest-2,Guiyang,CN,6,0c6ca6bf51ad.html,CN Southwest-Guiyang1
+huawei,la-south-2,Santiago,CL,7,0c6ca6bf51ad.html,LA-Santiago
+huawei,me-east-1,Riyadh,SA,4,0c6ca6bf51ad.html,ME-Riyadh
+ibm,au-syd,Sydney,AU,33,04fd4e76b1cd.pdf,Sydney
+ibm,br-sao,Center,US,3,2daf78c5ac2a.pdf,"SAO01 (Data Center) managed by Ascenty located in Sao Paulo, Brazil"
+ibm,ca-mon,Montréal,CA,12,23ba60ed94b2.pdf,"Montreal, Canada"
+ibm,ca-tor,Toronto,CA,7,2daf78c5ac2a.pdf,"TOR04 (Data Center) managed by ServerFarm located in Toronto, Canada"
+ibm,eu-de,Frankfurt am Main,DE,58,04fd4e76b1cd.pdf,"Frankfurt, Germany"
+ibm,eu-es,Alfonso,PH,8,37629f60b947.pdf,Alfonso
+ibm,eu-gb,London,GB,41,04fd4e76b1cd.pdf,London
+ibm,in-che,Chennai,IN,2,5c0e4d4f3a34.html,Chennai - Airtel ( in-che )
+ibm,in-mum,Mumbai,IN,2,5c0e4d4f3a34.html,Mumbai - Airtel ( in-mum )
+ibm,jp-osa,Center,US,5,2daf78c5ac2a.pdf,"OSA21 (Data Center) managed by IDC Frontier located in Osaka, Japan"
+ibm,jp-tok,Center,US,4,2daf78c5ac2a.pdf,"TOK02 (Data Center) managed by @Tokyo located in Tokyo, Japan"
+ibm,us-east,Washington,US,6,5c0e4d4f3a34.html,Washington DC ( us-east )
+ibm,us-south,Dallas,US,44,04fd4e76b1cd.pdf,Dallas
+oracle,af-casablanca-1,Casablanca,MA,2,066cd55fc647.html,Morocco West (Casablanca)
+oracle,af-johannesburg-1,Johannesburg,ZA,3,066cd55fc647.html,South Africa Central (Johannesburg)
+oracle,ap-batam-1,Batam,ID,2,066cd55fc647.html,Indonesia North (Batam)
+oracle,ap-chuncheon-1,Chuncheon,KR,3,066cd55fc647.html,South Korea North (Chuncheon)
+oracle,ap-hyderabad-1,Hyderabad,IN,3,066cd55fc647.html,India South (Hyderabad)
+oracle,ap-kulai-2,Kulai,MY,1,f443cb1f6bd3.html,Malaysia West 2 (Kulai)
+oracle,ap-melbourne-1,Melbourne,AU,3,066cd55fc647.html,Australia Southeast (Melbourne)
+oracle,ap-mumbai-1,Mumbai,IN,3,066cd55fc647.html,India West (Mumbai)
+oracle,ap-seoul-1,Koréa,CI,3,066cd55fc647.html,South Korea Central (Seoul)
+oracle,ap-sydney-1,Sydney,AU,3,066cd55fc647.html,Australia East (Sydney)
+oracle,ca-montreal-1,Montréal,CA,3,066cd55fc647.html,Canada Southeast (Montreal)
+oracle,ca-toronto-1,Toronto,CA,3,066cd55fc647.html,Canada Southeast (Toronto)
+oracle,eu-amsterdam-1,Amsterdam,NL,3,066cd55fc647.html,Netherlands Northwest (Amsterdam)
+oracle,eu-frankfurt-1,Frankfurt am Main,DE,4,066cd55fc647.html,Germany Central (Frankfurt)
+oracle,eu-marseille-1,Marseille,FR,3,066cd55fc647.html,France South (Marseille)
+oracle,eu-milan-1,Milan,IT,3,066cd55fc647.html,Italy Northwest (Milan)
+oracle,eu-paris-1,Paris,FR,3,066cd55fc647.html,France Central (Paris)
+oracle,eu-turin-1,Turin,IT,2,066cd55fc647.html,Italy North (Turin)
+oracle,me-jeddah-1,Jeddah,SA,3,066cd55fc647.html,Saudi Arabia West (Jeddah)
+oracle,me-riyadh-1,Riyadh,SA,2,066cd55fc647.html,Saudi Arabia Central (Riyadh)
+oracle,mx-monterrey-1,Monterrey,MX,3,066cd55fc647.html,Mexico Northeast (Monterrey)
+oracle,sa-bogota-1,Bogotá,CO,3,066cd55fc647.html,Colombia Central (Bogota)
+oracle,sa-santiago-1,Santiago,CL,3,066cd55fc647.html,Chile Central (Santiago)
+oracle,sa-vinhedo-1,Vinhedo,BR,3,066cd55fc647.html,Brazil Southeast (Vinhedo)
+oracle,uk-cardiff-1,Newport,GB,3,066cd55fc647.html,UK West (Newport)
+oracle,uk-london-1,London,GB,3,066cd55fc647.html,UK South (London)
+oracle,us-ashburn-1,Ashburn,US,3,066cd55fc647.html,US East (Ashburn)
+oracle,us-chicago-1,Chicago,US,3,066cd55fc647.html,US Midwest (Chicago)
+oracle,us-phoenix-1,Phoenix,US,3,066cd55fc647.html,US West (Phoenix)
+ovhcloud,BHS,Beauharnois,CA,5,3504b11e5ed5.pdf,"Beauharnois (BHS,"
+ovhcloud,ERI,London,GB,12,3504b11e5ed5.pdf,London
+ovhcloud,GRA,Gravelines,FR,53,05c1ce6c5498.html,"""text"": ""This refers to a region with three SecNumCloud-qualified availability zones. Since each zone is totally independent, they meet all the requirements of "
+ovhcloud,HIL,Hillsboro,US,3,3504b11e5ed5.pdf,"Hillsboro (HIL, United"
+ovhcloud,LIM,Frankfurt am Main,DE,11,3504b11e5ed5.pdf,"Limburg an der Lahn, Germany: located near Frankfurt, this site"
+ovhcloud,MIL,Milan,IT,30,05c1ce6c5498.html,Europe (Italy - Milan) (lz) eu-south-lz-mil LOCAL-ZONE - 2024 eu-south-lz-mil-a -
+ovhcloud,MUM,Mumbai,IN,10,3504b11e5ed5.pdf,▶ or in shared datacenters (mainly in the Asian sites of Mumbai and
+ovhcloud,PAR,Paris,FR,79,05c1ce6c5498.html,Europe (France - Paris) eu-west-par 3-AZ 3 2023 eu-west-par-a CCH01
+ovhcloud,RBX,Roubaix,FR,111,05c1ce6c5498.html,"""text"": ""This refers to a region with three SecNumCloud-qualified availability zones. Since each zone is totally independent, they meet all the requirements of "
+ovhcloud,SBG,Strasbourg,FR,53,05c1ce6c5498.html,"""text"": ""This refers to a region with three SecNumCloud-qualified availability zones. Since each zone is totally independent, they meet all the requirements of "
+ovhcloud,SGP,Center,US,8,3504b11e5ed5.pdf,Altimat Data Center Singapore Pte Ltd.
+ovhcloud,SYD,Sydney,AU,18,3504b11e5ed5.pdf,Data Center Sydney
+ovhcloud,TOR,Toronto,CA,8,3504b11e5ed5.pdf,"Singapore, as well as in Sydney, Toronto and the 3‑AZ in France),"
+ovhcloud,VIN,Hill,US,3,3504b11e5ed5.pdf,"Vint Hill (VIN, United"
+ovhcloud,WAW,Warsaw,PL,20,05c1ce6c5498.html,Europe (Poland - Warsaw) eu-central-waw 1-AZ 1 2016 eu-central-waw-a WAW1
+tencent,ap-bangkok,Asia,PH,5,822ac580323a.html,Bangkok Zone 2 (Bangkok nodes can be used to cover the Southeast Asia region) ap-bangkok-2
+tencent,ap-chengdu,Chengdu,CN,8,822ac580323a.html,Chengdu Zone 2 ap-chengdu-2
+tencent,ap-guangzhou,Guangzhou,CN,17,822ac580323a.html,Guangzhou Zone 4 (sold out) ap-guangzhou-4
+tencent,ap-hongkong,Kong,CI,16,63b9e4585bc2.html,Hong Kong (China) ap-hongkong-a-kc Hong Kong Hong Kong Equinix HK2
+tencent,ap-jakarta,Asia,PH,3,822ac580323a.html,Southeast Asia Pacific (Jakarta) ap-jakarta Jakarta Zone 1 (Jakarta nodes can be used to cover the Southeast Asia region) ap-jakarta-1
+tencent,ap-johorbahru,Johor Bahru,MY,5,822ac580323a.html,Johor Bahru ap-johorbahru Johorbahru Zone 1 ap-johorbahru-1 ✓ ✓ ✓ × ×
+tencent,ap-nanjing,Nanjing,CN,11,03cedc0372a4.html,Added support for the Nanjing (China) region COS is available in the new Nanjing (China) Region (ap-nanjing). 2019-12-19 Regions and Access Endpoints
+tencent,ap-osaka,Asia,PH,2,842aca5b1999.html,Asia Pacific and the Middle East (Osaka) Coverage: Northeast Asia ap-osaka 1 Osaka Zone 1 ap-osaka-1
+tencent,ap-seoul,Asia,PH,4,822ac580323a.html,Northeast Asia (Seoul) ap-seoul Seoul Zone 1 (Seoul nodes can be used to cover the Northeast Asia region) ap-seoul-1
+tencent,ap-singapore,Asia,PH,8,63b9e4585bc2.html,Asia Pacific ap-singapore-a-ayer-rajah Singapore Singapore Equinix SG3
+tencent,ap-tokyo,Asia,PH,4,822ac580323a.html,Northeast Asia (Tokyo) ap-tokyo Tokyo Zone 1 (Tokyo nodes can be used to cover the Northeast Asia region) ap-tokyo-1
+tencent,ap-zhongwei,Zhongwei,CN,4,842aca5b1999.html,Northwest China (Zhongwei) ap-zhongwei 1 Zhongwei Zone 1 * ap-zhongwei-1
+tencent,eu-frankfurt,Frankfurt am Main,DE,11,03cedc0372a4.html,Launched the media processing feature in Frankfurt region The media processing feature is launched in Frankfurt region (eu-frankfurt). 2022-02-17 Data Workflow 
+tencent,me-saudi-arabia,Riyadh,SA,9,03cedc0372a4.html,Riyadh region goes live Cloud Object Storage (COS) goes live in a new region: Riyadh (me-saudi-arabia). 2026-02-04 ﻿ Regions and access endpoints ﻿
+tencent,na-ashburn,Ashburn,US,1,03cedc0372a4.html,"Added support for the Silicon Valley, Virginia (Ashburn), Seoul, and Mumbai regions COS is now available in the Silicon Valley (na-siliconvalley), Virginia (Ash"
+tencent,na-queretaro,América,AR,2,842aca5b1999.html,Europe and the Americas (Queretaro) Coverage: North America na-queretaro 1 Queretaro Zone 1 * na-queretaro-1
+tencent,na-siliconvalley,Valley,US,9,03cedc0372a4.html,"Added support for the Silicon Valley, Virginia (Ashburn), Seoul, and Mumbai regions COS is now available in the Silicon Valley (na-siliconvalley), Virginia (Ash"
+tencent,sa-saopaulo,América,AR,3,822ac580323a.html,South America (São Paulo) sa-saopaulo Sao Paulo Zone 1 (Sao Paulo nodes can be used to cover the South America region). sa-saopaulo-1
+vultr,ams,Amsterdam,NL,1,713f34acaf61.html,"Storage Location : Amsterdam 6 . To view the list of supported Vultr Object Storage cluster location IDs, run the following API request:"
+vultr,ewr,Middlesex,US,1,4ac8054444f0.html,Vultr New Jersey Campus Vultr · Middlesex County
+vultr,sea,Center,US,1,ca319f9b4248.html,"2 min read March 5, 2024 0 Vultr is excited to announce the expansion of our Seattle cloud data center region at Sabey Data Centers' SDC Columbia location in Ea"
+vultr,sjc,Valley,US,2,4ac8054444f0.html,"Post an update Register a local fight One dated thing that happened at Vultr Silicon Valley Campus , with the notice, filing, agenda or article that shows it. I"

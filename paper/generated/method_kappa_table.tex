@@ -1,0 +1,16 @@
+\begin{tabular}{llrr}
+\toprule
+Method A & Method B & Same outcome & $\kappa$ \\
+\midrule
+RAG, Qwen 3.8 & Model, no documents & 85.0\% & 0.32 \\
+RAG, Qwen 3.8 & Model, label only & 83.2\% & 0.34 \\
+RAG, Qwen 3.8 & RAG, Qwen 3.6 & 92.6\% & 0.75 \\
+RAG, Qwen 3.8 & RAG, GLM 4.7 Flash & 92.1\% & 0.74 \\
+Model, no documents & Model, label only & 95.0\% & 0.74 \\
+Model, no documents & RAG, Qwen 3.6 & 81.8\% & 0.27 \\
+Model, no documents & RAG, GLM 4.7 Flash & 81.3\% & 0.26 \\
+Model, label only & RAG, Qwen 3.6 & 82.1\% & 0.36 \\
+Model, label only & RAG, GLM 4.7 Flash & 80.0\% & 0.29 \\
+RAG, Qwen 3.6 & RAG, GLM 4.7 Flash & 90.5\% & 0.70 \\
+\bottomrule
+\end{tabular}

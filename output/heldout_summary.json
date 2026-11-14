@@ -1,0 +1,29 @@
+{
+ "sites": {
+  "fastly": {
+   "sites": 201,
+   "placed": 189,
+   "with_point": 189,
+   "within_50_km": 177,
+   "nearest_airport": 86,
+   "major_hub": 81,
+   "nearby_hub": 89,
+   "operator_code_is_airport": 148
+  },
+  "zenlayerZones": {
+   "sites": 58,
+   "placed": 54,
+   "with_point": 0,
+   "within_50_km": 0,
+   "nearest_airport": 32,
+   "major_hub": 42,
+   "nearby_hub": 43,
+   "operator_code_is_airport": 45
+  }
+ },
+ "regions": {
+  "regions": 20,
+  "placed": 20,
+  "same_name": 19
+ }
+}

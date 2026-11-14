@@ -1,0 +1,21 @@
+provider,region_id,partition,reason,marked_by
+aws,us-gov-east-1,aws-us-gov,Government customers only,botocore partition label
+aws,us-gov-west-1,aws-us-gov,Government customers only,botocore partition label
+aws,us-iso-east-1,aws-iso,Classified government only,botocore partition label
+aws,us-iso-west-1,aws-iso,Classified government only,botocore partition label
+aws,us-isob-east-1,aws-iso-b,Classified government only,botocore partition label
+aws,us-isob-west-1,aws-iso-b,Classified government only,botocore partition label
+aws,eu-isoe-west-1,aws-iso-e,Classified government only,botocore partition label
+aws,us-isof-east-1,aws-iso-f,Classified government only,botocore partition label
+aws,us-isof-south-1,aws-iso-f,Classified government only,botocore partition label
+alibaba,cn-hangzhou-finance,alibaba-finance,Financial institutions only,region ID contains 'finance'
+alibaba,cn-shanghai-finance-1,alibaba-finance,Financial institutions only,region ID contains 'finance'
+alibaba,cn-shenzhen-finance-1,alibaba-finance,Financial institutions only,region ID contains 'finance'
+alibaba,cn-beijing-finance-1,alibaba-finance,Financial institutions only,region ID contains 'finance'
+alibaba,cn-north-2-gov-1,alibaba-gov,Government customers only,region ID contains 'gov'
+tencent,ap-beijing-fsi,tencent-finance,Financial institutions only,region ID ends '-fsi'
+tencent,ap-shanghai-fsi,tencent-finance,Financial institutions only,region ID ends '-fsi'
+tencent,ap-shenzhen-fsi,tencent-finance,Financial institutions only,region ID ends '-fsi'
+tencent,ap-shanghai-adc,tencent-autonomous,Self-driving customers only,region ID ends '-adc'
+tencent,ap-zhongwei-adc,tencent-autonomous,Self-driving customers only,region ID ends '-adc'
+huawei,cn-south-4,huawei-invitation,Invitation only,region name contains 'InvitationOnly'

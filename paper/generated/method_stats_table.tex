@@ -1,0 +1,12 @@
+\begin{tabular}{lrrrrrrr}
+\toprule
+Method & Answers & Misses & Median miss km & $\le$10~km & $\le$25~km & $\le$50~km & $\le$100~km \\
+\midrule
+Rules & 371 & 6 & 99 & 96\% & 97\% & 98\% & 99\% \\
+RAG, Qwen 3.8 & 321 & 4 & 287 & 98\% & 98\% & 99\% & 99\% \\
+Model, no documents & 363 & 15 & 237 & 94\% & 95\% & 96\% & 97\% \\
+Model, label only & 333 & 4 & 70 & 97\% & 98\% & 99\% & 100\% \\
+RAG, Qwen 3.6 & 313 & 8 & 782 & 96\% & 97\% & 97\% & 98\% \\
+RAG, GLM 4.7 Flash & 313 & 10 & 355 & 95\% & 96\% & 97\% & 97\% \\
+\bottomrule
+\end{tabular}

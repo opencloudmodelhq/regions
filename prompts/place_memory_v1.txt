@@ -1,0 +1,13 @@
+/no_think
+Say which city hosts this cloud region, from what you know.
+
+Rules:
+- If you are not confident of the city, return an empty city. Do not guess.
+- A state, province or country is not a city.
+
+Reply with JSON only: {"city": "", "country": ""}
+country is the ISO 3166-1 alpha-2 code.
+
+Vendor: {vendor}
+Region ID: {region_id}
+Name: {text}

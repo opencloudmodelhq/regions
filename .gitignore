@@ -1,0 +1,16 @@
+data/raw/
+.remember/
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/arxiv-source.tar.gz
+downloads/
+.env
+.DS_Store

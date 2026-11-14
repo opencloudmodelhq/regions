@@ -1,0 +1,8 @@
+provider,region_id,feed_city,feed_subdivision,feed_country,feed_share
+aws,me-west-1,Riyadh,SA-01,SA,1.0
+aws,sa-west-1,Santiago,CL-RM,CL,1.0
+aws,us-south-1,Dallas,US-TX,US,1.0
+gcp,europe-west15,Heringsdorf,DE-SN,DE,1.0
+gcp,us-central2,Tulsa,US-OK,US,1.0
+gcp,us-east7,Huntsville,US-AL,US,1.0
+gcp,us-west8,Phoenix,US-AZ,US,1.0

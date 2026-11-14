@@ -1,0 +1,48 @@
+{
+ "with_model": {
+  "vendor-feed": 19,
+  "vendor-stated": 335,
+  "vendor-document": 11,
+  "partial": 9,
+  "reported": 1,
+  "public-record": 5
+ },
+ "without_model": {
+  "vendor-feed": 24,
+  "vendor-stated": 335,
+  "vendor-document": 4,
+  "partial": 10,
+  "reported": 1,
+  "public-record": 6
+ },
+ "regions_gaining": [
+  [
+   "aws",
+   "ca-central-1"
+  ],
+  [
+   "azure",
+   "brazilsouth"
+  ],
+  [
+   "azure",
+   "brazilsoutheast"
+  ],
+  [
+   "azure",
+   "northeurope"
+  ],
+  [
+   "azure",
+   "norwayeast"
+  ],
+  [
+   "azure",
+   "norwaywest"
+  ],
+  [
+   "tencent",
+   "me-saudi-arabia"
+  ]
+ ]
+}

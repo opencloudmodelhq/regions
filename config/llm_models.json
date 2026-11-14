@@ -1,0 +1,53 @@
+{
+ "chain-qwen3.8": {
+  "chat_model": "ai/qwen3.8:27b-q8_0",
+  "chat_model_id": "7f7f60352e7c",
+  "embed_model": "ai/qwen3-embedding:4b-q8_0",
+  "embed_model_id": "16bf87bcb903",
+  "embed_query_template": "Instruct: Given a cloud region, retrieve passages that say which city its data centres are in\nQuery:{text}",
+  "embed_document_template": "{text}",
+  "corpus": "fetched",
+  "index_name": "qwen-embedding-4b-fetched",
+  "rerank_model": "ai/qwen3-reranker:4B",
+  "rerank_model_id": "c980ea59258a",
+  "chat_extra": {
+   "chat_template_kwargs": {
+    "enable_thinking": false
+   }
+  }
+ },
+ "chain-qwen3.6": {
+  "chat_model": "ai/qwen3.6:35b-a3b-q8_0",
+  "chat_model_id": "342d589f61b9",
+  "embed_model": "ai/qwen3-embedding:4b-q8_0",
+  "embed_model_id": "16bf87bcb903",
+  "embed_query_template": "Instruct: Given a cloud region, retrieve passages that say which city its data centres are in\nQuery:{text}",
+  "embed_document_template": "{text}",
+  "corpus": "fetched",
+  "index_name": "qwen-embedding-4b-fetched",
+  "rerank_model": "ai/qwen3-reranker:4B",
+  "rerank_model_id": "c980ea59258a",
+  "chat_extra": {
+   "chat_template_kwargs": {
+    "enable_thinking": false
+   }
+  }
+ },
+ "chain-glm-4.7": {
+  "chat_model": "ai/glm-4.7-flash:q8_0",
+  "chat_model_id": "b846e0b32df0",
+  "embed_model": "ai/qwen3-embedding:4b-q8_0",
+  "embed_model_id": "16bf87bcb903",
+  "embed_query_template": "Instruct: Given a cloud region, retrieve passages that say which city its data centres are in\nQuery:{text}",
+  "embed_document_template": "{text}",
+  "corpus": "fetched",
+  "index_name": "qwen-embedding-4b-fetched",
+  "rerank_model": "ai/qwen3-reranker:4B",
+  "rerank_model_id": "c980ea59258a",
+  "chat_extra": {
+   "chat_template_kwargs": {
+    "enable_thinking": false
+   }
+  }
+ }
+}

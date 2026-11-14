@@ -1,0 +1,22 @@
+\begin{tabular}{llrrrrrrr}
+\toprule
+ & & \multicolumn{3}{c}{All regions} & \multicolumn{4}{c}{Both answered} \\
+Method A & Method B & Only A & Only B & $p_{\mathrm{Holm}}$ & Regions & Only A & Only B & $p_{\mathrm{Holm}}$ \\
+\midrule
+Rules & RAG, Qwen 3.8 & 53 & 5 & $<$0.001 & 318 & 3 & 2 & 1.000 \\
+Rules & Model, no documents & 21 & 4 & 0.006 & 356 & 7 & 0 & 0.234 \\
+Rules & Model, label only & 36 & 0 & $<$0.001 & 333 & 0 & 0 & 1.000 \\
+Rules & RAG, Qwen 3.6 & 65 & 5 & $<$0.001 & 311 & 7 & 3 & 1.000 \\
+Rules & RAG, GLM 4.7 Flash & 67 & 5 & $<$0.001 & 310 & 8 & 3 & 1.000 \\
+RAG, Qwen 3.8 & Model, no documents & 13 & 44 & $<$0.001 & 314 & 7 & 1 & 0.984 \\
+RAG, Qwen 3.8 & Model, label only & 26 & 38 & 0.337 & 294 & 1 & 1 & 1.000 \\
+RAG, Qwen 3.8 & RAG, Qwen 3.6 & 20 & 8 & 0.107 & 304 & 5 & 1 & 1.000 \\
+RAG, Qwen 3.8 & RAG, GLM 4.7 Flash & 22 & 8 & 0.064 & 303 & 4 & 2 & 1.000 \\
+Model, no documents & Model, label only & 19 & 0 & $<$0.001 & 333 & 0 & 0 & 1.000 \\
+Model, no documents & RAG, Qwen 3.6 & 56 & 13 & $<$0.001 & 306 & 6 & 7 & 1.000 \\
+Model, no documents & RAG, GLM 4.7 Flash & 58 & 13 & $<$0.001 & 304 & 3 & 8 & 1.000 \\
+Model, label only & RAG, Qwen 3.6 & 46 & 22 & 0.025 & 292 & 6 & 2 & 1.000 \\
+Model, label only & RAG, GLM 4.7 Flash & 51 & 25 & 0.023 & 284 & 3 & 2 & 1.000 \\
+RAG, Qwen 3.6 & RAG, GLM 4.7 Flash & 19 & 17 & 0.868 & 296 & 4 & 5 & 1.000 \\
+\bottomrule
+\end{tabular}

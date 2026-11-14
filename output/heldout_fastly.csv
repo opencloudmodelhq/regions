@@ -1,0 +1,202 @@
+label,operator_code,placed_city,country,km,within_50_km,nearest_airport,major_hub,nearby_hub
+Adelaide,ADL,Adelaide,AU,0.2,yes,ADL,ADL,ADL
+Agra,QAS,Agra,IN,15.2,yes,AGR,DEL,AGR
+Ahmedabad,QAU,Ahmedabad,IN,11.5,yes,AMD,AMD,AMD
+Albuquerque,ABQ,Albuquerque,US,8.9,yes,ABQ,ABQ,ABQ
+Albuquerque,SAF,Albuquerque,US,9.0,yes,ABQ,ABQ,ABQ
+Ambala,QAV,Ambāla,IN,59.6,no,IXC,IXC,IXC
+Amsterdam,AMS,Amsterdam,NL,11.2,yes,AMS,AMS,AMS
+Amsterdam,RTM,Amsterdam,NL,4.6,yes,AMS,AMS,AMS
+Anantapur,PUT,Anantapur,IN,6.5,yes,CDP,BLR,CDP
+Asansol,QAW,Āsansol,IN,3.5,yes,RDP,CCU,RDP
+Ashburn,DCA,Ashburn,US,11.4,yes,IAD,IAD,IAD
+Ashburn,IAD,Ashburn,US,11.4,yes,IAD,IAD,IAD
+Atlanta,HMP,Atlanta,US,0.0,yes,ATL,ATL,ATL
+Atlanta,PDK,Atlanta,US,16.2,yes,ATL,ATL,ATL
+Auckland,AKL,Auckland,NZ,17.9,yes,AKL,AKL,AKL
+Baltimore,BWI,Baltimore,US,0.0,yes,BWI,IAD,IAD
+Bangalore,QBK,Bengaluru,IN,17.1,yes,BLR,BLR,BLR
+Bangalore Peenya,QAH,Bengaluru,IN,7.8,yes,BLR,BLR,BLR
+Bangkok,BKK,Bangkok,TH,0.2,yes,DMK,DMK,DMK
+Beaverton,TTD,Beaverton,US,0.0,yes,PDX,PDX,PDX
+Berhampur,QAJ,Brahmapur,IN,640.0,no,BBI,BBI,BBI
+Berlin,BER,Berlin,DE,3.8,yes,BER,BER,BER
+Bhopal,QAF,Bhopal,IN,6.8,yes,BHO,IDR,BHO
+Bhopal,QBL,Bhopal,IN,9.6,yes,BHO,IDR,BHO
+Bhubaneshwar,QBM,Bhubaneswar,IN,5.2,yes,BBI,BBI,BBI
+Bhubaneswar,QAB,Bhubaneswar,IN,2.8,yes,BBI,BBI,BBI
+Bogota,BOG,Bogotá,CO,11.3,yes,BOG,BOG,BOG
+Boston,BOS,Boston,US,4.5,yes,BOS,BOS,BOS
+Boston,OWD,Boston,US,0.4,yes,BOS,BOS,BOS
+Brasilia,BSB,Brasília,BR,8.1,yes,BSB,BSB,BSB
+Brisbane,BNE,Brisbane,AU,12.8,yes,BNE,BNE,BNE
+Brussels,BRU,Brussels,BE,9.2,yes,BRU,BRU,BRU
+Buenos Aires,EZE,Buenos Aires,AR,26.7,yes,AEP,AEP,AEP
+Calgary,YYC,Calgary,CA,0.5,yes,YYC,YYC,YYC
+Cape Town,CPT,Cape Town,ZA,6.2,yes,CPT,CPT,CPT
+Chandigarh,QAL,Chandigarh,IN,8.7,yes,IXC,IXC,IXC
+Chennai,MAA,Chennai,IN,15.6,yes,MAA,MAA,MAA
+Chennai,QAP,Chennai,IN,11.0,yes,MAA,MAA,MAA
+Chicago,CHI,Chicago,US,1.6,yes,MDW,ORD,ORD
+Chicago,ORD,Chicago,US,1.6,yes,MDW,ORD,ORD
+Chicago,RFD,Chicago,US,1.6,yes,MDW,ORD,ORD
+Chicago,UGN,Chicago,US,3.6,yes,MDW,ORD,ORD
+Christchurch,CHC,Christchurch,NZ,0.3,yes,CHC,CHC,CHC
+Columbus,CMH,Columbus,US,17.2,yes,CMH,CMH,CMH
+Copenhagen,CPH,Copenhagen,DK,13.1,yes,CPH,CPH,CPH
+Curitiba,CWB,Curitiba,BR,3.7,yes,CWB,CWB,CWB
+Dallas,ADS,Dallas,US,25.0,yes,DAL,DFW,DFW
+Dallas,DFW,Dallas,US,25.0,yes,DAL,DFW,DFW
+Delhi,DEL,Delhi,IN,21.6,yes,DEL,DEL,DEL
+Delhi Lawrence Road,QAG,Delhi,IN,8.3,yes,DEL,DEL,DEL
+Delhi-Vikaspuri,HDO,Delhi,IN,16.0,yes,DEL,DEL,DEL
+Denver,APA,Denver,US,2.9,yes,BJC,DEN,DEN
+Denver,BJC,Denver,US,2.9,yes,BJC,DEN,DEN
+Denver,DEN,Denver,US,29.9,yes,BJC,DEN,DEN
+Detroit,DTW,Detroit,US,22.1,yes,DTW,DTW,DTW
+Detroit,YIP,Detroit,US,0.1,yes,DTW,DTW,DTW
+Dhanbad,QAM,Dhanbad,IN,224.8,no,RDP,IXR,RDP
+Dubai,DXB,Dubai,AE,13.0,yes,DXB,DXB,DXB
+Dublin,DUB,Dublin,IE,2.0,yes,DUB,DUB,DUB
+Dusseldorf,DUS,Düsseldorf,DE,7.3,yes,DUS,FRA,DUS
+Fortaleza,FOR,Fortaleza,BR,9.6,yes,FOR,FOR,FOR
+Frankfurt,FRA,Frankfurt am Main,DE,14.1,yes,FRA,FRA,FRA
+Frankfurt,WIE,Frankfurt am Main,DE,3.9,yes,FRA,FRA,FRA
+Fujairah Al Mahta,FJR,Fujairah,AE,1.8,yes,FJR,DXB,FJR
+Ghana,ACC,,,,,,,
+Guwahati,QAX,Guwahati,IN,9.0,yes,GAU,GAU,GAU
+Helsinki,HEL,Helsinki,FI,0.2,yes,HEL,HEL,HEL
+Hong Kong,HKG,Hong Kong,HK,27.0,yes,HKG,HKG,HKG
+Honolulu,HNL,Honolulu,US,6.4,yes,HNL,HNL,HNL
+Houston,DWH,Houston,US,43.6,yes,HOU,IAH,IAH
+Houston,IAH,Houston,US,25.4,yes,HOU,IAH,IAH
+Howrah,QAC,Howrah,IN,2.2,yes,CCU,CCU,CCU
+Hyderabad,HYD,Hyderabad,IN,10.5,yes,HYD,HYD,HYD
+Hyderabad,QAE,Hyderabad,IN,10.4,yes,HYD,HYD,HYD
+Hyderabad,QBN,Hyderabad,IN,10.4,yes,HYD,HYD,HYD
+Jacksonville,CRG,Jacksonville,US,0.0,yes,JAX,JAX,JAX
+Jacksonville,JAX,Jacksonville,US,0.0,yes,JAX,JAX,JAX
+Jaipur,QAY,Jaipur,IN,8.6,yes,JAI,JAI,JAI
+Jamnagar,JGA,Jamnagar,IN,26.3,yes,JGA,IXY,IXY
+Johannesburg,JNB,Johannesburg,ZA,17.0,yes,JNB,JNB,JNB
+Kanpur,KNU,Kanpur,IN,9.5,yes,KNU,LKO,LKO
+Kansas City,MCI,Kansas City,US,0.3,yes,MCI,MCI,MCI
+Karnal,QAA,Karnāl,IN,65.6,no,IXC,DEL,IXC
+Kochi,QAN,,,,,,,
+Kochi,QBO,,,,,,,
+Kolkata,CCU,Kolkata,IN,4.2,yes,CCU,CCU,CCU
+Kolkata,QAR,Kolkata,IN,7.3,yes,CCU,CCU,CCU
+Kota,KTU,Kota,IN,1.9,yes,JAI,JAI,JAI
+Kuala Lumpur,KUL,Kuala Lumpur,MY,2.3,yes,SZB,KUL,KUL
+Lima,LIM,Lima,PE,7.8,yes,LIM,LIM,LIM
+Lisbon,LIS,Lisbon,PT,7.4,yes,LIS,LIS,LIS
+London,BQH,London,GB,43.3,yes,LCY,LHR,LHR
+London,LCY,London,GB,12.5,yes,LCY,LHR,LHR
+London,LGW,London,GB,43.3,yes,LCY,LHR,LHR
+London,LHR,London,GB,23.5,yes,LCY,LHR,LHR
+London,LON,London,GB,8.0,yes,LCY,LHR,LHR
+London,LTN,London,GB,11.4,yes,LCY,LHR,LHR
+London,QQP,London,GB,1.9,yes,LCY,LHR,LHR
+Los Angeles,BUR,Los Angeles,US,19.3,yes,HHR,LAX,LAX
+Los Angeles,HHR,Los Angeles,US,19.5,yes,HHR,LAX,LAX
+Los Angeles,LAX,Los Angeles,US,19.5,yes,HHR,LAX,LAX
+Lucknow,QAZ,Lucknow,IN,9.7,yes,LKO,LKO,LKO
+Ludhiana,QBA,Ludhiana,IN,3.2,yes,HWR,IXC,HWR
+Madrid,MAD,Madrid,ES,7.3,yes,MAD,MAD,MAD
+Madrid,TOJ,Madrid,ES,6.9,yes,MAD,MAD,MAD
+Madurai,IXM,Madurai,IN,2.8,yes,IXM,COK,IXM
+Manchester,MAN,,,,,,,
+Manila,MNL,Manila,PH,6.0,yes,MNL,MNL,MNL
+Marseille,MRS,Marseille,FR,1.7,yes,MRS,MRS,MRS
+McAllen,MFE,McAllen,US,0.5,yes,MFE,MFE,MFE
+Meerut,QAD,Meerut,IN,0.4,yes,DEL,DEL,DEL
+Melbourne,MEL,Melbourne,AU,18.9,yes,MEB,MEL,MEL
+Memphis,MEM,Memphis,US,18.7,yes,MEM,MEM,MEM
+Memphis,OLV,Memphis,US,18.7,yes,MEM,MEM,MEM
+Mexico City,AZP,Mexico City,MX,8.7,yes,MEX,MEX,MEX
+Miami,MIA,Miami,US,9.9,yes,MIA,MIA,MIA
+Milan,BGY,Milan,IT,7.0,yes,LIN,MXP,MXP
+Milan,LIN,Milan,IT,12.0,yes,LIN,MXP,MXP
+Milan,MXP,Milan,IT,0.0,yes,LIN,MXP,MXP
+Minneapolis,MIC,Minneapolis,US,0.2,yes,MSP,MSP,MSP
+Minneapolis,MSP,Minneapolis,US,1.2,yes,MSP,MSP,MSP
+Montreal,YUL,Montréal,CA,1.8,yes,YUL,YUL,YUL
+Mumbai,BOM,Mumbai,IN,12.4,yes,BOM,BOM,BOM
+Mumbai,NMI,Mumbai,IN,14.1,yes,BOM,BOM,BOM
+Mumbai DAICEC,QAI,Mumbai,IN,4.0,yes,BOM,BOM,BOM
+Mumbai RCP,QAO,Mumbai,IN,0.6,yes,BOM,BOM,BOM
+Munich,MUC,Munich,DE,1.6,yes,MUC,MUC,MUC
+Nagpur,QBB,Nagpur,IN,37.2,yes,NAG,NAG,NAG
+Naples,SRQ,Naples,IT,8617.4,no,NAP,FCO,NAP
+Nashville,BNA,Nashville,US,4.4,yes,BNA,BNA,BNA
+Nashville,MQY,Nashville,US,4.4,yes,BNA,BNA,BNA
+New York City,LGA,New York City,US,20.9,yes,LGA,JFK,JFK
+New York City,NYC,New York City,US,9.1,yes,LGA,JFK,JFK
+New York City,TSS,New York City,US,2.1,yes,LGA,JFK,JFK
+Newark,EWR,Newark,US,0.2,yes,EWR,JFK,JFK
+Noida,QBD,Noida,IN,6.6,yes,DEL,DEL,DEL
+Osaka,ITM,Osaka,JP,11.7,yes,ITM,ITM,ITM
+Oslo,OSL,Oslo,NO,3.7,yes,OSL,OSL,OSL
+Palo Alto,PAO,Palo Alto,US,3.2,yes,SQL,SFO,SFO
+Paris,PAR,Paris,FR,2.7,yes,ORY,CDG,CDG
+Patna,QBE,Patna,IN,7.1,yes,PAT,PAT,PAT
+Perth,PER,Perth,AU,10.0,yes,PER,PER,PER
+Philadelphia,TTN,Philadelphia,US,0.1,yes,PHL,JFK,PHL
+Phoenix,PHX,Phoenix,US,11.3,yes,PHX,PHX,PHX
+Pittsburgh,AGC,Pittsburgh,US,16.7,yes,PIT,PIT,PIT
+Pittsburgh,PIT,Pittsburgh,US,16.7,yes,PIT,PIT,PIT
+Pompano,FXE,,,,,,,
+Pompano,PPM,,,,,,,
+Port Blair,IXZ,Port Blair,IN,7.9,yes,IXZ,IXZ,IXZ
+Portland,PDX,Portland,US,18.8,yes,PDX,PDX,PDX
+Prayagraj,IXD,Prayagraj,IN,1.2,yes,IXD,LKO,IXD
+Pune,PNQ,Pune,IN,15.6,yes,PNQ,BOM,PNQ
+Queretaro,CYW,Santiago de Querétaro,MX,2.9,yes,QRO,MEX,QRO
+Queretaro,QRO,Santiago de Querétaro,MX,13.8,yes,QRO,MEX,QRO
+Raipur,RPR,Raipur,IN,3.7,yes,RPR,RPR,RPR
+Ranchi,IXR,Ranchi,IN,130.9,no,IXR,IXR,IXR
+Richmond,FLE,Richmond,US,6.0,yes,RIC,IAD,RIC
+Richmond,RIC,Richmond,US,6.0,yes,RIC,IAD,RIC
+Rio de Janeiro,GIG,Rio de Janeiro,BR,12.4,yes,SDU,GIG,GIG
+Riyadh,RUH,Riyadh,SA,8.6,yes,RUH,RUH,RUH
+Rome,FCO,Rome,IT,0.8,yes,CIA,FCO,FCO
+Roseville,STP,Roseville,US,2415.2,no,SMF,SFO,SMF
+Sacramento,MCC,Sacramento,US,17.9,yes,SMF,SFO,SMF
+Sacramento,SMF,Sacramento,US,17.9,yes,SMF,SFO,SMF
+Salem,SXV,Jerusalem,IL,4922.5,no,TLV,TLV,TLV
+Salt Lake City,BTF,Salt Lake City,US,5.1,yes,SLC,SLC,SLC
+Sambalpur,QAK,Sambalpur,IN,501.7,no,UKE,UKE,UKE
+San Francisco,JCE,San Francisco,US,0.0,yes,SFO,SFO,SFO
+San Jose,SJC,,,,,,,
+San Jose,WVI,,,,,,,
+Santa Clara,RHV,Santa Clara,CU,4336.3,no,SNU,VRA,SNU
+Santiago,SCL,Santiago,CL,15.2,yes,SCL,SCL,SCL
+Sao Paulo,GRU,São Paulo,BR,21.3,yes,CGH,GRU,GRU
+Seattle,BFI,Seattle,US,17.6,yes,BFI,SEA,SEA
+Seattle,PWT,Seattle,US,0.0,yes,BFI,SEA,SEA
+Seoul,ICN,Seoul,KR,166.6,no,GMP,ICN,ICN
+Shillong,SHL,Shillong,IN,1.2,yes,SHL,GAU,GAU
+Shimla,QBF,Shimla,IN,1.6,yes,IXC,IXC,IXC
+Siliguri,IXB,Siliguri,IN,3.8,yes,IXB,IXB,IXB
+Singapore,QPG,Singapore,SG,17.4,yes,XSP,SIN,SIN
+Singapore,SIN,Singapore,SG,17.4,yes,XSP,SIN,SIN
+Sofia,SOF,,,,,,,
+Solapur,SSE,Sholapur,IN,1.4,yes,LTU,LTU,LTU
+Srinagar-Nahota,QBG,Srinagar,IN,4.1,yes,SXR,SXR,SXR
+St.Louis,STL,St. Louis,US,0.2,yes,STL,STL,STL
+Stockholm,BMA,Stockholm,SE,7.7,yes,BMA,ARN,ARN
+Surat,STV,Surat,IN,14.8,yes,STV,STV,STV
+Sydney,SYD,Sydney,AU,9.1,yes,SYD,SYD,SYD
+Sydney,WSI,Sydney,AU,5.9,yes,SYD,SYD,SYD
+Tallahassee,TLH,Tallahassee,US,0.0,yes,TLH,TLH,TLH
+Tokyo,NRT,Tokyo,JP,9.5,yes,HND,HND,HND
+Toronto,YYZ,Toronto,CA,20.0,yes,YTZ,YYZ,YYZ
+Tukwila,PAE,Tukwila,US,3.4,yes,SEA,SEA,SEA
+Vancouver,YVR,Vancouver,CA,7.4,yes,YVR,YVR,YVR
+Varanasi,VNS,Varanasi,IN,151.3,no,VNS,VNS,VNS
+Vienna,VIE,Vienna,AT,7.3,yes,VIE,VIE,VIE
+Vijaywada,QBI,,,,,,,
+Visakhapatnam,VTZ,Visakhapatnam,IN,10.3,yes,VTZ,VTZ,VTZ
+Warrangal,QBJ,,,,,,,
+Wellington,WLG,Wellington,NZ,5.1,yes,WLG,WLG,WLG
+West Florida,VNC,,,,,,,

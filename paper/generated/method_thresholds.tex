@@ -1,0 +1,15 @@
+\definecolor{ocmblue}{HTML}{2A78D6}
+\definecolor{ocmorange}{HTML}{EB6834}
+\definecolor{ocmaqua}{HTML}{1BAF7A}
+\definecolor{ocmviolet}{HTML}{6250D6}
+\definecolor{ocmgrey}{HTML}{8A8984}
+\begin{tikzpicture}
+\begin{axis}[width=0.96\linewidth,height=5cm,xmode=log,xmin=1,xmax=2000,ymin=90,ymax=100,xlabel={Distance from the reference place (km)},ylabel={Answers within distance, \%},legend style={font=\footnotesize,at={(0.5,-0.32)},anchor=north,legend columns=2},,xmajorgrids,ymajorgrids,major grid style={gray!25},tick label style={font=\footnotesize},label style={font=\footnotesize},title style={font=\footnotesize\bfseries}]
+\draw[black,densely dashed] (axis cs:50,90) -- (axis cs:50,100);
+\addplot[thick,no markers,ocmblue,solid] coordinates {(1,95.15) (2,95.42) (5,95.96) (10,96.23) (20,96.77) (50,98.38) (100,99.19) (200,99.73) (500,100.00) (1000,100.00) (2000,100.00)};
+\addplot[thick,no markers,ocmorange,dashed] coordinates {(1,96.57) (2,96.88) (5,97.51) (10,97.51) (20,97.82) (50,98.75) (100,99.38) (200,99.38) (500,99.69) (1000,99.69) (2000,99.69)};
+\addplot[thick,no markers,ocmaqua,densely dotted] coordinates {(1,93.11) (2,93.11) (5,93.66) (10,94.21) (20,94.49) (50,95.87) (100,96.97) (200,97.52) (500,98.90) (1000,99.72) (2000,99.72)};
+\addplot[thick,no markers,ocmviolet,dashdotted] coordinates {(1,96.40) (2,96.40) (5,97.00) (10,97.00) (20,97.60) (50,98.80) (100,99.70) (200,99.70) (500,100.00) (1000,100.00) (2000,100.00)};
+\legend{Rules,{RAG, Qwen 3.8},{Model, no documents},{Model, label only}}
+\end{axis}
+\end{tikzpicture}

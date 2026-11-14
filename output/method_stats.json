@@ -1,0 +1,1238 @@
+{
+ "regions": 380,
+ "curves": {
+  "rules": [
+   [
+    1,
+    0.9514824797843666
+   ],
+   [
+    2,
+    0.954177897574124
+   ],
+   [
+    5,
+    0.9595687331536388
+   ],
+   [
+    10,
+    0.9622641509433962
+   ],
+   [
+    20,
+    0.967654986522911
+   ],
+   [
+    50,
+    0.9838274932614556
+   ],
+   [
+    100,
+    0.9919137466307277
+   ],
+   [
+    200,
+    0.9973045822102425
+   ],
+   [
+    500,
+    1.0
+   ],
+   [
+    1000,
+    1.0
+   ],
+   [
+    2000,
+    1.0
+   ]
+  ],
+  "rag": [
+   [
+    1,
+    0.9657320872274143
+   ],
+   [
+    2,
+    0.9688473520249221
+   ],
+   [
+    5,
+    0.9750778816199377
+   ],
+   [
+    10,
+    0.9750778816199377
+   ],
+   [
+    20,
+    0.9781931464174455
+   ],
+   [
+    50,
+    0.9875389408099688
+   ],
+   [
+    100,
+    0.9937694704049844
+   ],
+   [
+    200,
+    0.9937694704049844
+   ],
+   [
+    500,
+    0.9968847352024922
+   ],
+   [
+    1000,
+    0.9968847352024922
+   ],
+   [
+    2000,
+    0.9968847352024922
+   ]
+  ],
+  "memory": [
+   [
+    1,
+    0.931129476584022
+   ],
+   [
+    2,
+    0.931129476584022
+   ],
+   [
+    5,
+    0.9366391184573003
+   ],
+   [
+    10,
+    0.9421487603305785
+   ],
+   [
+    20,
+    0.9449035812672176
+   ],
+   [
+    50,
+    0.9586776859504132
+   ],
+   [
+    100,
+    0.9696969696969697
+   ],
+   [
+    200,
+    0.9752066115702479
+   ],
+   [
+    500,
+    0.9889807162534435
+   ],
+   [
+    1000,
+    0.9972451790633609
+   ],
+   [
+    2000,
+    0.9972451790633609
+   ]
+  ],
+  "label": [
+   [
+    1,
+    0.963963963963964
+   ],
+   [
+    2,
+    0.963963963963964
+   ],
+   [
+    5,
+    0.96996996996997
+   ],
+   [
+    10,
+    0.96996996996997
+   ],
+   [
+    20,
+    0.975975975975976
+   ],
+   [
+    50,
+    0.987987987987988
+   ],
+   [
+    100,
+    0.996996996996997
+   ],
+   [
+    200,
+    0.996996996996997
+   ],
+   [
+    500,
+    1.0
+   ],
+   [
+    1000,
+    1.0
+   ],
+   [
+    2000,
+    1.0
+   ]
+  ],
+  "rag-qwen3.6": [
+   [
+    1,
+    0.9552715654952076
+   ],
+   [
+    2,
+    0.9552715654952076
+   ],
+   [
+    5,
+    0.9616613418530351
+   ],
+   [
+    10,
+    0.9648562300319489
+   ],
+   [
+    20,
+    0.9680511182108626
+   ],
+   [
+    50,
+    0.9744408945686901
+   ],
+   [
+    100,
+    0.9808306709265175
+   ],
+   [
+    200,
+    0.9808306709265175
+   ],
+   [
+    500,
+    0.9808306709265175
+   ],
+   [
+    1000,
+    0.9936102236421726
+   ],
+   [
+    2000,
+    1.0
+   ]
+  ],
+  "rag-glm-4.7": [
+   [
+    1,
+    0.9361022364217252
+   ],
+   [
+    2,
+    0.939297124600639
+   ],
+   [
+    5,
+    0.9456869009584664
+   ],
+   [
+    10,
+    0.9488817891373802
+   ],
+   [
+    20,
+    0.9552715654952076
+   ],
+   [
+    50,
+    0.9680511182108626
+   ],
+   [
+    100,
+    0.9744408945686901
+   ],
+   [
+    200,
+    0.9776357827476039
+   ],
+   [
+    500,
+    0.9904153354632588
+   ],
+   [
+    1000,
+    0.9968051118210862
+   ],
+   [
+    2000,
+    0.9968051118210862
+   ]
+  ]
+ },
+ "mcnemar": {
+  "rules|rag": {
+   "pairs": 380,
+   "only_first": 53,
+   "only_second": 5,
+   "p": 3.4964767192668944e-11,
+   "p_holm": 4.1957720631202733e-10
+  },
+  "rules|memory": {
+   "pairs": 380,
+   "only_first": 21,
+   "only_second": 4,
+   "p": 0.0009105205535888672,
+   "p_holm": 0.00637364387512207
+  },
+  "rules|label": {
+   "pairs": 380,
+   "only_first": 36,
+   "only_second": 0,
+   "p": 2.9103830456733704e-11,
+   "p_holm": 3.7834979593753815e-10
+  },
+  "rules|rag-qwen3.6": {
+   "pairs": 380,
+   "only_first": 65,
+   "only_second": 5,
+   "p": 2.215352840138473e-14,
+   "p_holm": 3.101493976193862e-13
+  },
+  "rules|rag-glm-4.7": {
+   "pairs": 380,
+   "only_first": 67,
+   "only_second": 5,
+   "p": 6.387730835678276e-15,
+   "p_holm": 9.581596253517414e-14
+  },
+  "rag|memory": {
+   "pairs": 380,
+   "only_first": 13,
+   "only_second": 44,
+   "p": 4.710437609395379e-05,
+   "p_holm": 0.00037683500875163034
+  },
+  "rag|label": {
+   "pairs": 380,
+   "only_first": 26,
+   "only_second": 38,
+   "p": 0.16864291143970336,
+   "p_holm": 0.3372858228794067
+  },
+  "rag|rag-qwen3.6": {
+   "pairs": 380,
+   "only_first": 20,
+   "only_second": 8,
+   "p": 0.03569813817739487,
+   "p_holm": 0.1070944145321846
+  },
+  "rag|rag-glm-4.7": {
+   "pairs": 380,
+   "only_first": 22,
+   "only_second": 8,
+   "p": 0.016124801710247993,
+   "p_holm": 0.06449920684099197
+  },
+  "memory|label": {
+   "pairs": 380,
+   "only_first": 19,
+   "only_second": 0,
+   "p": 3.814697265625e-06,
+   "p_holm": 3.4332275390625e-05
+  },
+  "memory|rag-qwen3.6": {
+   "pairs": 380,
+   "only_first": 56,
+   "only_second": 13,
+   "p": 1.6837633430122172e-07,
+   "p_holm": 1.6837633430122172e-06
+  },
+  "memory|rag-glm-4.7": {
+   "pairs": 380,
+   "only_first": 58,
+   "only_second": 13,
+   "p": 6.26942884485106e-08,
+   "p_holm": 6.896371729336165e-07
+  },
+  "label|rag-qwen3.6": {
+   "pairs": 380,
+   "only_first": 46,
+   "only_second": 22,
+   "p": 0.004903382516355933,
+   "p_holm": 0.024516912581779668
+  },
+  "label|rag-glm-4.7": {
+   "pairs": 380,
+   "only_first": 51,
+   "only_second": 25,
+   "p": 0.0038362357516146246,
+   "p_holm": 0.023017414509687747
+  },
+  "rag-qwen3.6|rag-glm-4.7": {
+   "pairs": 380,
+   "only_first": 19,
+   "only_second": 17,
+   "p": 0.8679394004284404,
+   "p_holm": 0.8679394004284404
+  }
+ },
+ "mcnemar_answered": {
+  "rules|rag": {
+   "pairs": 318,
+   "only_first": 3,
+   "only_second": 2,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "rules|memory": {
+   "pairs": 356,
+   "only_first": 7,
+   "only_second": 0,
+   "p": 0.015625,
+   "p_holm": 0.234375
+  },
+  "rules|label": {
+   "pairs": 333,
+   "only_first": 0,
+   "only_second": 0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "rules|rag-qwen3.6": {
+   "pairs": 311,
+   "only_first": 7,
+   "only_second": 3,
+   "p": 0.34375,
+   "p_holm": 1.0
+  },
+  "rules|rag-glm-4.7": {
+   "pairs": 310,
+   "only_first": 8,
+   "only_second": 3,
+   "p": 0.2265625,
+   "p_holm": 1.0
+  },
+  "rag|memory": {
+   "pairs": 314,
+   "only_first": 7,
+   "only_second": 1,
+   "p": 0.0703125,
+   "p_holm": 0.984375
+  },
+  "rag|label": {
+   "pairs": 294,
+   "only_first": 1,
+   "only_second": 1,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "rag|rag-qwen3.6": {
+   "pairs": 304,
+   "only_first": 5,
+   "only_second": 1,
+   "p": 0.21875,
+   "p_holm": 1.0
+  },
+  "rag|rag-glm-4.7": {
+   "pairs": 303,
+   "only_first": 4,
+   "only_second": 2,
+   "p": 0.6875,
+   "p_holm": 1.0
+  },
+  "memory|label": {
+   "pairs": 333,
+   "only_first": 0,
+   "only_second": 0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "memory|rag-qwen3.6": {
+   "pairs": 306,
+   "only_first": 6,
+   "only_second": 7,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "memory|rag-glm-4.7": {
+   "pairs": 304,
+   "only_first": 3,
+   "only_second": 8,
+   "p": 0.2265625,
+   "p_holm": 1.0
+  },
+  "label|rag-qwen3.6": {
+   "pairs": 292,
+   "only_first": 6,
+   "only_second": 2,
+   "p": 0.2890625,
+   "p_holm": 1.0
+  },
+  "label|rag-glm-4.7": {
+   "pairs": 284,
+   "only_first": 3,
+   "only_second": 2,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "rag-qwen3.6|rag-glm-4.7": {
+   "pairs": 296,
+   "only_first": 4,
+   "only_second": 5,
+   "p": 1.0,
+   "p_holm": 1.0
+  }
+ },
+ "agreement": {
+  "rag|memory": {
+   "pairs": 380,
+   "share": 0.85,
+   "kappa": 0.3245603093426468
+  },
+  "rag|label": {
+   "pairs": 380,
+   "share": 0.8315789473684211,
+   "kappa": 0.3408142245351548
+  },
+  "rag|rag-qwen3.6": {
+   "pairs": 380,
+   "share": 0.9263157894736842,
+   "kappa": 0.7525005815305884
+  },
+  "rag|rag-glm-4.7": {
+   "pairs": 380,
+   "share": 0.9210526315789473,
+   "kappa": 0.7379189847809093
+  },
+  "memory|label": {
+   "pairs": 380,
+   "share": 0.95,
+   "kappa": 0.7446597821474038
+  },
+  "memory|rag-qwen3.6": {
+   "pairs": 380,
+   "share": 0.8184210526315789,
+   "kappa": 0.268823201338539
+  },
+  "memory|rag-glm-4.7": {
+   "pairs": 380,
+   "share": 0.8131578947368421,
+   "kappa": 0.2606598706565821
+  },
+  "label|rag-qwen3.6": {
+   "pairs": 380,
+   "share": 0.8210526315789474,
+   "kappa": 0.35769326373353194
+  },
+  "label|rag-glm-4.7": {
+   "pairs": 380,
+   "share": 0.8,
+   "kappa": 0.29191389202177226
+  },
+  "rag-qwen3.6|rag-glm-4.7": {
+   "pairs": 380,
+   "share": 0.9052631578947369,
+   "kappa": 0.7039601817788358
+  }
+ },
+ "all_agree": 279,
+ "errors": {
+  "rules": {
+   "answered": 371,
+   "median_km": 0.0,
+   "p90_km": 0.0,
+   "misses": 6,
+   "miss_median_km": 98.57834081928144,
+   "within": {
+    "10": 357,
+    "25": 360,
+    "50": 365,
+    "100": 368
+   }
+  },
+  "rag": {
+   "answered": 321,
+   "median_km": 0.0,
+   "p90_km": 0.0,
+   "misses": 4,
+   "miss_median_km": 287.335606419087,
+   "within": {
+    "10": 313,
+    "25": 314,
+    "50": 317,
+    "100": 319
+   }
+  },
+  "memory": {
+   "answered": 363,
+   "median_km": 0.0,
+   "p90_km": 0.0,
+   "misses": 15,
+   "miss_median_km": 237.04711033540033,
+   "within": {
+    "10": 342,
+    "25": 344,
+    "50": 348,
+    "100": 352
+   }
+  },
+  "label": {
+   "answered": 333,
+   "median_km": 0.0,
+   "p90_km": 0.0,
+   "misses": 4,
+   "miss_median_km": 69.68323911096527,
+   "within": {
+    "10": 323,
+    "25": 326,
+    "50": 329,
+    "100": 332
+   }
+  },
+  "rag-qwen3.6": {
+   "answered": 313,
+   "median_km": 0.0,
+   "p90_km": 0.0,
+   "misses": 8,
+   "miss_median_km": 782.1840918503615,
+   "within": {
+    "10": 302,
+    "25": 303,
+    "50": 305,
+    "100": 307
+   }
+  },
+  "rag-glm-4.7": {
+   "answered": 313,
+   "median_km": 0.0,
+   "p90_km": 0.0,
+   "misses": 10,
+   "miss_median_km": 355.218358197434,
+   "within": {
+    "10": 297,
+    "25": 299,
+    "50": 303,
+    "100": 305
+   }
+  }
+ },
+ "vendors": {
+  "rules": {
+   "akamai": {
+    "regions": 33,
+    "answered": 33,
+    "matched": 33,
+    "low": 0.8957265699643882,
+    "high": 1.0
+   },
+   "alibaba": {
+    "regions": 31,
+    "answered": 29,
+    "matched": 28,
+    "low": 0.8282410893529976,
+    "high": 0.9938869433859677
+   },
+   "aws": {
+    "regions": 37,
+    "answered": 36,
+    "matched": 35,
+    "low": 0.8582996626496918,
+    "high": 0.9950797197044302
+   },
+   "azure": {
+    "regions": 59,
+    "answered": 59,
+    "matched": 59,
+    "low": 0.9388685202159079,
+    "high": 1.0
+   },
+   "digitalocean": {
+    "regions": 16,
+    "answered": 16,
+    "matched": 16,
+    "low": 0.8063865817272801,
+    "high": 1.0
+   },
+   "gcp": {
+    "regions": 43,
+    "answered": 43,
+    "matched": 43,
+    "low": 0.9179874299767727,
+    "high": 1.0
+   },
+   "hetzner": {
+    "regions": 6,
+    "answered": 6,
+    "matched": 6,
+    "low": 0.6096569663469354,
+    "high": 1.0
+   },
+   "huawei": {
+    "regions": 28,
+    "answered": 26,
+    "matched": 26,
+    "low": 0.8712669561953783,
+    "high": 1.0
+   },
+   "ibm": {
+    "regions": 13,
+    "answered": 13,
+    "matched": 13,
+    "low": 0.7718981569447084,
+    "high": 1.0
+   },
+   "oracle": {
+    "regions": 45,
+    "answered": 44,
+    "matched": 44,
+    "low": 0.919701682217986,
+    "high": 1.0
+   },
+   "ovhcloud": {
+    "regions": 15,
+    "answered": 15,
+    "matched": 11,
+    "low": 0.48049110342313245,
+    "high": 0.8910272389681717
+   },
+   "tencent": {
+    "regions": 21,
+    "answered": 20,
+    "matched": 20,
+    "low": 0.8388698745050667,
+    "high": 1.0
+   },
+   "vultr": {
+    "regions": 33,
+    "answered": 31,
+    "matched": 31,
+    "low": 0.889740999265246,
+    "high": 1.0
+   }
+  },
+  "rag": {
+   "akamai": {
+    "regions": 33,
+    "answered": 32,
+    "matched": 32,
+    "low": 0.8928172849426365,
+    "high": 1.0
+   },
+   "alibaba": {
+    "regions": 31,
+    "answered": 28,
+    "matched": 28,
+    "low": 0.8793527963418923,
+    "high": 1.0
+   },
+   "aws": {
+    "regions": 37,
+    "answered": 32,
+    "matched": 31,
+    "low": 0.8425539219962727,
+    "high": 0.9944622826374491
+   },
+   "azure": {
+    "regions": 59,
+    "answered": 51,
+    "matched": 50,
+    "low": 0.8969519232441061,
+    "high": 0.9965303967465577
+   },
+   "digitalocean": {
+    "regions": 16,
+    "answered": 16,
+    "matched": 16,
+    "low": 0.8063865817272801,
+    "high": 1.0
+   },
+   "gcp": {
+    "regions": 43,
+    "answered": 41,
+    "matched": 41,
+    "low": 0.9143295511310926,
+    "high": 1.0
+   },
+   "hetzner": {
+    "regions": 6,
+    "answered": 6,
+    "matched": 6,
+    "low": 0.6096569663469354,
+    "high": 1.0
+   },
+   "huawei": {
+    "regions": 28,
+    "answered": 22,
+    "matched": 21,
+    "low": 0.7820151050048196,
+    "high": 0.9919307806988523
+   },
+   "ibm": {
+    "regions": 13,
+    "answered": 13,
+    "matched": 13,
+    "low": 0.7718981569447084,
+    "high": 1.0
+   },
+   "oracle": {
+    "regions": 45,
+    "answered": 41,
+    "matched": 41,
+    "low": 0.9143295511310926,
+    "high": 1.0
+   },
+   "ovhcloud": {
+    "regions": 15,
+    "answered": 13,
+    "matched": 12,
+    "low": 0.6668546607175265,
+    "high": 0.9862899336203037
+   },
+   "tencent": {
+    "regions": 21,
+    "answered": 19,
+    "matched": 19,
+    "low": 0.8318156346315495,
+    "high": 1.0
+   },
+   "vultr": {
+    "regions": 33,
+    "answered": 7,
+    "matched": 7,
+    "low": 0.6456611570247934,
+    "high": 1.0
+   }
+  },
+  "memory": {
+   "akamai": {
+    "regions": 33,
+    "answered": 33,
+    "matched": 33,
+    "low": 0.8957265699643882,
+    "high": 1.0
+   },
+   "alibaba": {
+    "regions": 31,
+    "answered": 29,
+    "matched": 29,
+    "low": 0.8830264055344442,
+    "high": 1.0
+   },
+   "aws": {
+    "regions": 37,
+    "answered": 35,
+    "matched": 29,
+    "low": 0.6731739236041119,
+    "high": 0.9189747005514327
+   },
+   "azure": {
+    "regions": 59,
+    "answered": 50,
+    "matched": 47,
+    "low": 0.8378265662912299,
+    "high": 0.9793854036353695
+   },
+   "digitalocean": {
+    "regions": 16,
+    "answered": 16,
+    "matched": 16,
+    "low": 0.8063865817272801,
+    "high": 1.0
+   },
+   "gcp": {
+    "regions": 43,
+    "answered": 40,
+    "matched": 40,
+    "low": 0.9123754607496077,
+    "high": 1.0
+   },
+   "hetzner": {
+    "regions": 6,
+    "answered": 6,
+    "matched": 6,
+    "low": 0.6096569663469354,
+    "high": 1.0
+   },
+   "huawei": {
+    "regions": 28,
+    "answered": 28,
+    "matched": 26,
+    "low": 0.7735426157408215,
+    "high": 0.9801883525522292
+   },
+   "ibm": {
+    "regions": 13,
+    "answered": 13,
+    "matched": 13,
+    "low": 0.7718981569447084,
+    "high": 1.0
+   },
+   "oracle": {
+    "regions": 45,
+    "answered": 44,
+    "matched": 44,
+    "low": 0.919701682217986,
+    "high": 1.0
+   },
+   "ovhcloud": {
+    "regions": 15,
+    "answered": 15,
+    "matched": 11,
+    "low": 0.48049110342313245,
+    "high": 0.8910272389681717
+   },
+   "tencent": {
+    "regions": 21,
+    "answered": 21,
+    "matched": 21,
+    "low": 0.8453561767357979,
+    "high": 1.0
+   },
+   "vultr": {
+    "regions": 33,
+    "answered": 33,
+    "matched": 33,
+    "low": 0.8957265699643882,
+    "high": 1.0
+   }
+  },
+  "label": {
+   "akamai": {
+    "regions": 33,
+    "answered": 33,
+    "matched": 33,
+    "low": 0.8957265699643882,
+    "high": 1.0
+   },
+   "alibaba": {
+    "regions": 31,
+    "answered": 28,
+    "matched": 28,
+    "low": 0.8793527963418923,
+    "high": 1.0
+   },
+   "aws": {
+    "regions": 37,
+    "answered": 22,
+    "matched": 22,
+    "low": 0.8513404742740388,
+    "high": 1.0
+   },
+   "azure": {
+    "regions": 59,
+    "answered": 40,
+    "matched": 40,
+    "low": 0.9123754607496077,
+    "high": 1.0
+   },
+   "digitalocean": {
+    "regions": 16,
+    "answered": 16,
+    "matched": 16,
+    "low": 0.8063865817272801,
+    "high": 1.0
+   },
+   "gcp": {
+    "regions": 43,
+    "answered": 40,
+    "matched": 40,
+    "low": 0.9123754607496077,
+    "high": 1.0
+   },
+   "hetzner": {
+    "regions": 6,
+    "answered": 6,
+    "matched": 6,
+    "low": 0.6096569663469354,
+    "high": 1.0
+   },
+   "huawei": {
+    "regions": 28,
+    "answered": 26,
+    "matched": 26,
+    "low": 0.8712669561953783,
+    "high": 1.0
+   },
+   "ibm": {
+    "regions": 13,
+    "answered": 13,
+    "matched": 13,
+    "low": 0.7718981569447084,
+    "high": 1.0
+   },
+   "oracle": {
+    "regions": 45,
+    "answered": 44,
+    "matched": 44,
+    "low": 0.919701682217986,
+    "high": 1.0
+   },
+   "ovhcloud": {
+    "regions": 15,
+    "answered": 15,
+    "matched": 11,
+    "low": 0.48049110342313245,
+    "high": 0.8910272389681717
+   },
+   "tencent": {
+    "regions": 21,
+    "answered": 19,
+    "matched": 19,
+    "low": 0.8318156346315495,
+    "high": 1.0
+   },
+   "vultr": {
+    "regions": 33,
+    "answered": 31,
+    "matched": 31,
+    "low": 0.889740999265246,
+    "high": 1.0
+   }
+  },
+  "rag-qwen3.6": {
+   "akamai": {
+    "regions": 33,
+    "answered": 32,
+    "matched": 32,
+    "low": 0.8928172849426365,
+    "high": 1.0
+   },
+   "alibaba": {
+    "regions": 31,
+    "answered": 27,
+    "matched": 27,
+    "low": 0.8754409628553642,
+    "high": 1.0
+   },
+   "aws": {
+    "regions": 37,
+    "answered": 27,
+    "matched": 27,
+    "low": 0.8754409628553642,
+    "high": 1.0
+   },
+   "azure": {
+    "regions": 59,
+    "answered": 50,
+    "matched": 50,
+    "low": 0.9286499658256813,
+    "high": 1.0
+   },
+   "digitalocean": {
+    "regions": 16,
+    "answered": 16,
+    "matched": 16,
+    "low": 0.8063865817272801,
+    "high": 1.0
+   },
+   "gcp": {
+    "regions": 43,
+    "answered": 40,
+    "matched": 34,
+    "low": 0.7092737396097997,
+    "high": 0.9293890829149257
+   },
+   "hetzner": {
+    "regions": 6,
+    "answered": 6,
+    "matched": 6,
+    "low": 0.6096569663469354,
+    "high": 1.0
+   },
+   "huawei": {
+    "regions": 28,
+    "answered": 23,
+    "matched": 22,
+    "low": 0.7900841350594088,
+    "high": 0.9922835330378733
+   },
+   "ibm": {
+    "regions": 13,
+    "answered": 13,
+    "matched": 13,
+    "low": 0.7718981569447084,
+    "high": 1.0
+   },
+   "oracle": {
+    "regions": 45,
+    "answered": 41,
+    "matched": 41,
+    "low": 0.9143295511310926,
+    "high": 1.0
+   },
+   "ovhcloud": {
+    "regions": 15,
+    "answered": 14,
+    "matched": 13,
+    "low": 0.6853073044604219,
+    "high": 0.9872781138877085
+   },
+   "tencent": {
+    "regions": 21,
+    "answered": 19,
+    "matched": 19,
+    "low": 0.8318156346315495,
+    "high": 1.0
+   },
+   "vultr": {
+    "regions": 33,
+    "answered": 5,
+    "matched": 5,
+    "low": 0.565508505247919,
+    "high": 1.0
+   }
+  },
+  "rag-glm-4.7": {
+   "akamai": {
+    "regions": 33,
+    "answered": 32,
+    "matched": 32,
+    "low": 0.8928172849426365,
+    "high": 1.0
+   },
+   "alibaba": {
+    "regions": 31,
+    "answered": 26,
+    "matched": 25,
+    "low": 0.8110682300804161,
+    "high": 0.9931781910230102
+   },
+   "aws": {
+    "regions": 37,
+    "answered": 27,
+    "matched": 25,
+    "low": 0.7663002270926939,
+    "high": 0.9794457783026164
+   },
+   "azure": {
+    "regions": 59,
+    "answered": 56,
+    "matched": 52,
+    "low": 0.8302431716851381,
+    "high": 0.9718744187536204
+   },
+   "digitalocean": {
+    "regions": 16,
+    "answered": 16,
+    "matched": 16,
+    "low": 0.8063865817272801,
+    "high": 1.0
+   },
+   "gcp": {
+    "regions": 43,
+    "answered": 37,
+    "matched": 37,
+    "low": 0.9059390425448562,
+    "high": 1.0
+   },
+   "hetzner": {
+    "regions": 6,
+    "answered": 6,
+    "matched": 6,
+    "low": 0.6096569663469354,
+    "high": 1.0
+   },
+   "huawei": {
+    "regions": 28,
+    "answered": 23,
+    "matched": 22,
+    "low": 0.7900841350594088,
+    "high": 0.9922835330378733
+   },
+   "ibm": {
+    "regions": 13,
+    "answered": 13,
+    "matched": 13,
+    "low": 0.7718981569447084,
+    "high": 1.0
+   },
+   "oracle": {
+    "regions": 45,
+    "answered": 40,
+    "matched": 40,
+    "low": 0.9123754607496077,
+    "high": 1.0
+   },
+   "ovhcloud": {
+    "regions": 15,
+    "answered": 14,
+    "matched": 13,
+    "low": 0.6853073044604219,
+    "high": 0.9872781138877085
+   },
+   "tencent": {
+    "regions": 21,
+    "answered": 17,
+    "matched": 17,
+    "low": 0.8156763396284354,
+    "high": 1.0
+   },
+   "vultr": {
+    "regions": 33,
+    "answered": 6,
+    "matched": 5,
+    "low": 0.4364905634363539,
+    "high": 0.9699474141282696
+   }
+  }
+ },
+ "steps": [
+  {
+   "step": "label, agrees",
+   "answered": 188,
+   "matched": 188,
+   "coverage": 0.49473684210526314
+  },
+  {
+   "step": "label",
+   "answered": 331,
+   "matched": 327,
+   "coverage": 0.8710526315789474
+  },
+  {
+   "step": "label, conflicts",
+   "answered": 336,
+   "matched": 332,
+   "coverage": 0.8842105263157894
+  },
+  {
+   "step": "document",
+   "answered": 336,
+   "matched": 332,
+   "coverage": 0.8842105263157894
+  },
+  {
+   "step": "feed",
+   "answered": 368,
+   "matched": 363,
+   "coverage": 0.968421052631579
+  },
+  {
+   "step": "capital",
+   "answered": 371,
+   "matched": 365,
+   "coverage": 0.9763157894736842
+  },
+  {
+   "step": "memory",
+   "answered": 371,
+   "matched": 365,
+   "coverage": 0.9763157894736842
+  },
+  {
+   "step": "none",
+   "answered": 371,
+   "matched": 365,
+   "coverage": 0.9763157894736842
+  }
+ ]
+}

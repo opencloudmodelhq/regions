@@ -1,0 +1,30 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix ocm: <https://github.com/opencloudmodelhq/regions/terms#> .
+
+ocm:PlacementShape a sh:NodeShape ;
+    sh:targetSubjectsOf ocm:regionId ;
+    sh:property [ sh:path prov:wasDerivedFrom ; sh:minCount 1 ; sh:nodeKind sh:IRI ;
+                  sh:message "a placement must derive from at least one evidence record" ] ;
+    sh:property [ sh:path prov:wasGeneratedBy ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:message "a placement must name the one step that made it" ] .
+
+ocm:EvidenceShape a sh:NodeShape ;
+    sh:targetSubjectsOf ocm:stance ;
+    sh:property [ sh:path prov:hadPrimarySource ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ;
+                  sh:message "an evidence record must name the one document it quotes" ] ;
+    sh:property [ sh:path prov:wasGeneratedBy ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:message "an evidence record must name the one step that made it" ] ;
+    sh:property [ sh:path prov:value ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ;
+                  sh:message "an evidence record must hold its verbatim quote" ] .
+
+ocm:HashShape a sh:NodeShape ;
+    sh:targetSubjectsOf ocm:sha256 ;
+    sh:property [ sh:path ocm:sha256 ; sh:maxCount 1 ; sh:pattern "^[0-9a-f]{64}$" ;
+                  sh:message "a hash must be one lowercase SHA-256 hex digest" ] .
+
+ocm:StepShape a sh:NodeShape ;
+    sh:targetClass prov:Activity ;
+    sh:property [ sh:path prov:wasAssociatedWith ; sh:minCount 1 ; sh:nodeKind sh:IRI ;
+                  sh:message "a step must name the agent that ran it" ] .

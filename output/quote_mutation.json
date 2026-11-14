@@ -1,0 +1,48 @@
+{
+ "control": {
+  "records": 266,
+  "passed": 265
+ },
+ "other_quote": {
+  "records": 265,
+  "false_pass": 2,
+  "share": 0.007547169811320755,
+  "low": 0.0020721086405427985,
+  "high": 0.027095996295598033,
+  "by_length": {
+   "under 20": {
+    "records": 23,
+    "false_pass": 0
+   },
+   "50 or more": {
+    "records": 97,
+    "false_pass": 1
+   },
+   "20 to 49": {
+    "records": 145,
+    "false_pass": 1
+   }
+  }
+ },
+ "other_city": {
+  "records": 254,
+  "false_pass": 1,
+  "share": 0.003937007874015748,
+  "low": 0.0006952990654844808,
+  "high": 0.021960470988688308,
+  "by_length": {
+   "20 to 49": {
+    "records": 147,
+    "false_pass": 0
+   },
+   "50 or more": {
+    "records": 80,
+    "false_pass": 0
+   },
+   "under 20": {
+    "records": 27,
+    "false_pass": 1
+   }
+  }
+ }
+}

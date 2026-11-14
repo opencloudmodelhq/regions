@@ -1,0 +1,59 @@
+label,operator_code,placed_city,country,km,within_50_km,nearest_airport,major_hub,nearby_hub
+Los Angeles,LAX,Los Angeles,US,,,HHR,LAX,LAX
+Los Angeles - China Optimized,LAX,Los Angeles,US,,,HHR,LAX,LAX
+Chicago,CHI,Chicago,US,,,MDW,ORD,ORD
+Dallas,DFW,Dallas,US,,,DAL,DFW,DFW
+Atlanta,ATL,Atlanta,US,,,ATL,ATL,ATL
+Washington,IAD,,,,,,,
+Miami,MIA,Miami,US,,,MIA,MIA,MIA
+New York,NYC,,,,,,,
+Seattle,SEA,Seattle,US,,,BFI,SEA,SEA
+San Jose,SJC,,,,,,,
+Sao Paulo,SAO,São Paulo,BR,,,CGH,GRU,GRU
+Río de Janeiro,GIG,Rio de Janeiro,BR,,,SDU,GIG,GIG
+Fortaleza,FOR,Fortaleza,BR,,,FOR,FOR,FOR
+Mexico City,MEX,Mexico City,MX,,,MEX,MEX,MEX
+Santiago,SCL,Santiago,CL,,,SCL,SCL,SCL
+Bogota,BOG,Bogotá,CO,,,BOG,BOG,BOG
+Buenos Aires,EZE,Buenos Aires,AR,,,AEP,AEP,AEP
+Bangkok,BKK,Bangkok,TH,,,DMK,DMK,DMK
+Bangalore,BLR,Bengaluru,IN,,,BLR,BLR,BLR
+Yangon,RGN,Yangon,MM,,,RGN,RGN,RGN
+Medan,KNO,Medan,ID,,,KNO,KNO,KNO
+Mumbai,BOM,Mumbai,IN,,,BOM,BOM,BOM
+Delhi,DEL,Delhi,IN,,,DEL,DEL,DEL
+Chennai,MAA,Chennai,IN,,,MAA,MAA,MAA
+Dhaka,DAC,Dhaka,BD,,,DAC,DAC,DAC
+Hong Kong,HKG,Hong Kong,HK,,,HKG,HKG,HKG
+Hong Kong - China Optimized,HKG,Hong Kong,HK,,,HKG,HKG,HKG
+Jakarta,JKT,Jakarta,ID,,,HLP,CGK,CGK
+Karachi,KHI,Karachi,PK,,,KHI,KHI,KHI
+Islamabad,ISB,,,,,,,
+Kuala Lumpur,KUL,Kuala Lumpur,MY,,,SZB,KUL,KUL
+Manila,MNL,Manila,PH,,,MNL,MNL,MNL
+Seoul,SEL,Seoul,KR,,,GMP,ICN,ICN
+Ho Chi Minh,SGN,Ho Chi Minh City,VN,,,SGN,SGN,SGN
+Hanoi,HAN,Hanoi,VN,,,HAN,HAN,HAN
+Singapore,SIN,Singapore,SG,,,XSP,SIN,SIN
+Taipei,TPE,Taipei,TW,,,TSA,TPE,TPE
+Osaka,OSA,Osaka,JP,,,ITM,ITM,ITM
+Tokyo,TYO,Tokyo,JP,,,HND,HND,HND
+Tokyo - China Optimized,TYO,Tokyo,JP,,,HND,HND,HND
+Sydney,SYD,Sydney,AU,,,SYD,SYD,SYD
+Amsterdam,AMS,Amsterdam,NL,,,AMS,AMS,AMS
+Frankfurt,FRA,Frankfurt am Main,DE,,,FRA,FRA,FRA
+Istanbul,IST,Istanbul,TR,,,SAW,IST,IST
+London,LON,London,GB,,,LCY,LHR,LHR
+Madrid,MAD,Madrid,ES,,,MAD,MAD,MAD
+Marseilles,MRS,Marseille,FR,,,MRS,MRS,MRS
+Paris,PAR,Paris,FR,,,ORY,CDG,CDG
+Milan,MXP,Milan,IT,,,LIN,MXP,MXP
+Stockholm,ARN,Stockholm,SE,,,BMA,ARN,ARN
+Warsaw,WAW,Warsaw,PL,,,WAW,WAW,WAW
+Dubai,DXB,Dubai,AE,,,DXB,DXB,DXB
+Fujairah,FJR,Fujairah,AE,,,FJR,DXB,FJR
+Tel Aviv,TLV,Tel Aviv,IL,,,TLV,TLV,TLV
+Johannesburg,JNB,Johannesburg,ZA,,,JNB,JNB,JNB
+Lagos,LOS,Lagos,NG,,,LOS,LOS,LOS
+Cairo,CAI,Cairo,EG,,,CAI,CAI,CAI
+Doha,DOH,Doha,QA,,,DOH,DOH,DOH

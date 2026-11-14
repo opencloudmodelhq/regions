@@ -1,0 +1,37 @@
+{
+  "iata_nearest_airport": {
+    "regions": 379,
+    "distinct": 131,
+    "share": 0.997
+  },
+  "iata_major_hub": {
+    "regions": 379,
+    "distinct": 105,
+    "share": 0.997
+  },
+  "iata_nearby_hub": {
+    "regions": 379,
+    "distinct": 125,
+    "share": 0.997
+  },
+  "iata_metro": {
+    "regions": 138,
+    "distinct": 21,
+    "share": 0.363
+  },
+  "metro_or_airport": {
+    "regions": 379,
+    "distinct": 119,
+    "share": 0.997
+  },
+  "unlocode": {
+    "regions": 370,
+    "distinct": 135,
+    "share": 0.974
+  },
+  "clli": {
+    "regions": 138,
+    "distinct": 33,
+    "share": 0.363
+  }
+}

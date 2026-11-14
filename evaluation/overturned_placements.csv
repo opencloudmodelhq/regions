@@ -1,0 +1,8 @@
+provider,region_id,first_placement,evidence_placement
+aws,me-central-1,Dubai,Abu Dhabi
+alibaba,na-south-1,Mexico City,Queretaro
+azure,brazilsouth,Sao Paulo,Campinas
+azure,westeurope,Amsterdam,Middenmeer
+azure,eastus,Boydton,Northern Virginia
+vultr,ewr,Newark,Piscataway
+alibaba,us-west-1,San Jose,Santa Clara

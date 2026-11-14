@@ -1,0 +1,475 @@
+doc_id,kind,publisher,title
+55bb28d2a093,vendor,Akamai,2025
+23ae093eec11,vendor,Linode,"{""data"": [{""id"": ""gb-lon"", ""label"": ""London 2, UK"", ""country"": ""gb"", ""capabilities"": [""Linodes"", ""Block Storage Encryption"", ""Disk Encryption"", ""Backups"", ""Premium NodeBalancers"", ""NodeBalancers"", ""Bl"
+3cfdb48a611a,directory,Cloud Security Alliance,STAR Registry: Evaluate Cloud & AI Providers | CSA
+270506245cc0,directory,Cloud Security Alliance,STAR Registry: Evaluate Cloud & AI Providers | CSA
+01b8701ddf2c,directory,,https://datacenterdynamics.com/en/news/akamai-plans-seven-new-cloud-regions
+61e76023aee1,vendor,Linode,# This file contains a self-published geofeed as defined in https://datatracker.ietf.org/doc/html/rfc8805
+661ec808ef73,directory,morethanjustparks.com,"Linode (Akamai) Atlanta Region Campus, GA: Operating | Map"
+045604ecbb79,government,General Services Administration,"{""meta"":{""last_change"":""2026-05-19T02:40:43.412Z"",""produced_by"":""General Services Administration""},""data"":{""Metrics"":{""ready"":66,""in_process"":15,""total"":517,""latest"":[{""id"":""FR2616639378"",""logo"":"""",""c"
+5157bc42f1d3,vendor,Linode,Linode Status
+3ae55f6da83d,news,TechCrunch,Akamai expands its cloud computing footprint with new locations and services | TechCrunch
+03fea244c2bd,vendor,Akamai,Distributed compute regions (limited availability)
+ac82d4a8f6cd,vendor,Akamai,---
+75416518d8f1,vendor,Akamai,---
+2b5acc712707,vendor,Akamai,New data centers 2026
+2e6e6d579269,vendor,Akamai,---
+538f02956501,directory,,https://www.akamai.com/content/dam/site/en/documents/akamai/2024/iso-iec-27001-2013-certification.pdf
+7351957787b4,certification,"A-LIGN Compliance and Security, Inc.","Akamai Technologies, Inc."
+37d6a6495a4e,certification,"A-LIGN Compliance and Security, Inc.","Akamai Technologies, Inc."
+27cbb5b057f7,certification,"A-LIGN Compliance and Security, Inc.","Akamai Technologies, Inc."
+9ffaf5a9cbb2,directory,,https://www.akamai.com/legal/compliance
+5b5295e5db45,directory,,https://www.akamai.com/site/ja/documents/akamai/pci-dss-3.2-attestation-of-compliance.pdf
+636205a51078,vendor,Akamai,Distributed Cloud Computing by Region | Akamai
+138da2abeaee,news,Data Center Frontier,Akamai to Deploy 12 New Linode Data Centers in Global Expansion | Data Center Frontier
+c2fba6e3cb1b,directory,,https://www.linode.com/compliance/
+abbba19ed049,directory,,https://www.linode.com/global-infrastructure/
+41cfc684c904,directory,PeeringDB,"{""data"": [{""id"": 8182, ""org_id"": 14, ""org"": {""id"": 14, ""name"": ""Akamai Technologies, Inc"", ""aka"": """", ""name_long"": """", ""website"": ""https://www.akamai.com/"", ""social_media"": [{""service"": ""website"", ""id"
+f4408234d9b0,news,Cision PR Newswire,"Akamai Expands World's Most Distributed Cloud Network with New Core Compute Regions Across Asia, Europe, North America, and Latin America"
+5059fd4a08cd,vendor,Akamai,akam-20251231
+5d83de88596d,vendor,Alibaba Cloud,Alibaba Cloud regions and zones selection guide-The Beginner's Guide-阿里云帮助中心
+97e75e244067,news,Yahoo Finance,"Alibaba opens first U.S. cloud center, enters hotly contested market"
+915822718702,news,w.media,Alibaba Cloud launches two data centers in Johor – w.media
+a4ad8fd6b211,vendor,Alibaba Cloud,Alibaba Cloud Global Locations | Deploy Around the World Including Mainland China
+19515202c784,vendor,Alibaba Cloud,Alibaba Cloud Global Locations | Deploy Around the World Including Mainland China
+0b456ce7d99a,vendor,Alibaba Cloud,Alibaba Cloud Global Locations | Deploy Around the World Including Mainland China
+fbdd8c354153,vendor,Alibaba Cloud,Alibaba Cloud Security & Compliance Center for Cloud Computing Infrastructure
+b6e0b9690b14,directory,,https://www.alibabacloud.com/en/trust-center/compliance-repository-intro?_p_lc=1
+b7cb9b70657b,vendor,Alibaba Cloud,ACK regions - Container Service for Kubernetes - Alibaba Cloud Documentation Center
+0d6c7338f6b3,vendor,Alibaba Cloud,Alibaba Cloud regions and zones selection guide - The Beginner's Guide - Alibaba Cloud Documentation Center
+d52777cb9b06,vendor,Alibaba Cloud,ECS: Public cloud regions and zones - Elastic Compute Service - Alibaba Cloud Documentation Center
+deae8c028644,vendor,Alibaba Cloud,Compliance certifications of Function Compute - - Alibaba Cloud Documentation Center
+83a7ea048482,vendor,Alibaba Cloud,Alibaba Cloud Amplifies Malaysia Infrastructure with Public Cloud Region in Johor to Meet Growing Demand - Alibaba Cloud
+e7e1b9db42ab,vendor,Alibaba Cloud,Alibaba Cloud Compliance Repository: Security & Privacy Reports
+e9787a53e402,directory,,https://www.alibabacloud.com/trust-center/security-compliance-practice
+798fe72ea5a5,certification,BSI Group,Client Directory Profile | BSI
+76f190ef1247,directory,Console Connect,Alibaba Cloud Express Connect Integration | Console Connect
+8f14f884b3ec,vendor,Amazon Web Services,AWS INVESTMENT
+35b5bd5ab9e9,vendor,AWS,AWS Investment:
+b1dc34b92bbc,vendor,AWS,AWS Direct Connect announces general availability in the US West Region - AWS
+0b2ff8134e28,vendor,AWS,Oracle Database@AWS is now available in twelve AWS Regions - AWS
+8345c078f002,vendor,AWS,Announcing the new AWS Asia Pacific (Thailand) Region | AWS News Blog
+0bbe9d272841,vendor,AWS,New AWS Region in Mexico is in the works | AWS News Blog
+be4cb71db618,vendor,AWS,Now Open — AWS Asia Pacific (New Zealand) Region | AWS News Blog
+a9ba34854067,vendor,AWS,Now Open – AWS Middle East (Bahrain) | AWS News Blog
+f45fa7209aba,vendor,AWS,Now Open–AWS Region in the United Arab Emirates (UAE) | AWS News Blog
+a8059ff84e3d,vendor,AWS,Opening the AWS European Sovereign Cloud | AWS News Blog
+8575f2f80f1d,vendor,AWS,Cloud Compliance - Amazon Web Services (AWS)
+5bd860f395a0,vendor,AWS,FedRAMP Compliance - Amazon Web Services (AWS)
+5e3df5fad48a,vendor,AWS,ISO/IEC 27001:2022 Compliance - Amazon Web Services (AWS)
+eafdb968a740,directory,,https://aws.amazon.com/compliance/soc-faqs/
+56b665c7b6ed,vendor,AWS,Amazon Web Services (AWS) Sub-processors
+be7cae0f5405,vendor,AWS,AWS Region in Malaysia
+bee1922e73a9,vendor,AWS,AWS Asia Pacific (New Zealand) Region
+ca26d759a5fb,vendor,AWS,AWS Data Centers - Amazon Web Services (AWS)
+a3c759b9e292,directory,Cloud Security Alliance,404 - Not Found | CSA
+3c05d418f240,directory,Cloud Security Alliance,404 - Not Found | CSA
+cec568f0157f,directory,,https://console.aws.amazon.com/artifact/
+5b3133a43c4d,certification,aws,https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/certification/compliance/iso_27001_global_certification.pdf
+9826f1450b88,certification,Amazon Web Services,System and Organization Controls 3 (SOC 3) Report
+2c0d21795b56,news,Data Center Frontier,Huge Cloud Expansion Underway in Amazon US East | Data Center Frontier
+6c3783f39854,news,DataCenterNews Asia Pacific,AWS opens another data center region in China
+8db9262d1422,vendor,AWS,Requesting cross connects at Direct Connect locations - AWS Direct Connect
+162fe7e5f1e3,news,Meed,Meed | Amazon data centre hit highlights sector vulnerabilities
+2a2ad4a0c376,news,Gulf News,"Amazon Web Services launches data centre operations in UAE, its second in Middle East"
+6d313871eed6,news,Gulf News,"Amazon Web Services launches data centre operations in UAE, its second in Middle East"
+51e3cc1ca066,directory,Last Week in AWS,us-west-1: The Flagship AWS Region That Isn’t - Last Week in AWS Blog
+5b8bfd87145a,news,Lowyat,Amazon Officially Launches Its First AWS Region In Malaysia - Lowyat.NET
+303a6cf0cc20,government,Ministerium der Justiz des Landes Brandenburg,"Potsdam, 15.01.2026"
+bbba9411d1e9,news,Mexico News Daily,Amazon Web Services to invest over US $5B in Mexico
+f12a343f02a4,news,CGTN,Amazon's cloud unit expands in China - CGTN
+5e0bf4ce76fe,news,Phys.org,"Amazon ups Ohio jobs to 1,000, begins collecting sales taxes (Update)"
+a07abf880e4e,vendor,Amazon,Amazon-Web-Services-Cloud-Now-Available-to-Customers-from-Data-Centers-in-Canada-12-08-2016 - US Press Center
+b94d9602e228,vendor,Amazon,Amazon-Web-Services-AWS-and-Ningxia-Western-Cloud-Data-Technology-Co.-Ltd-NWCD-Announce-a-Second-AWS-Region-in-China-Now-Available-to-Customers - US Press Center
+8bb696d1407f,vendor,Amazon,AWS-to-Open-Data-Centers-in-New-Zealand - US Press Center
+14d812211e77,vendor,Amazon,AWS-Launches-Infrastructure-Region-in-Spain - US Press Center
+7cd1511c7e4a,vendor,Amazon,AWS-Launches-Second-Infrastructure-Region-in-Canada - US Press Center
+6eda79896206,vendor,Amazon,AWS-to-Launch-an-Infrastructure-Region-in-Mexico - US Press Center
+817711a8ec58,vendor,Amazon,AWS-Launches-Infrastructure-Region-in-Malaysia - US Press Center
+ec678d07fcc7,vendor,Amazon,AWS-Launches-Infrastructure-Region-in-Thailand - US Press Center
+00b1906e2e8c,news,RCR Wireless,AWS expands Middle East presence with UAE region
+9befa6a7573d,vendor,Amazon Web Services,OVERVIEW
+a7a47b453cb6,vendor,Amazon Web Services,OVERVIEW
+d7957affd6b7,vendor,Amazon Web Services,OVERVIEW
+febabfbd062d,vendor,Amazon Web Services,OVERVIEW
+7136958bd4e7,news,The Edge Malaysia,"Air Selangor, AWS ink reclaimed water agreements for Klang Valley data centres"
+badaec766c29,news,w.media,"Amazon buys 2 million sq ft land in Selangor, Malaysia to build data center – w.media"
+d922caa602ed,vendor,Amazon,Here's how Amazon is investing in Virginia
+d8fed623f805,vendor,Amazon,"Amazon data center investment: local jobs, education, sustainability"
+9a177c1266d5,vendor,Amazon,"Amazon data centers: Amazon Montgomery County Community Fund awards $150,000 to local community"
+8fc20203ceec,vendor,Amazon,Amazon data center communities: Here’s what’s happened near data centers across the US in 2024-2025
+a0bffb3090ed,vendor,Amazon,Learn about AWS’s long-term commitment to Virginia
+3d662892aaa0,vendor,Amazon,AI and cloud infrastructure in Ohio gets $10 billion Amazon investment
+d684883f9e78,vendor,Amazon,"AWS brings economic benefits to California, Ohio, Oregon, Virginia"
+56c7f8f21208,vendor,Amazon,Amazon increases Spain investment to €33.7 billion
+712b37dac6a3,vendor,Amazon,"Amazon increases Spain investment to €33.7 billion, expanding data center infrastructure & supporting 29,900 jobs"
+55b805ab507e,vendor,Amazon,Learn about AWS's long-term commitment to Aragón (Spain)
+68f6485737cc,government,Gobierno de Aragón,Plan de Interés General de Aragón Expansión de la Región AWS en Aragón. Gobierno de Aragón
+4f16b8a5e1e9,government,Gobierno de Aragón,BOLETÍN OFICIAL DE ARAGÓN
+98b6b634b866,government,Gobierno de Aragón,BOLETÍN OFICIAL DE ARAGÓN
+433a6ca3fab7,news,ChannelPartner,AWS weiht angeblich souveräne Cloud ein | ChannelPartner
+1ec7fb2a05ae,news,Data Center Dynamics,Amazon buys seven acres in Santa Clara for $51.8m - DCD
+86972db000c2,news,Data Center Dynamics,"AWS buys 234 acres in Pickaway County, Ohio, for data center expansion - DCD"
+d50af4ccd9c1,news,Go Aragón,Amazon Web Services presses 'On': three data centers to put Aragon at the digital forefront - Go Aragón
+690e22567272,news,The Irish Times,Amazon secures permission to build three data centres in North Dublin – The Irish Times
+f4cfef27bc6c,news,ITSitio,"Querétaro, resguarda dos gigantes para Centros de Datos: Microsoft y AWS - ITSitio"
+d6bce2551660,vendor,Amazon Web Services,5 February 2025
+87e127b44d01,news,Mobile World Live,AWS to invest $5B for new cloud regio... - Mobile World Live
+d939424ff67d,news,NZ Herald,Amazon construction freeze: PM Christopher Luxon at tech giant’s launch but massive Auckland site abandoned – Tech Insider - NZ Herald
+d1e3556598a0,news,OPB,"Kotek’s push against data centers unlikely to slow expansion in Eastern Oregon, local officials say - OPB"
+227614236c5f,news,RNZ,Amazon and the case of the missing New Zealand data centres | RNZ
+b286415ebebd,news,RTE,Amazon spends €2bn on Irish data centre network
+24e034b26265,news,Silicon UK,Amazon Selects Montreal For Canadian Data Centre
+1794d5d7b70d,news,The National,Amazon Web Services opens three data centres in Middle East | The National
+7025971163f4,news,Ultima Hora,Los centros de datos de Amazon tienen ya el camino despejado para su ampliación en Aragón
+62b111ac6486,government,中共西藏自治区委员会网络安全和信息化委员会办公室,宁夏新增两家“国字号”绿色数据中心_中共西藏自治区委员会网络安全和信息化委员会办公室
+ee2ce73b8b3f,vendor,Microsoft,IRELAND
+7fdc8e721143,government,Washington State Department of Ecology,Response to Comments
+1742f4be9280,vendor,Microsoft,Microsoft expands cloud services with two new datacenters in Wyoming | Microsoft Azure Blog
+cff558c9b04c,vendor,Microsoft,Data residency
+cbb246071343,vendor,Microsoft,Data residency
+63fff03a14a7,news,Cowboy State Daily,Microsoft Opens Two New Data Centers In Cheyenne | Cowboy State Daily
+13d4f976795a,news,DataCenterKnowledge,"Microsoft Blames ""Severe"" Weather for Azure Cloud Outage"
+ce3f557a3ec6,vendor,Microsoft,BRAZIL
+b463c0bf4de9,vendor,Microsoft,"IOWA, USA"
+14e262479fb0,vendor,Microsoft,"TEXAS, USA"
+1fee86ffdcca,news,Data Centre Review,Microsoft’s Norway data centres come online for Azure customers in Europe - Data Centre Review
+b06f9d1626e3,government,State of Washington Department of Ecology,STATE OF WASHINGTON
+6b8d787cd7e2,news,Globes,Microsoft Israel to launch regional data center in 2022 - Globes
+a4194d59fa4d,government,Microsoft Operations Ireland Ltd,Microsoft Operations Ireland Ltd
+c03be6fa465c,government,Microsoft Operations Ireland Ltd,Microsoft Operations Ireland Ltd
+8b849cb65523,government,epawebapp.epa.ie,Microsoft Operations Ireland Ltd
+f05851cc46db,government,EPA,{
+41fc335f934e,vendor,Microsoft,Are the Azure US East and US East 2 facilities on the same campus? - Microsoft Q&A
+83121bd04f3c,vendor,Microsoft,Azure Front Door POP (point-of-presence) locations by abbreviation | Microsoft Learn
+b19439dd1c76,vendor,Microsoft,List of Azure regions | Microsoft Learn
+8cf137609847,vendor,Microsoft,Federal Risk and Authorization Management Program (FedRAMP) - Microsoft Compliance | Microsoft Learn
+591c918e3e95,vendor,Microsoft,System and Organization Controls (SOC) 3 - Microsoft Compliance | Microsoft Learn
+d9e52571bc1f,vendor,Microsoft,Subscriptions - List Locations - REST API (Azure Resource Management) | Microsoft Learn
+266b071d842f,vendor,Microsoft,Datacenter fact sheets - Microsoft Local
+21886b4135bb,vendor,Microsoft,2025 Fact sheets Archives - Microsoft Local
+778d460e9ffa,vendor,Microsoft,2025 Fact sheets Archives - Page 2 of 4 - Microsoft Local
+974eb4b44f2f,vendor,Microsoft,2025 Fact sheets Archives - Page 3 of 4 - Microsoft Local
+bad1ddb37426,vendor,Microsoft,California - Microsoft Local
+5f2f8f1d19da,vendor,Microsoft,Wyoming - Microsoft Local
+981caec95ad6,vendor,Microsoft,愛荷華州 - 微軟當地
+e08f6066771a,vendor,Microsoft,Texas - Microsoft Local
+8d44ca372de6,vendor,Microsoft,Illinois - Microsoft Local
+ab09e90738e8,vendor,Microsoft,Northern Virginia - Microsoft Local
+1e60fd1878d4,vendor,Microsoft,Washington - Microsoft Local
+e6110ee35a80,vendor,Microsoft,南弗吉尼亞州 - 微軟本地
+32c3592bef13,vendor,Microsoft,Ireland - Microsoft Local
+7bce0fd6cb3f,vendor,Microsoft,Microsoft datacenters in Ireland
+1e9dfc7c1e49,vendor,Microsoft,At a glance
+edaf314d5a24,vendor,Microsoft,Auf einen Blick
+cb667c4b2f65,vendor,Microsoft,Visão geral
+ec3f8a9e89f4,vendor,Microsoft,At a glance
+00b6864be928,vendor,Microsoft,En quelques mots
+a493029aee61,vendor,Microsoft,Oversigt
+947b64a11e13,vendor,Microsoft,Datakeskukset kootusti
+4f1e865e1e74,vendor,Microsoft,At a glance
+a58a0da12b6b,vendor,Microsoft,Με μια ματιά
+eac510b63be7,vendor,Microsoft,At a glance
+e8fda4bd0ae8,vendor,Microsoft,Ringkasan
+766805295b6f,vendor,Microsoft,At a glance
+7686d77d2d91,vendor,Microsoft,In sintesi
+a9fc5661db82,vendor,Microsoft,시트 1: 한눈에 보기
+a3114c3be285,vendor,Microsoft,Sepintas lalu
+66fb6e82a115,vendor,Microsoft,De un vistazo
+5408d23373e2,vendor,Microsoft,In een oogopslag
+242f0cfa54d5,vendor,Microsoft,At a glance
+e93cbf11d58f,vendor,Microsoft,At a glance
+0f4923c2dbe1,vendor,Microsoft,W skrócie
+1dacc6f87900,vendor,Microsoft,De un vistazo
+1f5e46db1f8b,vendor,Microsoft,Sammanfattning
+a3c0d957e683,vendor,Microsoft,第一部分：概覽
+b51f3fe72c3e,vendor,Microsoft,At a glance
+bfbb181130e8,vendor,Microsoft,At a glance
+13dfd4cec128,vendor,Microsoft,At a glance
+e888a817eac6,vendor,Microsoft,At a glance
+2a9b2a5d6356,vendor,Microsoft,At a glance
+03a0a68f5b80,vendor,Microsoft,At a glance
+166600bd47da,vendor,Microsoft,At a glance
+1cf6a73b13e7,vendor,Microsoft,At a glance
+8dafaae34194,vendor,Microsoft,At a glance
+c3f099ff7c9b,vendor,Microsoft,At a glance
+7534d894065c,vendor,Microsoft,At a glance
+12130b1d7143,vendor,Microsoft,Microsoft in your community - Microsoft Local
+0ef0f1cdd007,vendor,Microsoft,Microsoft anuncia el inicio de operaciones de la primera región de centros de datos de nube a hiper escala en México - News Center Latinoamérica
+2f925b1ea6af,vendor,Microsoft,Microsoft to deliver intelligent cloud from Norway datacenters - Source
+022767b2660d,news,Redmond Channel Partner,Microsoft To Open More Cloud Datacenters -- Redmond Channel Partner
+892ba730dcd8,government,Gemeente Hollands Kroon,Verzenddatum
+662810d0884a,government,Gedeputeerde Staten van Noord-Holland,evings
+39df9e76f0df,directory,,https://servicetrust.microsoft.com/
+2b1f569d10c6,government,Virginia Department of Environmental Quality,Commonwealth of Virginia
+4e2c227ff12b,government,Virginia Department of Environmental Quality,Commonwealth of Virginia
+b9c201068b72,government,Virginia Department of Environmental Quality,Commonwealth of Virginia
+42fae7388df1,government,Virginia Department of Environmental Quality,Commonwealth of Virginia
+2c441e6044ca,directory,Azure Speed,Brazil South (brazilsouth) Azure Region: Location & Zones
+fdf5c3f47efa,directory,Azure Speed,Canada East (canadaeast) Azure Region: Location & Zones
+7e5a029cbfca,directory,Azure Speed,Israel Central (israelcentral) Azure Region Location
+c974e3a726ea,directory,AzureSpeed,North Central US (northcentralus) Azure Region Location
+1c075ce3b021,directory,AzureSpeed,West Central US (westcentralus) Azure Region Location
+77c36ab28311,directory,AzureSpeed,"West US (westus) Azure Region: Location, Zones & Latency"
+4bb17a62326b,certification,BSI Group,Client Directory Profile | BSI SE
+c31629408fc4,news,Data Center Dynamics,"Microsoft plans data center in Hortolândia, Brazil - DCD"
+5647088bd040,news,DataCenterKnowledge,Windows Azure Hit by Cloud Outage in Europe
+fba0f8c37a78,news,DataCenterKnowledge,"Microsoft Expanding Virginia Data Center Campus, But Not in Ashburn"
+e2bc872824bd,news,DataCenterKnowledge,Microsoft to Build Arizona Cloud Data Centers for Fifth US West Region
+a2204b59192b,certification,GSMA,Certificate No: MT-MR-SM-0625
+867e100922fc,news,The Irish Times,MS to locate $500m data centre in Dublin – The Irish Times
+940257f735ee,directory,,https://www.sam360.com/wp-content/uploads/2020/03/Azure___Azure_Government_SOC_3_Report_2017-04-01_to_2018-03-31.pdf
+6ef0301727f8,news,techpartner.news,Microsoft to launch Azure Availability Zone in Melbourne - techpartner.news
+b93d512eb0b7,directory,,https://cloud.digitalocean.com/trust/security-reports
+aa75cdf288a6,directory,Cloud Security Alliance,STAR Registry Entries for DigitalOcean | CSA
+ea728ef24aac,vendor,DigitalOcean,Regional Availability | DigitalOcean Documentation
+23bd75fc5c96,vendor,DigitalOcean,Compute | DigitalOcean Documentation
+8a55c2ebec69,vendor,DigitalOcean,Global Infrastructure | DigitalOcean
+47b9402b42cc,vendor,DigitalOcean,Trust Platform | DigitalOcean
+3b8069341dbc,vendor,DigitalOcean,Trust Platform Certification Reports and Resources | DigitalOcean
+fc5abbd79b34,vendor,DigitalOcean,DigitalOcean Subprocessors
+09dc0ec2d86c,vendor,DigitalOcean,DigitalOcean Subprocessors: November 2025
+8f09375217f8,directory,,https://cloud.google.com/security/compliance/compliance-reports-manager
+ceedb348aae8,vendor,Google Cloud,ISO/IEC 27001 - Compliance | Google Cloud
+5b8d8ea81ed8,vendor,Google Cloud,SOC 3: compliance | Google Cloud
+b960ff7beab6,vendor,Google,Locations of Google Data Centers
+0e0f280d8177,vendor,Google Cloud,Regions and zones | Compute Engine | Google Cloud Documentation
+79ae6d24bbea,vendor,Google Cloud,FedRAMP and DoD compliance scope for Google Cloud and Google Workspace | Security | Google Cloud Documentation
+702d48e2a2a3,vendor,Google Cloud,Infrastructure Manager locations | Google Cloud Documentation
+3c0f239e8e73,vendor,Google Cloud,Cloud Workstations locations | Google Cloud Documentation
+3bb64fb65b87,certification,EY CertifyPoint,DocuSign Envelope ID: A71DB465-9565-4821-8B9B-D3A5DA9DE267
+dc610f65a1d8,certification,SOCOTEC Certification Deutschland GmbH,CERTIFICATE
+66c0b74c6f0d,directory,Cinia,New data centre favourable location and fast connections
+3103d8bd88cb,vendor,Hetzner,Locations - Hetzner Docs
+85b54da94b45,vendor,Hetzner,Company and Policy - Hetzner Docs
+a48d34bee597,vendor,Hetzner,Information security at Hetzner - Hetzner Docs
+6254502e052c,certification,Hetzner Online GmbH,Hetzner Online GmbH has an unlimited
+5522e1f41837,vendor,Hetzner Online GmbH,Datacenter
+aebbc097e421,vendor,Hetzner Online GmbH,Data Protection Certificates
+cc92d48ad9b6,directory,Prowler,> ## Documentation Index
+305216942929,news,China Daily,Ulaanqab Huawei Cloud Data Center leads green data development | govt.chinadaily.com.cn
+87275fbb48ef,certification,IMDA,Certificate of Registration
+72dbbb615035,news,中华网,华为云北方首批超节点AI智算中心开服，新一代CloudMatrix 384昇腾AI云服务点亮“绿色引擎”_中华网
+45fbca693ac4,news,China Daily,Hohhot accelerates toward digital economy frontier
+d8814f2a3711,vendor,Huawei,https://res-static.hc-cdn.cn/cloudbu-site/europe/en-us/ENS-2023.pdf
+c1b2194d96f6,vendor,Huawei Cloud,当前专线接入点有哪些？_产品咨询_常见问题_云专线 DC-华为云
+3cc87a273c7c,vendor,Huawei Cloud,Geographic Regions and Huawei Cloud Regions_Region Availability_Service Overview_Cloud Connect-Huawei Cloud
+3322441d5079,vendor,Huawei Cloud,Supported Regions_Region Availability_Service Overview_Cloud Connect-Huawei Cloud
+786814aef8d7,vendor,Huawei Cloud,Direct Connect Locations_Service Overview_Direct Connect-Huawei Cloud
+0c6ca6bf51ad,vendor,Huawei Cloud,Regions for Using SCPs_Managing SCPs_User Guide_Organizations-Huawei Cloud
+e285df1584a9,vendor,Huawei Cloud,¿Qué ubicaciones están disponibles para Direct Connect?_Consulta sobre productos_Preguntas frecuentes_Direct Connect-Huawei Cloud
+f20c699028d4,vendor,Huawei Cloud,专线接入点_产品介绍_云专线 DC-华为云
+b1e8c26650ea,vendor,Huawei Cloud,大区和区域的对应关系_支持区域_产品介绍_云连接 CC-华为云
+b7a4c0ad17b1,vendor,Huawei Cloud,专线接入点_产品介绍_云专线 DC-华为云
+2c8c8ca64be0,news,环球网,华为云华东（芜湖）数据中心正式开服，助力构建全国“算力一张网”
+a0663c5f5ddf,news,凤凰网,华为云北方首批超节点AI智算中心开服_凤凰网
+72212337c2b4,certification,BSI Group,Client Directory Certificate | BSI UK
+85c3fa2566c1,certification,BSI Group,Client Directory Certificate | BSI UK
+d503c9f49481,certification,BSI Group,Client Directory Certificate | BSI UK
+15688819a5eb,certification,BSI Group,Client Directory Profile | BSI UK
+6e69c006814d,certification,BSI Group,Validation & Verification | BSI UK
+8b79c0743211,certification,BSI Group,Validation & Verification | BSI UK
+54406c71c1f0,news,环球网,华为云华东（芜湖）数据中心正式开服，助力构建全国“算力一张网”
+b54e9fa064b5,vendor,Huawei,Huawei Cloud: Improving PUE to Build Green Data Centers - Huawei
+d7cda6b5f6fd,vendor,"Huawei Technologies Co., Ltd.",HUAWEI CLOUD Compliance with
+c12eaa8bc10c,vendor,Huawei Cloud,404-HUAWEI CLOUD
+b1d8170d13a0,vendor,Huawei Cloud,Worldwide Infrastructure-HUAWEI CLOUD
+7a335827e112,vendor,Huawei Cloud,Compliance-HUAWEI CLOUD
+7b916bfbaf11,vendor,Huawei Cloud,Compliance Center_HUAWEI CLOUD
+8461c0d4bfa2,vendor,Huawei Cloud,C5_HUAWEI CLOUD
+7784225e4b47,vendor,Huawei Cloud,China Compliance Guide_HUAWEI CLOUD
+29e7a84d0d76,vendor,Huawei Cloud,CSA STAR_HUAWEI CLOUD
+8a256001e80b,directory,,https://www.huaweicloud.com/intl/en-us/securecenter/compliance/compliance-center/download-compliance-certificates.html
+9cdba0c619f6,vendor,Huawei Cloud,Egypt NTRA_HUAWEI CLOUD
+6a05818cd407,vendor,Huawei Cloud,ENS_HUAWEI CLOUD
+c7845baa44f9,vendor,Huawei Cloud,ISO 22301_HUAWEI CLOUD
+71ea72a0bdd8,vendor,Huawei Cloud,ISO 27001_HUAWEI CLOUD
+378327ec20d2,vendor,Huawei Cloud,ISO27017_HUAWEI CLOUD
+bacc9d90c055,vendor,Huawei Cloud,Saudi Arabia Class C License_HUAWEI CLOUD
+d8b46cb9e35b,vendor,Huawei Cloud,DJCP_HUAWEI CLOUD
+44c3086bed4f,vendor,Huawei Cloud,Singapore Multi-Tier Cloud Security (MTCS) Level 3 Certification_HUAWEI CLOUD
+08be5a038938,vendor,Huawei Cloud,OSPAR_HUAWEI CLOUD
+a398bcc04574,vendor,Huawei Cloud,PCI DSS certification_HUAWEI CLOUD
+400e1c9cf498,vendor,Huawei Cloud,Singapore Compliance Guide_HUAWEI CLOUD
+1a9cefac83fc,vendor,Huawei Cloud,SOC _HUAWEI CLOUD
+40013d188eb9,vendor,Huawei Cloud,SRAA_HUAWEI CLOUD
+ab56afec67fa,vendor,Huawei Cloud,TISAX_HUAWEI CLOUD
+0c77f27186c1,vendor,Huawei Cloud,Compliance FAQs_HUAWEI CLOUD
+ac762d2dbd92,vendor,Huawei Cloud,华为云全球站点 云上丝绸之路-华为云
+c777923cdf95,vendor,Huawei Cloud,华为与源商数据进行战略合作，共建杨浦云数据中心_新闻报道_华为企业云
+943956c6163f,vendor,Huawei Cloud,华为举办首届数据中心峰会：探讨“绿色•云”数据中心的演进与发展_新闻报道_华为企业云
+7e7b99d80e84,vendor,Huawei Cloud,华为云开设香港数据中心 协助企业通达全球、创新未来-华为云
+dd72b7d557b6,vendor,Huawei Cloud,网络安全等级保护_华为云
+a2c1bcdd4191,vendor,Huawei Cloud,数据处理透明可视_华为云
+5c0e4d4f3a34,vendor,IBM,IBM Cloud regions and data centers for high availability | IBM Cloud Docs
+ca42c752f0d1,certification,Bureau Veritas Certification Holding SAS - UK Branch,CERTIFICATE
+23ba60ed94b2,certification,International Business Machines Corporation,International Business Machines Corporation
+d113380d0a36,certification,International Business Machines Corporation,International Business Machines Corporation
+a8c8d02d7de4,certification,International Business Machines Corporation,International Business Machines Corporation
+94b576bafa9c,certification,International Business Machines Corporation,International Business Machines Corporation
+5e924a6e998f,certification,"LEET Security, S.L.U.",CERTIFICADO DE CONFORMIDAD CON EL ESQUEMA NACIONAL DE SEGURIDAD
+eba839482acf,certification,Bureau Veritas Certification NA,IBM Cloud Infrastructure as a Service (IaaS)
+2daf78c5ac2a,certification,HITRUST,https://www.ibm.com/downloads/documents/us-en/107a02f5d3c8f4e7
+039155964090,certification,Bureau Veritas Certification NA,IBM Office of the CISO
+37629f60b947,certification,Bureau Veritas Certification Holding SAS - UK Branch,CERTIFICATE
+1d727f643df2,certification,Bureau Veritas Certification France,IBM CLOUD INFRASTRUCTURE AS A SERVICE (IAAS)
+f63c8f7b5303,certification,"LEET Security, S.L.U.",CERTIFICADO DE CONFORMIDAD CON EL ESQUEMA NACIONAL DE SEGURIDAD
+6f82e68b9dc8,certification,Bureau Veritas Certification Holding SAS - UK Branch,CERTIFICATE
+5d74074e3831,certification,Bureau Veritas Certification Holding SAS - UK Branch,CERTIFICATE
+e4427154f701,certification,"LEET Security, S.L.U.",CERTIFICADO DE CONFORMIDAD CON EL ESQUEMA NACIONAL DE SEGURIDAD
+d6f7f3bfcc18,certification,Bureau Veritas Certification NA,IBM Corporation
+89e3f823c65f,certification,HITRUST Alliance,https://www.ibm.com/downloads/documents/us-en/10c31775a15402bc
+4f776e56f8be,vendor,IBM,https://www.ibm.com/downloads/documents/us-en/10c31775a25403e6
+69a60f7e7d85,certification,HITRUST Alliance,https://www.ibm.com/downloads/documents/us-en/115d460142d51ae8
+c46ebd14f11c,certification,Bureau Veritas Certification NA,IBM Cloud Infrastructure (IaaS)
+d99acd131156,vendor,IBM,IBM Cloud Compliance Overview Page
+58715715ad1f,directory,,https://www.ibm.com/products/cloud/compliance/c5
+9ff6b38650ac,vendor,IBM,IBM Cloud CSA STAR compliance | IBM
+413129ef71d0,vendor,IBM,IBM Cloud ENS Spain compliance
+fab0702819e4,vendor,IBM,IBM Cloud FedRAMP compliance
+627cde30e259,vendor,IBM,IBM Cloud HDS France compliance
+e7cdeb91d11b,vendor,IBM,What is HITRUST? | IBM Cloud Compliance
+0d47f6c74b57,vendor,IBM,IBM Cloud ISO 22301 compliance
+0bd74c9b99de,vendor,IBM,IBM Cloud ISO 27017 compliance
+5680b670881b,vendor,IBM,IBM Cloud ISO 27018 compliance
+90308170a875,vendor,IBM,IBM Cloud ISO 27701 compliance
+99a819128470,directory,,https://www.ibm.com/products/cloud/compliance/pci
+76d85931fb6a,vendor,IBM,IBM Cloud SOC 1 reports compliance
+47a1b5b1924d,directory,,https://www.ibm.com/products/cloud/compliance/soc-2
+71d0b0c27734,vendor,IBM,IBM Cloud SOC 3 compliance
+4a5f4a2dbb19,vendor,IBM,Energy and emissions | IBM
+42d9583babd4,vendor,IBM,IBM Cloud Global Data Centers
+ba77074f2944,vendor,IBM,IBM ISO 27001 Certifications - Cloud
+04fd4e76b1cd,certification,Bureau Veritas Certification Holding SAS – UK Branch,IBM Cloud Infrastructure as a Service (IaaS)
+a1a2dce01c0d,certification,Bureau Veritas Certification,IBM Office of the CISO
+5c3ac0931b05,directory,,https://docs.oracle.com/en-us/iaas/Content/ComplianceDocuments/Concepts/compliancedocsoverview.htm
+f443cb1f6bd3,vendor,Oracle,Regions and Availability Domains
+397f83cc2d98,vendor,Oracle,About Connecting OCI Serbia Realm to another OCI Commercial region
+0b0ba194765d,vendor,Oracle,Received by NSD/FARA Registration Unit 06/06/2023 10:19:03 AM
+fd68c9b6d5be,certification,GSMA,Certificate No: OE-MR-SM-1025-2
+5d909c7c3744,certification,EY CertifyPoint,Docusign Envelope ID: 54CEC613-CA73-4765-BDB9-E1833807D1B0
+066cd55fc647,vendor,Oracle,Public Cloud Regions and Data Centers | Oracle
+70564a056c9f,vendor,Oracle,Cloud Compliance | Oracle
+03a984baf78b,vendor,Oracle,FedRAMP High Accredited Cloud | Oracle
+df2e263b6159,certification,LNE,Certificat
+40ea66a2887e,certification,Bureau Veritas Certification Holding SAS – UK Branch,CLEVER CLOUD
+eb939a53b73e,directory,Cloud Security Alliance,404 - Not Found | CSA
+20bae31fdeb6,vendor,OVHcloud,Universal Registration Document
+38d1707df6c6,vendor,OVHcloud,OVHcloud Announces Immediate Availability of New ‘Availability Zone’ Region in Paris
+218f37e87464,vendor,OVHcloud,Demand for data protection and security leads OVHcloud to extend ISO 27001 and ISO 27701 certifications to all its cloud solutions
+18a40dfe9166,vendor,OVHcloud,OVHcloud Accelerates on its SecNumCloud Strategy with SecNumCloud 3.2 Qualification on Three Distinct Datacenters
+7c0057204afa,vendor,OVHcloud,Managing our environmental impacts | OVHcloud
+2fc782011c1c,vendor,OVHcloud,Security and Compliance | OVHcloud
+3504b11e5ed5,vendor,OVHcloud,2025
+53e1b03c12aa,vendor,OVHcloud,3
+5ebb223a67fd,directory,,https://cyber.gouv.fr/produits-services-qualifies
+90db3150692f,vendor,OVHcloud,---
+a8dd7d3d6d07,vendor,OVHcloud,OVHcloud products ISO27k certifications - OVHcloud Documentation
+bd8e1cae45f2,vendor,OVHcloud,---
+57fb80ca68f3,vendor,OVHcloud,Bare Metal 3-AZ Region - Service presentation - OVHcloud Documentation
+506486cf8e1e,vendor,OVHcloud,---
+2aef9a47671d,directory,,https://esante.gouv.fr/offres-services/hds/liste-des-herbergeurs-certifies
+50e483e5669e,vendor,OVHcloud,DATA PROCESSING AGREEMENT
+9cb9433d8b8f,vendor,OVHcloud,OVHcloud Data Centers: Secure & Scalable Infrastructure
+b6854131f18a,vendor,OVHcloud,Global Infrastructure Locations
+4403fabac5df,vendor,OVHcloud,Data Protection: Attestations & Certifications
+e5a9f0c16c84,vendor,OVHcloud,HIPAA and HITECH certification
+8b635bfe8143,vendor,OVHcloud,"SSAE 18 Type 2 SOC 1, SOC 2 + NIST, and SOC 3 Attestations"
+dfcc77700a0e,vendor,OVHcloud,"SSAE 18 Type 2 SOC 1, SOC 2 + NIST, and SOC 3 Attestations"
+3c19e0b5fabe,vendor,OVHcloud,OVHcloud announces new examinations and the ISO 27001 certification
+a7f25a5c031a,certification,OVHcloud,OVH US LLC DBA OVHCLOUD
+38135d26d73a,government,LNE,Moteur de recherche
+05c1ce6c5498,vendor,OVHcloud,Infrastructure locations by region | OVHcloud Canada
+38fd0a87f79b,vendor,OVHcloud,Infrastructure locations by region | OVHcloud Singapore
+7b9e89e8e8ed,vendor,OVHcloud,Discover more about regions and availability zones | OVHcloud Worldwide
+1923f7d17d03,vendor,OVHcloud,Infrastructure locations by region | OVHcloud Worldwide
+e2038dc0ea09,vendor,OVHcloud,Compliance and certification | OVHcloud Worldwide
+6782feac000a,vendor,OVHcloud,BSI Critical Infrastructures | OVHcloud Worldwide
+19a0bddbff32,directory,,https://www.ovhcloud.com/en/compliance/c5/
+17b9476ac4e4,vendor,OVHcloud,HDS certification: Healthcare data hosting | OVHcloud Worldwide
+8b58277e60e9,vendor,OVHcloud,Sustainable Management and ISO/IEC 14001 | OVHcloud Worldwide
+0a5191dee005,vendor,OVHcloud,"ISO/IEC 27001, 27017 and 27018 certifications | OVHcloud Worldwide"
+2261672af27a,vendor,OVHcloud,ISO/IEC 27701 certification | OVHcloud Worldwide
+0baef932bead,vendor,OVHcloud,ISO 50001 | OVHcloud Worldwide
+15945cc650d3,vendor,OVHcloud,ISO 9001 | OVHcloud Worldwide
+5ed38e2ec85b,directory,,https://www.ovhcloud.com/en/compliance/pci-dss/
+dea25fa6d59e,vendor,OVHcloud,Financial Services Sector Compliance - Outsourcing Guidelines | OVHcloud Worldwide
+c04da17b71ae,vendor,OVHcloud,SecNumCloud: ANSSI Security Visa | OVHcloud Worldwide
+256b59ce688d,directory,,https://www.ovhcloud.com/en/compliance/soc-1-2-3/
+98d94bffab3c,vendor,OVHcloud,Localizações da OVHcloud: Presença Mundial Dos Datacenters | OVHcloud Portugal
+e29e050ee2fe,vendor,OVHcloud,"PUE, WUE, REF values for the following period - Fiscal Year 2025"
+7efcb6ba58be,vendor,OVHcloud,PUE and WUE values for the following period: [01/09/2023 – 31/08/2024]
+630d35738ac1,news,Solutions Numeriques & Cybersécurité,OVHCloud ouvre son 44e datacenter près de Milan
+61b5e20d1f41,news,Solutions Numeriques & Cybersécurité,OVHCloud ouvre son 44e datacenter près de Milan
+b156556de7c0,vendor,Tencent Cloud,人脸核身简介_人脸核身购买指南_人脸核身操作指南-腾讯云
+5fe904f984e7,vendor,Tencent Cloud,云服务器 地域和可用区_腾讯云
+8e08407c5075,vendor,Tencent Cloud,专线接入 数据结构_腾讯云
+29ceddb904ce,directory,Cloud Security Alliance,STAR Registry Entries for Tencent Cloud Computing (Beijing) | CSA
+6fa98c4280ac,news,ConvergenciaDigital,Gigante chinesa ativa primeiro Internet data center no Brasil – ConvergenciaDigital
+e17de210eac6,news,DataCenterNews Asia Pacific,Tencent Cloud opens Silicon Valley data center; Seoul & Mumbai locations to follow
+70b48035f964,news,DataCentreNews UK,Tencent Cloud boosts Frankfurt AI capacity for Europe
+73b2812c8727,news,Asharq Al-Awsat,Tencent Deepens Digital Footprint in Saudi Arabia to Support Smart Transformation
+842aca5b1999,vendor,Tencent Cloud,Regions and Zones
+72bf4cf8a01d,vendor,Tencent Cloud,PCI DSS Certification
+741abd925af6,directory,,https://intl.cloud.tencent.com/document/product/363/11543
+73dfc3d1e57b,vendor,Tencent Cloud,ISO 27018 Certification
+9507d4cef73f,directory,,https://intl.cloud.tencent.com/document/product/363/2408
+d27e69ca464a,vendor,Tencent Cloud,Multi-Level Protection Scheme
+ff0f984bcdbe,vendor,Tencent Cloud,ISO 22301 Certification
+9de9feb4d5ac,vendor,Tencent Cloud,ISO 27017 Certification
+10e0b7cb4fbd,vendor,Tencent Cloud,KISMS
+896ac2a25d4e,vendor,Tencent Cloud,MTCS
+1b811a742f89,vendor,Tencent Cloud,OSPAR
+c9ebc36a50ed,vendor,Tencent Cloud,C5
+028cd3ccd1f8,vendor,Tencent Cloud,TISAX
+e2dc1e183db2,vendor,Tencent Cloud,IT compliance audit in Malaysian financial industry
+e31a6e1a28d1,vendor,Tencent Cloud,IT compliance audit in Indonesian financial industry
+56aec6755b62,vendor,Tencent Cloud,The center for Financial Industry Information Systems (FISC)
+b9e07271f9f1,vendor,Tencent Cloud,IT compliance audit in Thailand financial industry
+42cafe4e187f,vendor,Tencent Cloud,IT compliance audit in Philippines financial industry
+3c83f5d3540a,vendor,Tencent Cloud,Data Protection Trustmark (DPTM) Certification
+dfc076c194fa,vendor,Tencent Cloud,CISPE Code of Conduct
+99bd3a0555cf,vendor,Tencent Cloud,IT compliance audit in Hong Kong Special Administrative Region (HKSAR) financial industry
+4b868664ea9a,vendor,Tencent Cloud,CSA STAR Certification
+03cedc0372a4,vendor,Tencent Cloud,Release Notes
+687c12341109,directory,,https://intl.cloud.tencent.com/render/compliance-documents
+7ad782fdfba6,vendor,Tencent,Tencent Carbon Neutrality Target and Roadmap Report
+27b700634f19,vendor,Tencent,"Environmental,"
+525fe4ba7678,vendor,Tencent,"Environmental,"
+92c50352ba1f,vendor,Tencent,"Environmental,"
+ed54db7d1db6,news,The Edge Malaysia,Tencent Cloud launches first Malaysian cloud region in Johor
+868599749b2b,news,The Tech Capital,Tencent Cloud expands Germany footprint with new Frankfurt availability zone - The Tech Capital
+f43fca24b86b,news,w.media,"Tencent Cloud launches cloud region in Johor, its first in Malaysia – w.media"
+e687e11e4d61,news,AAP,Tencent Cloud Launches New Availability Zone and Services in Europe to Power AI Growth | AAP
+85b0c7e0259a,news,Arab News,"Arab News | Tencent Cloud accelerates Saudi expansion with new data region, AI services"
+559a06a0c510,news,Arab News,"Tencent Cloud accelerates Saudi expansion with new data region, AI services | Arab News"
+624b63e02e98,news,BERNAMA,BERNAMA - Tencent Cloud Establishes Its First Malaysian Cloud Region In Johor
+8a1686af163f,directory,ConsoleConnect,Se connecter à Tencent Cloud - Console Connect
+63b9e4585bc2,directory,Console Connect,Se connecter à Tencent Cloud - Console Connect
+a1a1eda2c09d,news,CRN Asia,Tencent Cloud opens first Malaysia region in Johor
+03ca6112ad52,news,Data Center Dynamics,"Tencent Cloud launches availability zone in Frankfurt, Germany - DCD"
+bf3779185e59,news,DNV,Tencent Cloud receives CSA-STAR and ISO 27001 certification
+bd5acc5ecff6,news,Intelligent CIO LATAM,Tencent Cloud launches first Internet data center in Brazil – Intelligent CIO LATAM
+0010c77106af,news,IT之家,腾讯：在“东数西算”贵州、京津冀、成渝等枢纽节点均有布局，将建成中国西部最大的单体数据中心 - IT之家
+bbe92c4948f5,news,IT Pro,Tencent to open third data centre in Japan | IT Pro
+c406cb7e465e,news,PR Newswire,"Tencent Cloud Launches Four New Internet Data Centers in Bangkok, Frankfurt, Hong Kong and Tokyo"
+080d984628b2,vendor,Tencent Cloud,Tencent Cloud
+822ac580323a,vendor,Tencent Cloud,Regions and AZs
+db99578437bb,vendor,Tencent Cloud,Regions and AZs
+24f3560c73b1,directory,,https://www.tencentcloud.com/services/compliance-program
+afa6ef23798f,news,The Standard,Tencent Cloud to launch its first data center in Saudi Arabia
+2c2c692d3b7a,news,The Star,Tencent debuts first cloud region in Johor | The Star
+5e71db1c3607,news,Verdict,Tencent Cloud launches three data centres in Asia and one in Germany
+af898a662807,news,Yicai Global,Tencent Cloud Puts Its Seoul Data Center Online
+90fd4f3a8451,vendor,Vultr,"{""regions"":[{""id"":""ams"",""city"":""Amsterdam"",""country"":""NL"",""continent"":""Europe"",""options"":[""ddos_protection"",""block_storage_storage_opt"",""block_storage_high_perf"",""load_balancers"",""kubernetes""],""connec"
+023ae5e7428c,vendor,Vultr,Announcing Vultr's New ISO Certifications | Vultr Blogs
+ca319f9b4248,vendor,Vultr,Vultr Expands Cloud GPU Capacity and Eco Focus with Sabey Data Center | Vultr Blogs
+e5bef8c2689d,vendor,Vultr,"Vultr Announces 34th Cloud Data Center Region in Chennai, India, Among World’s Largest AMD Instinct™ Superclusters | Vultr Blogs"
+2b7469aa7c6e,directory,Cloud Security Alliance,404 - Not Found | CSA
+713f34acaf61,vendor,Vultr,Provision Vultr Cloud Infrastructure with Crossplane Guide | Vultr Docs
+dcf1f3f512d6,directory,,https://docs.vultr.com/platform/iam/other/compliance/data-center-compliance
+68f6ec4d35eb,directory,,https://docs.vultr.com/platform/iam/other/compliance/vultr-compliance
+422290709679,directory,,https://docs.vultr.com/support/platform/compliance/where-to-learn-more-about-vultr-datacenter-compliance
+4ac8054444f0,directory,morethanjustparks.com,"Vultr Silicon Valley Campus, CA: Operating | Map"
+eff05650930d,directory,,https://www.vultr.com/legal/compliance/
+792e90a9eb96,directory,,https://www.vultr.com/trust-center/

@@ -1,0 +1,27 @@
+{
+ "places": {
+  "compared": 94,
+  "within_50_km": 72,
+  "within_100_km": 75,
+  "median_km": 3.5,
+  "only_outside": [
+   "aws us-gov-east-1",
+   "aws us-gov-west-1",
+   "azure asiapacific",
+   "azure eastus3",
+   "azure greececentral",
+   "gcp us-central2",
+   "gcp us-east2"
+  ],
+  "only_ours": 45,
+  "far_where_the_vendor_names_the_city": 13
+ },
+ "codes": {
+  "sites": 343,
+  "resolved": 329,
+  "nearest_airport": 263,
+  "major_hub": 242,
+  "nearby_hub": 284,
+  "operator_code_is_airport": 324
+ }
+}

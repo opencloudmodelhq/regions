@@ -1,0 +1,47 @@
+{
+ "chat_extra": {
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  }
+ },
+ "chat_model": "ai/qwen3.8:27b-q8_0",
+ "chat_model_id": "7f7f60352e7c",
+ "commit": "ad84d1f39ce72afa4cec8999c41a167cc84fb82e",
+ "corpus": "fetched",
+ "cost_usd": 0.0,
+ "counts": {
+  "label": {
+   "abstained": 37,
+   "answered": 333,
+   "unresolved": 10
+  },
+  "memory": {
+   "abstained": 14,
+   "answered": 363,
+   "unresolved": 3
+  },
+  "rag": {
+   "abstained": 43,
+   "answered": 321,
+   "unresolved": 15,
+   "unsupported": 1
+  }
+ },
+ "embed_document_template": "{text}",
+ "embed_model": "ai/qwen3-embedding:4b-q8_0",
+ "embed_model_id": "16bf87bcb903",
+ "embed_query_template": "Instruct: Given a cloud region, retrieve passages that say which city its data centres are in\nQuery:{text}",
+ "index_name": "qwen-embedding-4b-fetched",
+ "max_tokens": 1000,
+ "prompts": {
+  "document": "3b465e95a437d633b29c1b5bc396053eeb3c9051b81ed8d3c4bf599fd86e6ce4",
+  "label": "f1668d6ccc717bc96689187e957140a60fcc3c0014ba1ebc5d575100db6d27ba",
+  "memory": "4e102dad673e84044ddeb02b764533c85d9399d4dc9cd287ffc1b386e37d1b10",
+  "rag": "f9dfc9629d58fed6de780b6fbf5ca3caa1e329f118acc34b393fb364942046b5"
+ },
+ "rerank_model": "ai/qwen3-reranker:4B",
+ "rerank_model_id": "c980ea59258a",
+ "seed": 42,
+ "temperature": 0,
+ "tool_version": "Version:    v1.2.9"
+}
