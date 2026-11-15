@@ -180,3 +180,11 @@ bash_shell(_, step) if step.shell == "bash"
 bash_shell(job, _) if job.defaults.run.shell == "bash"
 
 bash_shell(_, _) if input.defaults.run.shell == "bash"
+
+deny contains msg if {
+	some [job_id, step] in steps
+	startswith(step.uses, "actions/create-github-app-token@")
+	stated := [name | some name, _ in object.get(step, "with", {}); startswith(name, "permission-")]
+	count(stated) == 0
+	msg := sprintf("job %q: an App token must state its permissions with permission-<name> inputs", [job_id])
+}

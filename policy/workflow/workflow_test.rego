@@ -137,3 +137,17 @@ test_a_pipe_with_bash_at_workflow_level_is_allowed if {
 test_a_logical_or_is_not_a_pipe if {
 	count(workflow.deny) == 0 with input as with_step({"run": "make check || exit 1"})
 }
+
+app_token(inputs) := with_step({
+	"uses": sprintf("actions/create-github-app-token@%s", [sha]),
+	"with": object.union({"app-id": "1", "private-key": "k"}, inputs),
+})
+
+test_an_app_token_without_stated_permissions_is_denied if {
+	some msg in workflow.deny with input as app_token({})
+	contains(msg, "permission-")
+}
+
+test_an_app_token_with_stated_permissions_passes if {
+	count(workflow.deny) == 0 with input as app_token({"permission-administration": "read"})
+}

@@ -3,7 +3,7 @@ MODEL ?= chain-qwen3.8
 RUN = PYTHONPATH=src $(PY) -m ocm_regions.cli
 
 -include .env
-export OCM_REGIONS_USER_AGENT OCM_REGIONS_FROM OCM_REGIONS_REQUIRE_PROXY HTTPS_PROXY HTTP_PROXY NO_PROXY
+export OCM_REGIONS_USER_AGENT OCM_REGIONS_FROM OCM_REGIONS_REQUIRE_PROXY OCM_REGIONS_DNS HTTPS_PROXY HTTP_PROXY NO_PROXY
 
 .PHONY: heldout heldout-memory quote-review method-stats provenance validate handcheck-sheets handcheck-passages label rivals repeat document-types changes scripted rag joins chain archive-missing area-risk mutation  extract-methods sensitivity experiment materials snapshots extract llm-model llm-matrix llm-repeat llm-up compare all fetch refresh regions place evidence grade codes calls report build caps test lint verify paper arxiv check typecheck licences citation external
 

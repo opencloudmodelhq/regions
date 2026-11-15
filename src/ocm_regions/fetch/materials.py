@@ -8,6 +8,7 @@ import hashlib
 import html
 import http.client
 import ipaddress
+import os
 import re
 import socket
 import string
@@ -20,7 +21,7 @@ from pathlib import Path
 from typing import IO, Final, Literal, NotRequired, TypeAlias, TypedDict, cast, override
 
 from ocm_regions.evidence.verify import Fetched, readable_text
-from ocm_regions.fetch import robots
+from ocm_regions.fetch import dns, robots
 from ocm_regions.fetch.snapshots import SnapshotRow
 from ocm_regions.fetch.sources import StrPath, client_headers
 
@@ -187,18 +188,20 @@ def archivable(rows: Iterable[IndexRow], read_text: ReadText) -> list[IndexRow]:
 def check_url(url: str, resolve: Callable[[str], list[str]] | None = None) -> None:
     """Allow only http(s) addresses that resolve to the public internet.
 
+    A name sent through a proxy is never looked up on this machine; the operator names who resolves it.
+
     Args:
         url: URL of the document.
-        resolve: Function that resolves a host name to addresses; ``_resolve`` when None.
+        resolve: Function that resolves a host name to addresses; chosen by ``_addresses`` when None.
 
     Raises:
         ValueError: If the URL is not a web address or resolves to a non-public address.
+        RuntimeError: If the request goes through a proxy and no one is named to resolve its host.
     """
-    resolve = resolve or _resolve
     parts = urllib.parse.urlsplit(url)
     if parts.scheme not in ("http", "https") or not parts.hostname:
         raise ValueError(f"not a web address: {url[:80]}")
-    for address in resolve(parts.hostname):
+    for address in _addresses(parts.scheme, parts.hostname, resolve):
         if not _is_public(address.split("%")[0]):
             raise ValueError(f"not a public address: {parts.hostname}")
 
@@ -396,6 +399,29 @@ def write_index(rows: Iterable[IndexRow], path: StrPath) -> None:
         writer.writerows(rows)
 
 
+def _addresses(scheme: str, host: str, resolve: Callable[[str], list[str]] | None) -> list[str]:
+    """The addresses to check for a host: its own when written out, else from the resolver for this route.
+
+    Args:
+        scheme: Scheme of the URL.
+        host: Host of the URL.
+        resolve: Function that resolves a host name to addresses, when the caller gives one.
+
+    Returns:
+        The addresses, as text; empty when the operator states that the proxy resolves the name.
+    """
+    literal = _literal(host)
+    if literal:
+        return [literal]
+    if resolve:
+        return resolve(host)
+    resolver = os.environ.get(dns.DNS_VARIABLE, "").strip()
+    if _proxied(scheme, host):
+        return _proxy_addresses(host, resolver)
+    asked = dns.lookup(host, resolver) if resolver and resolver != dns.PROXY_RESOLVES else []
+    return _resolve(host) + asked
+
+
 def _checked(row: IndexRow, body: bytes, media: str, source: str, detail: str) -> FetchResult:
     """Hash a document body and report how it compares with its pins.
 
@@ -533,6 +559,28 @@ def _is_public(address: str) -> bool:
     )
 
 
+def _literal(host: str) -> str | None:
+    """The address a host stands for without a lookup: an IP address in any spelling, or a local name.
+
+    Args:
+        host: Host of the URL.
+
+    Returns:
+        The address, as text; None when the host is a name that needs a lookup.
+    """
+    name = host.rstrip(".").lower()
+    if name == "localhost" or name.endswith(".localhost"):
+        return "127.0.0.1"
+    try:
+        return str(ipaddress.ip_address(host.split("%")[0]))
+    except ValueError:
+        pass
+    try:
+        return socket.inet_ntoa(socket.inet_aton(host))
+    except OSError:
+        return None
+
+
 def _marking_forms(text: str) -> tuple[str, str, str]:
     """The raw text, so a marking in an attribute counts, and the text with tags dropped or spaced, as a reader sees it.
 
@@ -622,6 +670,40 @@ def _pinned_download(row: IndexRow, get: Get) -> Download:
         if _matches_pin(row, old_body, old_media)
         else (media, body, source, detail)
     )
+
+
+def _proxy_addresses(host: str, resolver: str) -> list[str]:
+    """The addresses to check for a name sent through a proxy, without a lookup on this machine.
+
+    Args:
+        host: Host name to resolve.
+        resolver: The operator's choice of resolver; empty when none is made.
+
+    Returns:
+        The chosen resolver's addresses; empty when the operator states that the proxy resolves the name.
+
+    Raises:
+        RuntimeError: If no one is named to resolve the name.
+    """
+    if not resolver:
+        choices = f"{', '.join(dns.RESOLVERS)}, an https resolver address, or {dns.PROXY_RESOLVES!r}"
+        raise RuntimeError(
+            f"{dns.DNS_VARIABLE} must name who resolves hosts sent through the proxy: {choices}"
+        )
+    return [] if resolver == dns.PROXY_RESOLVES else dns.lookup(host, resolver)
+
+
+def _proxied(scheme: str, host: str) -> bool:
+    """Whether a request to a host goes through a proxy.
+
+    Args:
+        scheme: Scheme of the URL.
+        host: Host of the URL.
+
+    Returns:
+        True when a proxy is set for the scheme and the host is not exempt from it.
+    """
+    return scheme in urllib.request.getproxies() and not urllib.request.proxy_bypass(host)
 
 
 def _read_copy(path: Path) -> str | None:

@@ -2,7 +2,17 @@ cff-version: 1.2.0
 message: "If you use this dataset or code, please cite it as below."
 type: dataset
 title: "OpenCloudModel Regions"
-abstract: "An evidence-linked mapping of cloud regions to places and to IATA, UN/LOCODE and CLLI codes, rebuilt by script from a published list of documents."
+abstract: >-
+  OpenCloudModel Regions maps the published cloud regions of major vendors to places and to standard location codes.
+  For each region it gives the city-level place with its country and coordinates, the IATA, UN/LOCODE and CLLI codes
+  for that place, a grade that states how strong the evidence for the placement is, and the evidence records behind it,
+  each with its source, the quoted text and whether it supports or contradicts the placement.
+  Every value is rebuilt by script from a published list of public documents: vendor pages, IP address feeds,
+  government filings and open datasets. The source documents are not redistributed.
+  Locations are city level only; the dataset holds no street addresses.
+  The archive contains the dataset, the Python pipeline that builds it, the list of sources and the paper that
+  describes the method and its limits.
+  The dataset is CC BY 4.0, the code is Apache-2.0, and the paper is not openly licensed.
 authors:
   - family-names: Broekman
     given-names: Andrew

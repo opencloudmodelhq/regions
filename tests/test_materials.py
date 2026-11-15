@@ -568,3 +568,118 @@ def test_a_marking_is_found_across_cells_and_in_full_width_entities():
 
     for text in ("Internal<br>Use Only", "<td>Not</td><td>for distribution</td>", "&#xFF23;onfidential"):
         assert _is_marked(text), text
+
+
+def _never(_host):
+    raise AssertionError("the name was looked up on this machine")
+
+
+PROXY = "http://proxy.example.org:3128"
+
+
+def _through_proxy(monkeypatch, resolver=""):
+    monkeypatch.setenv("HTTPS_PROXY", PROXY)
+    monkeypatch.setenv("HTTP_PROXY", PROXY)
+    if resolver:
+        monkeypatch.setenv("OCM_REGIONS_DNS", resolver)
+
+
+def _answers(asked):
+    def lookup(host, resolver):
+        asked.append((host, resolver))
+        return ["10.0.0.5"] if host == "inner.test" else ["93.184.216.34"]
+
+    return lookup
+
+
+def test_through_a_proxy_a_chosen_resolver_is_asked_instead_of_this_machine(monkeypatch):
+    import pytest
+
+    from ocm_regions.fetch import materials
+
+    asked = []
+    _through_proxy(monkeypatch, "cloudflare")
+    monkeypatch.setattr(materials, "_resolve", _never)
+    monkeypatch.setattr(materials.dns, "lookup", _answers(asked))
+    materials.check_url("https://a.test/x")
+    with pytest.raises(ValueError):
+        materials.check_url("https://inner.test/x")
+    assert asked == [("a.test", "cloudflare"), ("inner.test", "cloudflare")]
+
+
+def test_through_a_proxy_a_name_is_refused_until_someone_is_named_to_resolve_it(monkeypatch):
+    import pytest
+
+    from ocm_regions.fetch import materials
+
+    _through_proxy(monkeypatch)
+    monkeypatch.setattr(materials, "_resolve", _never)
+    with pytest.raises(RuntimeError, match="OCM_REGIONS_DNS"):
+        materials.check_url("https://a.test/x")
+
+
+def test_an_operator_can_state_that_the_proxy_resolves_and_refuses(monkeypatch):
+    from ocm_regions.fetch import materials
+
+    _through_proxy(monkeypatch, "proxy")
+    monkeypatch.setattr(materials, "_resolve", _never)
+    monkeypatch.setattr(materials.dns, "lookup", _never)
+    materials.check_url("https://a.test/x")
+    materials.check_url("http://a.test/x")
+
+
+def test_without_a_proxy_the_addresses_this_machine_connects_to_are_always_checked(monkeypatch):
+    import pytest
+
+    from ocm_regions.fetch import materials
+
+    asked = []
+    monkeypatch.setenv("OCM_REGIONS_DNS", "google")
+    monkeypatch.setattr(materials.dns, "lookup", _answers(asked))
+    monkeypatch.setattr(materials, "_resolve", lambda _host: ["127.0.0.1"])
+    with pytest.raises(ValueError):
+        materials.check_url("https://a.test/x")
+    monkeypatch.setattr(materials, "_resolve", lambda _host: ["93.184.216.34"])
+    materials.check_url("https://a.test/x")
+    with pytest.raises(ValueError):
+        materials.check_url("https://inner.test/x")
+    assert ("a.test", "google") in asked
+
+
+def test_without_a_proxy_the_word_proxy_names_no_resolver(monkeypatch):
+    import pytest
+
+    from ocm_regions.fetch import materials
+
+    monkeypatch.setenv("OCM_REGIONS_DNS", "proxy")
+    monkeypatch.setattr(materials.dns, "lookup", _never)
+    monkeypatch.setattr(materials, "_resolve", lambda _host: ["127.0.0.1"])
+    with pytest.raises(ValueError):
+        materials.check_url("https://a.test/x")
+
+
+def test_a_private_address_written_out_is_refused_whatever_the_route(monkeypatch):
+    import pytest
+
+    from ocm_regions.fetch import materials
+
+    monkeypatch.setattr(materials, "_resolve", _never)
+    for proxied in (False, True):
+        if proxied:
+            _through_proxy(monkeypatch, "proxy")
+        for host in ("10.0.0.5", "127.1", "2130706433", "0x7f.0.0.1", "[::1]", "localhost", "db.localhost"):
+            with pytest.raises(ValueError):
+                materials.check_url(f"http://{host}/")
+        materials.check_url("http://93.184.216.34/")
+
+
+def test_a_host_the_proxy_is_told_to_skip_is_looked_up_here(monkeypatch):
+    import pytest
+
+    from ocm_regions.fetch import materials
+
+    monkeypatch.setenv("HTTPS_PROXY", "http://proxy.example.org:3128")
+    monkeypatch.setenv("NO_PROXY", "direct.test")
+    monkeypatch.setattr(materials, "_resolve", lambda _host: ["127.0.0.1"])
+    with pytest.raises(ValueError):
+        materials.check_url("https://direct.test/x")

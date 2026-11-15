@@ -29,6 +29,8 @@ jobs:
         with:
           app-id: ${{ vars.AUDIT_APP_ID }}
           private-key: ${{ secrets.AUDIT_APP_KEY }}
+          permission-administration: read
+          permission-secrets: read
       - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
         with:
           go-version: stable
