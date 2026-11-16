@@ -15,6 +15,7 @@ A change to the published data is at least a minor release.
 ### Changed
 
 - A longer abstract in `CITATION.cff`, which the archive record shows as its description.
+- Pull requests are merged by squash, so every commit on `main` is signed.
 
 ### Fixed
 

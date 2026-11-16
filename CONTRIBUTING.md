@@ -16,7 +16,9 @@ Open an issue first for anything bigger than a typo, so we can agree on the appr
 
 ## Merges
 
-Pull requests are merged by rebase, with linear history, so the failing-test commit and the commit that makes it pass both reach `main` in order. Red commits on `main` fail tests by design; skip them when bisecting (`git bisect skip`).
+Pull requests are merged by squash, with linear history: one signed commit per pull request reaches `main`.
+The failing-test commit and the commit that makes it pass stay visible in the pull request, and their
+messages are kept in the body of the squashed commit.
 
 ## Sign your work (DCO)
 
